@@ -1,0 +1,16 @@
+<div class="wdghtml" taskKey="com.javarush.task.task31.task3106">
+<h3>Разархивируем файл</h3>
+<p>В метод <mark>main</mark> приходит список аргументов.<br />
+<strong>Первый аргумент</strong> &#8212; имя результирующего файла <mark class="user">resultFileName</mark>, <strong>остальные аргументы</strong> &#8212; имена файлов <mark class="user">fileNamePart</mark>.<br />
+Каждый файл (<mark class="user">fileNamePart</mark>) &#8212; это кусочек <strong>zip</strong> архива. Нужно разархивировать целый файл, собрав его из кусочков.<br />
+Записать разархивированный файл в <mark class="user">resultFileName</mark>.<br />
+Архив внутри может содержать файл большой длины, например, <strong>50Mb</strong>.<br />
+Внутри архива может содержаться файл с любым именем.</p>
+<p><strong>Пример входных данных. Внутри архива находится один файл с именем <em>abc.mp3</em>:</strong><br />
+<code>C:/result.mp3<br />
+C:/pathToTest/test.zip.003<br />
+C:/pathToTest/test.zip.001<br />
+C:/pathToTest/test.zip.004<br />
+C:/pathToTest/test.zip.002</code></p>
+
+</div>

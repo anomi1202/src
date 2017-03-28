@@ -1,0 +1,13 @@
+<div class="wdghtml" taskKey="com.javarush.task.task31.task3112">
+<h3>Загрузчик файлов</h3>
+<p>Реализуй метод <mark>downloadFile(String <strong>urlString</strong>, Path <strong>downloadDirectory</strong>)</mark>, на вход которого подается ссылка для скачивания файла и папка, куда нужно закачать файл.<br />
+<strong>Все ссылки имеют вид:</strong><br />
+<em>https://yastatic.net/morda-logo/i/citylogos/yandex19-logo-ru.png</em><br />
+<em>http://toogle.com/files/rules.txt</em><br />
+<em> https://pacemook.com/photos/image1.jpg</em></p>
+<p>Метод должен создать объект <strong>URL</strong> и загрузить содержимое файла на локальный диск.<br />
+Выкачивай сначала во временную директорию, чтобы в случае неуспешной загрузки в твоей директории не оставались недокачанные файлы.<br />
+Затем перемести файл в пользовательскую директорию. Имя для файла возьми из ссылки.<br />
+Используй только классы и методы из пакета <em><strong>java.nio</strong></em>.</p>
+
+</div>

@@ -1,0 +1,10 @@
+<div class="wdghtml" taskKey="com.javarush.task.task31.task3104">
+<h3>Поиск скрытых файлов</h3>
+<p>В классе <span class="text-corporate"><strong>Solution</strong></span> переопредели логику двух методов:<br />
+&#8212; <mark>visitFile</mark> кроме своей логики должен добавлять в <mark class="green">archived</mark> все пути к zip и rar файлам<br />
+&#8212; <mark>visitFileFailed</mark> должен добавлять в <mark class="green">failed</mark> все пути к недоступным файлам и возвращать <strong><span class="text-neon">SKIP_SUBTREE</span></strong></p>
+<p><strong>Пример вывода:</strong><br />
+<code>D:/mydir/BCD.zip</code></p>
+<p>Метод <mark>main</mark> не участвует в тестировании</p>
+
+</div>

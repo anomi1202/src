@@ -1,0 +1,21 @@
+<div class="wdghtml" taskKey="com.javarush.task.task31.task3105">
+<h3>Добавление файла в архив</h3>
+<p>В метод <mark>main</mark> приходит список аргументов.<br />
+<strong>Первый аргумент</strong> &#8212; полный путь к файлу <mark class="user">fileName</mark>.<br />
+<strong>Второй аргумент</strong> &#8212; путь к <strong>zip-архиву</strong>.<br />
+Добавить файл (<mark class="user">fileName</mark>) внутрь архива в директорию &#8216;<em><strong>new</strong></em>&#8216;.<br />
+Если в архиве есть файл с таким именем, то заменить его.</p>
+<p><strong>Пример входных данных:</strong><br />
+<code>C:/result.mp3<br />
+C:/pathToTest/test.zip</code></p>
+<p><strong>Файлы внутри <em>test.zip</em>:</strong><br />
+<code>a.txt<br />
+b.txt</code></p>
+<p>После запуска <mark>Solution.main</mark> архив <em><strong>test.zip</strong></em> должен иметь такое содержимое:<br />
+<code>new/result.mp3</code><br />
+<code> a.txt<br />
+b.txt</code></p>
+<p><strong>Подсказка:</strong> <em>нужно сначала куда-то сохранить содержимое всех энтри, а потом записать в архив все энтри вместе с добавленным файлом.</em><br />
+Пользоваться файловой системой нельзя.</p>
+
+</div>

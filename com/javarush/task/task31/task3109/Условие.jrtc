@@ -1,0 +1,10 @@
+<div class="wdghtml" taskKey="com.javarush.task.task31.task3109">
+<h3>Читаем конфиги</h3>
+<p>Реализовать метод <mark>getProperties</mark>, который должен считывать свойства из переданного файла <mark class="user">fileName</mark>.<br />
+<mark class="user">fileName</mark> может иметь любое расширение &#8212; как <strong>xml</strong>, так и любое другое, или вообще не иметь.<br />
+Нужно обеспечить корректное чтение свойств.<br />
+При возникновении ошибок должен возвращаться пустой объект.<br />
+Метод <mark>main</mark> не участвует в тестировании.</p>
+<p><strong>Подсказка:</strong> <em>возможно тебе понадобится</em> <mark>File.separator</mark>.</p>
+
+</div>

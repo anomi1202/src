@@ -1,0 +1,11 @@
+<div class="wdghtml" taskKey="com.javarush.task.task31.task3103">
+<h3>Своя реализация</h3>
+<p>Реализуй логику методов:<br />
+1. <mark>readBytes</mark> &#8212; должен возвращать все байты файла <mark class="user">fileName</mark>.<br />
+2. <mark>readLines</mark> &#8212; должен возвращать все строки файла <mark class="user">fileName</mark>. Используй кодировку по умолчанию.<br />
+3. <mark>writeBytes</mark> &#8212; должен записывать массив <strong>bytes</strong> в файл <mark class="user">fileName</mark>.<br />
+4. <mark>copy</mark> &#8212; должен копировать файл <mark class="user">resourceFileName</mark> на место <mark class="user">destinationFileName</mark>.</p>
+<p><strong>ГЛАВНОЕ УСЛОВИЕ:</strong><br />
+Никаких других импортов!</p>
+
+</div>

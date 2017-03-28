@@ -1,0 +1,7 @@
+<div class="wdghtml" taskKey="com.javarush.task.task31.task3107">
+<h3>Null Object Pattern</h3>
+<p>Почитай на вики про паттерн &#171;<em><strong>Null Object</strong></em>&#171;.<br />
+Используй <strong><span class="text-corporate">Files</span></strong>, чтобы в конструкторе класса <span class="text-corporate"><strong>Solution</strong></span> правильно инициализировать поле <mark class="user">fileData</mark> объектом <mark class="green">ConcreteFileData</mark>.<br />
+Если возникли какие-то проблемы со чтением файла по пути <mark class="user">pathToFile</mark>, то инициализируй поле объектом <mark class="green">NullFileData</mark>.</p>
+
+</div>
