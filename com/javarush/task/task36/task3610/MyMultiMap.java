@@ -16,6 +16,7 @@ public class MyMultiMap<K, V> extends HashMap<K, V> implements Cloneable, Serial
     @Override
     public int size() {
         //напишите тут ваш код
+        return map.size();
     }
 
     @Override
