@@ -16,37 +16,82 @@ public class MyMultiMap<K, V> extends HashMap<K, V> implements Cloneable, Serial
     @Override
     public int size() {
         //напишите тут ваш код
-        return map.size();
+        int size = 0;
+        for (List<V> list : map.values()){
+            size += list.size();
+        }
+
+        return size;
     }
 
     @Override
     public V put(K key, V value) {
-        //напишите тут ваш код
+        V prevValue = null;
+
+        List<V> list = map.get(key);
+        if (list == null)
+            list = new ArrayList<>();
+        else {
+            prevValue = list.size() == 0 ? null : list.get(list.size() - 1);
+            if (list.size() == repeatCount)
+                list.remove(0);
+        }
+
+        list.add(value);
+        map.put(key, list);
+
+        return prevValue;
     }
 
     @Override
     public V remove(Object key) {
-        //напишите тут ваш код
+        V removedValue = null;
+        if (!map.containsKey(key))
+            return removedValue;
+
+        List<V> list = map.get(key);
+        if (list != null) {
+            removedValue = list.remove(0);
+            map.put((K) key,list);
+            if (list.size() == 0) {
+                map.remove(key);
+            }
+        }
+
+        return removedValue;
     }
 
     @Override
     public Set<K> keySet() {
-        //напишите тут ваш код
+        return map.keySet();
     }
 
     @Override
     public Collection<V> values() {
         //напишите тут ваш код
+        ArrayList<V> list = new ArrayList<>();
+        for (List<V> lst : map.values()){
+            list.addAll(lst);
+        }
+        return list;
     }
 
     @Override
     public boolean containsKey(Object key) {
         //напишите тут ваш код
+        return map.containsKey(key);
     }
 
     @Override
     public boolean containsValue(Object value) {
         //напишите тут ваш код
+        boolean returnedBoll = false;
+        for (List<V> list : map.values())
+            if (list.contains(value)) {
+                returnedBoll = true;
+                return returnedBoll;
+            }
+        return returnedBoll;
     }
 
     @Override
