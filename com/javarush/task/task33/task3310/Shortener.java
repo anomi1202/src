@@ -2,11 +2,8 @@ package com.javarush.task.task33.task3310;
 
 import com.javarush.task.task33.task3310.strategy.StorageStrategy;
 
-import java.util.HashMap;
-import java.util.Map;
-
 /**
- * Created by Ru on 09.04.2017.
+ * Created by Ru on 14.04.2017.
  */
 public class Shortener {
     private Long lastId = 0L;
@@ -20,7 +17,7 @@ public class Shortener {
         if (storageStrategy.containsValue(string))
             return storageStrategy.getKey(string);
         else {
-            storageStrategy.put(lastId++, string);
+            storageStrategy.put(lastId, string);
             return lastId++;
         }
     }
