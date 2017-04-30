@@ -1,7 +1,6 @@
 package com.javarush.task.task33.task3310;
 
-import com.javarush.task.task33.task3310.strategy.HashMapStorageStrategy;
-import com.javarush.task.task33.task3310.strategy.StorageStrategy;
+import com.javarush.task.task33.task3310.strategy.*;
 
 import java.util.Date;
 import java.util.HashSet;
@@ -14,6 +13,14 @@ public class Solution {
     public static void main(String[] args) {
         HashMapStorageStrategy hashMapStorageStrategy = new HashMapStorageStrategy();
         Solution.testStrategy(hashMapStorageStrategy, 1000);
+        System.out.println();
+
+        OurHashMapStorageStrategy ourHashMapStorageStrategy = new OurHashMapStorageStrategy();
+        Solution.testStrategy(ourHashMapStorageStrategy, 1000);
+        System.out.println();
+
+        FileStorageStrategy fileStorageStrategy = new FileStorageStrategy();
+        Solution.testStrategy(fileStorageStrategy, 15);
     }
 
     /**
@@ -25,11 +32,11 @@ public class Solution {
      * Идентификатор для каждой отдельной строки нужно получить, используя shortener.
      */
     public static Set<Long> getIds(Shortener shortener, Set<String> strings){
-        Set<Long> set = new HashSet<>();
-        for (String str : strings){
-            set.add(shortener.getId(str));
+        Set<Long> result = new HashSet<>();
+        for(String s : strings){
+            result.add(shortener.getId(s));
         }
-        return set;
+        return result;
     }
 
     /**
@@ -38,12 +45,11 @@ public class Solution {
      * */
 
     public static Set<String> getStrings(Shortener shortener, Set<Long> keys){
-        Set<String> set = new HashSet<>();
-        for (Long key : keys){
-            set.add(shortener.getString(key));
+        Set<String> result = new HashSet<>();
+        for(Long l : keys){
+            result.add(shortener.getString(l));
         }
-
-        return set;
+        return result;
     }
 
     /**
@@ -63,16 +69,16 @@ public class Solution {
             * Если множества одинаковы, то выведи «Тест пройден.«, иначе «Тест не пройден.«.
      */
     public static void testStrategy(StorageStrategy strategy, long elementsNumber){
-        Shortener shortener = new Shortener(strategy);
         Helper.printMessage(strategy.getClass().getSimpleName());
-        Set<String> setValuesOriginal = new HashSet<>();
-        Set<Long>  setKeys = null;
 
-        for (int i = 0; i < elementsNumber; i++)
+        Set<String> setValuesOriginal = new HashSet<>();
+        for (long i = 0; i < elementsNumber; i++)
             setValuesOriginal.add(Helper.generateRandomString());
 
+        Shortener shortener = new Shortener(strategy);
+
         Date start = new Date();
-        setKeys = getIds(shortener, setValuesOriginal);
+        Set<Long>  setKeys = getIds(shortener, setValuesOriginal);
         Date end = new Date();
         long workTime = end.getTime() - start.getTime();
         Helper.printMessage(String.valueOf(workTime));
