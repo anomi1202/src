@@ -17,10 +17,18 @@ public class Solution {
 
         OurHashMapStorageStrategy ourHashMapStorageStrategy = new OurHashMapStorageStrategy();
         Solution.testStrategy(ourHashMapStorageStrategy, 1000);
-        System.out.println();
 
         FileStorageStrategy fileStorageStrategy = new FileStorageStrategy();
         Solution.testStrategy(fileStorageStrategy, 15);
+
+        OurHashBiMapStorageStrategy ourHashBiMapStorageStrategy = new OurHashBiMapStorageStrategy();
+        Solution.testStrategy(ourHashBiMapStorageStrategy, 1000);
+
+        HashBiMapStorageStrategy hashBiMapStorageStrategy = new HashBiMapStorageStrategy();
+        Solution.testStrategy(hashBiMapStorageStrategy, 1000);
+
+        DualHashBidiMapStorageStrategy dualHashBidiMapStorageStrategy = new DualHashBidiMapStorageStrategy();
+        Solution.testStrategy(dualHashBidiMapStorageStrategy, 1000);
     }
 
     /**

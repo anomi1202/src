@@ -55,7 +55,7 @@ public class FileBucket {
             try {
                 ObjectInputStream ois = new ObjectInputStream(Files.newInputStream(path));
                 entry = (Entry) ois.readObject();
-            } catch (IOException | ClassNotFoundException e) {}
+            } catch (Exception e) {}
         }
         return entry;
     }

@@ -6,26 +6,33 @@ import java.util.List;
 /*
 Рекурсия для мат. выражения
 */
-public class Solution {
-    public static void main(String[] args) {
+public class Solution
+{
+    public static void main(String[] args)
+    {
         Solution solution = new Solution();
         solution.recursion("sin(2*(-5+1.5*4)+28)", 0); //expected output 0.5 6
     }
 
-    public void recursion(final String expression, int countOperation) {
+    public void recursion(final String expression, int countOperation)
+    {
         //нахождение позиций открывающих и закрывающих скобок подвыражения
         boolean hasOpenBracketPos = false;
         int openBracketPos = 0;
         int closeBracketPos = 0;
-        for (int i = 0; i < expression.toCharArray().length; i++) {
+        for (int i = 0; i < expression.toCharArray().length; i++)
+        {
             char c = expression.charAt(i);
-            if (c == '(' && hasOpenBracketPos) {
+            if (c == '(' && hasOpenBracketPos)
+            {
                 openBracketPos = i;
-            } else if (c == '(') {
+            } else if (c == '(')
+            {
                 openBracketPos = i;
                 hasOpenBracketPos = true;
             }
-            if (c == ')') {
+            if (c == ')')
+            {
                 closeBracketPos = i;
                 break;
             }
@@ -33,9 +40,11 @@ public class Solution {
 
         // вычисление подвыражения:
         String subExpression;
-        if (openBracketPos == 0 && closeBracketPos == 0) {
+        if (openBracketPos == 0 && closeBracketPos == 0)
+        {
             subExpression = expression;
-        } else {
+        } else
+        {
             subExpression = expression.substring(openBracketPos + 1, closeBracketPos);
         }
         subExpression = subExpression.replaceAll(" ", "");
@@ -45,22 +54,29 @@ public class Solution {
         List<String> numbers = new ArrayList<>();
         String number = "";
         boolean isOperationFirst = false;
-        for (int i = 0; i < subExpression.toCharArray().length; i++) {
+        for (int i = 0; i < subExpression.toCharArray().length; i++)
+        {
             char c = subExpression.charAt(i);
-            if ((c >= '0' && c <= '9') || (c == '.')) {
-                if (i < subExpression.toCharArray().length - 1) {
+            if ((c >= '0' && c <= '9') || (c == '.'))
+            {
+                if (i < subExpression.toCharArray().length - 1)
+                {
                     number += c;
                     continue;
-                } else {
+                } else
+                {
                     number += c;
                 }
             }
-            if (!number.equals("")) {
+            if (!number.equals(""))
+            {
                 numbers.add(number);
                 number = "";
             }
-            if (c == '-' || c == '+' || c == '*' || c == '/' || c == '^') {
-                if (i == 0) {
+            if (c == '-' || c == '+' || c == '*' || c == '/' || c == '^')
+            {
+                if (i == 0)
+                {
                     isOperationFirst = true;
                 }
                 operations.add(String.valueOf(c));
@@ -70,31 +86,39 @@ public class Solution {
 
         //вычисление подвыражения:
         double subExpressionResult = 0d;
-        while (operations.size() > 0) {
+        while (operations.size() > 0)
+        {
             //вычисление всех операций возведения в степень:
-            while (operations.contains("^")) {
+            while (operations.contains("^"))
+            {
                 //вычисление одной операции возведения в степень:
                 int operationPos = 0;
                 int numberForInvolutePos = 0;
                 int involuteNumberPos = 0;
                 double numberForInvolute;
-                for (int i = 0; i < operations.size(); i++) {
-                    if (operations.get(i).equals("^")) {
+                for (int i = 0; i < operations.size(); i++)
+                {
+                    if (operations.get(i).equals("^"))
+                    {
                         operationPos = i;
-                        if (isOperationFirst) {
+                        if (isOperationFirst)
+                        {
                             numberForInvolutePos = i - 1;
                             involuteNumberPos = i;
                             numberForInvolute = Double.valueOf(numbers.get(i - 1));
                             subExpressionResult = numberForInvolute;
-                            for (int j = 1; j < Double.valueOf(numbers.get(i)); j++) {
+                            for (int j = 1; j < Double.valueOf(numbers.get(i)); j++)
+                            {
                                 subExpressionResult = subExpressionResult * numberForInvolute;
                             }
-                        } else {
+                        } else
+                        {
                             numberForInvolutePos = i;
                             involuteNumberPos = i + 1;
                             numberForInvolute = Double.valueOf(numbers.get(i));
                             subExpressionResult = numberForInvolute;
-                            for (int j = 1; j < Double.valueOf(numbers.get(i + 1)); j++) {
+                            for (int j = 1; j < Double.valueOf(numbers.get(i + 1)); j++)
+                            {
                                 subExpressionResult = subExpressionResult * numberForInvolute;
                             }
                         }
@@ -106,35 +130,44 @@ public class Solution {
                 numbers.remove(numberForInvolutePos);
                 numbers.remove(involuteNumberPos - 1);
 
-                if (isOperationFirst) {
+                if (isOperationFirst)
+                {
                     numbers.add(operationPos - 1, String.valueOf(subExpressionResult));
-                } else {
+                } else
+                {
                     numbers.add(operationPos, String.valueOf(subExpressionResult));
                 }
             }
 
             // вычисление всех операций умножения и деления:
-            while (operations.contains("*") || operations.contains("/")) {
+            while (operations.contains("*") || operations.contains("/"))
+            {
                 //вычисление одной операции умножения или деления:
                 int operationPos = 0;
                 int firstNumberPos = 0;
                 int secondNumberPos = 0;
-                for (int i = 0; i < operations.size(); i++) {
+                for (int i = 0; i < operations.size(); i++)
+                {
                     String opChar = operations.get(i);
-                    if (opChar.equals("*") || opChar.equals("/")) {
+                    if (opChar.equals("*") || opChar.equals("/"))
+                    {
                         operationPos = i;
-                        if (isOperationFirst) {
+                        if (isOperationFirst)
+                        {
                             firstNumberPos = i - 1;
                             secondNumberPos = i;
-                        } else {
+                        } else
+                        {
                             firstNumberPos = i;
                             secondNumberPos = i + 1;
                         }
                         double firstNumber = Double.valueOf(numbers.get(firstNumberPos));
                         double secondNumber = Double.valueOf(numbers.get(secondNumberPos));
-                        if (opChar.equals("*")) {
+                        if (opChar.equals("*"))
+                        {
                             subExpressionResult = firstNumber * secondNumber;
-                        } else if (opChar.equals("/")) {
+                        } else if (opChar.equals("/"))
+                        {
                             subExpressionResult = firstNumber / secondNumber;
                         }
                         break;
@@ -145,36 +178,46 @@ public class Solution {
                 numbers.remove(firstNumberPos);
                 numbers.remove(secondNumberPos - 1);
 
-                if (isOperationFirst) {
+                if (isOperationFirst)
+                {
                     numbers.add(operationPos - 1, String.valueOf(subExpressionResult));
-                } else {
+                } else
+                {
                     numbers.add(operationPos, String.valueOf(subExpressionResult));
                 }
             }
 
             // вычисление всех операций сложения и вычитания:
             subExpressionResult = 0d;
-            for (int i = 0; i < operations.size(); i++) {
-                if (isOperationFirst && (i == 0)) {
+            for (int i = 0; i < operations.size(); i++)
+            {
+                if (isOperationFirst && (i == 0))
+                {
                     subExpressionResult = Double.valueOf(operations.get(i) + numbers.get(i));
                     continue;
-                } else if (!isOperationFirst && (i == 0)) {
+                } else if (!isOperationFirst && (i == 0))
+                {
                     subExpressionResult = Double.valueOf(numbers.get(i));
                 }
 
                 String op = operations.get(i);
-                switch (op) {
+                switch (op)
+                {
                     case "-":
-                        if (isOperationFirst) {
+                        if (isOperationFirst)
+                        {
                             subExpressionResult -= Double.valueOf(numbers.get(i));
-                        } else {
+                        } else
+                        {
                             subExpressionResult -= Double.valueOf(numbers.get(i + 1));
                         }
                         break;
                     case "+":
-                        if (isOperationFirst) {
+                        if (isOperationFirst)
+                        {
                             subExpressionResult += Double.valueOf(numbers.get(i));
-                        } else {
+                        } else
+                        {
                             subExpressionResult += Double.valueOf(numbers.get(i + 1));
                         }
                         break;
@@ -186,9 +229,11 @@ public class Solution {
 
         // после вычисления подвыражения, проверка и вычисление синуса, косинуса или тангенса:
         String trigoStr = null;
-        if (openBracketPos >= 3) {
+        if (openBracketPos >= 3)
+        {
             String symbolsBeforeOpenBracket = expression.substring(openBracketPos - 3, openBracketPos);
-            switch (symbolsBeforeOpenBracket) {
+            switch (symbolsBeforeOpenBracket)
+            {
                 case "sin":
                     subExpressionResult = Math.sin(Math.toRadians(subExpressionResult));
                     operationsAmount++;
@@ -215,27 +260,34 @@ public class Solution {
         String newExpression;
         if (expression.contains("+") || expression.contains("-") || expression.contains("*") ||
                 expression.contains("/") || expression.contains("^") || expression.contains("sin") ||
-                expression.contains("cos") || expression.contains("tan")) {
+                expression.contains("cos") || expression.contains("tan"))
+        {
             if ((trigoStr != null) && (expression.substring(openBracketPos - 3, openBracketPos).equals(trigoStr))) {
                 newExpression = expression.substring(0, openBracketPos - 3) +
                         subExpressionResult +
                         (closeBracketPos == expression.length() - 1 ? "" : expression.substring(closeBracketPos + 1));
-            } else {
-                if (openBracketPos == 0 && closeBracketPos == 0) {
+            } else
+            {
+                if (openBracketPos == 0 && closeBracketPos == 0)
+                {
                     newExpression = String.valueOf(subExpressionResult);
-                } else {
+                } else
+                {
                     newExpression = expression.substring(0, openBracketPos) +
                             subExpressionResult +
                             (closeBracketPos == expression.length() - 1 ? "" : expression.substring(closeBracketPos + 1));
                 }
             }
             recursion(newExpression, countOperation + operationsAmount);
-        } else {
+        } else
+        {
             System.out.println(expression + " " + (countOperation + operationsAmount));
         }
+        //implement
     }
 
-    public Solution() {
+    public Solution()
+    {
         //don't delete
     }
 }

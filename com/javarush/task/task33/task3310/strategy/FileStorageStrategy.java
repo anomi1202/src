@@ -95,11 +95,12 @@ public class FileStorageStrategy implements StorageStrategy {
 
     @Override
     public boolean containsKey(Long key) {
-        return getEntry(key) != null;    }
+        return getEntry(key) != null ? true : false;
+    }
 
     @Override
     public boolean containsValue(String value) {
-        return getKey(value) != null;
+        return getKey(value) != null ? true : false;
     }
 
     @Override
@@ -111,10 +112,13 @@ public class FileStorageStrategy implements StorageStrategy {
 
     @Override
     public Long getKey(String value) {
+        if (size == 0)
+            return null;
+
         for (FileBucket fb : table) {
             if (fb != null) {
                 for (Entry e = fb.getEntry(); e != null; e = e.next) {
-                    if (e.getValue().equals(value))
+                    if (e.value.equals(value))
                         return e.getKey();
                 }
             }
@@ -125,9 +129,11 @@ public class FileStorageStrategy implements StorageStrategy {
 
     @Override
     public String getValue(Long key) {
-        if (key == null)
-            return null;
-        Entry e = getEntry(key);
-        return e != null ? e.getValue() : null;
+        if (size != 0) {
+            Entry e = getEntry(key);
+            return e != null ? e.getValue() : null;
+        }
+
+        return null;
     }
 }
