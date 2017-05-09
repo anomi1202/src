@@ -10,7 +10,8 @@ import org.junit.Test;
  * Created by Ru on 06.05.2017.
  */
 public class FunctionalTest {
-    private void testStorage(Shortener shortener){
+
+    public void testStorage(Shortener shortener){
         //Создаем три строки. Текст 1 и 3 строк одинаковый
         String textOriginal1 = Helper.generateRandomString();
         String textOriginal2 = Helper.generateRandomString();
@@ -40,42 +41,42 @@ public class FunctionalTest {
     }
 
     @Test
-    void testHashMapStorageStrategy(){
+    public void testHashMapStorageStrategy(){
         HashMapStorageStrategy hashMapStorageStrategy = new HashMapStorageStrategy();
         Shortener shortener = new Shortener(hashMapStorageStrategy);
         testStorage(shortener);
     }
 
     @Test
-    void testOurHashMapStorageStrategy(){
+    public void testOurHashMapStorageStrategy(){
         OurHashMapStorageStrategy ourHashMapStorageStrategy = new OurHashMapStorageStrategy();
         Shortener shortener = new Shortener(ourHashMapStorageStrategy);
         testStorage(shortener);
     }
 
     @Test
-    void testFileStorageStrategy(){
+    public void testFileStorageStrategy(){
         FileStorageStrategy fileStorageStrategy = new FileStorageStrategy();
         Shortener shortener = new Shortener(fileStorageStrategy);
         testStorage(shortener);
     }
 
     @Test
-    void testHashBiMapStorageStrategy(){
+    public void testHashBiMapStorageStrategy(){
         HashBiMapStorageStrategy hashBiMapStorageStrategy = new HashBiMapStorageStrategy();
         Shortener shortener = new Shortener(hashBiMapStorageStrategy);
         testStorage(shortener);
     }
 
     @Test
-    void testDualHashBidiMapStorageStrategy(){
+    public void testDualHashBidiMapStorageStrategy(){
         DualHashBidiMapStorageStrategy hashBidiMapStorageStrategy = new DualHashBidiMapStorageStrategy();
         Shortener shortener = new Shortener(hashBidiMapStorageStrategy);
         testStorage(shortener);
     }
 
     @Test
-    void testOurHashBiMapStorageStrategy(){
+    public void testOurHashBiMapStorageStrategy(){
         OurHashBiMapStorageStrategy ourHashBiMapStorageStrategy = new OurHashBiMapStorageStrategy();
         Shortener shortener = new Shortener(ourHashBiMapStorageStrategy);
         testStorage(shortener);
