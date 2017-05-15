@@ -2,9 +2,11 @@ package com.javarush.task.task33.task3310;
 
 import com.javarush.task.task33.task3310.strategy.*;
 
+import java.util.ArrayList;
 import java.util.Date;
 import java.util.HashSet;
 import java.util.Set;
+import java.util.concurrent.ConcurrentHashMap;
 
 /**
  * Created by Ru on 14.04.2017.
@@ -108,4 +110,5 @@ public class Solution {
         if (isContains)
             Helper.printMessage("Тест пройден.");
     }
+
 }
