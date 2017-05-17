@@ -2,7 +2,9 @@ package com.javarush.task.task39.task3913;
 
 import com.javarush.task.task39.task3913.query.IPQuery;
 
-import java.io.*;
+import java.io.File;
+import java.io.FilenameFilter;
+import java.io.IOException;
 import java.nio.charset.Charset;
 import java.nio.file.Files;
 import java.nio.file.Path;
@@ -35,29 +37,34 @@ public class LogParser implements IPQuery {
         for (File file : files) {
             try {
                 list.addAll(Files.readAllLines(file.toPath(), Charset.defaultCharset()));
-            } catch (Exception e) {
+            } catch (IOException e) {
                 e.printStackTrace();
             }
+
         }
 
         SimpleDateFormat dateFormat = new SimpleDateFormat("dd.MM.yyyy hh:mm:ss");
         ArrayList<LogObjects> listLogObject = new ArrayList<>();
         for (String line : list){
+            String[] logElement = line.split("\\t");
+
+            String ip = logElement[0];
+            String userName = logElement[1];
+            Event event = Event.valueOf(logElement[3].split(" ")[0]);
+            Status status = Status.valueOf(logElement[4]);
+            Date date = null;
             try {
-                String[] logElement = line.split("\\t");
-                String ip = logElement[0];
-                String userName = logElement[1];
-                Date date = dateFormat.parse(logElement[2]);
-                Event event = Event.valueOf(logElement[3].split(" ")[0]);
-                Status status = Status.valueOf(logElement[4]);
-
-                LogObjects log = new LogObjects(ip, userName, date, event, status);
-
-
-                listLogObject.add(log);
+                date = dateFormat.parse(logElement[2]);
             } catch (ParseException e) {
                 e.printStackTrace();
             }
+
+            LogObjects log = new LogObjects(ip, userName, date, event, status);
+            if (logElement[3].split(" ").length > 1)
+                log.taskNumber = logElement[3].split(" ")[1];
+
+            listLogObject.add(log);
+
         }
 
         return listLogObject;
@@ -67,13 +74,9 @@ public class LogParser implements IPQuery {
     private List<LogObjects> includeToInterval(Date after, Date before){
         ArrayList<LogObjects> list = new ArrayList<>();
 
-        for (LogObjects element : logList){
-            try {
-                if (includeToInterval(element.date, after, before))
-                    list.add(element);
-            } catch (Exception e) {
-                e.printStackTrace();
-            }
+        for (LogObjects element : logList) {
+            if (includeToInterval(element.date, after, before))
+                list.add(element);
         }
 
         return list;
@@ -120,7 +123,7 @@ public class LogParser implements IPQuery {
         if (fieldLog instanceof String) //for username
             return logElement.username.equals(fieldLog);
         if (fieldLog instanceof Event) //for event
-            return logElement.event.equals(fieldLog);
+            return fieldLog.equals(logElement.event);
         if (fieldLog instanceof Status) //for status
             return logElement.status.equals(fieldLog);
 
@@ -163,6 +166,7 @@ public class LogParser implements IPQuery {
         String username;
         Date date;
         Event event;
+        String taskNumber;
         Status status;
 
         public LogObjects(String IP, String username, Date date, Event event, Status status) {
@@ -173,5 +177,4 @@ public class LogParser implements IPQuery {
             this.status = status;
         }
     }
-
 }
