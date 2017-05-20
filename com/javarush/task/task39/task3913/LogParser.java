@@ -1,6 +1,7 @@
 package com.javarush.task.task39.task3913;
 
 import com.javarush.task.task39.task3913.query.IPQuery;
+import com.javarush.task.task39.task3913.query.UserQuery;
 
 import java.io.File;
 import java.io.FilenameFilter;
@@ -12,124 +13,139 @@ import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.*;
 
-public class LogParser implements IPQuery {
+public class LogParser implements IPQuery, UserQuery {
     private Path logDir;
-    private List<LogObjects> logList;
-
 
     //директория с логами (логов может быть несколько, все они должны иметь расширение log)
-    public LogParser(Path logDir){
+    public LogParser(Path logDir) {
         this.logDir = logDir;
-        logList = getLogObjectsList();
     }
 
-    //заполняем список, состоящий из объектов елементов лога
-    private List<LogObjects> getLogObjectsList(){
-        ArrayList<String> list = new ArrayList<>();
-        //формируем список файлов, состоящий только из логов в указанной dir
-        File[] files = logDir.toFile().listFiles(new FilenameFilter() {
-            @Override
-            public boolean accept(File dir, String name) {
-                return name.endsWith(".log");
-            }
-        });
+    /**
+     * other methods
+     */
+    //класс, в полях объектов которого будут храниться параметра логов (ip, userName, date, event and status)
+    private class LogObjects {
+        private String ip;
+        private String user;
+        private Date date;
+        private Event event;
+        private String taskNumber;
+        private Status status;
 
-        for (File file : files) {
-            try {
-                list.addAll(Files.readAllLines(file.toPath(), Charset.defaultCharset()));
-            } catch (IOException e) {
-                e.printStackTrace();
-            }
-
+        public LogObjects(String ip, String user, Date date, Event event, Status status) {
+            this.ip = ip;
+            this.user = user;
+            this.date = date;
+            this.event = event;
+            this.status = status;
         }
 
-        SimpleDateFormat dateFormat = new SimpleDateFormat("dd.MM.yyyy hh:mm:ss");
-        ArrayList<LogObjects> listLogObject = new ArrayList<>();
-        for (String line : list){
-            String[] logElement = line.split("\\t");
-
-            String ip = logElement[0];
-            String userName = logElement[1];
-            Event event = Event.valueOf(logElement[3].split(" ")[0]);
-            Status status = Status.valueOf(logElement[4]);
-            Date date = null;
+        public LogObjects(String logLine) {
+            String[] strings = logLine.split("\\t");
+            this.ip = strings[0];
+            this.user = strings[1];
+            SimpleDateFormat dateFormat = new SimpleDateFormat("d.M.yyyy H:m:s");
             try {
-                date = dateFormat.parse(logElement[2]);
+                date = dateFormat.parse(strings[2]);
             } catch (ParseException e) {
                 e.printStackTrace();
             }
-
-            LogObjects log = new LogObjects(ip, userName, date, event, status);
-            if (logElement[3].split(" ").length > 1)
-                log.taskNumber = logElement[3].split(" ")[1];
-
-            listLogObject.add(log);
-
+            String eventAndParam[] = strings[3].split(" ");
+            event = Event.valueOf(eventAndParam[0]);
+            if (eventAndParam.length > 1)
+                taskNumber = eventAndParam[1];
+            status = Status.valueOf(strings[4]);
         }
 
-        return listLogObject;
+        public String getIp() {
+            return ip;
+        }
+
+        public String getUser() {
+            return user;
+        }
+
+        public Date getDate() {
+            return date;
+        }
+
+        public Event getEvent() {
+            return event;
+        }
+
+        public String getTaskNumber() {
+            return taskNumber;
+        }
+
+        public Status getStatus() {
+            return status;
+        }
     }
 
-    //возвращает список из объектов елементов лога, даты которых входят в диапазон
-    private List<LogObjects> includeToInterval(Date after, Date before){
-        ArrayList<LogObjects> list = new ArrayList<>();
-
-        for (LogObjects element : logList) {
-            if (includeToInterval(element.date, after, before))
-                list.add(element);
+    //метод возвращает список, состоящий из объектов LogObjects
+    private List<LogObjects> getListLogObject() {
+        List<LogObjects> listLog = new ArrayList<>();
+        try {
+            File[] files = logDir.toFile().listFiles(new FilenameFilter() {
+                @Override
+                public boolean accept(File dir, String name) {
+                    return name.endsWith(".log");
+                }
+            });
+            for (File file : files) {
+                for (String record : Files.readAllLines(file.toPath(), Charset.defaultCharset())) {
+                    listLog.add(new LogObjects(record));
+                }
+            }
+        } catch (IOException e) {
+            e.printStackTrace();
         }
+        return listLog;
+    }
 
-        return list;
+    //возвращает список уникальных IP подходящих под критерий поиска
+    private Set<String> getIpSet(Object findLog, Date after, Date before) {
+        Set<String> ipSet = new HashSet<>();
+        for (LogObjects logObjects : getListLogObject()) {
+            if (isDateInside(logObjects.getDate(), after, before) && isFieldMatch(findLog, logObjects)) {
+                ipSet.add(logObjects.getIp());
+            }
+        }
+        return ipSet;
+    }
+
+    //метод проверяет, подходит ли лог под объект поиска (user, event or status)
+    private boolean isFieldMatch(Object findLog, LogObjects logElement) {
+        boolean isMatched = false;
+
+        if (findLog == null)
+            return true;
+        if (findLog instanceof String) //for username
+            isMatched = logElement.getUser().equals(findLog);
+        else if (findLog instanceof Event)  //for event
+            isMatched = logElement.getEvent().equals(findLog);
+        else if (findLog instanceof Status) //for status
+            isMatched = logElement.getStatus().equals(findLog);
+        return isMatched;
     }
 
     //метод проверяет вхождение даты лога в нужный интервал
-    private boolean includeToInterval(Date date, Date after, Date before){
-        boolean isInclude = true;
-
-        if (after != null && before !=null){
-            isInclude = date.getTime() >= after.getTime() && date.getTime() <= before.getTime();
+    private boolean isDateInside(Date date, Date after, Date before) {
+        if (after != null) {
+            if (date.getTime() < after.getTime())
+                return false;
         }
-        else if (after != null && before == null){
-            isInclude = date.getTime() >= after.getTime();
+        if (before != null) {
+            if (date.getTime() > before.getTime())
+                return false;
         }
-        else if (after == null && before != null){
-            isInclude = date.getTime() <= before.getTime();
-        }
-
-        return isInclude;
+        return true;
     }
 
-    //метод возвращает множество из уникальных IP, подходящих под критерии
-    // критерии:
-    // --входящие в интервал дат
-    // --подходящие по объекту поиска (user, event or status)
-    private Set<String> getIPSet(Object fieldLog, Date after, Date before){
-        Set<String> setIp = new HashSet<>();
-
-        for (LogObjects element : includeToInterval(after, before)){
-            if (isFieldMatch(fieldLog, element))
-                setIp.add(element.IP);
-        }
-
-        return setIp;
-    }
-
-    //метод проверяет подходит ли лог под критерий поиска по объекту (user, event, status)
-    private boolean isFieldMatch(Object fieldLog, LogObjects logElement){
-        boolean matched = false;
-
-        if (fieldLog == null)
-            return true;
-        if (fieldLog instanceof String) //for username
-            return logElement.username.equals(fieldLog);
-        if (fieldLog instanceof Event) //for event
-            return fieldLog.equals(logElement.event);
-        if (fieldLog instanceof Status) //for status
-            return logElement.status.equals(fieldLog);
-
-        return matched;
-    }
-
+    /**
+     * methods of IPQuery
+     */
     //возвращает количество уникальных IP адресов за выбранный период
     @Override
     public int getNumberOfUniqueIPs(Date after, Date before) {
@@ -139,42 +155,147 @@ public class LogParser implements IPQuery {
     //возвращает множество, содержащее все не повторяющиеся IP
     @Override
     public Set<String> getUniqueIPs(Date after, Date before) {
-        return getIPSet(null, after, before);
+        return getIpSet(null, after, before);
     }
 
     //возвращает IP, с которых работал переданный пользователь.
     @Override
     public Set<String> getIPsForUser(String user, Date after, Date before) {
-        return getIPSet(user, after, before);
+        return getIpSet(user, after, before);
     }
 
     //возвращает IP, с которых было произведено переданное событие
     @Override
     public Set<String> getIPsForEvent(Event event, Date after, Date before) {
-        return getIPSet(event, after, before);
+        return getIpSet(event, after, before);
     }
 
     //возвращает IP, события с которых закончилось переданным статусом.
     @Override
     public Set<String> getIPsForStatus(Status status, Date after, Date before) {
-        return getIPSet(status, after, before);
+        return getIpSet(status, after, before);
     }
 
-    //класс в котором хранятся елементы лога
-    private class LogObjects{
-        String IP;
-        String username;
-        Date date;
-        Event event;
-        String taskNumber;
-        Status status;
-
-        public LogObjects(String IP, String username, Date date, Event event, Status status) {
-            this.IP = IP;
-            this.username = username;
-            this.date = date;
-            this.event = event;
-            this.status = status;
+    /**
+     * methods of UserQuery
+     */
+    //возвращает всех пользователей
+    @Override
+    public Set<String> getAllUsers() {
+        Set<String> userList = new HashSet<>();
+        for (LogObjects logObjects : getListLogObject()){
+            userList.add(logObjects.getUser());
         }
+        return userList;
+    }
+
+    //возвращает количество уникальных пользователей
+    @Override
+    public int getNumberOfUsers(Date after, Date before) {
+        return getAllUsers().size();
+    }
+
+    //возвращает количество событий от определенного пользователя.
+    @Override
+    public int getNumberOfUserEvents(String user, Date after, Date before) {
+        int coutEventOfUser = 0;
+        for (LogObjects logObjects : getListLogObject()){
+            if (isDateInside(logObjects.getDate(), after, before) && isFieldMatch(user, logObjects))
+                coutEventOfUser++;
+        }
+        return coutEventOfUser;
+    }
+
+    //возвращает пользователей с определенным IP
+    //Несколько пользователей могут использовать один и тот же IP
+    @Override
+    public Set<String> getUsersForIP(String ip, Date after, Date before) {
+        Set<String> userList = new HashSet<>();
+        for (LogObjects logObjects : getListLogObject()){
+            if (isDateInside(logObjects.getDate(), after, before) && logObjects.getIp().equals(ip))
+                userList.add(logObjects.getUser());
+        }
+        return userList;
+    }
+
+    //возвращает пользователей, которые были залогинены
+    @Override
+    public Set<String> getLoggedUsers(Date after, Date before) {
+        Set<String> userList = new HashSet<>();
+        for (LogObjects logObjects : getListLogObject()){
+            if (isDateInside(logObjects.getDate(), after, before) && logObjects.getEvent().equals(Event.LOGIN))
+                userList.add(logObjects.getUser());
+        }
+        return userList;
+    }
+
+    //возвращает пользователей, которые скачали плагин
+    @Override
+    public Set<String> getDownloadedPluginUsers(Date after, Date before) {
+        Set<String> userList = new HashSet<>();
+        for (LogObjects logObjects : getListLogObject()){
+            if (isDateInside(logObjects.getDate(), after, before) && logObjects.getEvent().equals(Event.DOWNLOAD_PLUGIN))
+                userList.add(logObjects.getUser());
+        }
+        return userList;
+    }
+
+    //возвращает пользователей, которые отправили сообщение
+    @Override
+    public Set<String> getWroteMessageUsers(Date after, Date before) {
+        Set<String> userList = new HashSet<>();
+        for (LogObjects logObjects : getListLogObject()){
+            if (isDateInside(logObjects.getDate(), after, before) && logObjects.getEvent().equals(Event.WRITE_MESSAGE))
+                userList.add(logObjects.getUser());
+        }
+        return userList;
+    }
+
+    //возвращает пользователей, которые решали любую задачу
+    @Override
+    public Set<String> getSolvedTaskUsers(Date after, Date before) {
+        Set<String> userList = new HashSet<>();
+        for (LogObjects logObjects : getListLogObject()){
+            if (isDateInside(logObjects.getDate(), after, before) && logObjects.getEvent().equals(Event.SOLVE_TASK))
+                userList.add(logObjects.getUser());
+        }
+        return userList;
+    }
+
+    //возвращает пользователей, которые решали задачу с номером task
+    @Override
+    public Set<String> getSolvedTaskUsers(Date after, Date before, int task) {
+        Set<String> userList = new HashSet<>();
+        for (LogObjects logObjects : getListLogObject()){
+            if (isDateInside(logObjects.getDate(), after, before) && logObjects.getEvent().equals(Event.SOLVE_TASK)) {
+                if (logObjects.getEvent().equals(String.valueOf(task)))
+                    userList.add(logObjects.getUser());
+            }
+        }
+        return userList;
+    }
+
+    //возвращает пользователей, которые решали любую задачу
+    @Override
+    public Set<String> getDoneTaskUsers(Date after, Date before) {
+        Set<String> userList = new HashSet<>();
+        for (LogObjects logObjects : getListLogObject()){
+            if (isDateInside(logObjects.getDate(), after, before) && logObjects.getEvent().equals(Event.DONE_TASK))
+                userList.add(logObjects.getUser());
+        }
+        return userList;
+    }
+
+    //возвращает пользователей, которые решали задачу с номером task
+    @Override
+    public Set<String> getDoneTaskUsers(Date after, Date before, int task) {
+        Set<String> userList = new HashSet<>();
+        for (LogObjects logObjects : getListLogObject()){
+            if (isDateInside(logObjects.getDate(), after, before) && logObjects.getEvent().equals(Event.DONE_TASK)) {
+                if (logObjects.getEvent().equals(String.valueOf(task)))
+                    userList.add(logObjects.getUser());
+            }
+        }
+        return userList;
     }
 }
