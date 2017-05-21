@@ -10,7 +10,7 @@ import java.util.Date;
 public class Solution {
     public static void main(String[] args) throws IOException, ParseException {
         LogParser logParser = new LogParser(Paths.get("C:\\Users\\Ru\\Desktop\\JavaRushHomeWork\\JavaRushTasks\\4.JavaCollections\\src\\com\\javarush\\task\\task39\\task3913\\logs\\"));
-        System.out.println(logParser.getIPsForEvent(Event.LOGIN, null, null));
+        System.out.println(logParser.getNumberOfUserEvents("Morozko", null, null));
 
     }
 
