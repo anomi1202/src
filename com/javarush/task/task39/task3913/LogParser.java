@@ -1,10 +1,6 @@
 package com.javarush.task.task39.task3913;
 
-import com.javarush.task.task39.task3913.query.DateQuery;
-import com.javarush.task.task39.task3913.query.EventQuery;
-import com.javarush.task.task39.task3913.query.IPQuery;
-import com.javarush.task.task39.task3913.query.UserQuery;
-import sun.rmi.runtime.Log;
+import com.javarush.task.task39.task3913.query.*;
 
 import java.io.File;
 import java.io.FilenameFilter;
@@ -16,9 +12,7 @@ import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.*;
 
-import static javafx.scene.input.KeyCode.V;
-
-public class LogParser implements IPQuery, UserQuery, DateQuery, EventQuery {
+public class LogParser implements IPQuery, UserQuery, DateQuery, EventQuery, QLQuery {
     private Path logDir;
 
     //директория с логами (логов может быть несколько, все они должны иметь расширение log)
@@ -26,9 +20,171 @@ public class LogParser implements IPQuery, UserQuery, DateQuery, EventQuery {
         this.logDir = logDir;
     }
 
+    //метод обрабатывающий пользовательские запросы
+    @Override
+    public Set<Object> execute(String query) {
+        String[] queryParts = query.split("(\\W)+");
+        String field1 = queryParts[1];
+        String field2 = "";
+        String value = "";
+        if  (queryParts.length > 2) {
+            field2 = queryParts[3];
+            StringBuilder valueBuilder = new StringBuilder();
+            for (int i = 4; i < queryParts.length; i++) {
+                valueBuilder.append(queryParts[i] + "/");
+            }
+            value = valueBuilder.toString();
+        }
+
+        switch (field2){
+            case ("ip"):
+                value = value.substring(0, value.length() - 1);
+                value = value.replace("/", ".");
+                break;
+            case ("user"):
+                value = value.substring(0, value.length() - 1);
+                value = value.replace("/", " ");
+                break;
+            case ("date"):
+                value = value.substring(0, value.length() - 1);
+                break;
+            case ("event"):
+                value = value.substring(0, value.length() - 1);
+                break;
+            case ("status"):
+                value = value.substring(0, value.length() - 1).toUpperCase();
+                break;
+        }
+
+        Set resultList = null;
+        switch (field1){
+            case "ip":
+                switch (field2){
+                    case ("user"):
+                        resultList = getIPsForUser(value, null, null);
+                        break;
+                    case ("date"):
+                        SimpleDateFormat dateFormat = new SimpleDateFormat("dd/MM/yyyy/HH/mm/ss");
+                        try {
+                            resultList = getUniqueIPs(dateFormat.parse(value), dateFormat.parse(value));
+                        } catch (ParseException e) {
+                            e.printStackTrace();
+                        }
+                        break;
+                    case ("event"):
+                        resultList = getIPsForEvent(Event.valueOf(value), null, null);
+                        break;
+                    case ("status"):
+                        resultList = getIPsForStatus(Status.valueOf(value), null, null);
+                        break;
+                    default:
+                        resultList = getUniqueIPs(null, null);
+                        break;
+                }
+                break;
+            case "user":
+                switch (field2){
+                    case ("ip"):
+                        resultList = getUsersForIP(value, null, null);
+                        break;
+                    case ("date"):
+                        SimpleDateFormat dateFormat = new SimpleDateFormat("dd/MM/yyyy/HH/mm/ss");
+                        try {
+                            resultList = getUserForDates(dateFormat.parse(value), dateFormat.parse(value));
+                        } catch (ParseException e) {
+                            e.printStackTrace();
+                        }
+                        break;
+                    case ("event"):
+                        resultList = getUserForEvent(Event.valueOf(value), null, null);
+                        break;
+                    case ("status"):
+                        resultList = getUserForStatus(Status.valueOf(value), null, null);
+                        break;
+                    default:
+                        resultList = getAllUsers();
+                        break;
+                }
+                break;
+            case "date":
+                switch (field2){
+                    case ("ip"):
+                        resultList = getDatesForIp(value, null, null);
+                        break;
+                    case ("user"):
+                        resultList = new HashSet<>();
+                        setListPartsOfLog(value, resultList, null, null, PartsLog.USERNAME, PartsLog.DATE);
+                        break;
+                    case ("event"):
+                        resultList = new HashSet<>();
+                        setListPartsOfLog(Event.valueOf(value), resultList, null, null, PartsLog.EVENT, PartsLog.DATE);
+                        break;
+                    case ("status"):
+                        resultList = getDatesForStatus(Status.valueOf(value), null, null);
+                        break;
+                    default:
+                        resultList = getAllDate(null, null);
+                        break;
+                }
+                break;
+            case "event":
+                switch (field2){
+                    case ("ip"):
+                        resultList = getEventsForIP(value, null, null);
+                        break;
+                    case ("user"):
+                        resultList = getEventsForUser(value, null, null);
+                        break;
+                    case ("date"):
+                        SimpleDateFormat dateFormat = new SimpleDateFormat("dd/MM/yyyy/HH/mm/ss", Locale.ENGLISH);
+                        try {
+                            resultList = getAllEvents(dateFormat.parse(value), dateFormat.parse(value));
+                        } catch (ParseException e) {
+                            e.printStackTrace();
+                        }
+                        break;
+                    case ("status"):
+                        resultList = getEventsForStatus(Status.valueOf(value), null, null);
+                        break;
+                    default:
+                        resultList = getAllEvents(null, null);
+                        break;
+                }
+                break;
+            case "status":
+                switch (field2){
+                    case ("ip"):
+                        resultList = new HashSet<>();
+                        setListPartsOfLog(value, resultList, null, null, PartsLog.IP, PartsLog.STATUS);
+                        break;
+                    case ("user"):
+                        resultList = new HashSet<>();
+                        setListPartsOfLog(value, resultList, null, null, PartsLog.USERNAME, PartsLog.STATUS);
+                        break;
+                    case ("date"):
+                        SimpleDateFormat dateFormat = new SimpleDateFormat("dd/MM/yyyy/HH/mm/ss");
+                        try {
+                            resultList = getAllStatus(dateFormat.parse(value), dateFormat.parse(value));
+                        } catch (ParseException e) {
+                            e.printStackTrace();
+                        }
+                        break;
+                    case ("event"):
+                        resultList = new HashSet<>();
+                        setListPartsOfLog(Event.valueOf(value), resultList, null, null, PartsLog.EVENT, PartsLog.STATUS);
+                        break;
+                    default:
+                        resultList = getAllStatus(null, null);
+                        break;
+                }
+                break;
+        }
+        return resultList;
+    }
+
     /*
-     * other methods end enums
-     */
+    * other methods end enums for IP-, User-, Date-, Event-Query
+    */
     private enum PartsLog {
         IP,
         USERNAME,
@@ -206,6 +362,12 @@ public class LogParser implements IPQuery, UserQuery, DateQuery, EventQuery {
         return count;
     }
 
+    public Set<Status> getAllStatus(Date after, Date before){
+        Set<Status> listStatus = new HashSet<>();
+        setListPartsOfLog(null, listStatus, after, before, null, PartsLog.STATUS);
+        return listStatus;
+    }
+
     /*
      * methods of IPQuery
      */
@@ -246,11 +408,30 @@ public class LogParser implements IPQuery, UserQuery, DateQuery, EventQuery {
         setListPartsOfLog(status, listIP, after, before, PartsLog.STATUS, PartsLog.IP);
         return listIP;
     }
-
-
     /*
     * methods of UserQuery
     * */
+    //возвращает уникальных пользователей в и интервале дат
+    private Set<String> getUserForDates(Date after, Date before){
+        Set<String> listUser = new HashSet<>();
+        setListPartsOfLog(null, listUser, after, before, null, PartsLog.USERNAME);
+        return listUser;
+    }
+
+    //возвращает пользователей, с определенным событием
+    private Set<String> getUserForEvent(Event event, Date after, Date before){
+        Set<String> listUser = new HashSet<>();
+        setListPartsOfLog(event, listUser, after, before, PartsLog.EVENT, PartsLog.USERNAME);
+        return listUser;
+    }
+
+    //возвращает пользователей, с определенным статусом
+    private Set<String> getUserForStatus(Status status, Date after, Date before){
+        Set<String> listUser = new HashSet<>();
+        setListPartsOfLog(status, listUser, after, before, PartsLog.STATUS, PartsLog.USERNAME);
+        return listUser;
+    }
+
     //возвращает всех пользователей
     @Override
     public Set<String> getAllUsers() {
@@ -262,9 +443,7 @@ public class LogParser implements IPQuery, UserQuery, DateQuery, EventQuery {
     //возвращает количество уникальных пользователей
     @Override
     public int getNumberOfUsers(Date after, Date before) {
-        Set<String> listUser = new HashSet<>();
-        setListPartsOfLog(null, listUser, after, before, null, PartsLog.USERNAME);
-        return listUser.size();
+        return getUserForDates(after, before).size();
     }
 
     //возвращает количество событий от определенного пользователя.
@@ -351,10 +530,28 @@ public class LogParser implements IPQuery, UserQuery, DateQuery, EventQuery {
         return userList;
     }
 
-
     /*
- * methods of DateQuery
- */
+    * methods of DateQuery
+    */
+    private Set<Date> getDatesForStatus(Status status, Date after, Date before){
+        Set<Date> listDate = new HashSet<>();
+        setListPartsOfLog(status, listDate, after, before, PartsLog.STATUS, PartsLog.DATE);
+        return listDate;
+    }
+
+    //возвращает множество уникальных дат, за которые с IP адреса произведено любое действие.
+    private Set<Date> getDatesForIp(String ip, Date after, Date before){
+        Set<Date> listDate = new HashSet<>();
+        setListPartsOfLog(ip, listDate, after, before, PartsLog.IP, PartsLog.DATE);
+        return listDate;
+    }
+
+    //метод возвращает все уникальные даты
+    public Set<Date> getAllDate(Date after, Date before){
+        Set<Date> listDate = new HashSet<>();
+        setListPartsOfLog(null, listDate, after, before, null, PartsLog.DATE);
+        return listDate;
+    }
     //возвращает даты, когда определенный пользователь произвел определенное событие
     @Override
     public Set<Date> getDatesForUserAndEvent(String user, Event event, Date after, Date before) {
@@ -483,10 +680,15 @@ public class LogParser implements IPQuery, UserQuery, DateQuery, EventQuery {
         return listDate;
     }
 
-        /*
+    /*
      * methods of EventQuery
      */
-
+    //возвращает события с определенным статусом
+    private Set<Event> getEventsForStatus(Status status, Date after, Date before){
+        Set<Event> listEvent = new HashSet<>();
+        setListPartsOfLog(status, listEvent, after, before, PartsLog.STATUS, PartsLog.EVENT);
+        return listEvent;
+    }
 
     //возвращает количество событий за указанный период
     @Override
