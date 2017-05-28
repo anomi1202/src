@@ -11,6 +11,8 @@ import java.nio.file.Path;
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.*;
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
 
 public class LogParser implements IPQuery, UserQuery, DateQuery, EventQuery, QLQuery {
     private Path logDir;
@@ -23,37 +25,26 @@ public class LogParser implements IPQuery, UserQuery, DateQuery, EventQuery, QLQ
     //метод обрабатывающий пользовательские запросы
     @Override
     public Set<Object> execute(String query) {
-        String[] queryParts = query.split("(\\W)+");
-        String field1 = queryParts[1];
+        String field1 = "";
         String field2 = "";
-        String value = "";
-        if  (queryParts.length > 2) {
-            field2 = queryParts[3];
-            StringBuilder valueBuilder = new StringBuilder();
-            for (int i = 4; i < queryParts.length; i++) {
-                valueBuilder.append(queryParts[i] + "/");
+        String value1 = "";
+        Date dateAfter = null;
+        Date dateBefore = null;
+        SimpleDateFormat dateFormat = new SimpleDateFormat("dd.MM.yyyy HH:mm:ss");
+        Pattern pattern = Pattern.compile("get (ip|user|date|event|status)" +
+                "( for (ip|user|date|event|status) = \"([\\w \\.:]+)\")?" +
+                "( and date between \"([\\w \\.:]+)\" and \"([\\w \\.:]+)\")?");
+        Matcher matcher = pattern.matcher(query);
+        if (matcher.find()) {
+            field1 = matcher.group(1) == null ? field1 : matcher.group(1);
+            field2 = matcher.group(3) == null ? field2 : matcher.group(3);
+            value1 = matcher.group(4) == null ? value1 : matcher.group(4);
+            try {
+                dateAfter = matcher.group(6) == null ? dateAfter : dateFormat.parse(matcher.group(6));
+                dateBefore = matcher.group(7) == null ? dateBefore : dateFormat.parse(matcher.group(7));
+            } catch (ParseException e) {
+                e.printStackTrace();
             }
-            value = valueBuilder.toString();
-        }
-
-        switch (field2){
-            case ("ip"):
-                value = value.substring(0, value.length() - 1);
-                value = value.replace("/", ".");
-                break;
-            case ("user"):
-                value = value.substring(0, value.length() - 1);
-                value = value.replace("/", " ");
-                break;
-            case ("date"):
-                value = value.substring(0, value.length() - 1);
-                break;
-            case ("event"):
-                value = value.substring(0, value.length() - 1);
-                break;
-            case ("status"):
-                value = value.substring(0, value.length() - 1).toUpperCase();
-                break;
         }
 
         Set resultList = null;
@@ -61,93 +52,97 @@ public class LogParser implements IPQuery, UserQuery, DateQuery, EventQuery, QLQ
             case "ip":
                 switch (field2){
                     case ("user"):
-                        resultList = getIPsForUser(value, null, null);
+                        resultList = new HashSet<>();
+                        setListPartsOfLog(value1, resultList, dateAfter, dateBefore, PartsLog.USERNAME, PartsLog.IP);
                         break;
                     case ("date"):
-                        SimpleDateFormat dateFormat = new SimpleDateFormat("dd/MM/yyyy/HH/mm/ss");
-                        try {
-                            resultList = getUniqueIPs(dateFormat.parse(value), dateFormat.parse(value));
-                        } catch (ParseException e) {
-                            e.printStackTrace();
-                        }
+                            resultList = new HashSet<>();
+                            setListPartsOfLog(value1, resultList, dateAfter, dateBefore, PartsLog.DATE, PartsLog.IP);
                         break;
                     case ("event"):
-                        resultList = getIPsForEvent(Event.valueOf(value), null, null);
+                        resultList = new HashSet<>();
+                        setListPartsOfLog(value1, resultList, dateAfter, dateBefore, PartsLog.EVENT, PartsLog.IP);
                         break;
                     case ("status"):
-                        resultList = getIPsForStatus(Status.valueOf(value), null, null);
+                        resultList = new HashSet<>();
+                        setListPartsOfLog(value1, resultList, dateAfter, dateBefore, PartsLog.STATUS, PartsLog.IP);
                         break;
                     default:
-                        resultList = getUniqueIPs(null, null);
+                        resultList = new HashSet<>();
+                        setListPartsOfLog(null, resultList, dateAfter, dateBefore, null, PartsLog.IP);
                         break;
                 }
                 break;
             case "user":
                 switch (field2){
                     case ("ip"):
-                        resultList = getUsersForIP(value, null, null);
+                        resultList = new HashSet<>();
+                        setListPartsOfLog(value1, resultList, dateAfter, dateBefore, PartsLog.IP, PartsLog.USERNAME);
                         break;
                     case ("date"):
-                        SimpleDateFormat dateFormat = new SimpleDateFormat("dd/MM/yyyy/HH/mm/ss");
-                        try {
-                            resultList = getUserForDates(dateFormat.parse(value), dateFormat.parse(value));
-                        } catch (ParseException e) {
-                            e.printStackTrace();
-                        }
+                        resultList = new HashSet<>();
+                        setListPartsOfLog(value1, resultList, dateAfter, dateBefore, PartsLog.DATE, PartsLog.USERNAME);
                         break;
                     case ("event"):
-                        resultList = getUserForEvent(Event.valueOf(value), null, null);
+                        resultList = new HashSet<>();
+                        setListPartsOfLog(value1, resultList, dateAfter, dateBefore, PartsLog.EVENT, PartsLog.USERNAME);
                         break;
                     case ("status"):
-                        resultList = getUserForStatus(Status.valueOf(value), null, null);
+                        resultList = new HashSet<>();
+                        setListPartsOfLog(value1, resultList, dateAfter, dateBefore, PartsLog.STATUS, PartsLog.USERNAME);
                         break;
                     default:
-                        resultList = getAllUsers();
+                        resultList = new HashSet<>();
+                        setListPartsOfLog(null, resultList, dateAfter, dateBefore, null, PartsLog.USERNAME);
                         break;
                 }
                 break;
             case "date":
                 switch (field2){
                     case ("ip"):
-                        resultList = getDatesForIp(value, null, null);
+                        resultList = new HashSet<>();
+                        setListPartsOfLog(value1, resultList, dateAfter, dateBefore, PartsLog.IP, PartsLog.DATE);
                         break;
                     case ("user"):
                         resultList = new HashSet<>();
-                        setListPartsOfLog(value, resultList, null, null, PartsLog.USERNAME, PartsLog.DATE);
+                        setListPartsOfLog(value1, resultList, dateAfter, dateBefore, PartsLog.USERNAME, PartsLog.DATE);
                         break;
                     case ("event"):
                         resultList = new HashSet<>();
-                        setListPartsOfLog(Event.valueOf(value), resultList, null, null, PartsLog.EVENT, PartsLog.DATE);
+                        setListPartsOfLog(value1, resultList, dateAfter, dateBefore, PartsLog.EVENT, PartsLog.DATE);
                         break;
                     case ("status"):
-                        resultList = getDatesForStatus(Status.valueOf(value), null, null);
+                        resultList = new HashSet<>();
+                        setListPartsOfLog(value1, resultList, dateAfter, dateBefore, PartsLog.STATUS, PartsLog.DATE);
                         break;
                     default:
-                        resultList = getAllDate(null, null);
+                        resultList = new HashSet<>();
+                        setListPartsOfLog(null, resultList, dateAfter, dateBefore, null, PartsLog.DATE);
+                        //resultList = getAllDate(dateAfter, dateBefore);
                         break;
                 }
                 break;
             case "event":
                 switch (field2){
                     case ("ip"):
-                        resultList = getEventsForIP(value, null, null);
+                        resultList = new HashSet<>();
+                        setListPartsOfLog(value1, resultList, dateAfter, dateBefore, PartsLog.IP, PartsLog.EVENT);
                         break;
                     case ("user"):
-                        resultList = getEventsForUser(value, null, null);
+                        resultList = new HashSet<>();
+                        setListPartsOfLog(value1, resultList, dateAfter, dateBefore, PartsLog.USERNAME, PartsLog.EVENT);
                         break;
                     case ("date"):
-                        SimpleDateFormat dateFormat = new SimpleDateFormat("dd/MM/yyyy/HH/mm/ss", Locale.ENGLISH);
-                        try {
-                            resultList = getAllEvents(dateFormat.parse(value), dateFormat.parse(value));
-                        } catch (ParseException e) {
-                            e.printStackTrace();
-                        }
+                        resultList = new HashSet<>();
+                        setListPartsOfLog(value1, resultList, dateAfter, dateBefore, PartsLog.DATE, PartsLog.EVENT);
                         break;
                     case ("status"):
-                        resultList = getEventsForStatus(Status.valueOf(value), null, null);
+                        resultList = new HashSet<>();
+                        setListPartsOfLog(value1, resultList, dateAfter, dateBefore, PartsLog.STATUS, PartsLog.EVENT);
                         break;
                     default:
-                        resultList = getAllEvents(null, null);
+                        resultList = new HashSet<>();
+                        setListPartsOfLog(null, resultList, dateAfter, dateBefore, null, PartsLog.EVENT);
                         break;
                 }
                 break;
@@ -155,26 +150,24 @@ public class LogParser implements IPQuery, UserQuery, DateQuery, EventQuery, QLQ
                 switch (field2){
                     case ("ip"):
                         resultList = new HashSet<>();
-                        setListPartsOfLog(value, resultList, null, null, PartsLog.IP, PartsLog.STATUS);
+                        setListPartsOfLog(value1, resultList, dateAfter, dateBefore, PartsLog.IP, PartsLog.STATUS);
                         break;
                     case ("user"):
                         resultList = new HashSet<>();
-                        setListPartsOfLog(value, resultList, null, null, PartsLog.USERNAME, PartsLog.STATUS);
+                        setListPartsOfLog(value1, resultList, dateAfter, dateBefore, PartsLog.USERNAME, PartsLog.STATUS);
                         break;
                     case ("date"):
-                        SimpleDateFormat dateFormat = new SimpleDateFormat("dd/MM/yyyy/HH/mm/ss");
-                        try {
-                            resultList = getAllStatus(dateFormat.parse(value), dateFormat.parse(value));
-                        } catch (ParseException e) {
-                            e.printStackTrace();
-                        }
+                        resultList = new HashSet<>();
+                        setListPartsOfLog(value1, resultList, dateAfter, dateBefore, PartsLog.DATE, PartsLog.STATUS);
                         break;
                     case ("event"):
                         resultList = new HashSet<>();
-                        setListPartsOfLog(Event.valueOf(value), resultList, null, null, PartsLog.EVENT, PartsLog.STATUS);
+                        setListPartsOfLog(Event.valueOf(value1), resultList, dateAfter, dateBefore, PartsLog.EVENT, PartsLog.STATUS);
                         break;
                     default:
-                        resultList = getAllStatus(null, null);
+                        resultList = new HashSet<>();
+                        setListPartsOfLog(null, resultList, dateAfter, dateBefore, null, PartsLog.STATUS);
+                        //resultList = getAllStatus(dateAfter, dateBefore);
                         break;
                 }
                 break;
@@ -309,17 +302,32 @@ public class LogParser implements IPQuery, UserQuery, DateQuery, EventQuery, QLQ
                 isEquals = logObjects.getUser().equals(findElement);
                 break;
             case DATE:
-                Date date = (Date) findElement;
+                SimpleDateFormat dateFormat = new SimpleDateFormat("dd.MM.yyyy HH:mm:ss");
+                Date date = null;
+                try {
+                    date = dateFormat.parse(String.valueOf(findElement));
+                } catch (ParseException e) {
+                    e.printStackTrace();
+                }
                 isEquals = logObjects.getDate().getTime() == date.getTime();
                 break;
             case EVENT:
-                isEquals = logObjects.getEvent().equals((Event) findElement);
+                Event event;
+                if (findElement.toString().split("\\s").length > 1) {
+                    String taskNumner = findElement.toString().split("\\s")[1];
+                    event = Event.valueOf(findElement.toString().split("\\s")[0].toUpperCase());
+                    isEquals = logObjects.getEvent().equals(event) && logObjects.getTaskNumber().equals(taskNumner);
+                }
+                else {
+                    event = Event.valueOf(findElement.toString().toUpperCase());
+                    isEquals = logObjects.getEvent().equals(event);
+                }
                 break;
             case TASTNUMBER:
                 isEquals = Integer.parseInt(logObjects.getTaskNumber()) == (int)findElement;
                 break;
             case STATUS:
-                isEquals = logObjects.getStatus().equals((Status) findElement);
+                isEquals = logObjects.getStatus().equals(Status.valueOf(findElement.toString().toUpperCase()));
                 break;
             default:
                 break;
