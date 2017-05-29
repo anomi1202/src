@@ -30,7 +30,7 @@ public class LogParser implements IPQuery, UserQuery, DateQuery, EventQuery, QLQ
         String value1 = "";
         Date dateAfter = null;
         Date dateBefore = null;
-        SimpleDateFormat dateFormat = new SimpleDateFormat("dd.MM.yyyy HH:mm:ss");
+        SimpleDateFormat dateFormat = new SimpleDateFormat("d.M.yyyy H:m:s");
         Pattern pattern = Pattern.compile("get (ip|user|date|event|status)" +
                 "( for (ip|user|date|event|status) = \"([\\w \\.:]+)\")?" +
                 "( and date between \"([\\w \\.:]+)\" and \"([\\w \\.:]+)\")?");
@@ -56,8 +56,8 @@ public class LogParser implements IPQuery, UserQuery, DateQuery, EventQuery, QLQ
                         setListPartsOfLog(value1, resultList, dateAfter, dateBefore, PartsLog.USERNAME, PartsLog.IP);
                         break;
                     case ("date"):
-                            resultList = new HashSet<>();
-                            setListPartsOfLog(value1, resultList, dateAfter, dateBefore, PartsLog.DATE, PartsLog.IP);
+                        resultList = new HashSet<>();
+                        setListPartsOfLog(value1, resultList, dateAfter, dateBefore, PartsLog.DATE, PartsLog.IP);
                         break;
                     case ("event"):
                         resultList = new HashSet<>();
@@ -270,21 +270,21 @@ public class LogParser implements IPQuery, UserQuery, DateQuery, EventQuery, QLQ
     //метод проверяет вхождение даты лога в нужный интервал
     private boolean isDateInside(Date date, Date after, Date before) {
         if (after != null) {
-            if (date.getTime() < after.getTime())
+            if (date.getTime() <= after.getTime())
                 return false;
         }
         if (before != null) {
-            if (date.getTime() > before.getTime())
+            if (date.getTime() >= before.getTime())
                 return false;
         }
         return true;
     }
 
     //метод заполняет список нужными объектами, согласно параметру addPartLog, подходящими под условия (интервал дат и искомый параметр)
-    private void setListPartsOfLog(Object findElement, Set listEventResult, Date after, Date before, PartsLog findPartsLog, PartsLog addPartLog){
+    private void setListPartsOfLog(Object findElement, Set listResult, Date after, Date before, PartsLog findPartsLog, PartsLog addPartLog){
         for (LogObjects logObjects : getListLogObject()){
             if (isDateInside(logObjects.getDate(), after, before) && equalsPartLog(logObjects, findElement, findPartsLog))
-                addToListPartOfLogObjects(logObjects, listEventResult, addPartLog);
+                addToListPartOfLogObjects(logObjects, listResult, addPartLog);
         }
     }
 
@@ -309,7 +309,7 @@ public class LogParser implements IPQuery, UserQuery, DateQuery, EventQuery, QLQ
                 } catch (ParseException e) {
                     e.printStackTrace();
                 }
-                isEquals = logObjects.getDate().getTime() == date.getTime();
+                isEquals = logObjects.getDate().equals(date);
                 break;
             case EVENT:
                 Event event;
