@@ -1,5 +1,6 @@
 package com.javarush.task.task39.task3913;
-
+import com.javarush.task.task39.task3913.Event;
+import com.javarush.task.task39.task3913.Status;
 import com.javarush.task.task39.task3913.query.*;
 import java.io.File;
 import java.io.IOException;
@@ -13,9 +14,9 @@ import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
 
-public class LogParser implements IPQuery, UserQuery, DateQuery, EventQuery, QLQuery {
+public class LogParserTest implements IPQuery, UserQuery, DateQuery, EventQuery, QLQuery {
     private Path logDir;
-    public LogParser(Path logDir) {
+    public LogParserTest(Path logDir) {
         this.logDir = logDir;
     }
     @Override
