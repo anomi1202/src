@@ -1,0 +1,9 @@
+<div class="wdghtml" taskKey="com.javarush.task.task19.task1912">
+<h3>Ридер обертка 2</h3>
+<p>В методе <span class="text-corporate">main</span> подмените объект <mark class="green">System</mark>.<mark class="user">out</mark> написанной тобой ридер-оберткой по аналогии с лекцией.<br />
+Твоя ридер-обертка должна заменять все подстроки &#171;<em><strong>te</strong></em>&#187; на &#171;<em><strong>??</strong></em>&#171;.<br />
+Вызови готовый метод <mark>printSomething()</mark>, воспользуйтесь <mark class="green">testString</mark>.<br />
+Верни переменной <mark class="green">System</mark>.<mark class="user">out</mark> первоначальный поток.<br />
+Выведи модифицированную строку в консоль.</p>
+
+</div>

@@ -1,0 +1,25 @@
+<div class="wdghtml" taskKey="com.javarush.task.task19.task1916">
+<h3>Отслеживаем изменения</h3>
+<p>Считать с консоли <span class="text-user"><strong>2</strong></span> имени файла &#8212; <strong>file1</strong>, <strong>file2</strong>.<br />
+Файлы содержат строки, <strong>file2</strong> является обновленной версией <strong>file1</strong>, часть строк совпадают.<br />
+Нужно создать объединенную версию строк, записать их в список <strong><span class="text-red">lines</span></strong>.<br />
+Операции <strong>ADDED</strong> и <strong>REMOVED</strong> не могут идти подряд, они всегда разделены <strong>SAME</strong>.<br />
+В оригинальном и редактируемом файлах пустых строк нет.</p>
+<p><strong>Пример:</strong><br />
+<code>оригинальный    редактированный    общий<br />
+file1:          file2:             результат:(lines)<br />
+&nbsp;<br />
+строка1         строка1            SAME строка1<br />
+строка2         REMOVED            строка2<br />
+строка3         строка3            SAME строка3<br />
+строка4         REMOVED            строка4<br />
+строка5         строка5            SAME строка5<br />
+строка0         ADDED              строка0<br />
+строка1         строка1            SAME строка1<br />
+строка2         REMOVED            строка2<br />
+строка3         строка3            SAME строка3<br />
+строка5         ADDED              строка5<br />
+строка4         строка4            SAME строка4<br />
+строка5         REMOVED            строка5</code></p>
+
+</div>

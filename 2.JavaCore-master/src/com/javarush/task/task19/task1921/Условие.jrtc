@@ -1,0 +1,15 @@
+<div class="wdghtml" taskKey="com.javarush.task.task19.task1921">
+<h3>Хуан Хуанович</h3>
+<p>В метод main первым параметром приходит имя файла.<br />
+В этом файле каждая строка имеет следующий вид:<br />
+имя день месяц год<br />
+где <strong>[имя]</strong> &#8212; может состоять из нескольких слов, разделенных пробелами, и имеет тип <span class="text-corporate">String</span>.<br />
+<strong>[день]</strong> &#8212; <span class="text-corporate">int</span>, <strong>[месяц]</strong> &#8212; <span class="text-corporate">int</span>, <strong>[год]</strong> &#8212; <span class="text-corporate">int</span><br />
+данные разделены пробелами.</p>
+<p>Заполнить список <strong>PEOPLE</strong> используя данные из файла.<br />
+Закрыть потоки.</p>
+<p><strong>Пример входного файла:</strong><br />
+<code>Иванов Иван Иванович 31 12 1987<br />
+Вася 15 5 2013</code></p>
+
+</div>

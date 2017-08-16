@@ -1,0 +1,11 @@
+<div class="wdghtml" taskKey="com.javarush.task.task19.task1925">
+<h3>Длинные слова</h3>
+<p>В метод <mark>main</mark> первым параметром приходит имя <strong>файла1</strong>, вторым &#8212; <strong>файла2</strong>.<br />
+Файл1 содержит слова, разделенные пробелом.<br />
+Записать через запятую в <strong>Файл2</strong> слова, длина которых строго больше <span class="text-user"><strong>6</strong></span>.<br />
+В конце <strong>файла2</strong> запятой не должно быть.<br />
+Закрыть потоки.</p>
+<p><strong>Пример выходных данных в файл2:</strong><br />
+<code>длинное,короткое,аббревиатура</code></p>
+
+</div>

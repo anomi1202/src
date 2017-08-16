@@ -1,0 +1,9 @@
+<div class="wdghtml" taskKey="com.javarush.task.task19.task1909">
+<h3>Замена знаков</h3>
+<p>Считать с консоли <span class="text-user"><strong>2</strong></span> имени файла.<br />
+Первый Файл содержит текст.<br />
+Считать содержимое первого файла и заменить все точки &#171;<em><strong>.</strong></em>&#187; на знак &#171;<em><strong>!</strong></em>&#171;.<br />
+Результат вывести во второй файл.<br />
+<strong>Закрыть потоки.</strong></p>
+
+</div>

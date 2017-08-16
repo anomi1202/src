@@ -1,0 +1,7 @@
+<div class="wdghtml" taskKey="com.javarush.task.task19.task1901">
+<h3>TableAdapter</h3>
+<p>Измени класс <span class="text-corporate"><strong>TableAdapter</strong></span> так, чтобы он адаптировал <strong><span class="text-corporate">ATable</span></strong> к <span class="text-corporate"><strong>BTable</strong></span>.<br />
+Метод <mark>getHeaderText</mark> должен возвращать такую строку &#171;<span class="text-user"><strong>[username]</strong></span><em><strong> : tablename</strong></em>&#171;.</p>
+<p><strong>Пример</strong>, &#171;<strong><span class="text-user">[Amigo]</span> : DashboardTable</strong>&#171;.</p>
+
+</div>

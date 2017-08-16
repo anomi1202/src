@@ -1,0 +1,8 @@
+<div class="wdghtml" taskKey="com.javarush.task.task19.task1923">
+<h3>Слова с цифрами</h3>
+<p>В метод <mark>main</mark> первым параметром приходит имя <strong>файла1</strong>, вторым &#8212; <strong>файла2</strong>.<br />
+<strong>Файл1</strong> содержит строки со слов, разделенные пробелом.<br />
+Записать через пробел в <strong>Файл2</strong> все слова, которые содержат цифры, например, <strong>а1</strong> или <strong>abc3d</strong>.<br />
+Закрыть потоки.</p>
+
+</div>

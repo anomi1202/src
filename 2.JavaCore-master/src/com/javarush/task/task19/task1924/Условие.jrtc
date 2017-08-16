@@ -1,0 +1,18 @@
+<div class="wdghtml" taskKey="com.javarush.task.task19.task1924">
+<h3>Замена чисел</h3>
+<p>1. В статическом блоке инициализировать словарь map парами <strong>[число-слово]</strong> от <span class="text-user"><strong>0</strong></span> до <span class="text-user"><strong>12</strong> </span>включительно.<br />
+<strong>Например</strong>, <span class="text-user"><strong>0</strong></span> &#8212; &#171;<em><strong>ноль</strong></em>&#171;, <span class="text-user"><strong>1</strong></span> &#8212; &#171;<em><strong>один</strong></em>&#171;, <span class="text-user"><strong>2</strong></span> &#8212; &#171;<em><strong>два</strong></em>&#187;<br />
+2. Считать с консоли имя файла, считать содержимое файла.<br />
+3. Заменить все числа на слова используя словарь map.<br />
+4. Результат вывести на экран.<br />
+5. Закрыть потоки.</p>
+<p><strong>Пример данных в файле:</strong><br />
+<code>Это стоит 1 бакс, а вот это - 12 .<br />
+Переменная имеет имя file1.<br />
+110 - это число.</code></p>
+<p><strong>Пример вывода в консоль:</strong><br />
+<code>Это стоит один бакс, а вот это - двенадцать .<br />
+Переменная имеет имя file1.<br />
+110 - это число.</code></p>
+
+</div>

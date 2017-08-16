@@ -1,0 +1,9 @@
+<div class="wdghtml" taskKey="com.javarush.task.task19.task1906">
+<h3>Четные байты</h3>
+<p>Считать с консоли <span class="text-corporate text-user"><strong>2</strong></span> имени файла.<br />
+Вывести во второй файл все байты с четным индексом.</p>
+<p><strong>Пример:<br />
+</strong><em>второй байт, четвертый байт, шестой байт и т.д.</em></p>
+<p>Закрыть потоки ввода-вывода.</p>
+
+</div>

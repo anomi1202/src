@@ -1,0 +1,10 @@
+<div class="wdghtml" taskKey="com.javarush.task.task19.task1905">
+<h3>Закрепляем адаптер</h3>
+<p>Адаптировать <span class="text-corporate"><strong>Customer</strong></span> и <span class="text-corporate"><strong>Contact</strong></span> к <span class="text-corporate"><strong>RowItem</strong></span>.<br />
+Классом-адаптером является <span class="text-corporate"><strong>DataAdapter</strong></span>.</p>
+<p>Инициализируйте countries перед началом выполнения программы. Соответствие кода страны и названия:<br />
+<strong>UA</strong> <em>Ukraine</em><br />
+<strong>RU</strong> <em>Russia</em><br />
+<strong>CA</strong> <em>Canada</em></p>
+
+</div>

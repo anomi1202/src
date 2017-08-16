@@ -1,0 +1,13 @@
+<div class="wdghtml" taskKey="com.javarush.task.task19.task1914">
+<h3>Решаем пример</h3>
+<p>В методе <mark>main</mark> подмени объект <mark class="green">System</mark>.<mark class="user">out</mark> написанной тобой ридер-оберткой по аналогии с лекцией.<br />
+Твоя ридер-обертка должна выводить на консоль решенный пример.<br />
+Вызови готовый метод <mark>printSomething()</mark>, воспользуйтесь <mark class="green">testString</mark>.<br />
+Верни переменной <mark class="green">System</mark>.<mark class="user">out</mark> первоначальный поток.</p>
+<p>Возможные операции: <span class="text-neon">+ &#8212; *</span><br />
+Шаблон входных данных и вывода: <span class="text-neon">a [знак] b = c</span><br />
+Отрицательных и дробных чисел, унарных операторов &#8212; нет.</p>
+<p><strong>Пример вывода:</strong><br />
+<code>3 + 6 = 9</code></p>
+
+</div>

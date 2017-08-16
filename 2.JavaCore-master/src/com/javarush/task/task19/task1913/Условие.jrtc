@@ -1,0 +1,11 @@
+<div class="wdghtml" taskKey="com.javarush.task.task19.task1913">
+<h3>Выводим только цифры</h3>
+<p>В методе <mark>main</mark> подмени объект <mark class="green">System</mark>.<mark class="user">out</mark> написанной тобой ридер-оберткой по аналогии с лекцией.<br />
+Твоя ридер-обертка должна выводить только цифры.<br />
+Вызови готовый метод <mark>printSomething()</mark>, воспользуйтесь <mark class="green">testString</mark>.<br />
+Верни переменной <mark class="green">System</mark>.<mark class="user">out</mark> первоначальный поток.<br />
+Выведи модифицированную строку в консоль.</p>
+<p><strong>Пример вывода:</strong><br />
+<code>12345678</code></p>
+
+</div>

@@ -1,0 +1,9 @@
+<div class="wdghtml" taskKey="com.javarush.task.task19.task1911">
+<h3>Ридер обертка</h3>
+<p>В методе <mark>main</mark> подмени объект <mark class="green">System</mark>.<mark class="user">out</mark> написанной тобой ридер-оберткой по аналогии с лекцией.<br />
+Твоя ридер-обертка должна преобразовывать весь текст в заглавные буквы.<br />
+Вызови готовый метод <mark>printSomething()</mark>, воспользуйся<mark class="green"> testString</mark>.<br />
+Верни переменной <mark class="green">System</mark>.<mark class="user">out</mark> первоначальный поток.<br />
+Выведи модифицированную строку в консоль.</p>
+
+</div>

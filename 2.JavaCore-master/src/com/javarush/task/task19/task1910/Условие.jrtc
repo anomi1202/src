@@ -1,0 +1,10 @@
+<div class="wdghtml" taskKey="com.javarush.task.task19.task1910">
+<h3>Пунктуация</h3>
+<p>Считать с консоли <span class="text-corporate text-user"><strong>2</strong></span> имени файла.<br />
+Первый Файл содержит текст.<br />
+Считать содержимое первого файла, удалить все знаки пунктуации, включая символы новой строки.</p>
+<p><strong>Результат вывести во второй файл.</strong></p>
+<p><em>http://ru.wikipedia.org/wiki/%D0%9F%D1%83%D0%BD%D0%BA%D1%82%D1%83%D0%B0%D1%86%D0%B8%D1%8F</em></p>
+<p><strong>Закрыть потоки</strong>.</p>
+
+</div>
