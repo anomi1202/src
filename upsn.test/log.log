@@ -1,0 +1,14 @@
+2017-11-24 21:46:12,838 INFO u.t.Solution [main] 
+ 
+2017-11-24 21:46:12,859 INFO u.t.Solution [main] File with documents number: D:\MyJavaProject\upsn.test\src\main\java\uspn\test\docList.txt 
+2017-11-24 21:46:34,995 INFO u.t.Solution [main] Create docNumList 
+2017-11-24 21:46:34,995 INFO u.t.Solution [main] Document number/date: 7-2002-2003-2004/01.07.2099 
+2017-11-24 21:46:34,996 INFO u.t.Solution [main] Document number/date: 7-2008/01.07.2014 
+2017-11-24 21:46:34,997 INFO u.t.Solution [main] Document number/date: 7-2005/01.01.2015 
+2017-11-24 21:46:34,997 INFO u.t.Solution [main] Document number/date: 7-2017/01.07.2016 
+2017-11-24 21:46:34,997 INFO u.t.Solution [main] Document number/date: 7-2001/01.07.2016 
+2017-11-24 21:46:34,997 INFO u.t.Solution [main] Document number/date: 7-1002/01.07.2016 
+2017-11-24 21:46:34,997 INFO u.t.Solution [main] Document number/date: 7-1001/01.01.2011 
+2017-11-24 21:46:34,997 INFO u.t.Solution [main] Document number/date: 7-2010/01.07.2016 
+2017-11-24 21:46:34,999 INFO u.t.Solution [main] Start DELETE documents 
+2017-11-24 21:46:34,999 INFO u.t.Solution [main] Open browser: notification windows 

@@ -1,4 +1,0 @@
-Manifest-Version: 1.0
-Class-Path: D:\MyJavaProject\upsn.test\src\test\java\uspn\test
-Main-Class: uspn.test.Solution
-
