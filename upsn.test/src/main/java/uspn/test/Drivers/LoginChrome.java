@@ -28,6 +28,9 @@ public class LoginChrome {
                 case QA:
                     loginQA(driver);
                     break;
+                case USPNDEV:
+                    loginVIO(driver);
+                    break;
             }
         }
         catch (NoSuchElementException | NullPointerException e){
@@ -35,6 +38,10 @@ public class LoginChrome {
             driver.quit();
         }
         return driver;
+    }
+
+    private void loginVIO(WebDriver driver) {
+        driver.get("http://10.0.2.37:9181/vio-emulator/#/send/npfDocument");
     }
 
     private void loginDEV(WebDriver driver){

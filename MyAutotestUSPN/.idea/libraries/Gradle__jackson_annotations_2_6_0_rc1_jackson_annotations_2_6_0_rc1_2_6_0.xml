@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="Gradle: jackson-annotations-2.6.0-rc1:jackson-annotations-2.6.0-rc1:2.6.0">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/lib/Vio/jackson-annotations-2.6.0-rc1.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/MyAutotestUSPN.iml" filepath="$PROJECT_DIR$/.idea/modules/MyAutotestUSPN.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/MyAutotestUSPN_main.iml" filepath="$PROJECT_DIR$/.idea/modules/MyAutotestUSPN_main.iml" group="MyAutotestUSPN" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/MyAutotestUSPN_test.iml" filepath="$PROJECT_DIR$/.idea/modules/MyAutotestUSPN_test.iml" group="MyAutotestUSPN" />
+    </modules>
+  </component>
+</project>

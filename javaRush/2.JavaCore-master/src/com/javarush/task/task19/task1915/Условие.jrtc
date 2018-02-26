@@ -1,0 +1,14 @@
+<div class="wdghtml" taskKey="com.javarush.task.task19.task1915">
+<h3>Дублируем текст</h3>
+<p>Считай с консоли имя файла.<br />
+В методе main подмени объект <mark class="green">System</mark>.<mark class="user">out</mark> написанной тобой ридер-оберткой по аналогии с лекцией.<br />
+Твоя ридер-обертка должна дублировать вывод всего текста в файл, имя которого ты считал.<br />
+Вызови готовый метод <mark>printSomething()</mark>, воспользуйся <mark class="green">testString</mark>.<br />
+Верни переменной <mark class="green">System</mark>.<mark class="user">out</mark> первоначальный поток.<br />
+Закрой поток файла.</p>
+<p><strong>Пример вывода на экран:</strong><br />
+<code>it's a text for testing</code></p>
+<p><strong>Пример тела файла:</strong><br />
+<code>it's a text for testing</code></p>
+
+</div>

@@ -1,0 +1,3 @@
+2018-02-22 17:07:22 INFO  USPNInboxDocumentsChecker:30 - Запуск имитации ВИО
+2018-02-22 17:07:24 INFO  USPNInboxDocumentsChecker:36 - ---- Отправка через ВИО файла: UOPS-S_upload_xml_to_DB.zip ----
+2018-02-22 17:07:31 DEBUG VIOClient:205 - send: {"event-type":"notification","request-id":"59d458a5-cdba-42ba-a623-770635bd975c","message-id":"bc289b9a7b3f4b93a297f062dd8d2b6c","document-id":"1527575","parent-document-id":"1527574","process":"urn:process:4:1.0","type":"97","from":"urn:region:777000:USPN","peer-block":[{"identifier":"USPN"}]}

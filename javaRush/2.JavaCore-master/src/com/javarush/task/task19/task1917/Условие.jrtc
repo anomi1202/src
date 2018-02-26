@@ -1,0 +1,8 @@
+<div class="wdghtml" taskKey="com.javarush.task.task19.task1917">
+<h3>Свой FileWriter</h3>
+<p>Реализовать логику <strong><span class="text-corporate">FileConsoleWriter</span></strong>.<br />
+Класс <span class="text-corporate"><strong>FileConsoleWriter</strong></span> должен содержать приватное поле <mark class="user">FileWriter</mark> <mark class="user">fileWriter</mark>.<br />
+Класс <span class="text-corporate"><strong>FileConsoleWriter</strong></span> должен содержать все конструкторы, которые инициализируют <mark class="user">fileWriter</mark> для записи.</p>
+<p>При записи данных в файл, должен дублировать эти данные на консоль.</p>
+
+</div>

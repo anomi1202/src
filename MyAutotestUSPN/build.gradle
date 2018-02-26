@@ -1,0 +1,62 @@
+group 'MyAutotestUSPN'
+version '1.0-SNAPSHOT'
+
+apply plugin: 'java'
+
+sourceCompatibility = 1.8
+
+repositories {
+    mavenLocal()
+    mavenCentral()
+    flatDir {
+        dirs 'lib/Vio'
+    }
+}
+
+dependencies {
+    // https://mvnrepository.com/artifact/org.testng/testng
+    testCompile group: 'org.testng', name: 'testng', version: '6.14.2'
+    // https://mvnrepository.com/artifact/org.slf4j/slf4j-api
+    compile group: 'org.slf4j', name: 'slf4j-api', version: '1.7.25'
+    compile group: 'org.slf4j', name: 'slf4j-log4j12', version: '1.7.25'
+    // https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-java
+    compile group: 'org.seleniumhq.selenium', name: 'selenium-java', version: '3.9.1'
+    // https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-api
+    compile group: 'org.seleniumhq.selenium', name: 'selenium-api', version: '3.9.1'
+    // https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-firefox-driver
+    compile group: 'org.seleniumhq.selenium', name: 'selenium-firefox-driver', version: '3.9.1'
+    // https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-remote-driver
+    compile group: 'org.seleniumhq.selenium', name: 'selenium-remote-driver', version: '3.9.1'
+    // https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-chrome-driver
+    compile group: 'org.seleniumhq.selenium', name: 'selenium-chrome-driver', version: '3.9.1'
+
+
+//    compile 'org.apache.logging.log4j:log4j-api:2.8.1'
+//    compile 'org.apache.logging.log4j:log4j-core:2.8.1'
+    compile 'moduleVIO-1.0:moduleVIO-1.0:1.0'
+    compile 'com.ibm.mqjms:com.ibm.mqjms:1.0'
+    compile 'javax.jms-api-2.0.1:javax.jms-api-2.0.1:2.0.1'
+    compile 'ru.yandex.qatools.allure:allure-cucumber-jvm-adaptor:1.5.1'
+    compile 'jackson-annotations-2.6.0-rc1:jackson-annotations-2.6.0-rc1:2.6.0'
+    compile 'jackson-core-2.6.0-rc1:jackson-core-2.6.0-rc1:2.6.0'
+    compile 'jackson-databind-2.6.0-rc1:jackson-databind-2.6.0-rc1:2.6.0'
+    compile 'jta-1.1:jta-1.1:1.1'
+
+
+//    compile 'org.apache.poi:poi:3.13'
+//    compile 'org.apache.poi:poi-ooxml:3.13'
+//    compile 'org.apache.commons:commons-lang3:3.4'
+//    compile 'commons-beanutils:commons-beanutils:1.9.2'
+//    compile 'org.seleniumhq.selenium:selenium-java:2.53.0'
+//    compile 'com.ibm.db2.jcc:db2jcc4:1.0'
+//    compile 'info.cukes:cucumber-java:1.2.4'
+//    testCompile 'info.cukes:cucumber-picocontainer:1.2.4'
+//    compile 'info.cukes:cucumber-junit:1.2.4'
+//    compile 'junit:junit:4.12'
+//    compile 'joda-time:joda-time:1.6.2'
+//    compile 'commons-configuration:commons-configuration:1.10'
+//    compile 'commons-jxpath:commons-jxpath:1.3'
+//    compile 'com.jcraft:jsch:0.1.53'
+//    compile 'javax.xml:jaxb-impl:2.1'
+//    compile 'org.jetbrains:annotations:15.0'
+}

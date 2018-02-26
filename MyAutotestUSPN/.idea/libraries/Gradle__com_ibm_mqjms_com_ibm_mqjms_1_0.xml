@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="Gradle: com.ibm.mqjms:com.ibm.mqjms:1.0">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/lib/Vio/com.ibm.mqjms.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

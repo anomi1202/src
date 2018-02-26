@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Configuration>
+    <!-- Секция аппендеров -->
+    <Appenders>
+        <!-- Консольный аппендер -->
+        <Console name="Console" target="SYSTEM_OUT">
+            <PatternLayout pattern="%d{HH:mm:ss.SSS} [%t] %-5level %logger{36} - %msg%n"/>
+        </Console>
+        <!-- Файловый аппендер -->
+        <File name="file" fileName="log.log">
+            <PatternLayout>
+                <Pattern>%d %p %c{1.} [%t] %m %ex%n</Pattern>
+            </PatternLayout>
+        </File>
+        <!-- Используется фильтр по маркеру. -->
+        <!--Т.е. в файл не запишется лог с маркером SQL -->
+        <!--<File name="file2" fileName="log2.log">-->
+            <!--&lt;!&ndash; Фильтр по маркеру &ndash;&gt;-->
+            <!--<MarkerFilter marker="SQL" onMatch="DENY" onMismatch="ACCEPT"/>-->
+            <!--<PatternLayout>-->
+                <!--<Pattern>%d %p %c{1.} [%t] %m %ex%n</Pattern>-->
+            <!--</PatternLayout>-->
+        <!--</File>-->
+    </Appenders>
+
+    <!-- Секция логгеров -->
+    <Loggers>
+
+        <!-- Пишет в файл и в консоль -->
+        <!-- Чтобы писать только в одно место, надо убрать один из аппендеров -->
+        <!-- Корневой логгер -->
+        <Root level="all">
+            <AppenderRef ref="file" level="DEBUG"/>
+            <AppenderRef ref="Console"/>
+        </Root>
+        <!-- Логгер класса Solution -->
+        <Logger name="uspn.test.Solution" level="info" additivity="false">
+            <AppenderRef ref="file" level="INFO"/>
+            <AppenderRef ref="Console"/>
+        </Logger>
+    </Loggers>
+
+
+</Configuration>

@@ -7,8 +7,553 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c2ac22be-fd0c-461c-a8d9-688ad8ee1d36" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/uspn/test/DocNum.java" afterPath="$PROJECT_DIR$/src/main/java/uspn/test/DocNum.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/uspn/test/Solution.java" afterPath="$PROJECT_DIR$/src/main/java/uspn/test/Solution.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../MyAutotestUSPN/.idea/libraries/Gradle__com_beust_jcommander_1_72.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../MyAutotestUSPN/.idea/libraries/Gradle__com_google_code_findbugs_jsr305_1_3_9.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../MyAutotestUSPN/.idea/libraries/Gradle__com_google_code_gson_gson_2_8_2.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../MyAutotestUSPN/.idea/libraries/Gradle__com_google_errorprone_error_prone_annotations_2_1_3.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../MyAutotestUSPN/.idea/libraries/Gradle__com_google_guava_guava_23_6_jre.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../MyAutotestUSPN/.idea/libraries/Gradle__com_google_j2objc_j2objc_annotations_1_1.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../MyAutotestUSPN/.idea/libraries/Gradle__com_squareup_okhttp3_okhttp_3_9_1.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../MyAutotestUSPN/.idea/libraries/Gradle__com_squareup_okio_okio_1_13_0.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../MyAutotestUSPN/.idea/libraries/Gradle__commons_codec_commons_codec_1_10.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../MyAutotestUSPN/.idea/libraries/Gradle__commons_logging_commons_logging_1_2.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../MyAutotestUSPN/.idea/libraries/Gradle__net_bytebuddy_byte_buddy_1_7_9.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../MyAutotestUSPN/.idea/libraries/Gradle__org_apache_commons_commons_exec_1_3.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../MyAutotestUSPN/.idea/libraries/Gradle__org_apache_extras_beanshell_bsh_2_0b6.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../MyAutotestUSPN/.idea/libraries/Gradle__org_apache_httpcomponents_httpclient_4_5_3.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../MyAutotestUSPN/.idea/libraries/Gradle__org_apache_httpcomponents_httpcore_4_4_6.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../MyAutotestUSPN/.idea/libraries/Gradle__org_apache_logging_log4j_log4j_api_2_10_0.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../MyAutotestUSPN/.idea/libraries/Gradle__org_apache_logging_log4j_log4j_core_2_10_0.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../MyAutotestUSPN/.idea/libraries/Gradle__org_checkerframework_checker_compat_qual_2_0_0.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../MyAutotestUSPN/.idea/libraries/Gradle__org_codehaus_mojo_animal_sniffer_annotations_1_14.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../MyAutotestUSPN/.idea/libraries/Gradle__org_seleniumhq_selenium_selenium_api_3_9_1.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../MyAutotestUSPN/.idea/libraries/Gradle__org_seleniumhq_selenium_selenium_chrome_driver_3_9_1.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../MyAutotestUSPN/.idea/libraries/Gradle__org_seleniumhq_selenium_selenium_edge_driver_3_9_1.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../MyAutotestUSPN/.idea/libraries/Gradle__org_seleniumhq_selenium_selenium_firefox_driver_3_9_1.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../MyAutotestUSPN/.idea/libraries/Gradle__org_seleniumhq_selenium_selenium_ie_driver_3_9_1.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../MyAutotestUSPN/.idea/libraries/Gradle__org_seleniumhq_selenium_selenium_java_3_9_1.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../MyAutotestUSPN/.idea/libraries/Gradle__org_seleniumhq_selenium_selenium_opera_driver_3_9_1.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../MyAutotestUSPN/.idea/libraries/Gradle__org_seleniumhq_selenium_selenium_remote_driver_3_9_1.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../MyAutotestUSPN/.idea/libraries/Gradle__org_seleniumhq_selenium_selenium_safari_driver_3_9_1.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../MyAutotestUSPN/.idea/libraries/Gradle__org_seleniumhq_selenium_selenium_support_3_9_1.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../MyAutotestUSPN/.idea/libraries/Gradle__org_testng_testng_6_14_2.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../MyAutotestUSPN/.idea/modules/MyAutotestUSPN_main.iml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../MyAutotestUSPN/.idea/modules/MyAutotestUSPN_test.iml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../MyAutotestUSPN/.idea/uiDesigner.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../MyAutotestUSPN/.idea/vcs.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../MyAutotestUSPN/src/main/java/uspn/test/Main.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../firstTestSQL/.idea/libraries/Maven__commons_codec_commons_codec_1_10.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../firstTestSQL/.idea/libraries/Maven__commons_logging_commons_logging_1_2.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../firstTestSQL/.idea/libraries/Maven__org_apache_httpcomponents_httpclient_4_5_1.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../firstTestSQL/.idea/libraries/Maven__org_apache_httpcomponents_httpcore_4_4_3.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../firstTestSQL/.idea/libraries/Maven__org_apache_httpcomponents_httpmime_4_5_2.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../firstTestSQL/.idea/modules/ru.redsys.uspn.autotest.iml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../firstTestSQL/.idea/modules/ru.redsys.uspn.autotest_main.iml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../firstTestSQL/.idea/modules/ru.redsys.uspn.autotest_test.iml" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../.gitattributes" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../.idea/MyJavaProject.iml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../.idea/compiler.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../.idea/copyright/profiles_settings.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../.idea/misc.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../.idea/modules.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../.idea/vcs.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../.idea/workspace.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../2.JavaCore-master/.gitattributes" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../2.JavaCore-master/2.JavaCore.iml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../2.JavaCore-master/src/Quest.info" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../2.JavaCore-master/src/com/javarush/task/task19/task1901/Solution.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../2.JavaCore-master/src/com/javarush/task/task19/task1901/Условие.jrtc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../2.JavaCore-master/src/com/javarush/task/task19/task1904/Person.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../2.JavaCore-master/src/com/javarush/task/task19/task1904/PersonScanner.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../2.JavaCore-master/src/com/javarush/task/task19/task1904/Solution.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../2.JavaCore-master/src/com/javarush/task/task19/task1904/Условие.jrtc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../2.JavaCore-master/src/com/javarush/task/task19/task1905/Solution.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../2.JavaCore-master/src/com/javarush/task/task19/task1905/Условие.jrtc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../2.JavaCore-master/src/com/javarush/task/task19/task1906/1" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../2.JavaCore-master/src/com/javarush/task/task19/task1906/2" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../2.JavaCore-master/src/com/javarush/task/task19/task1906/Solution.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../2.JavaCore-master/src/com/javarush/task/task19/task1906/Условие.jrtc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../2.JavaCore-master/src/com/javarush/task/task19/task1907/1" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../2.JavaCore-master/src/com/javarush/task/task19/task1907/Solution.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../2.JavaCore-master/src/com/javarush/task/task19/task1907/Условие.jrtc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../2.JavaCore-master/src/com/javarush/task/task19/task1908/1" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../2.JavaCore-master/src/com/javarush/task/task19/task1908/2" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../2.JavaCore-master/src/com/javarush/task/task19/task1908/Solution.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../2.JavaCore-master/src/com/javarush/task/task19/task1908/Условие.jrtc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../2.JavaCore-master/src/com/javarush/task/task19/task1909/1" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../2.JavaCore-master/src/com/javarush/task/task19/task1909/2" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../2.JavaCore-master/src/com/javarush/task/task19/task1909/Solution.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../2.JavaCore-master/src/com/javarush/task/task19/task1909/Условие.jrtc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../2.JavaCore-master/src/com/javarush/task/task19/task1910/1" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../2.JavaCore-master/src/com/javarush/task/task19/task1910/2" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../2.JavaCore-master/src/com/javarush/task/task19/task1910/Solution.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../2.JavaCore-master/src/com/javarush/task/task19/task1910/Условие.jrtc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../2.JavaCore-master/src/com/javarush/task/task19/task1911/Solution.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../2.JavaCore-master/src/com/javarush/task/task19/task1911/Условие.jrtc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../2.JavaCore-master/src/com/javarush/task/task19/task1912/Solution.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../2.JavaCore-master/src/com/javarush/task/task19/task1912/Условие.jrtc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../2.JavaCore-master/src/com/javarush/task/task19/task1913/Solution.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../2.JavaCore-master/src/com/javarush/task/task19/task1913/Условие.jrtc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../2.JavaCore-master/src/com/javarush/task/task19/task1914/Solution.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../2.JavaCore-master/src/com/javarush/task/task19/task1914/Условие.jrtc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../2.JavaCore-master/src/com/javarush/task/task19/task1915/1" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../2.JavaCore-master/src/com/javarush/task/task19/task1915/Solution.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../2.JavaCore-master/src/com/javarush/task/task19/task1915/Условие.jrtc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../2.JavaCore-master/src/com/javarush/task/task19/task1916/1" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../2.JavaCore-master/src/com/javarush/task/task19/task1916/2" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../2.JavaCore-master/src/com/javarush/task/task19/task1916/Solution.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../2.JavaCore-master/src/com/javarush/task/task19/task1916/Условие.jrtc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../2.JavaCore-master/src/com/javarush/task/task19/task1917/FileConsoleWriter.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../2.JavaCore-master/src/com/javarush/task/task19/task1917/Условие.jrtc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../2.JavaCore-master/src/com/javarush/task/task19/task1918/Solution.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../2.JavaCore-master/src/com/javarush/task/task19/task1918/Условие.jrtc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../2.JavaCore-master/src/com/javarush/task/task19/task1919/1" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../2.JavaCore-master/src/com/javarush/task/task19/task1919/2" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../2.JavaCore-master/src/com/javarush/task/task19/task1919/Solution.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../2.JavaCore-master/src/com/javarush/task/task19/task1919/Условие.jrtc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../2.JavaCore-master/src/com/javarush/task/task19/task1920/1" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../2.JavaCore-master/src/com/javarush/task/task19/task1920/Solution.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../2.JavaCore-master/src/com/javarush/task/task19/task1920/Условие.jrtc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../2.JavaCore-master/src/com/javarush/task/task19/task1921/1" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../2.JavaCore-master/src/com/javarush/task/task19/task1921/Person.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../2.JavaCore-master/src/com/javarush/task/task19/task1921/Solution.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../2.JavaCore-master/src/com/javarush/task/task19/task1921/Условие.jrtc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../2.JavaCore-master/src/com/javarush/task/task19/task1922/1" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../2.JavaCore-master/src/com/javarush/task/task19/task1922/Solution.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../2.JavaCore-master/src/com/javarush/task/task19/task1922/Условие.jrtc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../2.JavaCore-master/src/com/javarush/task/task19/task1923/1" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../2.JavaCore-master/src/com/javarush/task/task19/task1923/2" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../2.JavaCore-master/src/com/javarush/task/task19/task1923/Solution.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../2.JavaCore-master/src/com/javarush/task/task19/task1923/Условие.jrtc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../2.JavaCore-master/src/com/javarush/task/task19/task1924/1" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../2.JavaCore-master/src/com/javarush/task/task19/task1924/Solution.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../2.JavaCore-master/src/com/javarush/task/task19/task1924/Условие.jrtc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../2.JavaCore-master/src/com/javarush/task/task19/task1925/1" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../2.JavaCore-master/src/com/javarush/task/task19/task1925/2" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../2.JavaCore-master/src/com/javarush/task/task19/task1925/Solution.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../2.JavaCore-master/src/com/javarush/task/task19/task1925/Условие.jrtc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../2.JavaCore-master/src/com/javarush/task/task19/task1926/1" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../2.JavaCore-master/src/com/javarush/task/task19/task1926/Solution.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../2.JavaCore-master/src/com/javarush/task/task19/task1926/Условие.jrtc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../2.JavaCore-master/src/com/javarush/task/task19/task1927/Solution.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../2.JavaCore-master/src/com/javarush/task/task19/task1927/Условие.jrtc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../2.JavaCore-master/src/com/javarush/task/task19/task1928/Solution.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../2.JavaCore-master/src/com/javarush/task/task19/task1928/Условие.jrtc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../2.JavaCore-master/src/com/javarush/task/task20/task2001/Asset.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../2.JavaCore-master/src/com/javarush/task/task20/task2001/Solution.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../2.JavaCore-master/src/com/javarush/task/task20/task2001/Условие.jrtc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../2.JavaCore-master/src/com/javarush/task/task20/task2002/Solution.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../2.JavaCore-master/src/com/javarush/task/task20/task2002/User.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../2.JavaCore-master/src/com/javarush/task/task20/task2002/Условие.jrtc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../2.JavaCore-master/src/com/javarush/task/task20/task2003/Solution.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../2.JavaCore-master/src/com/javarush/task/task20/task2003/Условие.jrtc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../2.JavaCore-master/src/com/javarush/task/task20/task2004/Solution.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../2.JavaCore-master/src/com/javarush/task/task20/task2004/Условие.jrtc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../2.JavaCore-master/src/com/javarush/task/task20/task2005/Asset.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../2.JavaCore-master/src/com/javarush/task/task20/task2005/Solution.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../2.JavaCore-master/src/com/javarush/task/task20/task2005/Условие.jrtc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../2.JavaCore-master/src/com/javarush/task/task20/task2006/Asset.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../2.JavaCore-master/src/com/javarush/task/task20/task2006/Solution.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../2.JavaCore-master/src/com/javarush/task/task20/task2006/Условие.jrtc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../2.JavaCore-master/src/com/javarush/task/task20/task2007/Solution.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../2.JavaCore-master/src/com/javarush/task/task20/task2007/User.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../2.JavaCore-master/src/com/javarush/task/task20/task2007/Условие.jrtc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../2.JavaCore-master/src/com/javarush/task/task20/task2008/Solution.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../2.JavaCore-master/src/com/javarush/task/task20/task2008/Условие.jrtc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../2.JavaCore-master/src/com/javarush/task/task20/task2009/Solution.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../2.JavaCore-master/src/com/javarush/task/task20/task2009/Условие.jrtc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../2.JavaCore-master/src/com/javarush/task/task20/task2010/Solution.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../2.JavaCore-master/src/com/javarush/task/task20/task2010/Условие.jrtc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../2.JavaCore-master/src/com/javarush/task/task20/task2011/Solution.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../2.JavaCore-master/src/com/javarush/task/task20/task2011/Условие.jrtc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../2.JavaCore-master/src/com/javarush/task/task20/task2012/Solution.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../2.JavaCore-master/src/com/javarush/task/task20/task2012/Условие.jrtc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../2.JavaCore-master/src/com/javarush/task/task20/task2013/Solution.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../2.JavaCore-master/src/com/javarush/task/task20/task2013/Условие.jrtc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../2.JavaCore-master/src/com/javarush/task/task20/task2014/Solution.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../2.JavaCore-master/src/com/javarush/task/task20/task2014/Условие.jrtc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../2.JavaCore-master/src/com/javarush/task/task20/task2015/Solution.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../2.JavaCore-master/src/com/javarush/task/task20/task2015/Условие.jrtc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../2.JavaCore-master/src/com/javarush/task/task20/task2016/Solution.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../2.JavaCore-master/src/com/javarush/task/task20/task2016/Условие.jrtc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../2.JavaCore-master/src/com/javarush/task/task20/task2017/Solution.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../2.JavaCore-master/src/com/javarush/task/task20/task2017/Условие.jrtc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../2.JavaCore-master/src/com/javarush/task/task20/task2018/Solution.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../2.JavaCore-master/src/com/javarush/task/task20/task2018/Условие.jrtc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../2.JavaCore-master/src/com/javarush/task/task20/task2019/Solution.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../2.JavaCore-master/src/com/javarush/task/task20/task2019/Условие.jrtc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../2.JavaCore-master/src/com/javarush/task/task20/task2020/Solution.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../2.JavaCore-master/src/com/javarush/task/task20/task2020/Условие.jrtc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../2.JavaCore-master/src/com/javarush/task/task20/task2021/Solution.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../2.JavaCore-master/src/com/javarush/task/task20/task2021/Условие.jrtc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../2.JavaCore-master/src/com/javarush/task/task20/task2022/Solution.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../2.JavaCore-master/src/com/javarush/task/task20/task2022/Условие.jrtc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../2.JavaCore-master/src/com/javarush/task/task20/task2023/Solution.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../2.JavaCore-master/src/com/javarush/task/task20/task2023/Условие.jrtc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../2.JavaCore-master/src/com/javarush/task/task20/task2024/Solution.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../2.JavaCore-master/src/com/javarush/task/task20/task2024/Условие.jrtc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../2.JavaCore-master/src/com/javarush/task/task20/task2025/Solution.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../2.JavaCore-master/src/com/javarush/task/task20/task2025/Условие.jrtc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../2.JavaCore-master/src/com/javarush/task/task20/task2026/Solution.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../2.JavaCore-master/src/com/javarush/task/task20/task2026/Условие.jrtc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../com/javarush/task/task20/task2028/CustomTree.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../com/javarush/task/task20/task2028/Условие.jrtc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../com/javarush/task/task22/task2213/Field.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../com/javarush/task/task22/task2213/Figure.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../com/javarush/task/task22/task2213/FigureFactory.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../com/javarush/task/task22/task2213/KeyboardObserver.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../com/javarush/task/task22/task2213/Tetris.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../com/javarush/task/task22/task2213/Условие.jrtc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../com/javarush/task/task25/task2515/BaseObject.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../com/javarush/task/task25/task2515/Bomb.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../com/javarush/task/task25/task2515/Canvas.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../com/javarush/task/task25/task2515/KeyboardObserver.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../com/javarush/task/task25/task2515/Rocket.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../com/javarush/task/task25/task2515/Space.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../com/javarush/task/task25/task2515/SpaceShip.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../com/javarush/task/task25/task2515/Ufo.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../com/javarush/task/task25/task2515/Условие.jrtc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../com/javarush/task/task31/task3101/1 — копия (2)/1.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../com/javarush/task/task31/task3101/1 — копия (2)/2.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../com/javarush/task/task31/task3101/1 — копия (2)/3.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../com/javarush/task/task31/task3101/1 — копия (2)/45/adw/1.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../com/javarush/task/task31/task3101/1 — копия (2)/5/1 copy.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../com/javarush/task/task31/task3101/1 — копия (2)/5/2 copy.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../com/javarush/task/task31/task3101/1 — копия (2)/5/3 copy.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../com/javarush/task/task31/task3101/1 — копия (2)/out.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../com/javarush/task/task31/task3101/1/2.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../com/javarush/task/task31/task3101/1/3.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../com/javarush/task/task31/task3101/1/5/2 copy.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../com/javarush/task/task31/task3101/1/5/3 copy.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../com/javarush/task/task31/task3101/1/allFilesContent.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../com/javarush/task/task31/task3101/1/allFilesContent1.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../com/javarush/task/task31/task3101/FileUtils.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../com/javarush/task/task31/task3101/Solution.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../com/javarush/task/task31/task3101/Условие.jrtc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../com/javarush/task/task31/task3102/Solution.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../com/javarush/task/task31/task3102/Условие.jrtc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../com/javarush/task/task31/task3103/Solution.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../com/javarush/task/task31/task3103/Условие.jrtc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../com/javarush/task/task31/task3104/Solution.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../com/javarush/task/task31/task3104/Условие.jrtc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../com/javarush/task/task31/task3105/Solution.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../com/javarush/task/task31/task3105/Условие.jrtc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../com/javarush/task/task31/task3106/Solution.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../com/javarush/task/task31/task3106/Условие.jrtc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../com/javarush/task/task31/task3107/ConcreteFileData.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../com/javarush/task/task31/task3107/FileData.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../com/javarush/task/task31/task3107/NullFileData.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../com/javarush/task/task31/task3107/Solution.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../com/javarush/task/task31/task3107/Условие.jrtc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../com/javarush/task/task31/task3108/Solution.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../com/javarush/task/task31/task3108/Условие.jrtc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../com/javarush/task/task31/task3109/1.dawad/eadwad" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../com/javarush/task/task31/task3109/Solution.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../com/javarush/task/task31/task3109/properties.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../com/javarush/task/task31/task3109/properties.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../com/javarush/task/task31/task3109/Условие.jrtc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../com/javarush/task/task31/task3111/SearchFileVisitor.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../com/javarush/task/task31/task3111/Solution.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../com/javarush/task/task31/task3111/Условие.jrtc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../com/javarush/task/task31/task3112/Solution.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../com/javarush/task/task31/task3112/Условие.jrtc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../com/javarush/task/task31/task3113/Solution.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../com/javarush/task/task31/task3113/Условие.jrtc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../com/javarush/task/task32/task3201/1" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../com/javarush/task/task32/task3201/Solution.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../com/javarush/task/task32/task3201/Условие.jrtc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../com/javarush/task/task32/task3202/Solution.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../com/javarush/task/task32/task3202/testFile.log" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../com/javarush/task/task32/task3202/Условие.jrtc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../com/javarush/task/task32/task3203/Solution.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../com/javarush/task/task32/task3203/Условие.jrtc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../com/javarush/task/task32/task3204/Solution.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../com/javarush/task/task32/task3204/Условие.jrtc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../com/javarush/task/task32/task3205/CustomInvocationHandler.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../com/javarush/task/task32/task3205/Solution.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../com/javarush/task/task32/task3205/SomeInterfaceWithMethods.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../com/javarush/task/task32/task3205/SomeInterfaceWithMethodsImpl.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../com/javarush/task/task32/task3205/Условие.jrtc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../com/javarush/task/task32/task3206/Big.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../com/javarush/task/task32/task3206/Item.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../com/javarush/task/task32/task3206/ItemInvocationHandler.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../com/javarush/task/task32/task3206/Small.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../com/javarush/task/task32/task3206/Solution.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../com/javarush/task/task32/task3206/Условие.jrtc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../com/javarush/task/task32/task3207/DoubleString.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../com/javarush/task/task32/task3207/DoubleStringImpl.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../com/javarush/task/task32/task3207/Solution.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../com/javarush/task/task32/task3207/Условие.jrtc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../com/javarush/task/task32/task3208/Animal.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../com/javarush/task/task32/task3208/Cat.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../com/javarush/task/task32/task3208/Dog.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../com/javarush/task/task32/task3208/Solution.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../com/javarush/task/task32/task3208/Условие.jrtc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../com/javarush/task/task32/task3210/1" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../com/javarush/task/task32/task3210/Solution.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../com/javarush/task/task32/task3210/Условие.jrtc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../com/javarush/task/task32/task3211/Solution.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../com/javarush/task/task32/task3211/Условие.jrtc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../com/javarush/task/task32/task3212/Cache.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../com/javarush/task/task32/task3212/ServiceLocator.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../com/javarush/task/task32/task3212/Solution.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../com/javarush/task/task32/task3212/contex/InitialContext.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../com/javarush/task/task32/task3212/service/Service.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../com/javarush/task/task32/task3212/service/impl/EJBServiceImpl.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../com/javarush/task/task32/task3212/service/impl/JMSServiceImpl.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../com/javarush/task/task32/task3212/Условие.jrtc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../com/javarush/task/task32/task3213/Solution.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../com/javarush/task/task32/task3213/Условие.jrtc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../com/javarush/task/task33/task3301/Solution.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../com/javarush/task/task33/task3301/Условие.jrtc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../com/javarush/task/task33/task3302/Solution.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../com/javarush/task/task33/task3302/Условие.jrtc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../com/javarush/task/task33/task3303/Solution.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../com/javarush/task/task33/task3303/test" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../com/javarush/task/task33/task3303/Условие.jrtc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../com/javarush/task/task33/task3304/Solution.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../com/javarush/task/task33/task3304/Условие.jrtc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../com/javarush/task/task33/task3305/Auto.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../com/javarush/task/task33/task3305/Car.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../com/javarush/task/task33/task3305/Motorbike.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../com/javarush/task/task33/task3305/Parking.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../com/javarush/task/task33/task3305/RaceBike.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../com/javarush/task/task33/task3305/Solution.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../com/javarush/task/task33/task3305/Условие.jrtc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../com/javarush/task/task33/task3306/Solution.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../com/javarush/task/task33/task3306/Условие.jrtc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../com/javarush/task/task33/task3307/Solution.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../com/javarush/task/task33/task3307/Условие.jrtc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../com/javarush/task/task33/task3308/Shop.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../com/javarush/task/task33/task3308/Solution.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../com/javarush/task/task33/task3308/data.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../com/javarush/task/task33/task3308/Условие.jrtc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../com/javarush/task/task33/task3309/Solution.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../com/javarush/task/task33/task3309/Условие.jrtc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../com/javarush/task/task33/task3310/ExceptionHandler.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../com/javarush/task/task33/task3310/Helper.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../com/javarush/task/task33/task3310/Shortener.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../com/javarush/task/task33/task3310/Solution.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../com/javarush/task/task33/task3310/strategy/DualHashBidiMapStorageStrategy.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../com/javarush/task/task33/task3310/strategy/Entry.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../com/javarush/task/task33/task3310/strategy/FileBucket.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../com/javarush/task/task33/task3310/strategy/FileStorageStrategy.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../com/javarush/task/task33/task3310/strategy/HashBiMapStorageStrategy.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../com/javarush/task/task33/task3310/strategy/HashMapStorageStrategy.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../com/javarush/task/task33/task3310/strategy/OurHashBiMapStorageStrategy.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../com/javarush/task/task33/task3310/strategy/OurHashMapStorageStrategy.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../com/javarush/task/task33/task3310/strategy/StorageStrategy.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../com/javarush/task/task33/task3310/tests/FunctionalTest.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../com/javarush/task/task33/task3310/tests/SpeedTest.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../com/javarush/task/task33/task3310/Условие.jrtc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../com/javarush/task/task33/task3311/RealBean.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../com/javarush/task/task33/task3311/Solution.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../com/javarush/task/task33/task3311/Условие.jrtc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../com/javarush/task/task33/task3312/Solution.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../com/javarush/task/task33/task3312/Zoo.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../com/javarush/task/task33/task3312/Условие.jrtc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../com/javarush/task/task33/task3313/Event.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../com/javarush/task/task33/task3313/Solution.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../com/javarush/task/task33/task3313/Условие.jrtc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../com/javarush/task/task34/task3401/Solution.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../com/javarush/task/task34/task3401/Условие.jrtc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../com/javarush/task/task34/task3402/Solution.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../com/javarush/task/task34/task3402/Условие.jrtc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../com/javarush/task/task34/task3403/Solution.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../com/javarush/task/task34/task3403/Условие.jrtc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../com/javarush/task/task34/task3404/Solution.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../com/javarush/task/task34/task3404/Условие.jrtc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../com/javarush/task/task34/task3405/Solution.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../com/javarush/task/task34/task3405/Условие.jrtc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../com/javarush/task/task34/task3406/Solution.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../com/javarush/task/task34/task3406/Условие.jrtc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../com/javarush/task/task34/task3407/Solution.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../com/javarush/task/task34/task3407/Условие.jrtc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../com/javarush/task/task34/task3408/Cache.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../com/javarush/task/task34/task3408/Solution.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../com/javarush/task/task34/task3408/Условие.jrtc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../com/javarush/task/task34/task3409/Solution.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../com/javarush/task/task34/task3409/log4j.properties" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../com/javarush/task/task34/task3409/Условие.jrtc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../com/javarush/task/task34/task3411/Solution.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../com/javarush/task/task34/task3411/Условие.jrtc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../com/javarush/task/task34/task3412/Solution.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../com/javarush/task/task34/task3412/Условие.jrtc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../com/javarush/task/task34/task3413/AnyObject.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../com/javarush/task/task34/task3413/SoftCache.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../com/javarush/task/task34/task3413/Solution.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../com/javarush/task/task34/task3413/Условие.jrtc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../com/javarush/task/task35/task3501/GenericStatic.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../com/javarush/task/task35/task3501/Solution.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../com/javarush/task/task35/task3501/Условие.jrtc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../com/javarush/task/task35/task3502/Solution.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../com/javarush/task/task35/task3502/Условие.jrtc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../com/javarush/task/task35/task3503/ClassForGenerics.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../com/javarush/task/task35/task3503/InterfaceForGenerics.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../com/javarush/task/task35/task3503/Solution.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../com/javarush/task/task35/task3503/Условие.jrtc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../com/javarush/task/task35/task3504/Solution.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../com/javarush/task/task35/task3504/Условие.jrtc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../com/javarush/task/task35/task3505/Convertable.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../com/javarush/task/task35/task3505/ConvertableBook.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../com/javarush/task/task35/task3505/ConvertableUser.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../com/javarush/task/task35/task3505/ConvertableUtil.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../com/javarush/task/task35/task3505/Solution.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../com/javarush/task/task35/task3505/Условие.jrtc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../com/javarush/task/task35/task3506/Solution.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../com/javarush/task/task35/task3506/Условие.jrtc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../com/javarush/task/task35/task3507/Animal.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../com/javarush/task/task35/task3507/Solution.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../com/javarush/task/task35/task3507/data/Cat.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../com/javarush/task/task35/task3507/data/Elephant.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../com/javarush/task/task35/task3507/data/Sheep.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../com/javarush/task/task35/task3507/Условие.jrtc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../com/javarush/task/task35/task3508/Solution.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../com/javarush/task/task35/task3508/Условие.jrtc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../com/javarush/task/task35/task3509/Solution.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../com/javarush/task/task35/task3509/Условие.jrtc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../com/javarush/task/task35/task3510/Cat.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../com/javarush/task/task35/task3510/Dog.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../com/javarush/task/task35/task3510/House.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../com/javarush/task/task35/task3510/Kitten.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../com/javarush/task/task35/task3510/Puppy.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../com/javarush/task/task35/task3510/Условие.jrtc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../com/javarush/task/task35/task3511/Solution.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../com/javarush/task/task35/task3511/Условие.jrtc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../com/javarush/task/task35/task3512/Event.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../com/javarush/task/task35/task3512/Generator.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../com/javarush/task/task35/task3512/Solution.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../com/javarush/task/task35/task3512/Условие.jrtc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../com/javarush/task/task36/task3601/Controller.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../com/javarush/task/task36/task3601/Model.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../com/javarush/task/task36/task3601/Service.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../com/javarush/task/task36/task3601/Solution.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../com/javarush/task/task36/task3601/View.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../com/javarush/task/task36/task3601/Условие.jrtc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../com/javarush/task/task36/task3602/Solution.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../com/javarush/task/task36/task3602/Условие.jrtc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../com/javarush/task/task36/task3603/Solution.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../com/javarush/task/task36/task3603/Условие.jrtc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../com/javarush/task/task36/task3604/RedBlackTree.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../com/javarush/task/task36/task3604/Solution.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../com/javarush/task/task36/task3604/Условие.jrtc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../com/javarush/task/task36/task3605/1" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../com/javarush/task/task36/task3605/Solution.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../com/javarush/task/task36/task3605/Условие.jrtc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../com/javarush/task/task36/task3606/HiddenClass.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../com/javarush/task/task36/task3606/Solution.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../com/javarush/task/task36/task3606/data/second/HiddenClassImplFirst.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../com/javarush/task/task36/task3606/data/second/HiddenClassImplSecond.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../com/javarush/task/task36/task3606/data/second/PackageAccessClass.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../com/javarush/task/task36/task3606/Условие.jrtc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../com/javarush/task/task36/task3607/Solution.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../com/javarush/task/task36/task3607/Условие.jrtc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../com/javarush/task/task36/task3609/CarController.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../com/javarush/task/task36/task3609/CarModel.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../com/javarush/task/task36/task3609/Solution.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../com/javarush/task/task36/task3609/SpeedometerView.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../com/javarush/task/task36/task3609/Условие.jrtc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../com/javarush/task/task36/task3610/MyMultiMap.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../com/javarush/task/task36/task3610/Solution.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../com/javarush/task/task36/task3610/Условие.jrtc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../com/javarush/task/task36/task3611/Solution.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../com/javarush/task/task36/task3611/Условие.jrtc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../com/javarush/task/task36/task3612/Solution.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../com/javarush/task/task36/task3612/Условие.jrtc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../com/javarush/task/task36/task3613/Solution.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../com/javarush/task/task36/task3613/Условие.jrtc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../com/javarush/task/task37/task3701/Solution.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../com/javarush/task/task37/task3701/Условие.jrtc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../com/javarush/task/task37/task3702/AbstractFactory.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../com/javarush/task/task37/task3702/FactoryProducer.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../com/javarush/task/task37/task3702/Human.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../com/javarush/task/task37/task3702/Solution.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../com/javarush/task/task37/task3702/female/FemaleFactory.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../com/javarush/task/task37/task3702/female/KidGirl.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../com/javarush/task/task37/task3702/female/TeenGirl.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../com/javarush/task/task37/task3702/female/Woman.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../com/javarush/task/task37/task3702/male/KidBoy.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../com/javarush/task/task37/task3702/male/MaleFactory.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../com/javarush/task/task37/task3702/male/Man.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../com/javarush/task/task37/task3702/male/TeenBoy.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../com/javarush/task/task37/task3702/Условие.jrtc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../com/javarush/task/task37/task3703/Solution.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../com/javarush/task/task37/task3703/Условие.jrtc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../com/javarush/task/task37/task3704/Solution.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../com/javarush/task/task37/task3704/Условие.jrtc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../com/javarush/task/task37/task3705/Solution.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../com/javarush/task/task37/task3705/Условие.jrtc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../com/javarush/task/task37/task3706/Solution.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../com/javarush/task/task37/task3706/Условие.jrtc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../com/javarush/task/task37/task3707/AmigoSet.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../com/javarush/task/task37/task3707/HashMapReflectionHelper.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../com/javarush/task/task37/task3707/Условие.jrtc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../com/javarush/task/task37/task3708/Solution.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../com/javarush/task/task37/task3708/cache/LRUCache.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../com/javarush/task/task37/task3708/retrievers/CachingProxyRetriever.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../com/javarush/task/task37/task3708/retrievers/OriginalRetriever.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../com/javarush/task/task37/task3708/retrievers/Retriever.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../com/javarush/task/task37/task3708/storage/FarAwayStorage.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../com/javarush/task/task37/task3708/storage/Storage.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../com/javarush/task/task37/task3708/Условие.jrtc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../com/javarush/task/task37/task3709/Solution.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../com/javarush/task/task37/task3709/connectors/Connector.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../com/javarush/task/task37/task3709/connectors/SecurityProxyConnector.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../com/javarush/task/task37/task3709/connectors/SimpleConnector.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../com/javarush/task/task37/task3709/security/SecurityChecker.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../com/javarush/task/task37/task3709/security/SecurityCheckerImpl.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../com/javarush/task/task37/task3709/Условие.jrtc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../com/javarush/task/task37/task3710/Solution.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../com/javarush/task/task37/task3710/decorators/RedShapeDecorator.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../com/javarush/task/task37/task3710/decorators/ShapeDecorator.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../com/javarush/task/task37/task3710/shapes/Circle.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../com/javarush/task/task37/task3710/shapes/Rectangle.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../com/javarush/task/task37/task3710/shapes/Shape.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../com/javarush/task/task37/task3710/Условие.jrtc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../com/javarush/task/task37/task3711/CPU.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../com/javarush/task/task37/task3711/Computer.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../com/javarush/task/task37/task3711/HardDrive.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../com/javarush/task/task37/task3711/Memory.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../com/javarush/task/task37/task3711/Solution.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../com/javarush/task/task37/task3711/Условие.jrtc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../com/javarush/task/task37/task3712/Basketball.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../com/javarush/task/task37/task3712/Football.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../com/javarush/task/task37/task3712/Game.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../com/javarush/task/task37/task3712/Solution.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../com/javarush/task/task37/task3712/Tennis.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../com/javarush/task/task37/task3712/Условие.jrtc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../com/javarush/task/task37/task3713/Solution.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../com/javarush/task/task37/task3713/space/SpaceShip.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../com/javarush/task/task37/task3713/space/crew/AbstractCrewMember.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../com/javarush/task/task37/task3713/space/crew/CabinBoy.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../com/javarush/task/task37/task3713/space/crew/Captain.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../com/javarush/task/task37/task3713/space/crew/Engineer.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../com/javarush/task/task37/task3713/space/crew/FirstMate.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../com/javarush/task/task37/task3713/Условие.jrtc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../com/javarush/task/task37/task3714/Solution.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../com/javarush/task/task37/task3714/Условие.jrtc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../com/javarush/task/task39/task3913/Event.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../com/javarush/task/task39/task3913/LogParser.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../com/javarush/task/task39/task3913/LogParserTest.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../com/javarush/task/task39/task3913/MyLogParser.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../com/javarush/task/task39/task3913/Solution.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../com/javarush/task/task39/task3913/Status.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../com/javarush/task/task39/task3913/TestClass.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../com/javarush/task/task39/task3913/logs/example.log" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../com/javarush/task/task39/task3913/query/DateQuery.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../com/javarush/task/task39/task3913/query/EventQuery.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../com/javarush/task/task39/task3913/query/IPQuery.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../com/javarush/task/task39/task3913/query/QLQuery.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../com/javarush/task/task39/task3913/query/UserQuery.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../com/javarush/task/task39/task3913/Условие.jrtc" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/uspn/test/DocNum.class" afterPath="$PROJECT_DIR$/target/classes/uspn/test/DocNum.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/uspn/test/Drivers/LoginChrome$1.class" afterPath="$PROJECT_DIR$/target/classes/uspn/test/Drivers/LoginChrome$1.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/uspn/test/Drivers/LoginChrome$2.class" afterPath="$PROJECT_DIR$/target/classes/uspn/test/Drivers/LoginChrome$2.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/uspn/test/Drivers/LoginChrome.class" afterPath="$PROJECT_DIR$/target/classes/uspn/test/Drivers/LoginChrome.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/uspn/test/Enum/EnumServer.class" afterPath="$PROJECT_DIR$/target/classes/uspn/test/Enum/EnumServer.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/uspn/test/Drivers/LoginChrome.java" afterPath="$PROJECT_DIR$/src/main/java/uspn/test/Drivers/LoginChrome.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/uspn/test/Enum/EnumServer.java" afterPath="$PROJECT_DIR$/src/main/java/uspn/test/Enum/EnumServer.java" />
     </list>
     <ignored path="upsn.test.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -42,10 +587,10 @@
       <file leaf-file-name="Solution.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/uspn/test/Solution.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="248">
+            <state relative-caret-position="374">
               <caret line="29" column="23" selection-start-line="29" selection-start-column="23" selection-end-line="29" selection-end-column="23" />
               <folding>
-                <element signature="imports" expanded="true" />
+                <element signature="imports" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -57,9 +602,12 @@
             <state relative-caret-position="306">
               <caret line="30" column="0" selection-start-line="30" selection-start-column="0" selection-end-line="30" selection-end-column="0" />
               <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#515#516#0" expanded="true" />
-                <element signature="e#546#547#0" expanded="true" />
+                <element signature="e#515#516#0" expanded="false" />
+                <element signature="e#546#547#0" expanded="false" />
+                <element signature="e#1599#1600#0" expanded="false" />
+                <element signature="e#1632#1633#0" expanded="false" />
+                <element signature="e#1689#1690#0" expanded="false" />
+                <element signature="e#1718#1719#0" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -68,7 +616,7 @@
       <file leaf-file-name="log4j2.xml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/resources/log4j2.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="511">
+            <state relative-caret-position="561">
               <caret line="35" column="36" selection-start-line="35" selection-start-column="36" selection-end-line="35" selection-end-column="36" />
               <folding>
                 <element signature="n#Console#0;n#Appenders#0;n#Configuration#0;n#!!top" expanded="false" />
@@ -262,25 +810,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope">
-        <subPane subId="Problems" />
-        <subPane subId="Project Files" />
-        <subPane subId="Default" />
-        <subPane subId="Tests" />
-      </pane>
-      <pane id="PackagesPane">
-        <subPane />
-      </pane>
-      <pane id="Scratches">
-        <subPane>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" />
-              <option name="myItemType" value="com.intellij.ide.scratch.ScratchProjectViewPane$MyProjectNode" />
-            </PATH_ELEMENT>
-          </PATH>
-        </subPane>
-      </pane>
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -313,74 +842,23 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
+        </subPane>
+      </pane>
+      <pane id="Scope">
+        <subPane subId="Problems" />
+        <subPane subId="Project Files" />
+        <subPane subId="Default" />
+        <subPane subId="Tests" />
+      </pane>
+      <pane id="PackagesPane">
+        <subPane />
+      </pane>
+      <pane id="Scratches">
+        <subPane>
           <PATH>
             <PATH_ELEMENT>
-              <option name="myItemId" value="upsn.test" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="upsn.test" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="resources" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="upsn.test" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="upsn.test" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="test" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="upsn.test" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="upsn.test" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+              <option name="myItemId" />
+              <option name="myItemType" value="com.intellij.ide.scratch.ScratchProjectViewPane$MyProjectNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
@@ -399,7 +877,7 @@
     <property name="settings.editor.selected.configurable" value="MavenSettings" />
     <property name="settings.editor.splitter.proportion" value="0.2" />
     <property name="com.intellij.database.dataSource.DataSourceTemplate" value="DB2 (JTOpen)" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../Log4j hello world" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../firstTestSQL" />
     <property name="last.edited.regexp" value="Sample Textasdas as da&#10;\s\s" />
     <property name="GenerateAntBuildDialog.enableUiFormCompile" value="true" />
     <property name="GenerateAntBuildDialog.forceTargetJdk" value="true" />
@@ -898,7 +1376,13 @@
       <workItem from="1511432608740" duration="613000" />
       <workItem from="1511433459832" duration="29000" />
       <workItem from="1511433527530" duration="6476000" />
-      <workItem from="1511516888570" duration="12648000" />
+      <workItem from="1511516888570" duration="13247000" />
+      <workItem from="1513229550374" duration="601000" />
+      <workItem from="1515567723788" duration="599000" />
+      <workItem from="1515570688061" duration="170000" />
+      <workItem from="1516334792006" duration="797000" />
+      <workItem from="1516337316653" duration="25000" />
+      <workItem from="1519117684854" duration="191000" />
     </task>
     <task id="LOCAL-00001" summary="create">
       <created>1510646721542</created>
@@ -971,7 +1455,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="138689000" />
+    <option name="totallyTimeSpent" value="141671000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -984,33 +1468,33 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1616" height="876" extended-state="6" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32729805" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3206941" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3955432" sideWeight="0.50899744" order="5" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32969153" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3955432" sideWeight="0.49100256" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3984576" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32729805" sideWeight="0.49421594" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.17930591" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32969153" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32729805" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.17930591" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32969153" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3566838" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="combo" />
+      <window_info id="Debug" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3566838" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3206941" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3984576" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32729805" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="Vcs.Log.UiProperties">
@@ -1030,14 +1514,6 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/uspn/test/DocNum.java</url>
-          <line>27</line>
-          <properties />
-          <option name="timeStamp" value="137" />
-        </line-breakpoint>
-      </breakpoints>
       <option name="time" value="138" />
     </breakpoint-manager>
     <watches-manager />
@@ -1203,7 +1679,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="34">
           <caret line="2" column="12" selection-start-line="2" selection-start-column="12" selection-end-line="2" selection-end-column="22" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1211,7 +1686,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="34">
           <caret line="2" column="12" selection-start-line="2" selection-start-column="12" selection-end-line="2" selection-end-column="12" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1220,9 +1694,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="187">
           <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1230,10 +1701,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="714">
           <caret line="47" column="4" selection-start-line="47" selection-start-column="4" selection-end-line="47" selection-end-column="4" />
-          <folding>
-            <element signature="e#2108#2109#0" expanded="false" />
-            <element signature="e#2147#2148#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1241,7 +1708,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="527">
           <caret line="35" column="42" selection-start-line="35" selection-start-column="42" selection-end-line="35" selection-end-column="42" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1249,7 +1715,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1257,7 +1722,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="136">
           <caret line="16" column="139" selection-start-line="16" selection-start-column="139" selection-end-line="16" selection-end-column="139" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1265,45 +1729,55 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="520">
           <caret line="86" column="65" selection-start-line="86" selection-start-column="65" selection-end-line="86" selection-end-column="65" />
-          <folding>
-            <element signature="method#actionOnDoc#0;class#ActionOnDoc#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/uspn/test/asd1.java" />
     <entry file="file://$PROJECT_DIR$/src/main/java/adasd.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/resources/log4j.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" column="40" selection-start-line="5" selection-start-column="40" selection-end-line="5" selection-end-column="40" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/log4j.properties" />
     <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="514">
           <caret line="87" column="0" selection-start-line="87" selection-start-column="0" selection-end-line="87" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/log2.log" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/uspn/test/Notification/Notification.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="459">
+          <caret line="112" column="16" selection-start-line="112" selection-start-column="16" selection-end-line="112" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/uspn/test/Solution.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="374">
+          <caret line="29" column="23" selection-start-line="29" selection-start-column="23" selection-end-line="29" selection-end-column="23" />
           <folding>
-            <element signature="n#plugin#0;n#plugins#0;n#build#0;n#project#0;n#!!top" expanded="false" />
-            <element signature="n#properties#0;n#configuration#0;n#plugin#1;n#plugins#0;n#build#0;n#project#0;n#!!top" expanded="false" />
-            <element signature="n#dependencies#0;n#plugin#1;n#plugins#0;n#build#0;n#project#0;n#!!top" expanded="false" />
+            <element signature="imports" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/log2.log">
+    <entry file="file://$PROJECT_DIR$/src/main/java/uspn/test/DocNum.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
+        <state relative-caret-position="306">
+          <caret line="30" column="0" selection-start-line="30" selection-start-column="0" selection-end-line="30" selection-end-column="0" />
+          <folding>
+            <element signature="e#515#516#0" expanded="false" />
+            <element signature="e#546#547#0" expanded="false" />
+            <element signature="e#1599#1600#0" expanded="false" />
+            <element signature="e#1632#1633#0" expanded="false" />
+            <element signature="e#1689#1690#0" expanded="false" />
+            <element signature="e#1718#1719#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/log4j2.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="511">
+        <state relative-caret-position="561">
           <caret line="35" column="36" selection-start-line="35" selection-start-column="36" selection-end-line="35" selection-end-column="36" />
           <folding>
             <element signature="n#Console#0;n#Appenders#0;n#Configuration#0;n#!!top" expanded="false" />
@@ -1316,41 +1790,6 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/uspn/test/Notification/Notification.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="459">
-          <caret line="112" column="16" selection-start-line="112" selection-start-column="16" selection-end-line="112" selection-end-column="16" />
-          <folding>
-            <element signature="method#gotoNotifyPages#0;class#Notification#0" expanded="false" />
-            <element signature="method#waitLoadGrid#0;class#Notification#0" expanded="false" />
-            <element signature="method#findMessage#0;class#Notification#0" expanded="false" />
-            <element signature="method#checkAction#0;class#Notification#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/uspn/test/Solution.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="248">
-          <caret line="29" column="23" selection-start-line="29" selection-start-column="23" selection-end-line="29" selection-end-column="23" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/uspn/test/DocNum.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="30" column="0" selection-start-line="30" selection-start-column="0" selection-end-line="30" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#515#516#0" expanded="true" />
-            <element signature="e#546#547#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>

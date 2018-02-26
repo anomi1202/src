@@ -1,0 +1,12 @@
+<div class="wdghtml" taskKey="com.javarush.task.task19.task1908">
+<h3>Выделяем числа</h3>
+<p>Считать с консоли <span class="text-user"><strong>2</strong></span> имени файла.<br />
+Вывести во второй файл все числа, которые есть в первом файле.<br />
+Числа выводить через пробел.<br />
+Закрыть потоки.</p>
+<p><strong>Пример тела файла:</strong><br />
+<code>12 text var2 14 8v 1</code></p>
+<p><strong>Результат:</strong><br />
+<code>12 14 1</code></p>
+
+</div>

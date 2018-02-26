@@ -1,0 +1,17 @@
+<div class="wdghtml" taskKey="com.javarush.task.task19.task1927">
+<h3>Контекстная реклама</h3>
+<p>В методе <mark>main</mark> подмени объект <mark class="green">System</mark>.<mark class="user">out</mark> написанной тобой реадер-оберткой.<br />
+Твоя реадер-обертка должна выводить на консоль контекстную рекламу после каждого второго <strong>println-а</strong>.<br />
+Вызови готовый метод <mark>printSomething()</mark>, воспользуйся <mark class="green">testString</mark>.<br />
+Верни переменной <mark class="green">System</mark>.<mark class="user">out</mark> первоначальный поток.</p>
+<p>Рекламный текст: &#171;<em><strong>JavaRush &#8212; курсы Java онлайн</strong></em>&#187;</p>
+<p><strong>Пример вывода:</strong><br />
+<code>first<br />
+second<br />
+JavaRush - курсы Java онлайн<br />
+third<br />
+fourth<br />
+JavaRush - курсы Java онлайн<br />
+fifth</code></p>
+
+</div>
