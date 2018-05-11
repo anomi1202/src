@@ -1,9 +1,8 @@
 package uspn.test;
 
 import org.slf4j.Logger;
-import uspn.test.Enum.EnumDocAction;
-import uspn.test.Notification.MessageNotification;
-import uspn.test.Notification.Notification;
+import uspn.test.appmanager.data.DocActionType;
+import uspn.test.appmanager.NotificationHelper.MessageNotification;
 
 
 import java.util.Map;
@@ -15,7 +14,7 @@ public class Main {
     private static final Logger logger = getLogger(Main.class);
 
     private static DocNum docNum;
-    private static Notification notificationWindow;
+//    private static Notification notificationWindow;
     private static ActionOnDoc actionWindon;
     private static String actionOnDoc;
     private static int typeDoc;
@@ -35,14 +34,14 @@ public class Main {
             logger.info("Document number/date: {}/{}", pair.getKey(), pair.getValue());
         }
 
-        actionOnDoc = EnumDocAction.DELETE.toString();
+        actionOnDoc = DocActionType.DELETE.toString();
         logger.info("Start {} documents", actionOnDoc);
 
         logger.info("Open browser: notification windows");
-        notificationWindow = new Notification();
+//        notificationWindow = new Notification();
 
         logger.info("Create notification message");
-        notificationWindow.setMessagesNotification(new MessageNotification(EnumDocAction.valueOf(actionOnDoc)));
+//        notificationWindow.setMessagesNotification(new MessageNotification(DocActionType.valueOf(actionOnDoc)));
 
         logger.info("Open browser: document grid windows");
         actionWindon = new ActionOnDoc();
@@ -52,9 +51,9 @@ public class Main {
         try {
 
             /**
-             * arg0 - action on doc = actionOnDoc = EnumDocAction.DELETE.toString() - delete docs
-             *                                      EnumDocAction.REUPLOAD.toString() - reupload docs
-             *                                      EnumDocAction.UPLOAD.toString() - upload docs
+             * arg0 - action on doc = actionOnDoc = DocActionType.DELETE.toString() - delete docs
+             *                                      DocActionType.RETURN.toString() - reupload docs
+             *                                      DocActionType.UPLOAD.toString() - upload docs
              * arg1 - docList
              * arg2 - type of doc = 7 doc (UOPS-S)
              *                      4 doc (RNPF-S)
@@ -63,16 +62,16 @@ public class Main {
              */
 
             logger.info("Run action on documents with param: action = {}, typeDoc = {}", actionOnDoc, typeDoc);
-            actionWindon.runAction(EnumDocAction.valueOf(actionOnDoc), docNum.getDocNumList(), typeDoc);
+            actionWindon.runAction(DocActionType.valueOf(actionOnDoc), docNum.getDocNumList(), typeDoc);
 
             logger.info("Check information message on users cabinet");
-            notificationWindow.checkAction();
+//            notificationWindow.checkAction();
         } catch (Exception e){
             logger.error(e.getMessage());
         }
         finally {
             logger.info("Exit from all browser");
-            notificationWindow.exit();
+//            notificationWindow.exit();
             actionWindon.exit();
         }
     }

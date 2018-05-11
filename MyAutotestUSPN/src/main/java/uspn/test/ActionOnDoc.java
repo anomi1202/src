@@ -7,33 +7,30 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.ExpectedCondition;
 import org.openqa.selenium.support.ui.WebDriverWait;
-import uspn.test.Drivers.LoginChrome;
-import uspn.test.Enum.EnumDocAction;
+import uspn.test.appmanager.data.DocActionType;
 
 import java.util.ArrayList;
 import java.util.concurrent.TimeUnit;
 
-import static uspn.test.Enum.EnumServer.DEV;
-
 
 public class ActionOnDoc {
     private static WebDriver driver;
-    private static LoginChrome loginChrome;
+//    private static LoginChrome loginChrome;
     private static boolean isDocInCheckBox;
     private static int timerDefault = 5;
     private static int timerMin = 1;
 
     public ActionOnDoc(){
-        loginChrome = new LoginChrome();
+//        loginChrome = new LoginChrome();
     }
 
-    public void runAction(EnumDocAction docAction, ArrayList<String> docNumList, int typeDoc) {
-        driver = loginChrome.login(DEV);
+    public void runAction(DocActionType docActionType, ArrayList<String> docNumList, int typeDoc) {
+//        driver = loginChrome.login(DEV);
         gotoDocNum(typeDoc);
         try {
             checkBoxDoc(docNumList);
             if (isDocInCheckBox)
-                actionOnDoc(docAction);
+                actionOnDoc(docActionType);
 
         }
         catch (Exception e){
@@ -108,11 +105,11 @@ public class ActionOnDoc {
         );
     }
 
-    private void actionOnDoc(EnumDocAction act){
+    private void actionOnDoc(DocActionType act){
         try {
             driver.findElement(By.xpath("(//button[@type='button'])[3]")).click(); // Прочие
             switch (act) {
-                case REUPLOAD:
+                case RETURN:
                     driver.findElement(By.id("npfInDocReturnMenu")).click(); // Отзыв
                     driver.findElement(By.id("rollbackWindowConfirmButton")).click(); // Отзыв - OK
 //                    driver.findElement(By.id("rollbackWindowCancelButton")).click(); // Отзыв = CANCEL
@@ -136,7 +133,7 @@ public class ActionOnDoc {
     }
 
     public void exit(){
-        loginChrome.exit(driver);
+//        loginChrome.exit(driver);
     }
 
 }
