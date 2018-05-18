@@ -1,0 +1,364 @@
+2018-05-18 10:51:42,348 [INFO ][main            ][                     MqSender2] - Load properties file: PATH_FILE_JSON - D:/!Projects/!USPN/04_07-SUD/regress/7/07_00004_upload_to_VIO_link_to_17_00001/testData/Reg_UOPS-S_SaveDocAndCont.json
+2018-05-18 10:51:42,837 [INFO ][main            ][                     MqSender2] - Load properties file: PATH_FILE_SOAP - D:/!Projects/!USPN/04_07-SUD/regress/7/07_00004_upload_to_VIO_link_to_17_00001/testData/kvit/start-UOPS-S-63-ET.xml
+2018-05-18 10:55:56,473 [INFO ][main            ][                     MqSender2] - Load properties file: PATH_FILE_JSON - D:/!Projects/!USPN/04_07-SUD/regress/7/07_00004_upload_to_VIO_link_to_17_00001/testData/Reg_UOPS-S_SaveDocAndCont.json
+2018-05-18 10:55:56,478 [INFO ][main            ][                     MqSender2] - Load properties file: PATH_FILE_SOAP - D:/!Projects/!USPN/04_07-SUD/regress/7/07_00004_upload_to_VIO_link_to_17_00001/testData/kvit/start-UOPS-S-63-ET.xml
+2018-05-18 10:56:10,868 [INFO ][main            ][                     MqSender2] - Load properties file: PATH_FILE_JSON - D:/!Projects/!USPN/04_07-SUD/regress/7/07_00004_upload_to_VIO_link_to_17_00001/testData/Reg_UOPS-S_SaveDocAndCont.json
+2018-05-18 10:56:10,873 [INFO ][main            ][                     MqSender2] - Load properties file: PATH_FILE_SOAP - D:/!Projects/!USPN/04_07-SUD/regress/7/07_00004_upload_to_VIO_link_to_17_00001/testData/kvit/start-UOPS-S-63-ET.xml
+2018-05-18 10:56:15,025 [INFO ][main            ][                     MqSender2] - Load properties file: PATH_FILE_JSON - D:/!Projects/!USPN/04_07-SUD/regress/7/07_00004_upload_to_VIO_link_to_17_00001/testData/Reg_UOPS-S_SaveDocAndCont.json
+2018-05-18 10:56:15,031 [INFO ][main            ][                     MqSender2] - Load properties file: PATH_FILE_SOAP - D:/!Projects/!USPN/04_07-SUD/regress/7/07_00004_upload_to_VIO_link_to_17_00001/testData/kvit/start-UOPS-S-63-ET.xml
+2018-05-18 11:44:43,784 [INFO ][main            ][                     MqSender2] - Load properties file: PATH_FILE_JSON - D:/!Projects/!USPN/04_07-SUD/regress/7/07_00004_upload_to_VIO_link_to_17_00001/testData/Reg_UOPS-S_SaveDocAndCont.json
+2018-05-18 11:44:43,791 [INFO ][main            ][                     MqSender2] - Load properties file: PATH_FILE_SOAP - D:/!Projects/!USPN/04_07-SUD/regress/7/07_00004_upload_to_VIO_link_to_17_00001/testData/kvit/start-UOPS-S-63-ET.xml
+2018-05-18 11:46:27,270 [INFO ][main            ][                     MqSender2] - Load properties file: PATH_FILE_JSON - D:/!Projects/!USPN/04_07-SUD/regress/7/07_00004_upload_to_VIO_link_to_17_00001/testData/Reg_UOPS-S_SaveDocAndCont.json
+2018-05-18 11:46:27,276 [INFO ][main            ][                     MqSender2] - Load properties file: PATH_FILE_SOAP - D:/!Projects/!USPN/04_07-SUD/regress/7/07_00004_upload_to_VIO_link_to_17_00001/testData/kvit/start-UOPS-S-63-ET.xml
+2018-05-18 11:46:47,118 [INFO ][main            ][                     MqSender2] - Load properties file: PATH_FILE_JSON - D:/!Projects/!USPN/04_07-SUD/regress/7/07_00004_upload_to_VIO_link_to_17_00001/testData/Reg_UOPS-S_SaveDocAndCont.json
+2018-05-18 11:46:47,123 [INFO ][main            ][                     MqSender2] - Load properties file: PATH_FILE_SOAP - D:/!Projects/!USPN/04_07-SUD/regress/7/07_00004_upload_to_VIO_link_to_17_00001/testData/kvit/start-UOPS-S-63-ET.xml
+2018-05-18 11:47:24,387 [INFO ][main            ][                     MqSender2] - Load properties file: PATH_FILE_JSON - D:/!Projects/!USPN/04_07-SUD/regress/7/07_00004_upload_to_VIO_link_to_17_00001/testData/Reg_UOPS-S_SaveDocAndCont.json
+2018-05-18 11:47:24,392 [INFO ][main            ][                     MqSender2] - Load properties file: PATH_FILE_SOAP - D:/!Projects/!USPN/04_07-SUD/regress/7/07_00004_upload_to_VIO_link_to_17_00001/testData/kvit/start-UOPS-S-63-ET.xml
+2018-05-18 13:52:33,737 [INFO ][main            ][                     MqSender2] - Send JSON file: D:/!Projects/!USPN/04_07-SUD/regress/7/07_00004_upload_to_VIO_link_to_17_00001/testData/Reg_UOPS-S_SaveDocAndCont.json
+2018-05-18 14:20:28,064 [INFO ][main            ][                     MqSender2] - Send JSON file: D:/!Projects/!USPN/04_07-SUD/regress/7/07_00004_upload_to_VIO_link_to_17_00001/testData/Reg_UOPS-S_SaveDocAndCont.json
+2018-05-18 14:21:20,689 [INFO ][main            ][                     MqSender2] - Send JSON file: D:/!Projects/!USPN/04_07-SUD/regress/7/07_00004_upload_to_VIO_link_to_17_00001/testData/Reg_UOPS-S_SaveDocAndCont.json
+2018-05-18 14:21:20,696 [INFO ][main            ][                     MqSender2] - Send SOAP file: D:/!Projects/!USPN/04_07-SUD/regress/7/07_00004_upload_to_VIO_link_to_17_00001/testData/Reg_UOPS-S_SaveDocAndCont.json
+2018-05-18 14:21:33,316 [INFO ][main            ][                     MqSender2] - Send JSON file: D:/!Projects/!USPN/04_07-SUD/regress/7/07_00004_upload_to_VIO_link_to_17_00001/testData/Reg_UOPS-S_SaveDocAndCont.json
+2018-05-18 14:21:33,328 [INFO ][main            ][                     MqSender2] - Send SOAP file: D:/!Projects/!USPN/04_07-SUD/regress/7/07_00004_upload_to_VIO_link_to_17_00001/testData/Reg_UOPS-S_SaveDocAndCont.json
+2018-05-18 14:21:42,505 [INFO ][main            ][                     MqSender2] - Send JSON file: D:/!Projects/!USPN/04_07-SUD/regress/7/07_00004_upload_to_VIO_link_to_17_00001/testData/Reg_UOPS-S_SaveDocAndCont.json
+2018-05-18 14:21:42,522 [INFO ][main            ][                     MqSender2] - Send SOAP file: D:/!Projects/!USPN/04_07-SUD/regress/7/07_00004_upload_to_VIO_link_to_17_00001/testData/Reg_UOPS-S_SaveDocAndCont.json
+2018-05-18 14:23:53,953 [INFO ][main            ][                     MqSender2] - Send JSON file: D:/!Projects/!USPN/04_07-SUD/regress/7/07_00004_upload_to_VIO_link_to_17_00001/testData/Reg_UOPS-S_SaveDocAndCont.json
+2018-05-18 14:23:53,960 [INFO ][main            ][                     MqSender2] - Send SOAP file: D:/!Projects/!USPN/04_07-SUD/regress/7/07_00004_upload_to_VIO_link_to_17_00001/testData/Reg_UOPS-S_SaveDocAndCont.json
+2018-05-18 14:24:12,426 [INFO ][main            ][                     MqSender2] - Send JSON file: D:/!Projects/!USPN/04_07-SUD/regress/7/07_00004_upload_to_VIO_link_to_17_00001/testData/Reg_UOPS-S_SaveDocAndCont.json
+2018-05-18 14:24:12,432 [INFO ][main            ][                     MqSender2] - Send SOAP file: D:/!Projects/!USPN/04_07-SUD/regress/7/07_00004_upload_to_VIO_link_to_17_00001/testData/Reg_UOPS-S_SaveDocAndCont.json
+2018-05-18 14:43:58,331 [INFO ][main            ][                     MqSender2] - Send JSON file: D:/!Projects/!USPN/04_07-SUD/regress/7/07_00004_upload_to_VIO_link_to_17_00001/testData/Reg_UOPS-S_SaveDocAndCont.json
+2018-05-18 14:43:58,347 [INFO ][main            ][                     MqSender2] - Send SOAP file: D:/!Projects/!USPN/04_07-SUD/regress/7/07_00004_upload_to_VIO_link_to_17_00001/testData/Reg_UOPS-S_SaveDocAndCont.json
+2018-05-18 14:44:11,657 [INFO ][main            ][                     MqSender2] - Send JSON file: D:/!Projects/!USPN/04_07-SUD/regress/7/07_00004_upload_to_VIO_link_to_17_00001/testData/Reg_UOPS-S_SaveDocAndCont.json
+2018-05-18 14:44:11,681 [INFO ][main            ][                     MqSender2] - Send SOAP file: D:/!Projects/!USPN/04_07-SUD/regress/7/07_00004_upload_to_VIO_link_to_17_00001/testData/Reg_UOPS-S_SaveDocAndCont.json
+2018-05-18 14:44:52,816 [INFO ][main            ][                     MqSender2] - Send JSON file: D:/!Projects/!USPN/04_07-SUD/regress/7/07_00004_upload_to_VIO_link_to_17_00001/testData/Reg_UOPS-S_SaveDocAndCont.json
+2018-05-18 14:44:52,831 [INFO ][main            ][                     MqSender2] - Send SOAP file: D:/!Projects/!USPN/04_07-SUD/regress/7/07_00004_upload_to_VIO_link_to_17_00001/testData/Reg_UOPS-S_SaveDocAndCont.json
+2018-05-18 14:46:08,001 [INFO ][main            ][                     MqSender2] - Send JSON file: D:/!Projects/!USPN/04_07-SUD/regress/7/07_00004_upload_to_VIO_link_to_17_00001/testData/Reg_UOPS-S_SaveDocAndCont.json
+2018-05-18 14:46:08,009 [ERROR][main            ][                     MqSender2] - FAILED
+java.lang.NullPointerException
+	at java.util.Hashtable.put(Hashtable.java:459)
+	at java.util.Properties.setProperty(Properties.java:166)
+	at MqSender2.initPropForMQSender(MqSender2.java:80)
+	at MqSender2.run(MqSender2.java:37)
+	at MqSender2.main(MqSender2.java:27)
+2018-05-18 14:46:21,587 [INFO ][main            ][                     MqSender2] - Send JSON file: D:/!Projects/!USPN/04_07-SUD/regress/7/07_00004_upload_to_VIO_link_to_17_00001/testData/Reg_UOPS-S_SaveDocAndCont.json
+2018-05-18 14:46:21,613 [INFO ][main            ][                     MqSender2] - Send SOAP file: D:/!Projects/!USPN/04_07-SUD/regress/7/07_00004_upload_to_VIO_link_to_17_00001/testData/Reg_UOPS-S_SaveDocAndCont.json
+2018-05-18 14:52:34,446 [INFO ][main            ][                     MqSender2] - Send JSON file: D:/!Projects/!USPN/04_07-SUD/regress/7/07_00004_upload_to_VIO_link_to_17_00001/testData/Reg_UOPS-S_SaveDocAndCont.json
+2018-05-18 14:52:34,465 [INFO ][main            ][                     MqSender2] - Send SOAP file: D:/!Projects/!USPN/04_07-SUD/regress/7/07_00004_upload_to_VIO_link_to_17_00001/testData/Reg_UOPS-S_SaveDocAndCont.json
+2018-05-18 14:52:55,577 [INFO ][main            ][                     MqSender2] - Send JSON file: D:/!Projects/!USPN/04_07-SUD/regress/7/07_00004_upload_to_VIO_link_to_17_00001/testData/Reg_UOPS-S_SaveDocAndCont.json
+2018-05-18 14:52:55,596 [INFO ][main            ][                     MqSender2] - Send SOAP file: D:/!Projects/!USPN/04_07-SUD/regress/7/07_00004_upload_to_VIO_link_to_17_00001/testData/Reg_UOPS-S_SaveDocAndCont.json
+2018-05-18 14:53:22,819 [INFO ][main            ][                     MqSender2] - Send JSON file: D:/!Projects/!USPN/04_07-SUD/regress/7/07_00004_upload_to_VIO_link_to_17_00001/testData/Reg_UOPS-S_SaveDocAndCont.json
+2018-05-18 14:53:22,836 [INFO ][main            ][                     MqSender2] - Send SOAP file: D:/!Projects/!USPN/04_07-SUD/regress/7/07_00004_upload_to_VIO_link_to_17_00001/testData/Reg_UOPS-S_SaveDocAndCont.json
+2018-05-18 14:53:39,640 [INFO ][main            ][                     MqSender2] - Send JSON file: D:/!Projects/!USPN/04_07-SUD/regress/7/07_00004_upload_to_VIO_link_to_17_00001/testData/Reg_UOPS-S_SaveDocAndCont.json
+2018-05-18 14:54:04,375 [INFO ][main            ][                     MqSender2] - Send SOAP file: D:/!Projects/!USPN/04_07-SUD/regress/7/07_00004_upload_to_VIO_link_to_17_00001/testData/Reg_UOPS-S_SaveDocAndCont.json
+2018-05-18 14:54:34,318 [INFO ][main            ][                     MqSender2] - Send JSON file: D:/!Projects/!USPN/04_07-SUD/regress/7/07_00004_upload_to_VIO_link_to_17_00001/testData/Reg_UOPS-S_SaveDocAndCont.json
+2018-05-18 14:54:34,332 [INFO ][main            ][                     MqSender2] - Send SOAP file: D:/!Projects/!USPN/04_07-SUD/regress/7/07_00004_upload_to_VIO_link_to_17_00001/testData/Reg_UOPS-S_SaveDocAndCont.json
+2018-05-18 15:27:52,581 [INFO ][main            ][                     MqSender2] - Send JSON file: D:/!Projects/!USPN/04_07-SUD/regress/7/07_00004_upload_to_VIO_link_to_17_00001/testData/Reg_UOPS-S_SaveDocAndCont.json
+2018-05-18 15:27:56,234 [ERROR][main            ][                     MqSender2] - FAILED
+java.lang.NumberFormatException: For input string: "a"
+	at java.lang.NumberFormatException.forInputString(NumberFormatException.java:65)
+	at java.lang.Integer.parseInt(Integer.java:580)
+	at java.lang.Integer.parseInt(Integer.java:615)
+	at MqSender2.run(MqSender2.java:40)
+	at MqSender2.main(MqSender2.java:25)
+2018-05-18 15:27:56,238 [INFO ][main            ][                     MqSender2] - Enter the ID of doc:
+2018-05-18 15:27:56,239 [INFO ][main            ][                     MqSender2] - Send SOAP file: D:/!Projects/!USPN/04_07-SUD/regress/7/07_00004_upload_to_VIO_link_to_17_00001/testData/Reg_UOPS-S_SaveDocAndCont.json
+2018-05-18 15:28:23,618 [INFO ][main            ][                     MqSender2] - Send JSON file: D:/!Projects/!USPN/04_07-SUD/regress/7/07_00004_upload_to_VIO_link_to_17_00001/testData/Reg_UOPS-S_SaveDocAndCont.json
+2018-05-18 15:28:29,953 [ERROR][main            ][                     MqSender2] - FAILED
+java.lang.NumberFormatException: For input string: "#"
+	at java.lang.NumberFormatException.forInputString(NumberFormatException.java:65)
+	at java.lang.Integer.parseInt(Integer.java:569)
+	at java.lang.Integer.parseInt(Integer.java:615)
+	at MqSender2.run(MqSender2.java:40)
+	at MqSender2.main(MqSender2.java:25)
+2018-05-18 15:28:29,957 [INFO ][main            ][                     MqSender2] - Enter the ID of doc:
+2018-05-18 15:28:29,957 [INFO ][main            ][                     MqSender2] - Send SOAP file: D:/!Projects/!USPN/04_07-SUD/regress/7/07_00004_upload_to_VIO_link_to_17_00001/testData/Reg_UOPS-S_SaveDocAndCont.json
+2018-05-18 15:41:05,427 [INFO ][main            ][                     MqSender2] - Send JSON file: D:/!Projects/!USPN/04_07-SUD/regress/7/07_00004_upload_to_VIO_link_to_17_00001/testData/Reg_UOPS-S_SaveDocAndCont.json
+2018-05-18 15:41:07,861 [ERROR][main            ][                     MqSender2] - FAILED
+java.lang.NumberFormatException: For input string: "ac"
+	at java.lang.NumberFormatException.forInputString(NumberFormatException.java:65)
+	at java.lang.Integer.parseInt(Integer.java:580)
+	at java.lang.Integer.parseInt(Integer.java:615)
+	at MqSender2.run(MqSender2.java:40)
+	at MqSender2.main(MqSender2.java:25)
+2018-05-18 15:41:42,052 [INFO ][main            ][                     MqSender2] - Send JSON file: D:/!Projects/!USPN/04_07-SUD/regress/7/07_00004_upload_to_VIO_link_to_17_00001/testData/Reg_UOPS-S_SaveDocAndCont.json
+2018-05-18 15:41:44,072 [ERROR][main            ][                     MqSender2] - Incorrect ID.
+2018-05-18 15:41:50,551 [INFO ][main            ][                     MqSender2] - Send JSON file: D:/!Projects/!USPN/04_07-SUD/regress/7/07_00004_upload_to_VIO_link_to_17_00001/testData/Reg_UOPS-S_SaveDocAndCont.json
+2018-05-18 15:41:52,050 [INFO ][main            ][                     MqSender2] - Enter the ID of doc: 1
+2018-05-18 15:41:52,051 [INFO ][main            ][                     MqSender2] - Send SOAP file with requestID: 1. 
+2018-05-18 15:43:13,833 [INFO ][main            ][                     MqSender2] - Send JSON file: D:/!Projects/!USPN/04_07-SUD/regress/7/07_00004_upload_to_VIO_link_to_17_00001/testData/Reg_UOPS-S_SaveDocAndCont.json
+2018-05-18 15:43:15,426 [INFO ][main            ][                     MqSender2] - Enter the ID of document: 1
+2018-05-18 15:43:15,428 [INFO ][main            ][                     MqSender2] - Send SOAP file 'D:/!Projects/!USPN/04_07-SUD/regress/7/07_00004_upload_to_VIO_link_to_17_00001/testData/Reg_UOPS-S_SaveDocAndCont.json' with requestID: 1. 
+2018-05-18 15:44:35,330 [INFO ][main            ][                     MqSender2] - Send JSON file: D:/!Projects/!USPN/04_07-SUD/regress/7/07_00004_upload_to_VIO_link_to_17_00001/testData/Reg_UOPS-S_SaveDocAndCont.json
+2018-05-18 15:45:03,864 [INFO ][main            ][                     MqSender2] - Send JSON file: D:/!Projects/!USPN/04_07-SUD/regress/7/07_00004_upload_to_VIO_link_to_17_00001/testData/Reg_UOPS-S_SaveDocAndCont.json
+2018-05-18 15:45:04,876 [ERROR][main            ][                     MqSender2] - Incorrect ID.
+2018-05-18 15:46:31,974 [INFO ][main            ][                     MqSender2] - Send JSON file: D:/!Projects/!USPN/04_07-SUD/regress/7/07_00004_upload_to_VIO_link_to_17_00001/testData/Reg_UOPS-S_SaveDocAndCont.json
+2018-05-18 15:46:34,072 [ERROR][main            ][                     MqSender2] - Incorrect ID: 0
+2018-05-18 15:47:42,512 [INFO ][main            ][                     MqSender2] - Send JSON file: D:/!Projects/!USPN/04_07-SUD/regress/7/07_00004_upload_to_VIO_link_to_17_00001/testData/Reg_UOPS-S_SaveDocAndCont.json
+2018-05-18 15:47:44,863 [ERROR][main            ][                     MqSender2] - Incorrect ID: 
+2018-05-18 15:48:37,721 [INFO ][main            ][                     MqSender2] - Send JSON file: D:/!Projects/!USPN/04_07-SUD/regress/7/07_00004_upload_to_VIO_link_to_17_00001/testData/Reg_UOPS-S_SaveDocAndCont.json
+2018-05-18 15:48:38,578 [ERROR][main            ][                     MqSender2] - Incorrect ID: ''
+2018-05-18 15:49:00,382 [INFO ][main            ][                     MqSender2] - Send JSON file: D:/!Projects/!USPN/04_07-SUD/regress/7/07_00004_upload_to_VIO_link_to_17_00001/testData/Reg_UOPS-S_SaveDocAndCont.json
+2018-05-18 15:49:01,880 [INFO ][main            ][                     MqSender2] - Enter the ID of document: 1
+2018-05-18 15:49:01,881 [INFO ][main            ][                     MqSender2] - Send SOAP file: D:/!Projects/!USPN/04_07-SUD/regress/7/07_00004_upload_to_VIO_link_to_17_00001/testData/Reg_UOPS-S_SaveDocAndCont.json
+2018-05-18 15:49:01,882 [INFO ][main            ][                     MqSender2] - Send SOAP file with DocumentRef id: 1. 
+2018-05-18 15:58:06,221 [INFO ][main            ][                     MqSender2] - Send JSON file: D:/!Projects/!USPN/04_07-SUD/regress/7/07_00004_upload_to_VIO_link_to_17_00001/testData/Reg_UOPS-S_SaveDocAndCont.json
+2018-05-18 15:58:08,109 [INFO ][main            ][                     MqSender2] - Enter the ID of document: 1
+2018-05-18 15:58:08,109 [INFO ][main            ][                     MqSender2] - Send SOAP file: D:\!Projects\!USPN\04_07-SUD\regress\7\07_00004_upload_to_VIO_link_to_17_00001\testData\kvit\start-UOPS-S-63-ET.xml
+2018-05-18 15:58:08,110 [INFO ][main            ][                     MqSender2] - Send SOAP file with DocumentRef id: 1. 
+2018-05-18 15:58:08,110 [INFO ][main            ][                     MqSender2] - Send SOAP file with RequestId: 1. 
+2018-05-18 15:58:44,308 [INFO ][main            ][                     MqSender2] - Send JSON file: D:/!Projects/!USPN/04_07-SUD/regress/7/07_00004_upload_to_VIO_link_to_17_00001/testData/Reg_UOPS-S_SaveDocAndCont.json
+2018-05-18 15:58:46,855 [INFO ][main            ][                     MqSender2] - Enter the ID of document: 1
+2018-05-18 15:58:46,856 [INFO ][main            ][                     MqSender2] - Send SOAP file: D:/!Projects/!USPN/04_07-SUD/regress/7/07_00004_upload_to_VIO_link_to_17_00001/testData/kvit/start-UOPS-S-63-ET.xml
+2018-05-18 15:58:46,856 [INFO ][main            ][                     MqSender2] - Send SOAP file with DocumentRef id: 1. 
+2018-05-18 15:58:46,857 [INFO ][main            ][                     MqSender2] - Send SOAP file with RequestId: 1. 
+2018-05-18 16:07:52,634 [INFO ][main            ][                     MqSender2] - Send JSON file: D:/!Projects/!USPN/04_07-SUD/regress/7/07_00004_upload_to_VIO_link_to_17_00001/testData/Reg_UOPS-S_SaveDocAndCont.json
+2018-05-18 16:07:54,500 [INFO ][main            ][                     MqSender2] - Enter the ID of document: 1
+2018-05-18 16:07:54,501 [INFO ][main            ][                     MqSender2] - Send SOAP file: D:/!Projects/!USPN/04_07-SUD/regress/7/07_00004_upload_to_VIO_link_to_17_00001/testData/kvit/start-UOPS-S-63-ET.xml
+2018-05-18 16:07:54,501 [INFO ][main            ][                     MqSender2] - Send SOAP file with DocumentRef id: 1. 
+2018-05-18 16:07:54,614 [INFO ][main            ][                     MqSender2] - Send SOAP file with RequestId: null. 
+2018-05-18 16:08:34,547 [INFO ][main            ][                     MqSender2] - Send JSON file: D:/!Projects/!USPN/04_07-SUD/regress/7/07_00004_upload_to_VIO_link_to_17_00001/testData/Reg_UOPS-S_SaveDocAndCont.json
+2018-05-18 16:08:35,802 [INFO ][main            ][                     MqSender2] - Enter the ID of document: 1
+2018-05-18 16:08:35,803 [INFO ][main            ][                     MqSender2] - Send SOAP file: D:/!Projects/!USPN/04_07-SUD/regress/7/07_00004_upload_to_VIO_link_to_17_00001/testData/kvit/start-UOPS-S-63-ET.xml
+2018-05-18 16:08:35,803 [INFO ][main            ][                     MqSender2] - Send SOAP file with DocumentRef id: 1. 
+2018-05-18 16:08:44,681 [INFO ][main            ][                     MqSender2] - Send JSON file: D:/!Projects/!USPN/04_07-SUD/regress/7/07_00004_upload_to_VIO_link_to_17_00001/testData/Reg_UOPS-S_SaveDocAndCont.json
+2018-05-18 16:08:48,168 [INFO ][main            ][                     MqSender2] - Enter the ID of document: 1
+2018-05-18 16:08:48,169 [INFO ][main            ][                     MqSender2] - Send SOAP file: D:/!Projects/!USPN/04_07-SUD/regress/7/07_00004_upload_to_VIO_link_to_17_00001/testData/kvit/start-UOPS-S-63-ET.xml
+2018-05-18 16:08:48,169 [INFO ][main            ][                     MqSender2] - Send SOAP file with DocumentRef id: 1. 
+2018-05-18 16:09:28,415 [INFO ][main            ][                     MqSender2] - Send JSON file: D:/!Projects/!USPN/04_07-SUD/regress/7/07_00004_upload_to_VIO_link_to_17_00001/testData/Reg_UOPS-S_SaveDocAndCont.json
+2018-05-18 16:09:42,311 [INFO ][main            ][                     MqSender2] - Send JSON file: D:/!Projects/!USPN/04_07-SUD/regress/7/07_00004_upload_to_VIO_link_to_17_00001/testData/Reg_UOPS-S_SaveDocAndCont.json
+2018-05-18 16:10:02,188 [INFO ][main            ][                     MqSender2] - Send JSON file: D:/!Projects/!USPN/04_07-SUD/regress/7/07_00004_upload_to_VIO_link_to_17_00001/testData/Reg_UOPS-S_SaveDocAndCont.json
+2018-05-18 16:10:02,201 [INFO ][main            ][                     MqSender2] - Enter the ID of document: 1
+2018-05-18 16:10:02,201 [INFO ][main            ][                     MqSender2] - Send SOAP file: D:/!Projects/!USPN/04_07-SUD/regress/7/07_00004_upload_to_VIO_link_to_17_00001/testData/kvit/start-UOPS-S-63-ET.xml
+2018-05-18 16:10:02,202 [INFO ][main            ][                     MqSender2] - Send SOAP file with DocumentRef id: 1. 
+2018-05-18 16:10:16,066 [INFO ][main            ][                     MqSender2] - Send JSON file: D:/!Projects/!USPN/04_07-SUD/regress/7/07_00004_upload_to_VIO_link_to_17_00001/testData/Reg_UOPS-S_SaveDocAndCont.json
+2018-05-18 16:10:16,080 [INFO ][main            ][                     MqSender2] - Enter the ID of document: 1
+2018-05-18 16:10:16,081 [INFO ][main            ][                     MqSender2] - Send SOAP file: D:/!Projects/!USPN/04_07-SUD/regress/7/07_00004_upload_to_VIO_link_to_17_00001/testData/kvit/start-UOPS-S-63-ET.xml
+2018-05-18 16:10:16,081 [INFO ][main            ][                     MqSender2] - Send SOAP file with DocumentRef id: 1. 
+2018-05-18 16:22:23,896 [INFO ][main            ][                     MqSender2] - Send JSON file: D:/!Projects/!USPN/04_07-SUD/regress/7/07_00004_upload_to_VIO_link_to_17_00001/testData/Reg_UOPS-S_SaveDocAndCont.json
+2018-05-18 16:22:23,919 [INFO ][main            ][                     MqSender2] - Enter the ID of document: 1
+2018-05-18 16:22:23,919 [INFO ][main            ][                     MqSender2] - Send SOAP file: D:/!Projects/!USPN/04_07-SUD/regress/7/07_00004_upload_to_VIO_link_to_17_00001/testData/kvit/start-UOPS-S-63-ET.xml
+2018-05-18 16:22:23,920 [INFO ][main            ][                     MqSender2] - Send SOAP file with DocumentRef id: 1. 
+2018-05-18 16:22:50,909 [INFO ][main            ][                     MqSender2] - Send SOAP file with RequestId: null. 
+2018-05-18 16:23:35,472 [INFO ][main            ][                     MqSender2] - Send JSON file: D:/!Projects/!USPN/04_07-SUD/regress/7/07_00004_upload_to_VIO_link_to_17_00001/testData/Reg_UOPS-S_SaveDocAndCont.json
+2018-05-18 16:23:35,489 [INFO ][main            ][                     MqSender2] - Enter the ID of document: 1
+2018-05-18 16:23:35,490 [INFO ][main            ][                     MqSender2] - Send SOAP file: D:/!Projects/!USPN/04_07-SUD/regress/7/07_00004_upload_to_VIO_link_to_17_00001/testData/kvit/start-UOPS-S-63-ET.xml
+2018-05-18 16:23:35,490 [INFO ][main            ][                     MqSender2] - Send SOAP file with DocumentRef id: 1. 
+2018-05-18 16:23:42,158 [INFO ][main            ][                     MqSender2] - Send SOAP file with RequestId: null. 
+2018-05-18 16:24:45,802 [INFO ][main            ][                     MqSender2] - Send JSON file: D:/!Projects/!USPN/04_07-SUD/regress/7/07_00004_upload_to_VIO_link_to_17_00001/testData/Reg_UOPS-S_SaveDocAndCont.json
+2018-05-18 16:24:45,818 [INFO ][main            ][                     MqSender2] - Enter the ID of document: 1
+2018-05-18 16:24:45,818 [INFO ][main            ][                     MqSender2] - Send SOAP file: D:/!Projects/!USPN/04_07-SUD/regress/7/07_00004_upload_to_VIO_link_to_17_00001/testData/kvit/start-UOPS-S-63-ET.xml
+2018-05-18 16:24:45,819 [INFO ][main            ][                     MqSender2] - Send SOAP file with DocumentRef id: 1. 
+2018-05-18 16:25:01,741 [INFO ][main            ][                     MqSender2] - Send JSON file: D:/!Projects/!USPN/04_07-SUD/regress/7/07_00004_upload_to_VIO_link_to_17_00001/testData/Reg_UOPS-S_SaveDocAndCont.json
+2018-05-18 16:25:01,758 [INFO ][main            ][                     MqSender2] - Enter the ID of document: 1
+2018-05-18 16:25:01,758 [INFO ][main            ][                     MqSender2] - Send SOAP file: D:/!Projects/!USPN/04_07-SUD/regress/7/07_00004_upload_to_VIO_link_to_17_00001/testData/kvit/start-UOPS-S-63-ET.xml
+2018-05-18 16:25:01,759 [INFO ][main            ][                     MqSender2] - Send SOAP file with DocumentRef id: 1. 
+2018-05-18 16:25:29,236 [INFO ][main            ][                     MqSender2] - Send JSON file: D:/!Projects/!USPN/04_07-SUD/regress/7/07_00004_upload_to_VIO_link_to_17_00001/testData/Reg_UOPS-S_SaveDocAndCont.json
+2018-05-18 16:25:29,250 [INFO ][main            ][                     MqSender2] - Enter the ID of document: 1
+2018-05-18 16:25:29,251 [INFO ][main            ][                     MqSender2] - Send SOAP file: D:/!Projects/!USPN/04_07-SUD/regress/7/07_00004_upload_to_VIO_link_to_17_00001/testData/kvit/start-UOPS-S-63-ET.xml
+2018-05-18 16:25:29,251 [INFO ][main            ][                     MqSender2] - Send SOAP file with DocumentRef id: 1. 
+2018-05-18 16:25:45,007 [INFO ][main            ][                     MqSender2] - Send SOAP file with RequestId: null. 
+2018-05-18 16:25:58,463 [INFO ][main            ][                     MqSender2] - Send JSON file: D:/!Projects/!USPN/04_07-SUD/regress/7/07_00004_upload_to_VIO_link_to_17_00001/testData/Reg_UOPS-S_SaveDocAndCont.json
+2018-05-18 16:25:58,477 [INFO ][main            ][                     MqSender2] - Enter the ID of document: 1
+2018-05-18 16:25:58,477 [INFO ][main            ][                     MqSender2] - Send SOAP file: D:/!Projects/!USPN/04_07-SUD/regress/7/07_00004_upload_to_VIO_link_to_17_00001/testData/kvit/start-UOPS-S-63-ET.xml
+2018-05-18 16:25:58,477 [INFO ][main            ][                     MqSender2] - Send SOAP file with DocumentRef id: 1. 
+2018-05-18 16:25:58,617 [INFO ][main            ][                     MqSender2] - Send SOAP file with RequestId: null. 
+2018-05-18 16:29:20,714 [INFO ][main            ][                     MqSender2] - Send JSON file: D:/!Projects/!USPN/04_07-SUD/regress/7/07_00004_upload_to_VIO_link_to_17_00001/testData/Reg_UOPS-S_SaveDocAndCont.json
+2018-05-18 16:29:20,727 [INFO ][main            ][                     MqSender2] - Enter the ID of document: 1
+2018-05-18 16:29:20,727 [INFO ][main            ][                     MqSender2] - Send SOAP file: D:/!Projects/!USPN/04_07-SUD/regress/7/07_00004_upload_to_VIO_link_to_17_00001/testData/kvit/start-UOPS-S-63-ET.xml
+2018-05-18 16:29:20,728 [INFO ][main            ][                     MqSender2] - Send SOAP file with DocumentRef id: 1. 
+2018-05-18 16:30:10,047 [INFO ][main            ][                     MqSender2] - Send JSON file: D:/!Projects/!USPN/04_07-SUD/regress/7/07_00004_upload_to_VIO_link_to_17_00001/testData/Reg_UOPS-S_SaveDocAndCont.json
+2018-05-18 16:30:10,063 [INFO ][main            ][                     MqSender2] - Enter the ID of document: 1
+2018-05-18 16:30:10,063 [INFO ][main            ][                     MqSender2] - Send SOAP file: D:/!Projects/!USPN/04_07-SUD/regress/7/07_00004_upload_to_VIO_link_to_17_00001/testData/kvit/start-UOPS-S-63-ET.xml
+2018-05-18 16:30:10,064 [INFO ][main            ][                     MqSender2] - Send SOAP file with DocumentRef id: 1. 
+2018-05-18 16:30:32,608 [INFO ][main            ][                     MqSender2] - Send JSON file: D:/!Projects/!USPN/04_07-SUD/regress/7/07_00004_upload_to_VIO_link_to_17_00001/testData/Reg_UOPS-S_SaveDocAndCont.json
+2018-05-18 16:30:32,622 [INFO ][main            ][                     MqSender2] - Enter the ID of document: 1
+2018-05-18 16:30:32,623 [INFO ][main            ][                     MqSender2] - Send SOAP file: D:/!Projects/!USPN/04_07-SUD/regress/7/07_00004_upload_to_VIO_link_to_17_00001/testData/kvit/start-UOPS-S-63-ET.xml
+2018-05-18 16:30:32,623 [INFO ][main            ][                     MqSender2] - Send SOAP file with DocumentRef id: 1. 
+2018-05-18 16:30:39,208 [INFO ][main            ][                     MqSender2] - Send JSON file: D:/!Projects/!USPN/04_07-SUD/regress/7/07_00004_upload_to_VIO_link_to_17_00001/testData/Reg_UOPS-S_SaveDocAndCont.json
+2018-05-18 16:30:39,223 [INFO ][main            ][                     MqSender2] - Enter the ID of document: 1
+2018-05-18 16:30:39,224 [INFO ][main            ][                     MqSender2] - Send SOAP file: D:/!Projects/!USPN/04_07-SUD/regress/7/07_00004_upload_to_VIO_link_to_17_00001/testData/kvit/start-UOPS-S-63-ET.xml
+2018-05-18 16:30:39,224 [INFO ][main            ][                     MqSender2] - Send SOAP file with DocumentRef id: 1. 
+2018-05-18 16:31:30,250 [INFO ][main            ][                     MqSender2] - Send JSON file: D:/!Projects/!USPN/04_07-SUD/regress/7/07_00004_upload_to_VIO_link_to_17_00001/testData/Reg_UOPS-S_SaveDocAndCont.json
+2018-05-18 16:31:30,266 [INFO ][main            ][                     MqSender2] - Enter the ID of document: 1
+2018-05-18 16:31:30,266 [INFO ][main            ][                     MqSender2] - Send SOAP file: D:/!Projects/!USPN/04_07-SUD/regress/7/07_00004_upload_to_VIO_link_to_17_00001/testData/kvit/start-UOPS-S-63-ET.xml
+2018-05-18 16:31:30,267 [INFO ][main            ][                     MqSender2] - Send SOAP file with DocumentRef id: 1. 
+2018-05-18 16:31:36,420 [INFO ][main            ][                     MqSender2] - Send JSON file: D:/!Projects/!USPN/04_07-SUD/regress/7/07_00004_upload_to_VIO_link_to_17_00001/testData/Reg_UOPS-S_SaveDocAndCont.json
+2018-05-18 16:31:36,444 [INFO ][main            ][                     MqSender2] - Enter the ID of document: 1
+2018-05-18 16:31:36,444 [INFO ][main            ][                     MqSender2] - Send SOAP file: D:/!Projects/!USPN/04_07-SUD/regress/7/07_00004_upload_to_VIO_link_to_17_00001/testData/kvit/start-UOPS-S-63-ET.xml
+2018-05-18 16:31:36,445 [INFO ][main            ][                     MqSender2] - Send SOAP file with DocumentRef id: 1. 
+2018-05-18 16:31:44,755 [INFO ][main            ][                     MqSender2] - Send JSON file: D:/!Projects/!USPN/04_07-SUD/regress/7/07_00004_upload_to_VIO_link_to_17_00001/testData/Reg_UOPS-S_SaveDocAndCont.json
+2018-05-18 16:31:44,804 [INFO ][main            ][                     MqSender2] - Enter the ID of document: 1
+2018-05-18 16:31:44,805 [INFO ][main            ][                     MqSender2] - Send SOAP file: D:/!Projects/!USPN/04_07-SUD/regress/7/07_00004_upload_to_VIO_link_to_17_00001/testData/kvit/start-UOPS-S-63-ET.xml
+2018-05-18 16:31:44,805 [INFO ][main            ][                     MqSender2] - Send SOAP file with DocumentRef id: 1. 
+2018-05-18 16:32:01,956 [INFO ][main            ][                     MqSender2] - Send JSON file: D:/!Projects/!USPN/04_07-SUD/regress/7/07_00004_upload_to_VIO_link_to_17_00001/testData/Reg_UOPS-S_SaveDocAndCont.json
+2018-05-18 16:32:01,972 [INFO ][main            ][                     MqSender2] - Enter the ID of document: 1
+2018-05-18 16:32:01,972 [INFO ][main            ][                     MqSender2] - Send SOAP file: D:/!Projects/!USPN/04_07-SUD/regress/7/07_00004_upload_to_VIO_link_to_17_00001/testData/kvit/start-UOPS-S-63-ET.xml
+2018-05-18 16:32:01,973 [INFO ][main            ][                     MqSender2] - Send SOAP file with DocumentRef id: 1. 
+2018-05-18 16:32:17,928 [INFO ][main            ][                     MqSender2] - Send JSON file: D:/!Projects/!USPN/04_07-SUD/regress/7/07_00004_upload_to_VIO_link_to_17_00001/testData/Reg_UOPS-S_SaveDocAndCont.json
+2018-05-18 16:32:17,954 [INFO ][main            ][                     MqSender2] - Enter the ID of document: 1
+2018-05-18 16:32:17,955 [INFO ][main            ][                     MqSender2] - Send SOAP file: D:/!Projects/!USPN/04_07-SUD/regress/7/07_00004_upload_to_VIO_link_to_17_00001/testData/kvit/start-UOPS-S-63-ET.xml
+2018-05-18 16:32:17,955 [INFO ][main            ][                     MqSender2] - Send SOAP file with DocumentRef id: 1. 
+2018-05-18 16:36:43,286 [INFO ][main            ][                     MqSender2] - Send JSON file: D:/!Projects/!USPN/04_07-SUD/regress/7/07_00004_upload_to_VIO_link_to_17_00001/testData/Reg_UOPS-S_SaveDocAndCont.json
+2018-05-18 16:36:43,300 [INFO ][main            ][                     MqSender2] - Enter the ID of document: 1
+2018-05-18 16:36:43,300 [INFO ][main            ][                     MqSender2] - Send SOAP file: D:/!Projects/!USPN/04_07-SUD/regress/7/07_00004_upload_to_VIO_link_to_17_00001/testData/kvit/start-UOPS-S-63-ET.xml
+2018-05-18 16:36:43,300 [INFO ][main            ][                     MqSender2] - Send SOAP file with DocumentRef id: 1. 
+2018-05-18 16:36:54,429 [INFO ][main            ][                     MqSender2] - Send JSON file: D:/!Projects/!USPN/04_07-SUD/regress/7/07_00004_upload_to_VIO_link_to_17_00001/testData/Reg_UOPS-S_SaveDocAndCont.json
+2018-05-18 16:36:54,454 [INFO ][main            ][                     MqSender2] - Enter the ID of document: 1
+2018-05-18 16:36:54,455 [INFO ][main            ][                     MqSender2] - Send SOAP file: D:/!Projects/!USPN/04_07-SUD/regress/7/07_00004_upload_to_VIO_link_to_17_00001/testData/kvit/start-UOPS-S-63-ET.xml
+2018-05-18 16:36:54,455 [INFO ][main            ][                     MqSender2] - Send SOAP file with DocumentRef id: 1. 
+2018-05-18 16:37:04,046 [INFO ][main            ][                     MqSender2] - Send JSON file: D:/!Projects/!USPN/04_07-SUD/regress/7/07_00004_upload_to_VIO_link_to_17_00001/testData/Reg_UOPS-S_SaveDocAndCont.json
+2018-05-18 16:37:04,061 [INFO ][main            ][                     MqSender2] - Enter the ID of document: 1
+2018-05-18 16:37:04,062 [INFO ][main            ][                     MqSender2] - Send SOAP file: D:/!Projects/!USPN/04_07-SUD/regress/7/07_00004_upload_to_VIO_link_to_17_00001/testData/kvit/start-UOPS-S-63-ET.xml
+2018-05-18 16:37:04,062 [INFO ][main            ][                     MqSender2] - Send SOAP file with DocumentRef id: 1. 
+2018-05-18 16:38:24,724 [INFO ][main            ][                     MqSender2] - Send JSON file: D:/!Projects/!USPN/04_07-SUD/regress/7/07_00004_upload_to_VIO_link_to_17_00001/testData/Reg_UOPS-S_SaveDocAndCont.json
+2018-05-18 16:38:24,739 [INFO ][main            ][                     MqSender2] - Enter the ID of document: 1
+2018-05-18 16:38:24,739 [INFO ][main            ][                     MqSender2] - Send SOAP file: D:/!Projects/!USPN/04_07-SUD/regress/7/07_00004_upload_to_VIO_link_to_17_00001/testData/kvit/start-UOPS-S-63-ET.xml
+2018-05-18 16:38:24,740 [INFO ][main            ][                     MqSender2] - Send SOAP file with DocumentRef id: 1. 
+2018-05-18 16:38:24,808 [INFO ][main            ][                     MqSender2] - Send SOAP file with RequestId: null. 
+2018-05-18 16:39:29,273 [INFO ][main            ][                     MqSender2] - Send JSON file: D:/!Projects/!USPN/04_07-SUD/regress/7/07_00004_upload_to_VIO_link_to_17_00001/testData/Reg_UOPS-S_SaveDocAndCont.json
+2018-05-18 16:39:29,287 [INFO ][main            ][                     MqSender2] - Enter the ID of document: 1
+2018-05-18 16:39:29,287 [INFO ][main            ][                     MqSender2] - Send SOAP file: D:/!Projects/!USPN/04_07-SUD/regress/7/07_00004_upload_to_VIO_link_to_17_00001/testData/kvit/start-UOPS-S-63-ET.xml
+2018-05-18 16:39:29,288 [INFO ][main            ][                     MqSender2] - Send SOAP file with DocumentRef id: 1. 
+2018-05-18 16:39:53,951 [INFO ][main            ][                     MqSender2] - Send JSON file: D:/!Projects/!USPN/04_07-SUD/regress/7/07_00004_upload_to_VIO_link_to_17_00001/testData/Reg_UOPS-S_SaveDocAndCont.json
+2018-05-18 16:39:53,965 [INFO ][main            ][                     MqSender2] - Enter the ID of document: 1
+2018-05-18 16:39:53,966 [INFO ][main            ][                     MqSender2] - Send SOAP file: D:/!Projects/!USPN/04_07-SUD/regress/7/07_00004_upload_to_VIO_link_to_17_00001/testData/kvit/start-UOPS-S-63-ET.xml
+2018-05-18 16:39:53,966 [INFO ][main            ][                     MqSender2] - Send SOAP file with DocumentRef id: 1. 
+2018-05-18 16:39:54,062 [INFO ][main            ][                     MqSender2] - Send SOAP file with RequestId: null. 
+2018-05-18 16:44:54,324 [INFO ][main            ][                     MqSender2] - Send JSON file: D:/!Projects/!USPN/04_07-SUD/regress/7/07_00004_upload_to_VIO_link_to_17_00001/testData/Reg_UOPS-S_SaveDocAndCont.json
+2018-05-18 16:44:54,348 [INFO ][main            ][                     MqSender2] - Enter the ID of document: 1
+2018-05-18 16:44:54,348 [INFO ][main            ][                     MqSender2] - Send SOAP file: D:/!Projects/!USPN/04_07-SUD/regress/7/07_00004_upload_to_VIO_link_to_17_00001/testData/kvit/start-UOPS-S-63-ET.xml
+2018-05-18 16:44:54,349 [INFO ][main            ][                     MqSender2] - Send SOAP file with DocumentRef id: 1. 
+2018-05-18 16:44:54,457 [INFO ][main            ][                     MqSender2] - Send SOAP file with RequestId: requestId. 
+2018-05-18 16:45:39,310 [INFO ][main            ][                     MqSender2] - Send JSON file: D:/!Projects/!USPN/04_07-SUD/regress/7/07_00004_upload_to_VIO_link_to_17_00001/testData/Reg_UOPS-S_SaveDocAndCont.json
+2018-05-18 16:45:39,325 [INFO ][main            ][                     MqSender2] - Enter the ID of document: 1
+2018-05-18 16:45:39,325 [INFO ][main            ][                     MqSender2] - Send SOAP file: D:/!Projects/!USPN/04_07-SUD/regress/7/07_00004_upload_to_VIO_link_to_17_00001/testData/kvit/start-UOPS-S-63-ET.xml
+2018-05-18 16:45:39,325 [INFO ][main            ][                     MqSender2] - Send SOAP file with DocumentRef id: 1. 
+2018-05-18 16:46:35,088 [INFO ][main            ][                     MqSender2] - Send SOAP file with RequestId: requestId. 
+2018-05-18 16:46:38,686 [INFO ][main            ][                     MqSender2] - Send JSON file: D:/!Projects/!USPN/04_07-SUD/regress/7/07_00004_upload_to_VIO_link_to_17_00001/testData/Reg_UOPS-S_SaveDocAndCont.json
+2018-05-18 16:46:38,701 [INFO ][main            ][                     MqSender2] - Enter the ID of document: 1
+2018-05-18 16:46:38,702 [INFO ][main            ][                     MqSender2] - Send SOAP file: D:/!Projects/!USPN/04_07-SUD/regress/7/07_00004_upload_to_VIO_link_to_17_00001/testData/kvit/start-UOPS-S-63-ET.xml
+2018-05-18 16:46:38,702 [INFO ][main            ][                     MqSender2] - Send SOAP file with DocumentRef id: 1. 
+2018-05-18 16:47:17,521 [INFO ][main            ][                     MqSender2] - Send SOAP file with RequestId: requestId. 
+2018-05-18 16:47:21,027 [INFO ][main            ][                     MqSender2] - Send JSON file: D:/!Projects/!USPN/04_07-SUD/regress/7/07_00004_upload_to_VIO_link_to_17_00001/testData/Reg_UOPS-S_SaveDocAndCont.json
+2018-05-18 16:47:21,043 [INFO ][main            ][                     MqSender2] - Enter the ID of document: 1
+2018-05-18 16:47:21,044 [INFO ][main            ][                     MqSender2] - Send SOAP file: D:/!Projects/!USPN/04_07-SUD/regress/7/07_00004_upload_to_VIO_link_to_17_00001/testData/kvit/start-UOPS-S-63-ET.xml
+2018-05-18 16:47:21,044 [INFO ][main            ][                     MqSender2] - Send SOAP file with DocumentRef id: 1. 
+2018-05-18 16:47:29,327 [INFO ][main            ][                     MqSender2] - Send SOAP file with RequestId: requestId. 
+2018-05-18 16:47:37,172 [INFO ][main            ][                     MqSender2] - Send JSON file: D:/!Projects/!USPN/04_07-SUD/regress/7/07_00004_upload_to_VIO_link_to_17_00001/testData/Reg_UOPS-S_SaveDocAndCont.json
+2018-05-18 16:47:37,185 [INFO ][main            ][                     MqSender2] - Enter the ID of document: 1
+2018-05-18 16:47:37,185 [INFO ][main            ][                     MqSender2] - Send SOAP file: D:/!Projects/!USPN/04_07-SUD/regress/7/07_00004_upload_to_VIO_link_to_17_00001/testData/kvit/start-UOPS-S-63-ET.xml
+2018-05-18 16:47:37,187 [INFO ][main            ][                     MqSender2] - Send SOAP file with DocumentRef id: 1. 
+2018-05-18 16:47:37,287 [INFO ][main            ][                     MqSender2] - Send SOAP file with RequestId: 42ae3d2a70f24cf7a92130e71d793ca8. 
+2018-05-18 16:50:07,292 [INFO ][main            ][                     MqSender2] - Send JSON file: D:/!Projects/!USPN/04_07-SUD/regress/7/07_00004_upload_to_VIO_link_to_17_00001/testData/Reg_UOPS-S_SaveDocAndCont.json
+2018-05-18 16:50:07,305 [INFO ][main            ][                     MqSender2] - Enter the ID of document: 1
+2018-05-18 16:50:07,305 [INFO ][main            ][                     MqSender2] - Send SOAP file: D:/!Projects/!USPN/04_07-SUD/regress/7/07_00004_upload_to_VIO_link_to_17_00001/testData/kvit/start-UOPS-S-63-ET.xml
+2018-05-18 16:50:07,306 [INFO ][main            ][                     MqSender2] - Send SOAP file with DocumentRef id: 1. 
+2018-05-18 16:50:28,508 [INFO ][main            ][                     MqSender2] - Send JSON file: D:/!Projects/!USPN/04_07-SUD/regress/7/07_00004_upload_to_VIO_link_to_17_00001/testData/Reg_UOPS-S_SaveDocAndCont.json
+2018-05-18 16:50:28,520 [INFO ][main            ][                     MqSender2] - Enter the ID of document: 1
+2018-05-18 16:50:28,521 [INFO ][main            ][                     MqSender2] - Send SOAP file: D:/!Projects/!USPN/04_07-SUD/regress/7/07_00004_upload_to_VIO_link_to_17_00001/testData/kvit/start-UOPS-S-63-ET.xml
+2018-05-18 16:50:28,521 [INFO ][main            ][                     MqSender2] - Send SOAP file with DocumentRef id: 1. 
+2018-05-18 16:50:28,616 [INFO ][main            ][                     MqSender2] - Send SOAP file with RequestId: 42ae3d2a70f24cf7a92130e71d793ca8. 
+2018-05-18 16:51:26,758 [INFO ][main            ][                     MqSender2] - Send JSON file: D:/!Projects/!USPN/04_07-SUD/regress/7/07_00004_upload_to_VIO_link_to_17_00001/testData/Reg_UOPS-S_SaveDocAndCont.json
+2018-05-18 16:51:26,772 [INFO ][main            ][                     MqSender2] - Enter the ID of document: 1
+2018-05-18 16:51:26,772 [INFO ][main            ][                     MqSender2] - Send SOAP file: D:/!Projects/!USPN/04_07-SUD/regress/7/07_00004_upload_to_VIO_link_to_17_00001/testData/kvit/start-UOPS-S-63-ET.xml
+2018-05-18 16:51:26,772 [INFO ][main            ][                     MqSender2] - Send SOAP file with DocumentRef id: 1. 
+2018-05-18 16:51:26,871 [INFO ][main            ][                     MqSender2] - Send SOAP file with RequestId: 42ae3d2a70f24cf7a92130e71d793ca8. 
+2018-05-18 16:55:51,986 [INFO ][main            ][                     MqSender2] - Send JSON file: D:/!Projects/!USPN/04_07-SUD/regress/7/07_00004_upload_to_VIO_link_to_17_00001/testData/Reg_UOPS-S_SaveDocAndCont.json
+2018-05-18 16:55:52,122 [INFO ][main            ][                     MqSender2] - Enter the ID of document: 1
+2018-05-18 16:56:11,535 [INFO ][main            ][                     MqSender2] - Send JSON file: D:/!Projects/!USPN/04_07-SUD/regress/7/07_00004_upload_to_VIO_link_to_17_00001/testData/Reg_UOPS-S_SaveDocAndCont.json
+2018-05-18 16:56:14,023 [INFO ][main            ][                     MqSender2] - Enter the ID of document: 1
+2018-05-18 16:56:22,617 [INFO ][main            ][                     MqSender2] - Send JSON file: D:/!Projects/!USPN/04_07-SUD/regress/7/07_00004_upload_to_VIO_link_to_17_00001/testData/Reg_UOPS-S_SaveDocAndCont.json
+2018-05-18 16:56:22,766 [INFO ][main            ][                     MqSender2] - Enter the ID of document: 1
+2018-05-18 16:56:22,767 [INFO ][main            ][                     MqSender2] - Send SOAP file: D:/!Projects/!USPN/04_07-SUD/regress/7/07_00004_upload_to_VIO_link_to_17_00001/testData/kvit/start-UOPS-S-63-ET.xml
+	with DocumentRef id: 1
+	with RequestId: 42ae3d2a70f24cf7a92130e71d793ca8.
+2018-05-18 16:56:46,374 [INFO ][main            ][                     MqSender2] - Send JSON file: D:/!Projects/!USPN/04_07-SUD/regress/7/07_00004_upload_to_VIO_link_to_17_00001/testData/Reg_UOPS-S_SaveDocAndCont.json
+2018-05-18 16:56:46,497 [INFO ][main            ][                     MqSender2] - Enter the ID of document: 1
+2018-05-18 16:56:46,498 [INFO ][main            ][                     MqSender2] - Send SOAP
+	file: D:/!Projects/!USPN/04_07-SUD/regress/7/07_00004_upload_to_VIO_link_to_17_00001/testData/kvit/start-UOPS-S-63-ET.xml
+	with DocumentRef id: 1
+	with RequestId: 42ae3d2a70f24cf7a92130e71d793ca8.
+2018-05-18 18:03:49,999 [INFO ][main            ][                     MqSender2] - Send JSON file: D:/!Projects/!USPN/04_07-SUD/regress/7/07_00004_upload_to_VIO_link_to_17_00001/testData/Reg_UOPS-S_SaveDocAndCont.json
+2018-05-18 18:03:59,535 [INFO ][main            ][                     MqSender2] - Send JSON file: D:/!Projects/!USPN/04_07-SUD/regress/7/07_00004_upload_to_VIO_link_to_17_00001/testData/Reg_UOPS-S_SaveDocAndCont.json
+2018-05-18 18:06:39,113 [INFO ][main            ][                     MqSender2] - Send JSON file: D:/!Projects/!USPN/04_07-SUD/regress/7/07_00004_upload_to_VIO_link_to_17_00001/testData/Reg_UOPS-S_SaveDocAndCont.json
+2018-05-18 18:06:39,465 [ERROR][main            ][                     MqSender2] - FAILDE
+javax.xml.bind.UnmarshalException
+ - with linked exception:
+[org.xml.sax.SAXParseException; lineNumber: 1; columnNumber: 1; Content is not allowed in prolog.]
+	at javax.xml.bind.helpers.AbstractUnmarshallerImpl.createUnmarshalException(AbstractUnmarshallerImpl.java:335)
+	at com.sun.xml.internal.bind.v2.runtime.unmarshaller.UnmarshallerImpl.createUnmarshalException(UnmarshallerImpl.java:563)
+	at com.sun.xml.internal.bind.v2.runtime.unmarshaller.UnmarshallerImpl.unmarshal0(UnmarshallerImpl.java:249)
+	at com.sun.xml.internal.bind.v2.runtime.unmarshaller.UnmarshallerImpl.unmarshal(UnmarshallerImpl.java:214)
+	at javax.xml.bind.helpers.AbstractUnmarshallerImpl.unmarshal(AbstractUnmarshallerImpl.java:157)
+	at javax.xml.bind.helpers.AbstractUnmarshallerImpl.unmarshal(AbstractUnmarshallerImpl.java:214)
+	at MqSender2.setRequestIdFromJSONToSOAP(MqSender2.java:89)
+	at MqSender2.run(MqSender2.java:58)
+	at MqSender2.main(MqSender2.java:34)
+Caused by: org.xml.sax.SAXParseException; lineNumber: 1; columnNumber: 1; Content is not allowed in prolog.
+	at com.sun.org.apache.xerces.internal.util.ErrorHandlerWrapper.createSAXParseException(ErrorHandlerWrapper.java:203)
+	at com.sun.org.apache.xerces.internal.util.ErrorHandlerWrapper.fatalError(ErrorHandlerWrapper.java:177)
+	at com.sun.org.apache.xerces.internal.impl.XMLErrorReporter.reportError(XMLErrorReporter.java:400)
+	at com.sun.org.apache.xerces.internal.impl.XMLErrorReporter.reportError(XMLErrorReporter.java:327)
+	at com.sun.org.apache.xerces.internal.impl.XMLScanner.reportFatalError(XMLScanner.java:1472)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentScannerImpl$PrologDriver.next(XMLDocumentScannerImpl.java:994)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentScannerImpl.next(XMLDocumentScannerImpl.java:602)
+	at com.sun.org.apache.xerces.internal.impl.XMLNSDocumentScannerImpl.next(XMLNSDocumentScannerImpl.java:112)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl.scanDocument(XMLDocumentFragmentScannerImpl.java:505)
+	at com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:841)
+	at com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:770)
+	at com.sun.org.apache.xerces.internal.parsers.XMLParser.parse(XMLParser.java:141)
+	at com.sun.org.apache.xerces.internal.parsers.AbstractSAXParser.parse(AbstractSAXParser.java:1213)
+	at com.sun.org.apache.xerces.internal.jaxp.SAXParserImpl$JAXPSAXParser.parse(SAXParserImpl.java:643)
+	at com.sun.xml.internal.bind.v2.runtime.unmarshaller.UnmarshallerImpl.unmarshal0(UnmarshallerImpl.java:243)
+	... 6 more
+2018-05-18 18:06:39,470 [INFO ][main            ][                     MqSender2] - Enter the ID of document: 1
+2018-05-18 18:06:39,471 [INFO ][main            ][                     MqSender2] - Send SOAP file: D:/!Projects/!USPN/04_07-SUD/regress/7/07_00004_upload_to_VIO_link_to_17_00001/testData/kvit/start-UOPS-S-63-ET.xml
+	with DocumentRef id: 1
+	with RequestId: 42ae3d2a70f24cf7a92130e71d793ca8.
+2018-05-18 18:08:17,261 [INFO ][main            ][                     MqSender2] - Send JSON file: D:/!Projects/!USPN/04_07-SUD/regress/7/07_00004_upload_to_VIO_link_to_17_00001/testData/Reg_UOPS-S_SaveDocAndCont.json
+2018-05-18 18:08:17,517 [ERROR][main            ][                     MqSender2] - FAILDE
+javax.xml.bind.UnmarshalException
+ - with linked exception:
+[org.xml.sax.SAXParseException; lineNumber: 1; columnNumber: 1; Content is not allowed in prolog.]
+	at javax.xml.bind.helpers.AbstractUnmarshallerImpl.createUnmarshalException(AbstractUnmarshallerImpl.java:335)
+	at com.sun.xml.internal.bind.v2.runtime.unmarshaller.UnmarshallerImpl.createUnmarshalException(UnmarshallerImpl.java:563)
+	at com.sun.xml.internal.bind.v2.runtime.unmarshaller.UnmarshallerImpl.unmarshal0(UnmarshallerImpl.java:249)
+	at com.sun.xml.internal.bind.v2.runtime.unmarshaller.UnmarshallerImpl.unmarshal(UnmarshallerImpl.java:214)
+	at javax.xml.bind.helpers.AbstractUnmarshallerImpl.unmarshal(AbstractUnmarshallerImpl.java:157)
+	at javax.xml.bind.helpers.AbstractUnmarshallerImpl.unmarshal(AbstractUnmarshallerImpl.java:214)
+	at MqSender2.setRequestIdFromJSONToSOAP(MqSender2.java:90)
+	at MqSender2.run(MqSender2.java:58)
+	at MqSender2.main(MqSender2.java:34)
+Caused by: org.xml.sax.SAXParseException; lineNumber: 1; columnNumber: 1; Content is not allowed in prolog.
+	at com.sun.org.apache.xerces.internal.util.ErrorHandlerWrapper.createSAXParseException(ErrorHandlerWrapper.java:203)
+	at com.sun.org.apache.xerces.internal.util.ErrorHandlerWrapper.fatalError(ErrorHandlerWrapper.java:177)
+	at com.sun.org.apache.xerces.internal.impl.XMLErrorReporter.reportError(XMLErrorReporter.java:400)
+	at com.sun.org.apache.xerces.internal.impl.XMLErrorReporter.reportError(XMLErrorReporter.java:327)
+	at com.sun.org.apache.xerces.internal.impl.XMLScanner.reportFatalError(XMLScanner.java:1472)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentScannerImpl$PrologDriver.next(XMLDocumentScannerImpl.java:994)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentScannerImpl.next(XMLDocumentScannerImpl.java:602)
+	at com.sun.org.apache.xerces.internal.impl.XMLNSDocumentScannerImpl.next(XMLNSDocumentScannerImpl.java:112)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl.scanDocument(XMLDocumentFragmentScannerImpl.java:505)
+	at com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:841)
+	at com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:770)
+	at com.sun.org.apache.xerces.internal.parsers.XMLParser.parse(XMLParser.java:141)
+	at com.sun.org.apache.xerces.internal.parsers.AbstractSAXParser.parse(AbstractSAXParser.java:1213)
+	at com.sun.org.apache.xerces.internal.jaxp.SAXParserImpl$JAXPSAXParser.parse(SAXParserImpl.java:643)
+	at com.sun.xml.internal.bind.v2.runtime.unmarshaller.UnmarshallerImpl.unmarshal0(UnmarshallerImpl.java:243)
+	... 6 more
+2018-05-18 18:22:25,023 [INFO ][main            ][                     MqSender2] - Send JSON file: D:/!Projects/!USPN/04_07-SUD/regress/7/07_00004_upload_to_VIO_link_to_17_00001/testData/Reg_UOPS-S_SaveDocAndCont.json
+2018-05-18 18:22:25,207 [INFO ][main            ][                     MqSender2] - Enter the ID of document: 1
+2018-05-18 18:22:25,208 [INFO ][main            ][                     MqSender2] - Send SOAP file: D:/!Projects/!USPN/04_07-SUD/regress/7/07_00004_upload_to_VIO_link_to_17_00001/testData/kvit/start-UOPS-S-63-ET.xml
+	with DocumentRef id: 1
+	with RequestId: 42ae3d2a70f24cf7a92130e71d793ca8.
+2018-05-18 18:22:33,594 [INFO ][main            ][                     MqSender2] - Send JSON file: D:/!Projects/!USPN/04_07-SUD/regress/7/07_00004_upload_to_VIO_link_to_17_00001/testData/Reg_UOPS-S_SaveDocAndCont.json
+2018-05-18 18:22:33,766 [INFO ][main            ][                     MqSender2] - Enter the ID of document: 1
+2018-05-18 18:22:33,766 [INFO ][main            ][                     MqSender2] - Send SOAP file: D:/!Projects/!USPN/04_07-SUD/regress/7/07_00004_upload_to_VIO_link_to_17_00001/testData/kvit/start-UOPS-S-63-ET.xml
+	with DocumentRef id: 1
+	with RequestId: 42ae3d2a70f24cf7a92130e71d793ca8.
+2018-05-18 18:24:23,803 [INFO ][main            ][                     MqSender2] - Send JSON file: D:/!Projects/!USPN/04_07-SUD/regress/7/07_00004_upload_to_VIO_link_to_17_00001/testData/Reg_UOPS-S_SaveDocAndCont.json
+2018-05-18 18:24:23,977 [INFO ][main            ][                     MqSender2] - Enter the ID of document: 1
+2018-05-18 18:24:23,977 [INFO ][main            ][                     MqSender2] - Send SOAP file: D:/!Projects/!USPN/04_07-SUD/regress/7/07_00004_upload_to_VIO_link_to_17_00001/testData/kvit/start-UOPS-S-63-ET.xml
+	with DocumentRef id: 1
+	with RequestId: 42ae3d2a70f24cf7a92130e71d793ca8.
+2018-05-18 18:39:03,583 [INFO ][main            ][                     MqSender2] - Send JSON file: D:/!Projects/!USPN/04_07-SUD/regress/7/07_00004_upload_to_VIO_link_to_17_00001/testData/Reg_UOPS-S_SaveDocAndCont.json
