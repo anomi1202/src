@@ -1,5 +1,4 @@
 import Common.FileUtils;
-import Common.MQClient;
 
 import javax.jms.*;
 import java.io.IOException;
