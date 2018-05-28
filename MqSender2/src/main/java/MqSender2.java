@@ -5,6 +5,7 @@ import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
 import com.google.gson.JsonElement;
 import com.google.gson.JsonObject;
+import com.sun.xml.internal.bind.v2.runtime.output.XmlOutput;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import sun.nio.ch.IOUtil;
@@ -13,14 +14,15 @@ import javax.xml.bind.JAXBContext;
 import javax.xml.bind.JAXBElement;
 import javax.xml.bind.JAXBException;
 import javax.xml.bind.Unmarshaller;
-import javax.xml.stream.XMLInputFactory;
-import javax.xml.stream.XMLStreamReader;
-import javax.xml.stream.events.XMLEvent;
+import javax.xml.namespace.QName;
+import javax.xml.stream.*;
+import javax.xml.stream.events.*;
 import java.io.*;
 import java.nio.charset.Charset;
 import java.nio.file.Files;
 import java.nio.file.Paths;
 import java.util.ArrayList;
+import java.util.Iterator;
 import java.util.Properties;
 import java.util.regex.Pattern;
 
@@ -39,8 +41,7 @@ public class MqSender2 {
         JCommander jCommander = new JCommander(mqSender2);
         try {
             jCommander.parse(args);
-            mqSender2.setParamJSONDocToSOAP(1, "42ae3d2a70f24cf7a92130e71d793ca8");
-//            mqSender2.run();
+            mqSender2.run();
         } catch (ParameterException e) {
             jCommander.usage();
         }
@@ -97,8 +98,8 @@ public class MqSender2 {
     }
 
     private void setParamJSONDocToSOAP(int documentRefId, String requestID) throws Exception {
-        String newRequestID = String.format("<ns1:RequestId>%saaaaaaaaaaaaaaaaaaaaaaaaa</ns1:RequestId>", requestID);
-        String newDocumentRefId = String.format("DocumentRef id=\"%daaaaaaaaaaaaaaaaaaaa\"", documentRefId);
+        String newRequestID = String.format("\t\t<ns1:RequestId>%saaaaaaaaaaaaaaaaaaaaaaaaa</ns1:RequestId>", requestID);
+        String newDocumentRefId = String.format("\t\t<n1:DocumentRef id=\"%daaaaaaaaaaaaaaaaaaaa\" contentNumber=\"1\"/>", documentRefId);
 
         Pattern patternRequestID = Pattern.compile("\t\t<n1:DocumentRef id=\"[0-9]+\" contentNumber=\"1\"/>");
         Pattern patternDocumentRefId = Pattern.compile("\t\t<ns1:RequestId>[0-9 A-Z a-z]+</ns1:RequestId>");
@@ -106,9 +107,9 @@ public class MqSender2 {
         ArrayList<String> xmlLines = (ArrayList<String>) Files.readAllLines(Paths.get(PATH_FILE_SOAP));
         xmlLines.forEach((value) -> {
             if (patternDocumentRefId.matcher(value).matches()){
-                value += newDocumentRefId;
+                value = newDocumentRefId;
             } else if (patternRequestID.matcher(value).matches()){
-                value += newRequestID;
+                value = newRequestID;
             }
         });
 
@@ -116,20 +117,54 @@ public class MqSender2 {
     }
 
     private void setParamJSONDocToSOAP() throws Exception {
-        try (InputStream is = Files.newInputStream(Paths.get(PATH_FILE_SOAP))){
-            XMLStreamReader xmlReader = XMLInputFactory.newInstance().createXMLStreamReader(is);
-            while (xmlReader.hasNext()){
-                int event = xmlReader.next();
-                if (event == XMLEvent.START_ELEMENT) {
-                    String tagName = xmlReader.getLocalName();
-                    String valueText = "";
-                    if (tagName.equals("RequestId")) {
-                        valueText = xmlReader.getElementText();
-                    } else if (tagName.equals("DocumentRef")){
-                        valueText = xmlReader.getAttributeValue(null, "id");
+        InputStream is = Files.newInputStream(Paths.get(PATH_FILE_SOAP));
+        OutputStream os = Files.newOutputStream(Paths.get(PATH_FILE_SOAP + "_tmp"));
+        try{
+            XMLEventReader xmlEventReader = XMLInputFactory.newInstance().createXMLEventReader(is);
+            XMLEventWriter xmlEventWriter = XMLOutputFactory.newInstance().createXMLEventWriter(os);
+            while (xmlEventReader.hasNext()){
+                XMLEvent xmlEvent = xmlEventReader.nextEvent();
+
+                if (xmlEvent.isStartElement()){
+                    StartElement startElement = xmlEvent.asStartElement();
+                    if (startElement.getName().toString().contains("RequestId") || startElement.getName().toString().contains("DocumentRef")) {
+                        System.out.println(startElement.getName());
+
+                        Iterator iterator = startElement.getAttributes();
+                        while (iterator.hasNext()){
+                            Attribute attribute = (Attribute) iterator.next();
+                            QName qName = attribute.getName();
+                            String value = attribute.getValue();
+                            System.out.println(String.format("\t%s: %s", qName, value));
+                        }
+
+                        xmlEvent = xmlEventReader.nextEvent();
+                        if (xmlEvent.isCharacters()){
+                            Characters character = xmlEvent.asCharacters();
+                            if (!character.isWhiteSpace()) {
+                                System.out.println(String.format("\tText:\t%s", character));
+                            }
+                        }
                     }
-                    System.out.println(tagName + " - " + valueText);
                 }
+
+                if (xmlEvent.isEndElement()){
+                    EndElement endElement = xmlEvent.asEndElement();
+                    if (endElement.getName().toString().contains("RequestId") || endElement.getName().toString().contains("DocumentRef")) {
+                        System.out.println(endElement.getName());
+                    }
+                }
+
+
+                xmlEventWriter.add(xmlEvent);
+            }
+            xmlEventWriter.flush();
+        } finally {
+            if (is != null){
+                is.close();
+            }
+            if (os != null){
+                os.close();
             }
         }
     }
