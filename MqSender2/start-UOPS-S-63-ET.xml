@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?><soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope" xmlns:wsa="http://www.w3.org/2005/08/addressing" xmlns:ns1="http://r-style.com/2014/routing" xmlns:n1="http://vio.pfr.ru/document/up/1.0">
+	<soap:Header>
+		<wsa:MessageID>5000f5e75dd878e2b000000000ad1111</wsa:MessageID>
+		<wsa:From>
+			<wsa:Address>urn:region:777000:UVKiP</wsa:Address>
+		</wsa:From>
+		<wsa:To>urn:region:777000:UVKiP</wsa:To>
+		<wsa:Action>urn:process:5:1.0</wsa:Action>
+		<ns1:RequestId>f0a28c94e50a435d885eeafe3c6a1d35</ns1:RequestId>
+	</soap:Header>
+	<soap:Body>
+		<n1:DocumentRef id="1" contentNumber="1"></n1:DocumentRef>
+	</soap:Body>
+</soap:Envelope>

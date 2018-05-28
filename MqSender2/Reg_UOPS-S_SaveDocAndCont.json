@@ -1,0 +1,26 @@
+{
+  "operation": "saveDocumentAndContent",
+  "request": {
+    "contentBody": "H4sICEeiAVoEAM/U0F84NjAyMTYxNzQ3XzAwMF/Tzs/RLdFfMjAxNzA4MzFfMmZkZDQ1MDAtM2VlOS00MzgzLWIzMDQtYzQ2NzE4OGJlZGRiLlhNTAC1WMtu01AQ3SPxD1H2ju08nciYDQ8hwQqQ2JYkQCRIEKkoy0LKSyC1lFZUQFISEGKDCCGB0jz4hfEfcebajuPYcU0Aq67se2fOzJx52I5+8t6tm7G75Tv1Sq16Iq4mlHisXC3WSpXq9RPxy5fOSFo8Vl9dqZZWbtaq5RPxai1+0jh+TKfPtEP79IHexYBQrZ+I31hdvV2QZfplbiTMdXNDpm3zPm1TS6YmS8r0nlq4aEvUlpOKmpMUTVLycUu/cK9emWKsra0l1lKJ2p3rEFRU+cqF8xeLN8q3VqRKlZ0plh0t2qIPAaZ5eSqybdmP4KH5gA6w+wzrD2lCfXPTfIqVQYC7f4wZhPGeOgEIZoPGdGBu4HyEcx2e9KiLtTE8G1DHxUtLioo/4NUrhbpg6HytuLKKXEbwLDgfsSX1EvfqpTgqI4ZDnxGxl6zld/D/kHqI4Acie2A+m9l1FDsFVFYXtHUNoKesEHXZsxOs1gRTIxqY6wZ8wpGWTl+yFd29WX/kUId0K157ZW6VEbtQGwFg7GSIawUtMUHORrgfMqyzJ6QGBrXpPay+ZK8AsQvxDv6/RMW+ilnQuvx3Jhb4u4eLpqFllaSaVXPpnGXG3XHVnJ3ZJfj9Cwzdh4VDXPfgRR8n+/PTZ/EVdS1p87m75+67yYCVfQPJ9a4E6rTNhrD41YqSM2c+sTyYxuzTcuqF9oF8gAba5HY0N93KSsH4AiEbNMQV0ZE/qQW9b5wAA3Fsgc63yGgTHbCNuybud2FkoZJtJoylHegNUfWZdFbW8hmg+faOZABNjPpuIC9DZo0D5DUEPDQbLh8Aj6gSkCT5j7MUMBJoB5rfuKa5yj2RhY+KTJRRsXBkZLKanGVu5zYC41zKa130c1+Q+R3OPeXeAWMPWF48cHpi7XBON3we/cvZ9JpaYm7vIr4t+ojK/fJfZlLIfMrlknk1o6W1bNB88h+OVGCa/oJwHmJvwmvnAxxr2SJhYvBhxD0jZgp4fYHzE+3ydICLfpmjIfdoBDFAvMHZZJjpehT1Fhh4TAPubi5Xg2cU5x5wW+zXFNIvuzALR1NiGffSj/PnTKspSk7K5RQ8vLOxFBr5aI3ArLuZcxfnnknuRsQHmw6CJpyfWTaEJfi5aM/77oPReGiH0OehwYNbOPMHtRVcU21c9rn/GD5qTXlraZ8GTPN8JUWtoD2r29k+0xCtekKqxh0LO4La74zNMCBMsLfOAxioE/Z5gexcpiNkQKc9VMIvATP+tzn6QuPlMgPFZbMC1X+RCbHVYSoAsAFyxoaWT2c064CuX8BD/EJSrW3vx4LztjlEsr7bbxJdcxOOjQFtP2PMR3PU6fzFVzh7+dwpI3mtVEpnFEVKlct5KZ3SUtLVFL4FiulsTtW0q+VS6SqMOvI+EPf1h4tMMO585aTUS0mloGYLybyN4Bf2f0BggnE9CrGeG78cIOl5r5ugwBvWk5Z13TdGfr5aHNABZmZGgzfLA/i9ELPyJTeJiHwK7q5Pcxc5URCd/mKA29/HIb2GeBAAAA\u003d\u003d",
+    "contentDescription": "Решение суда",
+    "contentType": "application/gzip",
+    "documentChannelType": 13,
+    "documentDate": "2018-05-04T10:00:00.000+03:00",
+    "documentAcceptDate": "2018-05-04T10:00:00.000+03:00",
+    "documentDescription": "Уведомление о вступлении в силу решения суда о признании договора об обязательном пенсионном страховании заключенным ненадлежащими сторонам",
+    "documentFrom": "urn:region:777000:UVKiP",
+    "documentTo": "urn:region:777000:USPN",
+    "documentKind": 1,
+    "documentNumber": "7-00004-ET",
+    "documentReceiver": "101-000",
+    "documentReceiverType": 4,
+    "documentSender": 7726486023,
+    "documentSenderType": 3,
+    "documentStatus": 1,
+    "documentType": 63,
+    "fileName": "ПФР_8602161747_000_УОПС-С_20170831_2fdd4500-3ee9-4383-b304-c467188beddb.xml.gz",
+    "mimeType": "application/gzip"
+  },
+  "requestId": "f0a28c94e50a435d885eeafe3c6a1d35",
+  "systemName": "NPF"
+}
