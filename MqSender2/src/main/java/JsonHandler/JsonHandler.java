@@ -6,30 +6,34 @@ import org.slf4j.LoggerFactory;
 
 import java.io.IOException;
 import java.nio.file.Path;
+import java.nio.file.Paths;
 import java.util.Base64;
 import java.util.UUID;
 
 
 public class JsonHandler extends AbstractJsonHandler{
     private Logger logger = LoggerFactory.getLogger(JsonHandler.class);
+    private Path PATH_FILE_ARCHIVE_DOC;
     private String archDocBase64;
     private String requestId;
 
-    public JsonHandler(Path jsonFilePath, Path pathFileArchiveDoc) {
-        super(jsonFilePath);
+    public JsonHandler(Path PATH_FILE_JSON, Path PATH_FILE_ARCHIVE_DOC) {
+        super(PATH_FILE_JSON);
         this.requestId = UUID.randomUUID().toString().replace("-", "");
 
-        if (pathFileArchiveDoc != null) {
-            archDocEncodeToBase64(pathFileArchiveDoc);
+        if (PATH_FILE_ARCHIVE_DOC != null) {
+            this.PATH_FILE_ARCHIVE_DOC = PATH_FILE_ARCHIVE_DOC;
+            archDocEncodeToBase64(PATH_FILE_ARCHIVE_DOC);
         }
     }
 
     public void jsonGenerate() {
-        setValueToTag(jsonFilePath, "requestId", requestId);
+        setValueToTag(PATH_FILE_JSON, "requestId", requestId);
         logger.info(String.format("Generate JSON with requestId: %s", requestId));
 
         if (archDocBase64 != null) {
-            setValueToTag(jsonFilePath, "contentBody", archDocBase64);
+            setValueToTag(PATH_FILE_JSON, "contentBody", archDocBase64);
+            setValueToTag(PATH_FILE_JSON, "fileName", PATH_FILE_ARCHIVE_DOC.getFileName().toString());
             logger.info(String.format("Generate JSON with contentBody: %s", archDocBase64));
         }
     }

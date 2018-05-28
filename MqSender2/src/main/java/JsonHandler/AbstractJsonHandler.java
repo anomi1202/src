@@ -16,20 +16,21 @@ import java.util.Map;
 
 abstract class AbstractJsonHandler {
     private Logger logger = LoggerFactory.getLogger(AutoCloseable.class);
-    Path jsonFilePath;
+    protected Path PATH_FILE_JSON;
 
-    AbstractJsonHandler(Path jsonFilePath) {
-        this.jsonFilePath = jsonFilePath;
+    AbstractJsonHandler(Path PATH_FILE_JSON) {
+        this.PATH_FILE_JSON = PATH_FILE_JSON;
     }
 
-    protected void setValueToTag(Path jsonFilePath, String tagName, String newValue) {
-        try (BufferedReader fileReader = Files.newBufferedReader(jsonFilePath)) {
+    protected void setValueToTag(Path PATH_FILE_JSON, String tagName, String newValue) {
+        try (BufferedReader fileReader = Files.newBufferedReader(PATH_FILE_JSON)) {
             Gson jsonDoc = new GsonBuilder().setPrettyPrinting().create();
             JsonObject jsonObject = jsonDoc.fromJson(fileReader, JsonElement.class).getAsJsonObject();
 
             setValueToTag(tagName, newValue, jsonObject);
-            try (BufferedWriter fileWriter = Files.newBufferedWriter(jsonFilePath)) {
-                fileWriter.write(jsonDoc.toJson(jsonObject));
+            try (BufferedWriter fileWriter = Files.newBufferedWriter(PATH_FILE_JSON)) {
+                String json = jsonDoc.toJson(jsonObject).replace("\\u003d", "=").replace("  ", "\t");
+                fileWriter.write(json);
                 fileWriter.flush();
             }
         } catch (IOException e) {
@@ -52,7 +53,7 @@ abstract class AbstractJsonHandler {
 
     public String getValueFromTag(String tagName) throws IOException {
         String tagValue = "";
-        try (BufferedReader fileReader = Files.newBufferedReader(jsonFilePath)) {
+        try (BufferedReader fileReader = Files.newBufferedReader(PATH_FILE_JSON)) {
             Gson jsonDoc = new GsonBuilder().setPrettyPrinting().create();
             JsonObject jsonObject = jsonDoc.fromJson(fileReader, JsonElement.class).getAsJsonObject();
             tagValue = getValueFromTag(tagName, jsonObject);
