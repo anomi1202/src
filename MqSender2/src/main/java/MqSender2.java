@@ -1,9 +1,10 @@
+import EHDComminucation.EhdPageHandler;
+import Enums.ESenderDocType;
 import JsonHandler.JsonHandler;
 import XmlHandler.XmlHandler;
 import com.beust.jcommander.JCommander;
 import com.beust.jcommander.Parameter;
 import com.beust.jcommander.ParameterException;
-import Enums.ESenderDocType;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -11,7 +12,6 @@ import java.io.*;
 import java.nio.file.Files;
 import java.nio.file.Path;
 import java.nio.file.Paths;
-import java.nio.file.StandardCopyOption;
 import java.util.Properties;
 
 public class MqSender2 {
@@ -27,6 +27,9 @@ public class MqSender2 {
 
     @Parameter(names = {"ARCH", "arch", "-a"}, description = "Path of GZ archive of document")
     private static Path PATH_FILE_ARCHIVE_DOC;
+
+    @Parameter(names = {"-br", "-browser", "browser"}, description = "Type of start app.")
+    private static boolean withBrowser = false;
 
     public static void main(String[] args) {
         MqSender2 mqSender2 = new MqSender2();
@@ -49,12 +52,12 @@ public class MqSender2 {
         try {
             jsonHandler.jsonGenerate();
             initPropForMQSender(ESenderDocType.JSON);
-//            send(ESenderDocType.JSON);
+            send(ESenderDocType.JSON);
 
             if (PATH_FILE_SOAP != null) {
                 initPropForMQSender(ESenderDocType.SOAP);
                 initSoap(jsonHandler);
-//                send(ESenderDocType.SOAP);
+                send(ESenderDocType.SOAP);
             }
 
         } catch (Exception e) {
@@ -63,7 +66,8 @@ public class MqSender2 {
     }
 
     private void initSoap(JsonHandler jsonHandler) throws IllegalArgumentException,IOException {
-        long documentRef = askUserAboutID();
+        String docName = jsonHandler.getValueFromTag("documentNumber");
+        long documentRef = withBrowser ? new EhdPageHandler().searchDocument(docName).getDocumentId() : askUserAboutID();
         logger.info(String.format("EHD ID of document: %d", documentRef));
 
         String requestID = jsonHandler.getValueFromTag("requestId");
