@@ -63,7 +63,7 @@ public class ApplicationManager {
 
     public WebElement findElement(By locator) {
         WebElement element = new WebDriverWait(driver, 10).until((d) -> driver.findElement(locator));
-        // для прогрузки анимации, усыпляем поток
+        // ??? ????????? ????????, ???????? ?????
         try {
             sleep(3000);
         } catch (InterruptedException e) {
