@@ -3,8 +3,9 @@ package XmlHandler;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-import javax.xml.stream.*;
-import java.io.InputStream;
+import javax.xml.stream.XMLEventWriter;
+import javax.xml.stream.XMLOutputFactory;
+import javax.xml.stream.XMLStreamException;
 import java.io.OutputStream;
 
 public class XmlHandlerWriter implements AutoCloseable{

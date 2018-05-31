@@ -1,9 +1,12 @@
+import EHDComminucation.EhdPageHandler;
+import Enums.ESenderDocType;
 import JsonHandler.JsonHandler;
+import Utils.JsonExtensionChecks;
+import Utils.SoapExtensionChecks;
 import XmlHandler.XmlHandler;
 import com.beust.jcommander.JCommander;
 import com.beust.jcommander.Parameter;
 import com.beust.jcommander.ParameterException;
-import Enums.ESenderDocType;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -11,22 +14,18 @@ import java.io.*;
 import java.nio.file.Files;
 import java.nio.file.Path;
 import java.nio.file.Paths;
-import java.nio.file.StandardCopyOption;
 import java.util.Properties;
 
 public class MqSender2 {
-    private Logger logger = LoggerFactory.getLogger(MqSender2.class);
+    private static Logger logger = LoggerFactory.getLogger(MqSender2.class);
     public static final String MQSENDER_PROPERTIES = "MQSender.properties";
     public static final String MQSENDER2_PROPERTIES = "MQSender2.properties";
-
-    @Parameter(names = {"JSON", "json", "-j"}, description = "Path to JSON file")
     private static Path PATH_FILE_JSON;
-
-    @Parameter(names = {"SOAP", "soap", "-s"}, description = "Path to SOAP file")
     private static Path PATH_FILE_SOAP;
-
-    @Parameter(names = {"ARCH", "arch", "-a"}, description = "Path of GZ archive of document")
     private static Path PATH_FILE_ARCHIVE_DOC;
+
+    @Parameter(names = {"BROWSER", "browser", "-br"}, description = "Start MQSender using headless browser")
+    private static boolean withBrowser = false;
 
     public static void main(String[] args) {
         MqSender2 mqSender2 = new MqSender2();
@@ -35,6 +34,7 @@ public class MqSender2 {
             jCommander.parse(args);
             mqSender2.run();
         } catch (ParameterException e) {
+            logger.error(String.format("FAILED: %s", e.getLocalizedMessage()));
             jCommander.usage();
         }
     }
@@ -45,8 +45,8 @@ public class MqSender2 {
             return;
         }
 
-        JsonHandler jsonHandler = new JsonHandler(PATH_FILE_JSON, PATH_FILE_ARCHIVE_DOC);
         try {
+            JsonHandler jsonHandler = new JsonHandler(PATH_FILE_JSON, PATH_FILE_ARCHIVE_DOC);
             jsonHandler.jsonGenerate();
             initPropForMQSender(ESenderDocType.JSON);
 //            send(ESenderDocType.JSON);
@@ -59,11 +59,18 @@ public class MqSender2 {
 
         } catch (Exception e) {
             e.printStackTrace();
+        } finally {
+            try {
+                Files.delete(Paths.get(MQSENDER_PROPERTIES));
+            } catch (IOException e) {
+                e.printStackTrace();
+            }
         }
     }
 
     private void initSoap(JsonHandler jsonHandler) throws IllegalArgumentException,IOException {
-        long documentRef = askUserAboutID();
+        String docName = jsonHandler.getValueFromTag("documentNumber");
+        long documentRef = withBrowser ? new EhdPageHandler().searchDocument(docName).getDocumentId() : askUserAboutID();
         logger.info(String.format("EHD ID of document: %d", documentRef));
 
         String requestID = jsonHandler.getValueFromTag("requestId");

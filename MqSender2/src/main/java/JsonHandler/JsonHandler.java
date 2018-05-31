@@ -6,7 +6,6 @@ import org.slf4j.LoggerFactory;
 
 import java.io.IOException;
 import java.nio.file.Path;
-import java.nio.file.Paths;
 import java.util.Base64;
 import java.util.UUID;
 
@@ -17,7 +16,7 @@ public class JsonHandler extends AbstractJsonHandler{
     private String archDocBase64;
     private String requestId;
 
-    public JsonHandler(Path PATH_FILE_JSON, Path PATH_FILE_ARCHIVE_DOC) {
+    public JsonHandler(Path PATH_FILE_JSON, Path PATH_FILE_ARCHIVE_DOC) throws IOException {
         super(PATH_FILE_JSON);
         this.requestId = UUID.randomUUID().toString().replace("-", "");
 
@@ -38,13 +37,14 @@ public class JsonHandler extends AbstractJsonHandler{
         }
     }
 
-    private void archDocEncodeToBase64(Path archFilePath) {
+    private void archDocEncodeToBase64(Path archFilePath) throws IOException {
         try {
             byte[] byteFile = Base64.getEncoder().encode(FileUtils.loadFileData(archFilePath.toFile()));
             archDocBase64 = new String(byteFile);
 
         } catch (IOException e) {
             logger.error("FAILED", e);
+            throw e;
         }
     }
 }
