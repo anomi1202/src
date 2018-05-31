@@ -14,6 +14,7 @@ import java.io.*;
 import java.nio.charset.Charset;
 import java.nio.file.*;
 import java.util.Properties;
+import java.util.stream.Collectors;
 
 public class MqSender2 {
     private static Logger logger = LoggerFactory.getLogger(MqSender2.class);
@@ -62,7 +63,11 @@ public class MqSender2 {
         } catch (Exception e) {
             e.printStackTrace();
         } finally {
-            Paths.get(MQSENDER_PROPERTIES).toFile().deleteOnExit();
+            try{
+                Files.delete(Paths.get(MQSENDER_PROPERTIES));
+            } catch (IOException e) {
+                e.printStackTrace();
+            }
         }
     }
 
@@ -152,12 +157,12 @@ public class MqSender2 {
                     break;
             }
 
+            propFile.setProperty("mq.destination", propDestination);
             propFile.remove("mq.destinationSOAP");
             propFile.remove("mq.destinationJSON");
             propFile.remove("doc.json");
             propFile.remove("doc.soap");
             propFile.remove("doc.arch");
-            propFile.setProperty("mq.destination", propDestination);
             propFile.store(os, "Set properties 'mq.destination': " + propDestination);
         } catch (IOException | NullPointerException ex) {
             logger.error("FAILED", ex);
