@@ -1,8 +1,6 @@
 import EHDComminucation.EhdPageHandler;
 import Enums.ESenderDocType;
 import JsonHandler.JsonHandler;
-import Utils.JsonExtensionChecks;
-import Utils.SoapExtensionChecks;
 import XmlHandler.XmlHandler;
 import com.beust.jcommander.JCommander;
 import com.beust.jcommander.Parameter;
@@ -11,10 +9,10 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 import java.io.*;
-import java.nio.charset.Charset;
-import java.nio.file.*;
+import java.nio.file.Files;
+import java.nio.file.Path;
+import java.nio.file.Paths;
 import java.util.Properties;
-import java.util.stream.Collectors;
 
 public class MqSender2 {
     private static Logger logger = LoggerFactory.getLogger(MqSender2.class);
