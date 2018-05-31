@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/EhdPageParse.iml" filepath="$PROJECT_DIR$/.idea/modules/EhdPageParse.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/EhdPageParse_main.iml" filepath="$PROJECT_DIR$/.idea/modules/EhdPageParse_main.iml" group="EhdPageParse" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/EhdPageParse_test.iml" filepath="$PROJECT_DIR$/.idea/modules/EhdPageParse_test.iml" group="EhdPageParse" />
+    </modules>
+  </component>
+</project>
