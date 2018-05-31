@@ -1,42 +1,91 @@
-2018-05-30 10:32:28,483 [INFO ][main            ][       JsonHandler.JsonHandler] - Generate JSON with requestId: d8d837259c8b47f4a5d40d6d6d7762ed
-2018-05-30 10:32:28,500 [INFO ][main            ][       JsonHandler.JsonHandler] - Generate JSON with contentBody: H4sICEeiAVoEAM/U0F84NjAyMTYxNzQ3XzAwMF/Tzs/RLdFfMjAxNzA4MzFfMmZkZDQ1MDAtM2VlOS00MzgzLWIzMDQtYzQ2NzE4OGJlZGRiLlhNTAC1WMtu01AQ3SPxD1H2ju08nciYDQ8hwQqQ2JYkQCRIEKkoy0LKSyC1lFZUQFISEGKDCCGB0jz4hfEfcebajuPYcU0Aq67se2fOzJx52I5+8t6tm7G75Tv1Sq16Iq4mlHisXC3WSpXq9RPxy5fOSFo8Vl9dqZZWbtaq5RPxai1+0jh+TKfPtEP79IHexYBQrZ+I31hdvV2QZfplbiTMdXNDpm3zPm1TS6YmS8r0nlq4aEvUlpOKmpMUTVLycUu/cK9emWKsra0l1lKJ2p3rEFRU+cqF8xeLN8q3VqRKlZ0plh0t2qIPAaZ5eSqybdmP4KH5gA6w+wzrD2lCfXPTfIqVQYC7f4wZhPGeOgEIZoPGdGBu4HyEcx2e9KiLtTE8G1DHxUtLioo/4NUrhbpg6HytuLKKXEbwLDgfsSX1EvfqpTgqI4ZDnxGxl6zld/D/kHqI4Acie2A+m9l1FDsFVFYXtHUNoKesEHXZsxOs1gRTIxqY6wZ8wpGWTl+yFd29WX/kUId0K157ZW6VEbtQGwFg7GSIawUtMUHORrgfMqyzJ6QGBrXpPay+ZK8AsQvxDv6/RMW+ilnQuvx3Jhb4u4eLpqFllaSaVXPpnGXG3XHVnJ3ZJfj9Cwzdh4VDXPfgRR8n+/PTZ/EVdS1p87m75+67yYCVfQPJ9a4E6rTNhrD41YqSM2c+sTyYxuzTcuqF9oF8gAba5HY0N93KSsH4AiEbNMQV0ZE/qQW9b5wAA3Fsgc63yGgTHbCNuybud2FkoZJtJoylHegNUfWZdFbW8hmg+faOZABNjPpuIC9DZo0D5DUEPDQbLh8Aj6gSkCT5j7MUMBJoB5rfuKa5yj2RhY+KTJRRsXBkZLKanGVu5zYC41zKa130c1+Q+R3OPeXeAWMPWF48cHpi7XBON3we/cvZ9JpaYm7vIr4t+ojK/fJfZlLIfMrlknk1o6W1bNB88h+OVGCa/oJwHmJvwmvnAxxr2SJhYvBhxD0jZgp4fYHzE+3ydICLfpmjIfdoBDFAvMHZZJjpehT1Fhh4TAPubi5Xg2cU5x5wW+zXFNIvuzALR1NiGffSj/PnTKspSk7K5RQ8vLOxFBr5aI3ArLuZcxfnnknuRsQHmw6CJpyfWTaEJfi5aM/77oPReGiH0OehwYNbOPMHtRVcU21c9rn/GD5qTXlraZ8GTPN8JUWtoD2r29k+0xCtekKqxh0LO4La74zNMCBMsLfOAxioE/Z5gexcpiNkQKc9VMIvATP+tzn6QuPlMgPFZbMC1X+RCbHVYSoAsAFyxoaWT2c064CuX8BD/EJSrW3vx4LztjlEsr7bbxJdcxOOjQFtP2PMR3PU6fzFVzh7+dwpI3mtVEpnFEVKlct5KZ3SUtLVFL4FiulsTtW0q+VS6SqMOvI+EPf1h4tMMO585aTUS0mloGYLybyN4Bf2f0BggnE9CrGeG78cIOl5r5ugwBvWk5Z13TdGfr5aHNABZmZGgzfLA/i9ELPyJTeJiHwK7q5Pcxc5URCd/mKA29/HIb2GeBAAAA==
-2018-05-30 10:32:36,965 [INFO ][main            ][EHDComminucation.EhdPageHandler] - Инициализация скрытого браузера
-2018-05-30 10:32:47,990 [INFO ][main            ][EHDComminucation.EhdPageHandler] - Загрузка страницы: http://10.0.12.235:2222/uds-admin/
-2018-05-30 10:32:48,470 [INFO ][main            ][EHDComminucation.AbstractEhdPage] - Ожидание окончания процесса: Инициализация...
-2018-05-30 10:32:51,596 [INFO ][main            ][EHDComminucation.AbstractEhdPage] - Ожидание окончания процесса: Инициализация...
-2018-05-30 10:32:54,691 [INFO ][main            ][EHDComminucation.AbstractEhdPage] - Ожидание окончания процесса: Инициализация...
-2018-05-30 10:32:57,784 [INFO ][main            ][EHDComminucation.AbstractEhdPage] - Ожидание окончания процесса: Инициализация...
-2018-05-30 10:33:00,871 [INFO ][main            ][EHDComminucation.AbstractEhdPage] - Ожидание окончания процесса: Инициализация...
-2018-05-30 10:33:03,964 [INFO ][main            ][EHDComminucation.AbstractEhdPage] - Ожидание окончания процесса: Инициализация...
-2018-05-30 10:33:07,037 [INFO ][main            ][EHDComminucation.AbstractEhdPage] - Ожидание окончания процесса: Загрузка...
-2018-05-30 10:33:10,366 [INFO ][main            ][EHDComminucation.AbstractEhdPage] - Поиск документа с номером: 7-00004-ET
-2018-05-30 10:33:10,720 [INFO ][main            ][EHDComminucation.AbstractEhdPage] - Ожидание окончания процесса: Загрузка...
-2018-05-30 10:33:18,990 [INFO ][main            ][EHDComminucation.EhdPageHandler] - Считывание списка последних документов
-2018-05-30 10:33:18,991 [ERROR][main            ][EHDComminucation.EhdPageHandler] - FAILED!
-java.util.NoSuchElementException: Не найден ни один подходящий документ
-	at selectFirstDocumentFromGridWithIndex(EhdPageHandler.java:48)
-	at EHDComminucation.EhdPageHandler.getDocumentId(EhdPageHandler.java:73)
-	at MqSender2.initSoap(MqSender2.java:70)
-	at MqSender2.run(MqSender2.java:59)
-	at MqSender2.main(MqSender2.java:39)
-2018-05-30 10:33:20,082 [INFO ][main            ][EHDComminucation.EhdPageHandler] - Закрытие скрытого браузера
-2018-05-30 10:36:59,844 [INFO ][main            ][       JsonHandler.JsonHandler] - Generate JSON with requestId: 940aa5a9f90749a6961a4f49a3129de6
-2018-05-30 10:36:59,865 [INFO ][main            ][       JsonHandler.JsonHandler] - Generate JSON with contentBody: H4sICEeiAVoEAM/U0F84NjAyMTYxNzQ3XzAwMF/Tzs/RLdFfMjAxNzA4MzFfMmZkZDQ1MDAtM2VlOS00MzgzLWIzMDQtYzQ2NzE4OGJlZGRiLlhNTAC1WMtu01AQ3SPxD1H2ju08nciYDQ8hwQqQ2JYkQCRIEKkoy0LKSyC1lFZUQFISEGKDCCGB0jz4hfEfcebajuPYcU0Aq67se2fOzJx52I5+8t6tm7G75Tv1Sq16Iq4mlHisXC3WSpXq9RPxy5fOSFo8Vl9dqZZWbtaq5RPxai1+0jh+TKfPtEP79IHexYBQrZ+I31hdvV2QZfplbiTMdXNDpm3zPm1TS6YmS8r0nlq4aEvUlpOKmpMUTVLycUu/cK9emWKsra0l1lKJ2p3rEFRU+cqF8xeLN8q3VqRKlZ0plh0t2qIPAaZ5eSqybdmP4KH5gA6w+wzrD2lCfXPTfIqVQYC7f4wZhPGeOgEIZoPGdGBu4HyEcx2e9KiLtTE8G1DHxUtLioo/4NUrhbpg6HytuLKKXEbwLDgfsSX1EvfqpTgqI4ZDnxGxl6zld/D/kHqI4Acie2A+m9l1FDsFVFYXtHUNoKesEHXZsxOs1gRTIxqY6wZ8wpGWTl+yFd29WX/kUId0K157ZW6VEbtQGwFg7GSIawUtMUHORrgfMqyzJ6QGBrXpPay+ZK8AsQvxDv6/RMW+ilnQuvx3Jhb4u4eLpqFllaSaVXPpnGXG3XHVnJ3ZJfj9Cwzdh4VDXPfgRR8n+/PTZ/EVdS1p87m75+67yYCVfQPJ9a4E6rTNhrD41YqSM2c+sTyYxuzTcuqF9oF8gAba5HY0N93KSsH4AiEbNMQV0ZE/qQW9b5wAA3Fsgc63yGgTHbCNuybud2FkoZJtJoylHegNUfWZdFbW8hmg+faOZABNjPpuIC9DZo0D5DUEPDQbLh8Aj6gSkCT5j7MUMBJoB5rfuKa5yj2RhY+KTJRRsXBkZLKanGVu5zYC41zKa130c1+Q+R3OPeXeAWMPWF48cHpi7XBON3we/cvZ9JpaYm7vIr4t+ojK/fJfZlLIfMrlknk1o6W1bNB88h+OVGCa/oJwHmJvwmvnAxxr2SJhYvBhxD0jZgp4fYHzE+3ydICLfpmjIfdoBDFAvMHZZJjpehT1Fhh4TAPubi5Xg2cU5x5wW+zXFNIvuzALR1NiGffSj/PnTKspSk7K5RQ8vLOxFBr5aI3ArLuZcxfnnknuRsQHmw6CJpyfWTaEJfi5aM/77oPReGiH0OehwYNbOPMHtRVcU21c9rn/GD5qTXlraZ8GTPN8JUWtoD2r29k+0xCtekKqxh0LO4La74zNMCBMsLfOAxioE/Z5gexcpiNkQKc9VMIvATP+tzn6QuPlMgPFZbMC1X+RCbHVYSoAsAFyxoaWT2c064CuX8BD/EJSrW3vx4LztjlEsr7bbxJdcxOOjQFtP2PMR3PU6fzFVzh7+dwpI3mtVEpnFEVKlct5KZ3SUtLVFL4FiulsTtW0q+VS6SqMOvI+EPf1h4tMMO585aTUS0mloGYLybyN4Bf2f0BggnE9CrGeG78cIOl5r5ugwBvWk5Z13TdGfr5aHNABZmZGgzfLA/i9ELPyJTeJiHwK7q5Pcxc5URCd/mKA29/HIb2GeBAAAA==
-2018-05-30 10:36:59,895 [INFO ][main            ][                     MqSender2] - Send JSON file: D:\!Projects\!USPN\04_07-SUD\regress\7\07_00004_upload_to_VIO_link_to_17_00001\testData\Reg_UOPS-S_SaveDocAndCont.json
-2018-05-30 10:37:10,557 [INFO ][main            ][EHDComminucation.EhdPageHandler] - Инициализация скрытого браузера
-2018-05-30 10:37:22,076 [INFO ][main            ][EHDComminucation.EhdPageHandler] - Загрузка страницы: http://10.0.12.235:2222/uds-admin/
-2018-05-30 10:37:22,411 [INFO ][main            ][EHDComminucation.AbstractEhdPage] - Ожидание окончания процесса: Инициализация...
-2018-05-30 10:37:25,539 [INFO ][main            ][EHDComminucation.AbstractEhdPage] - Ожидание окончания процесса: Инициализация...
-2018-05-30 10:37:28,631 [INFO ][main            ][EHDComminucation.AbstractEhdPage] - Ожидание окончания процесса: Инициализация...
-2018-05-30 10:37:31,722 [INFO ][main            ][EHDComminucation.AbstractEhdPage] - Ожидание окончания процесса: Инициализация...
-2018-05-30 10:37:34,816 [INFO ][main            ][EHDComminucation.AbstractEhdPage] - Ожидание окончания процесса: Инициализация...
-2018-05-30 10:37:37,907 [INFO ][main            ][EHDComminucation.AbstractEhdPage] - Ожидание окончания процесса: Инициализация...
-2018-05-30 10:37:41,896 [INFO ][main            ][EHDComminucation.AbstractEhdPage] - Ожидание окончания процесса: Загрузка...
-2018-05-30 10:37:45,241 [INFO ][main            ][EHDComminucation.AbstractEhdPage] - Поиск документа с номером: 7-00004-ET
-2018-05-30 10:37:45,569 [INFO ][main            ][EHDComminucation.AbstractEhdPage] - Ожидание окончания процесса: Загрузка...
-2018-05-30 10:37:48,871 [INFO ][main            ][EHDComminucation.EhdPageHandler] - Считывание списка последних документов
-2018-05-30 10:37:50,373 [INFO ][main            ][EHDComminucation.EhdPageHandler] - Открытие карточки выбранного документа
-2018-05-30 10:37:51,525 [INFO ][main            ][EHDComminucation.EhdPageHandler] - Закрытие скрытого браузера
-2018-05-30 10:37:51,526 [INFO ][main            ][                     MqSender2] - EHD ID of document: 1600199
-2018-05-30 10:37:51,527 [INFO ][main            ][                     MqSender2] - RequestID of document: 940aa5a9f90749a6961a4f49a3129de6
-2018-05-30 10:37:51,738 [INFO ][main            ][                     MqSender2] - Send SOAP file: D:\!Projects\!USPN\04_07-SUD\regress\7\07_00004_upload_to_VIO_link_to_17_00001\testData\kvit\start-UOPS-S-63-ET.xml.
+2018-05-31 10:33:14,764 [INFO ][main            ][                     MqSender2] - PATH_FILE_JSON is NULL
+2018-05-31 11:06:32,201 [ERROR][main            ][                     MqSender2] - FAILED
+com.beust.jcommander.ParameterException: Incorrect extension of SOAP file.
+	at Utils.SoapExtensionChecks.validate(SoapExtensionChecks.java:10)
+	at com.beust.jcommander.ParameterDescription.validateParameter(ParameterDescription.java:367)
+	at com.beust.jcommander.ParameterDescription.validateParameter(ParameterDescription.java:333)
+	at com.beust.jcommander.ParameterDescription.addValue(ParameterDescription.java:233)
+	at com.beust.jcommander.JCommander.processFixedArity(JCommander.java:895)
+	at com.beust.jcommander.JCommander.processFixedArity(JCommander.java:870)
+	at com.beust.jcommander.JCommander.parseValues(JCommander.java:721)
+	at com.beust.jcommander.JCommander.parse(JCommander.java:340)
+	at com.beust.jcommander.JCommander.parse(JCommander.java:319)
+	at MqSender2.main(MqSender2.java:40)
+2018-05-31 11:06:41,787 [ERROR][main            ][                     MqSender2] - FAILED
+2018-05-31 11:06:54,992 [ERROR][main            ][                     MqSender2] - FAILED
+2018-05-31 11:08:17,260 [ERROR][main            ][                     MqSender2] - FAILED
+com.beust.jcommander.ParameterException: Incorrect extension of SOAP file.
+	at Utils.SoapExtensionChecks.validate(SoapExtensionChecks.java:10)
+	at com.beust.jcommander.ParameterDescription.validateParameter(ParameterDescription.java:367)
+	at com.beust.jcommander.ParameterDescription.validateParameter(ParameterDescription.java:333)
+	at com.beust.jcommander.ParameterDescription.addValue(ParameterDescription.java:233)
+	at com.beust.jcommander.JCommander.processFixedArity(JCommander.java:895)
+	at com.beust.jcommander.JCommander.processFixedArity(JCommander.java:870)
+	at com.beust.jcommander.JCommander.parseValues(JCommander.java:721)
+	at com.beust.jcommander.JCommander.parse(JCommander.java:340)
+	at com.beust.jcommander.JCommander.parse(JCommander.java:319)
+	at MqSender2.main(MqSender2.java:40)
+2018-05-31 11:10:24,997 [ERROR][main            ][                     MqSender2] - FAILEDIncorrect extension of SOAP file.
+2018-05-31 11:10:48,471 [ERROR][main            ][                     MqSender2] - FAILED: Incorrect extension of SOAP file.
+2018-05-31 11:11:02,770 [ERROR][main            ][                     MqSender2] - FAILED: Expected a value after parameter -s
+2018-05-31 11:11:14,306 [ERROR][main            ][                     MqSender2] - FAILED: The following option is required: [JSON | json | -j]
+2018-05-31 11:14:24,964 [ERROR][main            ][                     MqSender2] - FAILED: Incorrect extension of SOAP file.
+2018-05-31 11:14:44,802 [INFO ][main            ][       JsonHandler.JsonHandler] - Generate JSON with requestId: de598516a935480d85863695a5cd2faf
+2018-05-31 11:14:44,826 [INFO ][main            ][       JsonHandler.JsonHandler] - Generate JSON with contentBody: UEsDBBQAAAAIABSZZ0vHIb2GdAQAAHgQAABLAAAAj5SQXzg2MDIxNjE3NDdfMDAwX5OOj5EtkV8yMDE3MDgzMV8yZmRkNDUwMC0zZWU5LTQzODMtYjMwNC1jNDY3MTg4YmVkZGIuWE1MtVjLbtNQEN0j8Q9R9o7tPJ3ImA0PIcEKkNiWJEAkSBCpKMtCyksgtZRWVEBSEhBigwghgdI8+IXxH3Hm2o7j2HFNAKuu7HtnzsycediOfvLerZuxu+U79UqteiKuJpR4rFwt1kqV6vUT8cuXzkhaPFZfXamWVm7WquUT8WotftI4fkynz7RD+/SB3sWAUK2fiN9YXb1dkGX6ZW4kzHVzQ6Zt8z5tU0umJkvK9J5auGhL1JaTipqTFE1S8nFLv3CvXplirK2tJdZSidqd6xBUVPnKhfMXizfKt1akSpWdKZYdLdqiDwGmeXkqsm3Zj+Ch+YAOsPsM6w9pQn1z03yKlUGAu3+MGYTxnjoBCGaDxnRgbuB8hHMdnvSoi7UxPBtQx8VLS4qKP+DVK4W6YOh8rbiyilxG8Cw4H7El9RL36qU4KiOGQ58RsZes5Xfw/5B6iOAHIntgPpvZdRQ7BVRWF7R1DaCnrBB12bMTrNYEUyMamOsGfMKRlk5fshXdvVl/5FCHdCtee2VulRG7UBsBYOxkiGsFLTFBzka4HzKssyekBga16T2svmSvALEL8Q7+v0TFvopZ0Lr8dyYW+LuHi6ahZZWkmlVz6Zxlxt1x1Zyd2SX4/QsM3YeFQ1z34EUfJ/vz02fxFXUtafO5u+fuu8mAlX0DyfWuBOq0zYaw+NWKkjNnPrE8mMbs03LqhfaBfIAG2uR2NDfdykrB+AIhGzTEFdGRP6kFvW+cAANxbIHOt8hoEx2wjbsm7ndhZKGSbSaMpR3oDVH1mXRW1vIZoPn2jmQATYz6biAvQ2aNA+Q1BDw0Gy4fAI+oEpAk+Y+zFDASaAea37imuco9kYWPikyUUbFwZGSympxlbuc2AuNcymtd9HNfkPkdzj3l3gFjD1hePHB6Yu1wTjd8Hv3L2fSaWmJu7yK+LfqIyv3yX2ZSyHzK5ZJ5NaOltWzQfPIfjlRgmv6CcB5ib8Jr5wMca9kiYWLwYcQ9I2YKeH2B8xPt8nSAi36ZoyH3aAQxQLzB2WSY6XoU9RYYeEwD7m4uV4NnFOcecFvs1xTSL7swC0dTYhn30o/z50yrKUpOyuUUPLyzsRQa+WiNwKy7mXMX555J7kbEB5sOgiacn1k2hCX4uWjP++6D0Xhoh9DnocGDWzjzB7UVXFNtXPa5/xg+ak15a2mfBkzzfCVFraA9q9vZPtMQrXpCqsYdCzuC2u+MzTAgTLC3zgMYqBP2eYHsXKYjZECnPVTCLwEz/rc5+kLj5TIDxWWzAtV/kQmx1WEqALABcsaGlk9nNOuArl/AQ/xCUq1t78eC87Y5RLK+228SXXMTjo0BbT9jzEdz1On8xVc4e/ncKSN5rVRKZxRFSpXLeSmd0lLS1RS+BYrpbE7VtKvlUukqjDryPhD39YeLTDDufOWk1EtJpaBmC8m8jeAX9n9AYIJxPQqxnhu/HCDpea+boMAb1pOWdd03Rn6+WhzQAWZmRoM3ywP4vRCz8iU3iYh8Cu6uT3MXOVEQnf5igNvfUEsBAj8AFAAAAAgAFJlnS8chvYZ0BAAAeBAAAEsAJAAAAAAAAAAgAAAAAAAAAI+UkF84NjAyMTYxNzQ3XzAwMF+Tjo+RLZFfMjAxNzA4MzFfMmZkZDQ1MDAtM2VlOS00MzgzLWIzMDQtYzQ2NzE4OGJlZGRiLlhNTAoAIAAAAAAAAQAYAIA9TSXBV9MBu8rotJX40wG7yui0lfjTAVBLBQYAAAAAAQABAJ0AAADdBAAAAAA=
+2018-05-31 11:14:47,711 [INFO ][main            ][                     MqSender2] - EHD ID of document: 1231
+2018-05-31 11:14:47,713 [INFO ][main            ][                     MqSender2] - RequestID of document: de598516a935480d85863695a5cd2faf
+2018-05-31 11:15:58,952 [INFO ][main            ][       JsonHandler.JsonHandler] - Generate JSON with requestId: b3590b54d2214a9e952c9433f62040b7
+2018-05-31 11:15:58,964 [INFO ][main            ][       JsonHandler.JsonHandler] - Generate JSON with contentBody: UEsDBBQAAAAIABSZZ0vHIb2GdAQAAHgQAABLAAAAj5SQXzg2MDIxNjE3NDdfMDAwX5OOj5EtkV8yMDE3MDgzMV8yZmRkNDUwMC0zZWU5LTQzODMtYjMwNC1jNDY3MTg4YmVkZGIuWE1MtVjLbtNQEN0j8Q9R9o7tPJ3ImA0PIcEKkNiWJEAkSBCpKMtCyksgtZRWVEBSEhBigwghgdI8+IXxH3Hm2o7j2HFNAKuu7HtnzsycediOfvLerZuxu+U79UqteiKuJpR4rFwt1kqV6vUT8cuXzkhaPFZfXamWVm7WquUT8WotftI4fkynz7RD+/SB3sWAUK2fiN9YXb1dkGX6ZW4kzHVzQ6Zt8z5tU0umJkvK9J5auGhL1JaTipqTFE1S8nFLv3CvXplirK2tJdZSidqd6xBUVPnKhfMXizfKt1akSpWdKZYdLdqiDwGmeXkqsm3Zj+Ch+YAOsPsM6w9pQn1z03yKlUGAu3+MGYTxnjoBCGaDxnRgbuB8hHMdnvSoi7UxPBtQx8VLS4qKP+DVK4W6YOh8rbiyilxG8Cw4H7El9RL36qU4KiOGQ58RsZes5Xfw/5B6iOAHIntgPpvZdRQ7BVRWF7R1DaCnrBB12bMTrNYEUyMamOsGfMKRlk5fshXdvVl/5FCHdCtee2VulRG7UBsBYOxkiGsFLTFBzka4HzKssyekBga16T2svmSvALEL8Q7+v0TFvopZ0Lr8dyYW+LuHi6ahZZWkmlVz6Zxlxt1x1Zyd2SX4/QsM3YeFQ1z34EUfJ/vz02fxFXUtafO5u+fuu8mAlX0DyfWuBOq0zYaw+NWKkjNnPrE8mMbs03LqhfaBfIAG2uR2NDfdykrB+AIhGzTEFdGRP6kFvW+cAANxbIHOt8hoEx2wjbsm7ndhZKGSbSaMpR3oDVH1mXRW1vIZoPn2jmQATYz6biAvQ2aNA+Q1BDw0Gy4fAI+oEpAk+Y+zFDASaAea37imuco9kYWPikyUUbFwZGSympxlbuc2AuNcymtd9HNfkPkdzj3l3gFjD1hePHB6Yu1wTjd8Hv3L2fSaWmJu7yK+LfqIyv3yX2ZSyHzK5ZJ5NaOltWzQfPIfjlRgmv6CcB5ib8Jr5wMca9kiYWLwYcQ9I2YKeH2B8xPt8nSAi36ZoyH3aAQxQLzB2WSY6XoU9RYYeEwD7m4uV4NnFOcecFvs1xTSL7swC0dTYhn30o/z50yrKUpOyuUUPLyzsRQa+WiNwKy7mXMX555J7kbEB5sOgiacn1k2hCX4uWjP++6D0Xhoh9DnocGDWzjzB7UVXFNtXPa5/xg+ak15a2mfBkzzfCVFraA9q9vZPtMQrXpCqsYdCzuC2u+MzTAgTLC3zgMYqBP2eYHsXKYjZECnPVTCLwEz/rc5+kLj5TIDxWWzAtV/kQmx1WEqALABcsaGlk9nNOuArl/AQ/xCUq1t78eC87Y5RLK+228SXXMTjo0BbT9jzEdz1On8xVc4e/ncKSN5rVRKZxRFSpXLeSmd0lLS1RS+BYrpbE7VtKvlUukqjDryPhD39YeLTDDufOWk1EtJpaBmC8m8jeAX9n9AYIJxPQqxnhu/HCDpea+boMAb1pOWdd03Rn6+WhzQAWZmRoM3ywP4vRCz8iU3iYh8Cu6uT3MXOVEQnf5igNvfUEsBAj8AFAAAAAgAFJlnS8chvYZ0BAAAeBAAAEsAJAAAAAAAAAAgAAAAAAAAAI+UkF84NjAyMTYxNzQ3XzAwMF+Tjo+RLZFfMjAxNzA4MzFfMmZkZDQ1MDAtM2VlOS00MzgzLWIzMDQtYzQ2NzE4OGJlZGRiLlhNTAoAIAAAAAAAAQAYAIA9TSXBV9MBu8rotJX40wG7yui0lfjTAVBLBQYAAAAAAQABAJ0AAADdBAAAAAA=
+2018-05-31 11:16:00,885 [INFO ][main            ][                     MqSender2] - EHD ID of document: 123456
+2018-05-31 11:16:00,887 [INFO ][main            ][                     MqSender2] - RequestID of document: b3590b54d2214a9e952c9433f62040b7
+2018-05-31 11:43:45,020 [ERROR][main            ][       JsonHandler.JsonHandler] - FAILED
+java.io.FileNotFoundException: D:\!Projects\!USPN\04_07-SUD\regress\7\07_00004_upload_to_VIO_link_to_17_00001\testData\ПФР_8602161747_000_УОПС-С_20170831_2fdd4500-3ee9-4383-b304-c467188beddb.zip (Не удается найти указанный файл)
+	at java.io.FileInputStream.open0(Native Method)
+	at java.io.FileInputStream.open(FileInputStream.java:195)
+	at java.io.FileInputStream.<init>(FileInputStream.java:138)
+	at Common.FileUtils.loadFileData(FileUtils.java:34)
+	at JsonHandler.JsonHandler.archDocEncodeToBase64(JsonHandler.java:42)
+	at JsonHandler.JsonHandler.<init>(JsonHandler.java:25)
+	at MqSender2.run(MqSender2.java:54)
+	at MqSender2.main(MqSender2.java:41)
+2018-05-31 11:43:45,156 [INFO ][main            ][       JsonHandler.JsonHandler] - Generate JSON with requestId: 7a739c3ea30a4ace970dea868f13ee16
+2018-05-31 11:46:14,466 [ERROR][main            ][       JsonHandler.JsonHandler] - FAILED
+java.io.FileNotFoundException: D:\!Projects\!USPN\04_07-SUD\regress\7\07_00004_upload_to_VIO_link_to_17_00001\testData\ПФР_8602161747_000_УОПС-С_20170831_2fdd4500-3ee9-4383-b304-c467188beddb.zip (Не удается найти указанный файл)
+	at java.io.FileInputStream.open0(Native Method)
+	at java.io.FileInputStream.open(FileInputStream.java:195)
+	at java.io.FileInputStream.<init>(FileInputStream.java:138)
+	at Common.FileUtils.loadFileData(FileUtils.java:34)
+	at JsonHandler.JsonHandler.archDocEncodeToBase64(JsonHandler.java:42)
+	at JsonHandler.JsonHandler.<init>(JsonHandler.java:25)
+	at MqSender2.run(MqSender2.java:55)
+	at MqSender2.main(MqSender2.java:41)
+2018-05-31 11:46:14,730 [INFO ][main            ][       JsonHandler.JsonHandler] - Generate JSON with requestId: fefbe3c27b664d6fbf2ec1978c1390f6
+2018-05-31 11:47:43,776 [ERROR][main            ][       JsonHandler.JsonHandler] - FAILED
+java.io.FileNotFoundException: D:\!Projects\!USPN\04_07-SUD\regress\7\07_00004_upload_to_VIO_link_to_17_00001\testData\ПФР_8602161747_000_УОПС-С_20170831_2fdd4500-3ee9-4383-b304-c467188beddb.zip (Не удается найти указанный файл)
+	at java.io.FileInputStream.open0(Native Method)
+	at java.io.FileInputStream.open(FileInputStream.java:195)
+	at java.io.FileInputStream.<init>(FileInputStream.java:138)
+	at Common.FileUtils.loadFileData(FileUtils.java:34)
+	at JsonHandler.JsonHandler.archDocEncodeToBase64(JsonHandler.java:42)
+	at JsonHandler.JsonHandler.<init>(JsonHandler.java:25)
+	at MqSender2.run(MqSender2.java:54)
+	at MqSender2.main(MqSender2.java:41)
+2018-05-31 11:48:14,887 [INFO ][main            ][       JsonHandler.JsonHandler] - Generate JSON with requestId: 27787414574a427990dbad5d107e8e26
+2018-05-31 11:48:20,227 [ERROR][main            ][       JsonHandler.JsonHandler] - FAILED
+java.io.FileNotFoundException: D:\!Projects\!USPN\04_07-SUD\regress\7\07_00004_upload_to_VIO_link_to_17_00001\testData\ПФР_8602161747_000_УОПС-С_20170831_2fdd4500-3ee9-4383-b304-c467188beddb.zip (Не удается найти указанный файл)
+	at java.io.FileInputStream.open0(Native Method)
+	at java.io.FileInputStream.open(FileInputStream.java:195)
+	at java.io.FileInputStream.<init>(FileInputStream.java:138)
+	at Common.FileUtils.loadFileData(FileUtils.java:34)
+	at JsonHandler.JsonHandler.archDocEncodeToBase64(JsonHandler.java:42)
+	at JsonHandler.JsonHandler.<init>(JsonHandler.java:25)
+	at MqSender2.run(MqSender2.java:55)
+	at MqSender2.main(MqSender2.java:41)
+2018-05-31 11:48:50,717 [INFO ][main            ][       JsonHandler.JsonHandler] - Generate JSON with requestId: c907d0329c134ac5b2d6b20b6d6d06be
+2018-05-31 11:48:50,748 [INFO ][main            ][       JsonHandler.JsonHandler] - Generate JSON with contentBody: H4sICEeiAVoEAM/U0F84NjAyMTYxNzQ3XzAwMF/Tzs/RLdFfMjAxNzA4MzFfMmZkZDQ1MDAtM2VlOS00MzgzLWIzMDQtYzQ2NzE4OGJlZGRiLlhNTAC1WMtu01AQ3SPxD1H2ju08nciYDQ8hwQqQ2JYkQCRIEKkoy0LKSyC1lFZUQFISEGKDCCGB0jz4hfEfcebajuPYcU0Aq67se2fOzJx52I5+8t6tm7G75Tv1Sq16Iq4mlHisXC3WSpXq9RPxy5fOSFo8Vl9dqZZWbtaq5RPxai1+0jh+TKfPtEP79IHexYBQrZ+I31hdvV2QZfplbiTMdXNDpm3zPm1TS6YmS8r0nlq4aEvUlpOKmpMUTVLycUu/cK9emWKsra0l1lKJ2p3rEFRU+cqF8xeLN8q3VqRKlZ0plh0t2qIPAaZ5eSqybdmP4KH5gA6w+wzrD2lCfXPTfIqVQYC7f4wZhPGeOgEIZoPGdGBu4HyEcx2e9KiLtTE8G1DHxUtLioo/4NUrhbpg6HytuLKKXEbwLDgfsSX1EvfqpTgqI4ZDnxGxl6zld/D/kHqI4Acie2A+m9l1FDsFVFYXtHUNoKesEHXZsxOs1gRTIxqY6wZ8wpGWTl+yFd29WX/kUId0K157ZW6VEbtQGwFg7GSIawUtMUHORrgfMqyzJ6QGBrXpPay+ZK8AsQvxDv6/RMW+ilnQuvx3Jhb4u4eLpqFllaSaVXPpnGXG3XHVnJ3ZJfj9Cwzdh4VDXPfgRR8n+/PTZ/EVdS1p87m75+67yYCVfQPJ9a4E6rTNhrD41YqSM2c+sTyYxuzTcuqF9oF8gAba5HY0N93KSsH4AiEbNMQV0ZE/qQW9b5wAA3Fsgc63yGgTHbCNuybud2FkoZJtJoylHegNUfWZdFbW8hmg+faOZABNjPpuIC9DZo0D5DUEPDQbLh8Aj6gSkCT5j7MUMBJoB5rfuKa5yj2RhY+KTJRRsXBkZLKanGVu5zYC41zKa130c1+Q+R3OPeXeAWMPWF48cHpi7XBON3we/cvZ9JpaYm7vIr4t+ojK/fJfZlLIfMrlknk1o6W1bNB88h+OVGCa/oJwHmJvwmvnAxxr2SJhYvBhxD0jZgp4fYHzE+3ydICLfpmjIfdoBDFAvMHZZJjpehT1Fhh4TAPubi5Xg2cU5x5wW+zXFNIvuzALR1NiGffSj/PnTKspSk7K5RQ8vLOxFBr5aI3ArLuZcxfnnknuRsQHmw6CJpyfWTaEJfi5aM/77oPReGiH0OehwYNbOPMHtRVcU21c9rn/GD5qTXlraZ8GTPN8JUWtoD2r29k+0xCtekKqxh0LO4La74zNMCBMsLfOAxioE/Z5gexcpiNkQKc9VMIvATP+tzn6QuPlMgPFZbMC1X+RCbHVYSoAsAFyxoaWT2c064CuX8BD/EJSrW3vx4LztjlEsr7bbxJdcxOOjQFtP2PMR3PU6fzFVzh7+dwpI3mtVEpnFEVKlct5KZ3SUtLVFL4FiulsTtW0q+VS6SqMOvI+EPf1h4tMMO585aTUS0mloGYLybyN4Bf2f0BggnE9CrGeG78cIOl5r5ugwBvWk5Z13TdGfr5aHNABZmZGgzfLA/i9ELPyJTeJiHwK7q5Pcxc5URCd/mKA29/HIb2GeBAAAA==
+2018-05-31 11:48:53,693 [INFO ][main            ][                     MqSender2] - EHD ID of document: 132456
+2018-05-31 11:48:53,695 [INFO ][main            ][                     MqSender2] - RequestID of document: c907d0329c134ac5b2d6b20b6d6d06be
+2018-05-31 11:58:25,514 [INFO ][main            ][       JsonHandler.JsonHandler] - Generate JSON with requestId: 8a8b1d52ac3d4007a7d849f9d0879f19
+2018-05-31 11:58:25,617 [INFO ][main            ][       JsonHandler.JsonHandler] - Generate JSON with contentBody: H4sICEeiAVoEAM/U0F84NjAyMTYxNzQ3XzAwMF/Tzs/RLdFfMjAxNzA4MzFfMmZkZDQ1MDAtM2VlOS00MzgzLWIzMDQtYzQ2NzE4OGJlZGRiLlhNTAC1WMtu01AQ3SPxD1H2ju08nciYDQ8hwQqQ2JYkQCRIEKkoy0LKSyC1lFZUQFISEGKDCCGB0jz4hfEfcebajuPYcU0Aq67se2fOzJx52I5+8t6tm7G75Tv1Sq16Iq4mlHisXC3WSpXq9RPxy5fOSFo8Vl9dqZZWbtaq5RPxai1+0jh+TKfPtEP79IHexYBQrZ+I31hdvV2QZfplbiTMdXNDpm3zPm1TS6YmS8r0nlq4aEvUlpOKmpMUTVLycUu/cK9emWKsra0l1lKJ2p3rEFRU+cqF8xeLN8q3VqRKlZ0plh0t2qIPAaZ5eSqybdmP4KH5gA6w+wzrD2lCfXPTfIqVQYC7f4wZhPGeOgEIZoPGdGBu4HyEcx2e9KiLtTE8G1DHxUtLioo/4NUrhbpg6HytuLKKXEbwLDgfsSX1EvfqpTgqI4ZDnxGxl6zld/D/kHqI4Acie2A+m9l1FDsFVFYXtHUNoKesEHXZsxOs1gRTIxqY6wZ8wpGWTl+yFd29WX/kUId0K157ZW6VEbtQGwFg7GSIawUtMUHORrgfMqyzJ6QGBrXpPay+ZK8AsQvxDv6/RMW+ilnQuvx3Jhb4u4eLpqFllaSaVXPpnGXG3XHVnJ3ZJfj9Cwzdh4VDXPfgRR8n+/PTZ/EVdS1p87m75+67yYCVfQPJ9a4E6rTNhrD41YqSM2c+sTyYxuzTcuqF9oF8gAba5HY0N93KSsH4AiEbNMQV0ZE/qQW9b5wAA3Fsgc63yGgTHbCNuybud2FkoZJtJoylHegNUfWZdFbW8hmg+faOZABNjPpuIC9DZo0D5DUEPDQbLh8Aj6gSkCT5j7MUMBJoB5rfuKa5yj2RhY+KTJRRsXBkZLKanGVu5zYC41zKa130c1+Q+R3OPeXeAWMPWF48cHpi7XBON3we/cvZ9JpaYm7vIr4t+ojK/fJfZlLIfMrlknk1o6W1bNB88h+OVGCa/oJwHmJvwmvnAxxr2SJhYvBhxD0jZgp4fYHzE+3ydICLfpmjIfdoBDFAvMHZZJjpehT1Fhh4TAPubi5Xg2cU5x5wW+zXFNIvuzALR1NiGffSj/PnTKspSk7K5RQ8vLOxFBr5aI3ArLuZcxfnnknuRsQHmw6CJpyfWTaEJfi5aM/77oPReGiH0OehwYNbOPMHtRVcU21c9rn/GD5qTXlraZ8GTPN8JUWtoD2r29k+0xCtekKqxh0LO4La74zNMCBMsLfOAxioE/Z5gexcpiNkQKc9VMIvATP+tzn6QuPlMgPFZbMC1X+RCbHVYSoAsAFyxoaWT2c064CuX8BD/EJSrW3vx4LztjlEsr7bbxJdcxOOjQFtP2PMR3PU6fzFVzh7+dwpI3mtVEpnFEVKlct5KZ3SUtLVFL4FiulsTtW0q+VS6SqMOvI+EPf1h4tMMO585aTUS0mloGYLybyN4Bf2f0BggnE9CrGeG78cIOl5r5ugwBvWk5Z13TdGfr5aHNABZmZGgzfLA/i9ELPyJTeJiHwK7q5Pcxc5URCd/mKA29/HIb2GeBAAAA==
+2018-05-31 11:58:29,287 [INFO ][main            ][                     MqSender2] - EHD ID of document: 12345679
+2018-05-31 11:58:29,288 [INFO ][main            ][                     MqSender2] - RequestID of document: 8a8b1d52ac3d4007a7d849f9d0879f19

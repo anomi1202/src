@@ -19,7 +19,7 @@ public class EhdPageHandler extends AbstractEhdPage{
     private final String ehdUrl = "http://10.0.12.235:2222/uds-admin/";
 
     public EhdPageHandler() {
-        System.setProperty("webdriver.gecko.driver", "src/main/resources/geckodriver.exe");
+        System.setProperty("webdriver.gecko.driver", "drivers/geckodriver.exe");
         System.setProperty(FirefoxDriver.SystemProperty.BROWSER_LOGFILE,"/dev/null");
         FirefoxOptions firefoxOptions = new FirefoxOptions().addArguments("--headless", "--no-sandbox");
         driver = new FirefoxDriver(firefoxOptions);

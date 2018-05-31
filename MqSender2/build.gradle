@@ -1,5 +1,5 @@
 group 'MqSender2'
-version '1.0-SNAPSHOT'
+version '1.0.1'
 
 apply plugin: 'java'
 apply plugin: 'application'
@@ -27,12 +27,12 @@ dependencies {
     // https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-java
     compile group: 'org.seleniumhq.selenium', name: 'selenium-java', version: '3.12.0'
 
-    // https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-htmlunit-driver
-    compile group: 'org.seleniumhq.selenium', name: 'selenium-htmlunit-driver', version: '2.52.0'
-
 
 }
 
-mainClassName = 'Main'
-//mainClassName = 'MqSender2'
+mainClassName = 'MqSender2'
 
+jar {
+    baseName = group
+    version = version
+}
