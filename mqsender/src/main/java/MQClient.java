@@ -95,9 +95,10 @@ public abstract class MQClient {
     }
 
     protected void init() {
+        InputStream resourceAsStream = null;
         try {
             String propFileName = this.getClass().getSimpleName() + ".properties";
-            InputStream resourceAsStream = this.getClass().getResourceAsStream("/" + propFileName);
+            resourceAsStream = this.getClass().getResourceAsStream("/" + propFileName);
             if (resourceAsStream == null){
                 resourceAsStream = new FileInputStream(propFileName);
             }
@@ -107,6 +108,14 @@ public abstract class MQClient {
                 throw new IllegalArgumentException("Could not load properties from file " + this.getClass().getSimpleName() + ".properties.");
             } else if (e instanceof NullPointerException){
                 throw new NullPointerException("Could not load properties from file " + this.getClass().getSimpleName() + ".properties.");
+            }
+        } finally {
+            if (resourceAsStream!= null){
+                try {
+                    resourceAsStream.close();
+                } catch (IOException e) {
+                    e.printStackTrace();
+                }
             }
         }
 
