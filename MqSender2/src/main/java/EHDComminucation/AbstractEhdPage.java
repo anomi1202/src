@@ -30,7 +30,7 @@ public abstract class AbstractEhdPage {
                     (driver) -> {
                         WebElement element = driver.findElement(LOADING_BANNER);
                         if (!element.getText().equals("")) {
-                            logger.info(String.format("Ожидание окончания процесса: %s", element.getText()));
+                            logger.info(String.format("Waiting for the process to finish: %s", element.getText()));
                         }
                         return !element.isDisplayed();
                     }
@@ -38,8 +38,8 @@ public abstract class AbstractEhdPage {
         }
 
         if (!elementIsVisible){
-            logger.error("FAILED! Элементы загрузки страницы не были скрыты за отведеннове время");
-            throw new RuntimeException("Элементы загрузки страницы не были скрыты за отведеннове время");
+            logger.error("FAILED! The EHD page load failed!");
+            throw new RuntimeException("The EHD page load failed!");
         }
     }
 
@@ -66,7 +66,7 @@ public abstract class AbstractEhdPage {
     protected AbstractEhdPage setDocNumFilter(String docNum){
         driver.findElement(DOC_NUM_INPUT_FIELD).clear();
         driver.findElement(DOC_NUM_INPUT_FIELD).sendKeys(docNum);
-        logger.info(String.format("Поиск документа с номером: %s", docNum));
+        logger.info(String.format("Search document with number: %s", docNum));
 
         return this;
     }

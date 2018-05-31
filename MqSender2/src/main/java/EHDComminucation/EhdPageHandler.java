@@ -23,11 +23,11 @@ public class EhdPageHandler extends AbstractEhdPage{
         System.setProperty(FirefoxDriver.SystemProperty.BROWSER_LOGFILE,"/dev/null");
         FirefoxOptions firefoxOptions = new FirefoxOptions().addArguments("--headless", "--no-sandbox");
         driver = new FirefoxDriver(firefoxOptions);
-        logger.info("Инициализация скрытого браузера");
+        logger.info("Initialize the hidden browser");
 
         driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
         driver.get(ehdUrl.replaceFirst("://", String.format("://%s:%s@", loginUser, loginPass)));
-        logger.info(String.format("Загрузка страницы: %s", ehdUrl));
+        logger.info(String.format("Load page: %s", ehdUrl));
         waitLoadElementDisappeared();
     }
 
@@ -39,26 +39,25 @@ public class EhdPageHandler extends AbstractEhdPage{
         clickButton(driver.findElement(searchButton));
     }
 
-    private EhdPageHandler selectFirstDocumentFromGridWithIndex(){
+    private void selectFirstDocumentFromGridWithIndex() throws NoSuchElementException{
         List<WebElement> docList = getDocumentTable();
-        logger.info("Считывание списка последних документов");
+        logger.info("Read the list of last documents!");
         if (docList.size() > 0) {
             docList.get(0).findElements(By.xpath("child::td")).get(0).click();
         } else {
-            throw new NoSuchElementException("Не найден ни один подходящий документ");
+            logger.error("The documents is not found!");
+            throw new NoSuchElementException("The documents is not found!");
         }
-
-        return this;
     }
 
     private void openDocumentCard(){
         clickButton(driver.findElement(viewButton));
-        logger.info("Открытие карточки выбранного документа");
+        logger.info("Open the document's card");
     }
 
     private void stop(){
         driver.quit();
-        logger.info("Закрытие скрытого браузера");
+        logger.info("Close the hidden browser");
     }
 
     public EhdPageHandler searchDocument(String docNum){
@@ -70,7 +69,8 @@ public class EhdPageHandler extends AbstractEhdPage{
     public long getDocumentId(){
         long docId;
         try {
-            selectFirstDocumentFromGridWithIndex().openDocumentCard();
+            selectFirstDocumentFromGridWithIndex();
+            openDocumentCard();
             docId = readDocumentCard().getEhdDocId();
         } catch (NoSuchElementException e){
             logger.error("FAILED!", e);

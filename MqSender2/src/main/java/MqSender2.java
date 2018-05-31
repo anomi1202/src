@@ -11,20 +11,21 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 import java.io.*;
-import java.nio.file.Files;
-import java.nio.file.Path;
-import java.nio.file.Paths;
+import java.nio.charset.Charset;
+import java.nio.file.*;
 import java.util.Properties;
 
 public class MqSender2 {
     private static Logger logger = LoggerFactory.getLogger(MqSender2.class);
-    public static final String MQSENDER_PROPERTIES = "MQSender.properties";
-    public static final String MQSENDER2_PROPERTIES = "MQSender2.properties";
-    private static Path PATH_FILE_JSON;
-    private static Path PATH_FILE_SOAP;
-    private static Path PATH_FILE_ARCHIVE_DOC;
+    private static final String MQSENDER_PROPERTIES = "MQSender.properties";
+    private Path PATH_FILE_JSON;
+    private Path PATH_FILE_SOAP;
+    private Path PATH_FILE_ARCHIVE_DOC;
 
-    @Parameter(names = {"BROWSER", "browser", "-br"}, description = "Start MQSender using headless browser")
+    @Parameter(names = {"prop", "-p"}, description = "Path to MQSender2.properties")
+    private static String MQSENDER2_PROPERTIES = "MQSender2.properties";
+
+    @Parameter(names = {"browser", "-br"}, description = "Start MQSender using headless browser")
     private static boolean withBrowser = false;
 
     public static void main(String[] args) {
@@ -40,6 +41,7 @@ public class MqSender2 {
     }
 
     public void run() {
+        initDocumentsPath();
         if (PATH_FILE_JSON == null) {
             logger.info("PATH_FILE_JSON is NULL");
             return;
@@ -49,26 +51,36 @@ public class MqSender2 {
             JsonHandler jsonHandler = new JsonHandler(PATH_FILE_JSON, PATH_FILE_ARCHIVE_DOC);
             jsonHandler.jsonGenerate();
             initPropForMQSender(ESenderDocType.JSON);
-//            send(ESenderDocType.JSON);
+            send(ESenderDocType.JSON);
 
             if (PATH_FILE_SOAP != null) {
                 initPropForMQSender(ESenderDocType.SOAP);
                 initSoap(jsonHandler);
-//                send(ESenderDocType.SOAP);
+                send(ESenderDocType.SOAP);
             }
 
         } catch (Exception e) {
             e.printStackTrace();
         } finally {
-            try {
-                Files.delete(Paths.get(MQSENDER_PROPERTIES));
-            } catch (IOException e) {
-                e.printStackTrace();
-            }
+            Paths.get(MQSENDER_PROPERTIES).toFile().deleteOnExit();
         }
     }
 
-    private void initSoap(JsonHandler jsonHandler) throws IllegalArgumentException,IOException {
+    private void initDocumentsPath() {
+        Properties propFile = new Properties();
+
+        try (BufferedReader reader = Files.newBufferedReader(Paths.get(MQSENDER2_PROPERTIES))) {
+            propFile.load(reader);
+            PATH_FILE_JSON = Paths.get(propFile.getProperty("doc.json"));
+            PATH_FILE_SOAP = Paths.get(propFile.getProperty("doc.soap"));
+            PATH_FILE_ARCHIVE_DOC = Paths.get(propFile.getProperty("doc.arch"));
+
+        } catch (IOException e) {
+            logger.error("FAILED", e);
+        }
+    }
+
+    private void initSoap(JsonHandler jsonHandler) throws IOException {
         String docName = jsonHandler.getValueFromTag("documentNumber");
         long documentRef = withBrowser ? new EhdPageHandler().searchDocument(docName).getDocumentId() : askUserAboutID();
         logger.info(String.format("EHD ID of document: %d", documentRef));
@@ -93,10 +105,9 @@ public class MqSender2 {
 
             if (docID <= 0) {
                 logger.error(String.format("Incorrect ID: '%s'", id));
-
                 throw new NumberFormatException();
             }
-        } catch (NumberFormatException e) {
+        } catch (IOException e) {
             throw e;
         }
 
@@ -143,6 +154,9 @@ public class MqSender2 {
 
             propFile.remove("mq.destinationSOAP");
             propFile.remove("mq.destinationJSON");
+            propFile.remove("doc.json");
+            propFile.remove("doc.soap");
+            propFile.remove("doc.arch");
             propFile.setProperty("mq.destination", propDestination);
             propFile.store(os, "Set properties 'mq.destination': " + propDestination);
         } catch (IOException | NullPointerException ex) {
