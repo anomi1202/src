@@ -1,7 +1,7 @@
 @if "%DEBUG%" == "" @echo off
 @rem ##########################################################################
 @rem
-@rem  uspn.uploadVio.Saip startup script for Windows
+@rem  uspn.VIOuploader startup script for Windows
 @rem
 @rem ##########################################################################
 
@@ -13,7 +13,7 @@ if "%DIRNAME%" == "" set DIRNAME=.
 set APP_BASE_NAME=%~n0
 set APP_HOME=%DIRNAME%..
 
-@rem Add default JVM options here. You can also use JAVA_OPTS and USPN_UPLOAD_VIO_SAIP_OPTS to pass JVM options to this script.
+@rem Add default JVM options here. You can also use JAVA_OPTS and USPN_VI_OUPLOADER_OPTS to pass JVM options to this script.
 set DEFAULT_JVM_OPTS=
 
 @rem Find java.exe
@@ -65,17 +65,17 @@ set CMD_LINE_ARGS=%*
 
 set CLASSPATH=%APP_HOME%\lib\jcommander-1.72.jar;%APP_HOME%\lib\httpclient-4.5.5.jar;%APP_HOME%\lib\httpcore-4.4.9.jar;%APP_HOME%\lib\VIOuploader-1.0.1.jar;%APP_HOME%\lib\commons-io-2.6.jar;%APP_HOME%\lib\commons-lang3-3.7.jar;%APP_HOME%\lib\slf4j-api-1.7.25.jar;%APP_HOME%\lib\commons-codec-1.10.jar;%APP_HOME%\lib\httpmime-4.5.5.jar;%APP_HOME%\lib\slf4j-log4j12-1.7.25.jar;%APP_HOME%\lib\commons-logging-1.2.jar;%APP_HOME%\lib\log4j-1.2.17.jar
 
-@rem Execute uspn.uploadVio.Saip
-"%JAVA_EXE%" %DEFAULT_JVM_OPTS% %JAVA_OPTS% %USPN_UPLOAD_VIO_SAIP_OPTS%  -classpath "%CLASSPATH%" VIOuploader %CMD_LINE_ARGS%
+@rem Execute uspn.VIOuploader
+"%JAVA_EXE%" %DEFAULT_JVM_OPTS% %JAVA_OPTS% %USPN_VI_OUPLOADER_OPTS%  -classpath "%CLASSPATH%" VIOuploader %CMD_LINE_ARGS%
 
 :end
 @rem End local scope for the variables with windows NT shell
 if "%ERRORLEVEL%"=="0" goto mainEnd
 
 :fail
-rem Set variable USPN_UPLOAD_VIO_SAIP_EXIT_CONSOLE if you need the _script_ return code instead of
+rem Set variable USPN_VI_OUPLOADER_EXIT_CONSOLE if you need the _script_ return code instead of
 rem the _cmd.exe /c_ return code!
-if  not "" == "%USPN_UPLOAD_VIO_SAIP_EXIT_CONSOLE%" exit 1
+if  not "" == "%USPN_VI_OUPLOADER_EXIT_CONSOLE%" exit 1
 exit /b 1
 
 :mainEnd

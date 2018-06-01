@@ -2,9 +2,9 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/uspn.uploadVio.Saip.iml" filepath="$PROJECT_DIR$/.idea/modules/uspn.uploadVio.Saip.iml" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/uspn.uploadVio.Saip_main.iml" filepath="$PROJECT_DIR$/.idea/modules/uspn.uploadVio.Saip_main.iml" group="uspn.uploadVio.Saip" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/uspn.uploadVio.Saip_test.iml" filepath="$PROJECT_DIR$/.idea/modules/uspn.uploadVio.Saip_test.iml" group="uspn.uploadVio.Saip" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/uspn.VIOuploader.iml" filepath="$PROJECT_DIR$/.idea/modules/uspn.VIOuploader.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/uspn.VIOuploader_main.iml" filepath="$PROJECT_DIR$/.idea/modules/uspn.VIOuploader_main.iml" group="uspn.VIOuploader" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/uspn.VIOuploader_test.iml" filepath="$PROJECT_DIR$/.idea/modules/uspn.VIOuploader_test.iml" group="uspn.VIOuploader" />
     </modules>
   </component>
 </project>
