@@ -2,9 +2,9 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/uspn.VIOuploader.iml" filepath="$PROJECT_DIR$/.idea/modules/uspn.VIOuploader.iml" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/uspn.VIOuploader_main.iml" filepath="$PROJECT_DIR$/.idea/modules/uspn.VIOuploader_main.iml" group="uspn.VIOuploader" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/uspn.VIOuploader_test.iml" filepath="$PROJECT_DIR$/.idea/modules/uspn.VIOuploader_test.iml" group="uspn.VIOuploader" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/uspn.VIOsender.iml" filepath="$PROJECT_DIR$/.idea/modules/uspn.VIOsender.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/uspn.VIOsender_main.iml" filepath="$PROJECT_DIR$/.idea/modules/uspn.VIOsender_main.iml" group="uspn.VIOsender" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/uspn.VIOsender_test.iml" filepath="$PROJECT_DIR$/.idea/modules/uspn.VIOsender_test.iml" group="uspn.VIOsender" />
     </modules>
   </component>
 </project>

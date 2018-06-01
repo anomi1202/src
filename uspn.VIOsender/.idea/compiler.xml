@@ -4,6 +4,10 @@
     <bytecodeTargetLevel>
       <module name="uspn.uploadVio.Saip_main" target="1.8" />
       <module name="uspn.uploadVio.Saip_test" target="1.8" />
+      <module name="uspn.uspn.VIOsender_main" target="1.8" />
+      <module name="uspn.uspn.VIOsender_test" target="1.8" />
+      <module name="uspn.VIOsender_main" target="1.8" />
+      <module name="uspn.VIOsender_test" target="1.8" />
       <module name="uspn.VIOuploader_main" target="1.8" />
       <module name="uspn.VIOuploader_test" target="1.8" />
     </bytecodeTargetLevel>

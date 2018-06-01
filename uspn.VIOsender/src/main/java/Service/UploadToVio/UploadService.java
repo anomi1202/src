@@ -1,9 +1,11 @@
-package service;
+package Service.UploadToVio;
+
+import Service.common.UploadedFile;
 
 import java.io.File;
 import java.util.List;
 
-public interface DocumentService {
+public interface UploadService {
     /**
      * Загрузка файла в ВИО-эмулятор
      *
