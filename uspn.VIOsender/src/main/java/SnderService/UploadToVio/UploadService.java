@@ -1,9 +1,8 @@
-package Service.UploadToVio;
-
-import Service.common.UploadedFile;
+package SnderService.UploadToVio;
 
 import java.io.File;
 import java.util.List;
+import java.util.Map;
 
 public interface UploadService {
     /**
@@ -20,5 +19,5 @@ public interface UploadService {
      * @param files загружаемые файлы
      * @return идентификаторы загруженных файлов
      */
-    List<String> upload(List<File> files) throws Exception;
+    Map<File, String> upload(List<File> files) throws Exception;
 }

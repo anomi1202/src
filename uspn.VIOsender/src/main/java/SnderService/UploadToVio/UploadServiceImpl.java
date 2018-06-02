@@ -1,8 +1,5 @@
-package Service.UploadToVio;
+package SnderService.UploadToVio;
 
-import Service.common.UploadedFile;
-import com.google.gson.Gson;
-import com.google.gson.reflect.TypeToken;
 import org.apache.http.HttpEntity;
 import org.apache.http.client.fluent.Executor;
 import org.apache.http.client.fluent.Request;
@@ -13,11 +10,11 @@ import org.apache.http.entity.mime.content.FileBody;
 
 import java.io.File;
 import java.nio.charset.Charset;
-import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
-import java.util.concurrent.Future;
 
 public class UploadServiceImpl implements UploadService {
     private final String uri;
@@ -37,23 +34,20 @@ public class UploadServiceImpl implements UploadService {
                 .addPart("file", fileBody)
                 .build();
 
-        return Executor.newInstance().execute(Request.Post(uri).body(entity)).returnContent().asString();
+        return Executor.newInstance().execute(Request.Post(uri).body(entity)).returnContent().asString().replaceAll("\"", "");
     }
 
     @Override
-    public List<String> upload(List<File> files) throws Exception {
-        List<String> result = new ArrayList<>();
-        List<Future<String>> threadResults = new ArrayList<>();
+    public Map<File, String> upload(List<File> files) throws Exception {
+        Map<File, String> resultMap = new HashMap<>();
         ExecutorService executorService = Executors.newFixedThreadPool(threadCount);
 
         for (File file : files) {
-            threadResults.add(executorService.submit(upload(file)::toString));
+            resultMap.put(file, executorService.submit(upload(file)::toString).get().replaceAll("\"", ""));
         }
 
-        for (Future<String> threadResult : threadResults) {
-            result.add(threadResult.get());
-        }
-        return result;
+        executorService.shutdown();
+        return resultMap;
     }
 
 }

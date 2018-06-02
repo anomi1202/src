@@ -1,9 +1,9 @@
-package Service;
+package SnderService;
 
-import Service.SendToUspn.SendService;
-import Service.SendToUspn.SendServiceImpl;
-import Service.UploadToVio.UploadService;
-import Service.UploadToVio.UploadServiceImpl;
+import SnderService.SendToUspn.SendService;
+import SnderService.SendToUspn.SendServiceImpl;
+import SnderService.UploadToVio.UploadService;
+import SnderService.UploadToVio.UploadServiceImpl;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 

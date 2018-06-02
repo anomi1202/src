@@ -1,9 +1,8 @@
-package Service.SendToUspn;
+package SnderService.SendToUspn;
 
 import Enums.DocumentType;
 
 import java.io.File;
-import java.util.List;
 import java.util.Map;
 
 public interface SendService {
@@ -13,7 +12,7 @@ public interface SendService {
      * @param file отправляемый файл
      * @return идентификатор отправленного файла
      */
-    String sendToUspn(File file, DocumentType type) throws Exception;
+    String sendToUspn(File file, File upp, DocumentType type) throws Exception;
 
     /**
      * Загрузка файлов из ВИО-эмулятора в приложение УСПН
@@ -21,5 +20,5 @@ public interface SendService {
      * @param files отправляемые файлы
      * @return идентификаторы отправленных файлов
      */
-    List<String> sendToUspn(Map<File, DocumentType> files) throws Exception;
+    Map<File, String> sendToUspn(Map<File, DocumentType> files, File upp) throws Exception;
 }
