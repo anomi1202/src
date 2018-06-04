@@ -1,0 +1,43 @@
+2018-06-02 13:44:16,316 [ERROR][main            ][                     SenderService.VIOsender] - FAILED
+org.apache.http.client.HttpResponseException: Internal Server Error
+	at org.apache.http.impl.client.AbstractResponseHandler.handleResponse(AbstractResponseHandler.java:70)
+	at org.apache.http.client.fluent.Response.handleResponse(Response.java:90)
+	at org.apache.http.client.fluent.Response.returnContent(Response.java:97)
+	at SenderService.SendToUspn.SendServiceImpl.sendToUspn(SendServiceImpl.java:38)
+	at SenderService.VIOsender.send(SenderService.VIOsender.java:48)
+	at SenderService.VIOsender.main(SenderService.VIOsender.java:21)
+2018-06-02 13:44:32,092 [ERROR][main            ][                     SenderService.VIOsender] - FAILED
+org.apache.http.client.HttpResponseException: Internal Server Error
+	at org.apache.http.impl.client.AbstractResponseHandler.handleResponse(AbstractResponseHandler.java:70)
+	at org.apache.http.client.fluent.Response.handleResponse(Response.java:90)
+	at org.apache.http.client.fluent.Response.returnContent(Response.java:97)
+	at SenderService.SendToUspn.SendServiceImpl.sendToUspn(SendServiceImpl.java:38)
+	at SenderService.VIOsender.send(SenderService.VIOsender.java:48)
+	at SenderService.VIOsender.main(SenderService.VIOsender.java:21)
+2018-06-02 13:45:47,351 [ERROR][main            ][                     SenderService.VIOsender] - FAILED
+org.apache.http.client.HttpResponseException: Internal Server Error
+	at org.apache.http.impl.client.AbstractResponseHandler.handleResponse(AbstractResponseHandler.java:70)
+	at org.apache.http.client.fluent.Response.handleResponse(Response.java:90)
+	at org.apache.http.client.fluent.Response.returnContent(Response.java:97)
+	at SenderService.SendToUspn.SendServiceImpl.sendToUspn(SendServiceImpl.java:38)
+	at SenderService.VIOsender.send(SenderService.VIOsender.java:48)
+	at SenderService.VIOsender.main(SenderService.VIOsender.java:21)
+2018-06-02 13:48:14,187 [ERROR][main            ][                     SenderService.VIOsender] - FAILED
+org.apache.http.client.HttpResponseException: Internal Server Error
+	at org.apache.http.impl.client.AbstractResponseHandler.handleResponse(AbstractResponseHandler.java:70)
+	at org.apache.http.client.fluent.Response.handleResponse(Response.java:90)
+	at org.apache.http.client.fluent.Response.returnContent(Response.java:97)
+	at SenderService.SendToUspn.SendServiceImpl.sendToUspn(SendServiceImpl.java:42)
+	at SenderService.VIOsender.send(SenderService.VIOsender.java:48)
+	at SenderService.VIOsender.main(SenderService.VIOsender.java:21)
+2018-06-02 13:49:46,253 [ERROR][main            ][                     SenderService.VIOsender] - FAILED
+java.util.IllegalFormatConversionException: d != java.lang.String
+	at java.util.Formatter$FormatSpecifier.failConversion(Formatter.java:4302)
+	at java.util.Formatter$FormatSpecifier.printInteger(Formatter.java:2793)
+	at java.util.Formatter$FormatSpecifier.print(Formatter.java:2747)
+	at java.util.Formatter.format(Formatter.java:2520)
+	at java.util.Formatter.format(Formatter.java:2455)
+	at java.lang.String.format(String.java:2940)
+	at SenderService.SendToUspn.SendServiceImpl.sendToUspn(SendServiceImpl.java:34)
+	at SenderService.VIOsender.send(SenderService.VIOsender.java:48)
+	at SenderService.VIOsender.main(SenderService.VIOsender.java:21)
