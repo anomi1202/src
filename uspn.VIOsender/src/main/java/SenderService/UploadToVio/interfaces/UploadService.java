@@ -1,4 +1,4 @@
-package SnderService.UploadToVio;
+package SenderService.UploadToVio.interfaces;
 
 import java.io.File;
 import java.util.List;
@@ -12,7 +12,6 @@ public interface UploadService {
      * @return идентификатор загруженного файла
      */
     String upload(File file) throws Exception;
-
     /**
      * Загрузка файлов в ВИО-эмулятор
      *
