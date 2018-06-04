@@ -12,6 +12,7 @@ import java.io.File;
 import java.io.IOException;
 import java.io.InputStream;
 import java.nio.file.Files;
+import java.nio.file.Path;
 import java.nio.file.Paths;
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -20,63 +21,117 @@ import java.util.Properties;
 
 public class SenderServiceBuilder {
     private final Logger logger = LoggerFactory.getLogger(SenderServiceBuilder.class);
-    private final String VIOSENDER_PROPERTIES = "VIO.properties";
+    private final String VIOSENDER_PROPERTIES = "USPN.properties";
     private final String DEFAULT_CONTEXT = "vio-emulator";
     private final int DEFAULT_THREAD_COUNT = 10;
+
     private UploadService uploadService;
     private SendService sendService;
 
     private String host;
     private int port;
     private String context;
-    private int threadCount;
 
-    private SenderServiceBuilder() {
+    private Map<File, DocumentType> docMap;
+    private File upp;
+
+    private SenderServiceBuilder() throws IOException {
         this.context = DEFAULT_CONTEXT;
-        this.threadCount = DEFAULT_THREAD_COUNT;
         initProp();
     }
 
-    public static SenderServiceBuilder create() {
-        return new SenderServiceBuilder().build();
+    public static SenderServiceBuilder newInstance() {
+        try {
+            return new SenderServiceBuilder();
+        } catch (IOException e) {
+            return null;
+        }
     }
 
-    private SenderServiceBuilder build() {
+    public SenderServiceBuilder build() {
         if (host != null
                 && port > 0 && port < 65536){
             String uri = "http://" + host + ":" + port + "/" + context + "/";
             logger.info(String.format("Generate URL link to webApp: %s", uri));
 
-            uploadService = new UploadServiceImpl(uri, threadCount);
-            sendService = new SendServiceImpl(uri, threadCount);
+            uploadService = new UploadServiceImpl(uri, DEFAULT_THREAD_COUNT);
+            sendService = new SendServiceImpl(uri, DEFAULT_THREAD_COUNT);
             return this;
         } else {
             return null;
         }
     }
 
-    public Map<File, String> send(Map<File, DocumentType> fileMap, File upp) throws Exception {
+    public SenderServiceBuilder documentToSend(Path docToSend, int typeNum){
+        try {
+            DocumentType typeName = DocumentType.getName(typeNum);
+
+            docMap = new HashMap<>();
+            docMap.put(docToSend.toFile(), DocumentType.getName(typeNum));
+            logger.info(String.format("Add document to send: %s %s", docToSend.getFileName(), typeName));
+
+            return this;
+        } catch (Exception e){
+            logger.error("FAILED", e);
+            return null;
+        }
+    }
+
+    public SenderServiceBuilder documentsToSend(Map<Path, Integer> documentsMap){
+        try {
+            HashMap<File, DocumentType> map = new HashMap<>();
+            documentsMap.forEach((docToSend, typeNum) -> {
+                DocumentType typeName = DocumentType.getName(typeNum);
+                map.put(docToSend.toFile(), typeName);
+                logger.info(String.format("Add document to send: %s %s", docToSend.getFileName(), typeName));
+            });
+            docMap = map;
+
+            return this;
+        } catch (Exception e) {
+            logger.error("FAILED", e);
+            return null;
+        }
+    }
+
+    public SenderServiceBuilder upp(Path upp){
+        try {
+            this.upp = upp.toFile();
+            logger.info(String.format("Add upp to send: %s ", upp.getFileName()));
+
+            return this;
+        } catch (Exception e){
+            logger.error("FAILED", e);
+            return null;
+        }
+    }
+
+    public Map<File, String> send() {
         Map<File, String> requestMap = new HashMap<>();
 
-        String uppId = uploadService.upload(upp);
-        Map<File, String> filesId = uploadService.upload(new ArrayList<>(fileMap.keySet()));
+        try {
+            String uppId = uploadService.upload(upp);
+            Map<File, String> filesId = uploadService.upload(new ArrayList<>(docMap.keySet()));
 
-        Map<String, DocumentType> uploadedFiles = new HashMap<>();
-        filesId.forEach((file, id) -> uploadedFiles.put(id, fileMap.get(file)));
+            Map<String, DocumentType> uploadedFiles = new HashMap<>();
+            filesId.forEach((file, id) -> uploadedFiles.put(id, docMap.get(file)));
 
-        Map<String, String> sendedFiles = sendService.send(uploadedFiles, uppId);
-        sendedFiles.forEach((fileId, request) ->
-                filesId.forEach((file, id) -> {
-                    if (id.equals(fileId)) {
-                        requestMap.put(file, request);
-                    }
-                })
-        );
+            Map<String, String> sendedFiles = sendService.send(uploadedFiles, uppId);
+            sendedFiles.forEach((fileId, request) ->
+                    filesId.forEach((file, id) -> {
+                        if (id.equals(fileId)) {
+                            requestMap.put(file, request);
+                        }
+                    })
+            );
+        } catch (Exception e) {
+            logger.error("FAILED", e);
+        }
 
         return requestMap;
     }
 
-    private void initProp() {
+    private void initProp() throws IOException, NumberFormatException {
         Properties prop = new Properties();
         try (InputStream is = Files.newInputStream(Paths.get(VIOSENDER_PROPERTIES))) {
             prop.load(is);
@@ -92,6 +147,7 @@ public class SenderServiceBuilder {
                     , VIOSENDER_PROPERTIES, host, port, context));
         } catch (IOException | NumberFormatException e) {
             logger.error("FAILED", e);
+            throw e;
         }
     }
 }

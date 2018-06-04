@@ -1,12 +1,12 @@
-2018-06-03 00:39:45,083 [ERROR][main            ][        SenderService.VIOsender] - FAILED
+2018-06-03 00:39:45,083 [ERROR][main            ][        SenderService.VIOSender] - FAILED
 java.lang.IllegalArgumentException: baseUrl must end in /: http://172.22.116.68:9080/vio-emulator
 	at retrofit2.Retrofit$Builder.baseUrl(Retrofit.java:515)
 	at retrofit2.Retrofit$Builder.baseUrl(Retrofit.java:458)
 	at SenderService.SendToUspn.SendServiceImpl.sendToUspn(SendServiceImpl.java:67)
 	at SenderService.SendToUspn.SendServiceImpl.sendToUspn(SendServiceImpl.java:60)
-	at SenderService.VIOsender.send(VIOsender.java:55)
+	at SenderService.VIOSender.send(VIOsender.java:55)
 	at Main.main(Main.java:14)
-2018-06-03 00:40:11,097 [ERROR][main            ][        SenderService.VIOsender] - FAILED
+2018-06-03 00:40:11,097 [ERROR][main            ][        SenderService.VIOSender] - FAILED
 java.lang.IllegalArgumentException: Unable to create converter for class java.lang.String
     for method SendService.sendToUspn
 	at retrofit2.ServiceMethod$Builder.methodError(ServiceMethod.java:755)
@@ -17,7 +17,7 @@ java.lang.IllegalArgumentException: Unable to create converter for class java.la
 	at com.sun.proxy.$Proxy0.sendToUspn(Unknown Source)
 	at SenderService.SendToUspn.SendServiceImpl.sendToUspn(SendServiceImpl.java:71)
 	at SenderService.SendToUspn.SendServiceImpl.sendToUspn(SendServiceImpl.java:60)
-	at SenderService.VIOsender.send(VIOsender.java:55)
+	at SenderService.VIOSender.send(VIOsender.java:55)
 	at Main.main(Main.java:14)
 Caused by: java.lang.IllegalArgumentException: Could not locate ResponseBody converter for class java.lang.String.
   Tried:
@@ -26,7 +26,7 @@ Caused by: java.lang.IllegalArgumentException: Could not locate ResponseBody con
 	at retrofit2.Retrofit.responseBodyConverter(Retrofit.java:313)
 	at retrofit2.ServiceMethod$Builder.createResponseConverter(ServiceMethod.java:739)
 	... 8 more
-2018-06-03 00:40:52,235 [ERROR][main            ][        SenderService.VIOsender] - FAILED
+2018-06-03 00:40:52,235 [ERROR][main            ][        SenderService.VIOSender] - FAILED
 java.lang.IllegalArgumentException: Unable to create converter for class java.lang.String
     for method SendService.sendToUspn
 	at retrofit2.ServiceMethod$Builder.methodError(ServiceMethod.java:755)
@@ -37,7 +37,7 @@ java.lang.IllegalArgumentException: Unable to create converter for class java.la
 	at com.sun.proxy.$Proxy0.sendToUspn(Unknown Source)
 	at SenderService.SendToUspn.SendServiceImpl.sendToUspn(SendServiceImpl.java:71)
 	at SenderService.SendToUspn.SendServiceImpl.sendToUspn(SendServiceImpl.java:60)
-	at SenderService.VIOsender.send(VIOsender.java:55)
+	at SenderService.VIOSender.send(VIOsender.java:55)
 	at Main.main(Main.java:14)
 Caused by: java.lang.IllegalArgumentException: Could not locate ResponseBody converter for class java.lang.String.
   Tried:
@@ -46,7 +46,7 @@ Caused by: java.lang.IllegalArgumentException: Could not locate ResponseBody con
 	at retrofit2.Retrofit.responseBodyConverter(Retrofit.java:313)
 	at retrofit2.ServiceMethod$Builder.createResponseConverter(ServiceMethod.java:739)
 	... 8 more
-2018-06-03 00:41:14,204 [ERROR][main            ][        SenderService.VIOsender] - FAILED
+2018-06-03 00:41:14,204 [ERROR][main            ][        SenderService.VIOSender] - FAILED
 java.lang.IllegalArgumentException: Unable to create converter for class java.lang.String
     for method SendService.sendToUspn
 	at retrofit2.ServiceMethod$Builder.methodError(ServiceMethod.java:755)
@@ -57,7 +57,7 @@ java.lang.IllegalArgumentException: Unable to create converter for class java.la
 	at com.sun.proxy.$Proxy0.sendToUspn(Unknown Source)
 	at SenderService.SendToUspn.SendServiceImpl.sendToUspn(SendServiceImpl.java:71)
 	at SenderService.SendToUspn.SendServiceImpl.sendToUspn(SendServiceImpl.java:60)
-	at SenderService.VIOsender.send(VIOsender.java:55)
+	at SenderService.VIOSender.send(VIOsender.java:55)
 	at Main.main(Main.java:14)
 Caused by: java.lang.IllegalArgumentException: Could not locate ResponseBody converter for class java.lang.String.
   Tried:
@@ -66,7 +66,7 @@ Caused by: java.lang.IllegalArgumentException: Could not locate ResponseBody con
 	at retrofit2.Retrofit.responseBodyConverter(Retrofit.java:313)
 	at retrofit2.ServiceMethod$Builder.createResponseConverter(ServiceMethod.java:739)
 	... 8 more
-2018-06-03 00:41:44,922 [ERROR][main            ][        SenderService.VIOsender] - FAILED
+2018-06-03 00:41:44,922 [ERROR][main            ][        SenderService.VIOSender] - FAILED
 java.lang.IllegalArgumentException: Unable to create converter for class java.lang.String
     for method SendService.sendToUspn
 	at retrofit2.ServiceMethod$Builder.methodError(ServiceMethod.java:755)
@@ -77,7 +77,7 @@ java.lang.IllegalArgumentException: Unable to create converter for class java.la
 	at com.sun.proxy.$Proxy0.sendToUspn(Unknown Source)
 	at SenderService.SendToUspn.SendServiceImpl.sendToUspn(SendServiceImpl.java:70)
 	at SenderService.SendToUspn.SendServiceImpl.sendToUspn(SendServiceImpl.java:60)
-	at SenderService.VIOsender.send(VIOsender.java:55)
+	at SenderService.VIOSender.send(VIOsender.java:55)
 	at Main.main(Main.java:14)
 Caused by: java.lang.IllegalArgumentException: Could not locate ResponseBody converter for class java.lang.String.
   Tried:
@@ -86,19 +86,19 @@ Caused by: java.lang.IllegalArgumentException: Could not locate ResponseBody con
 	at retrofit2.Retrofit.responseBodyConverter(Retrofit.java:313)
 	at retrofit2.ServiceMethod$Builder.createResponseConverter(ServiceMethod.java:739)
 	... 8 more
-2018-06-03 00:48:56,625 [ERROR][main            ][        SenderService.VIOsender] - FAILED
+2018-06-03 00:48:56,625 [ERROR][main            ][        SenderService.VIOSender] - FAILED
 java.lang.NullPointerException
 	at SenderService.SendToUspn.SendServiceImpl.sendToUspn(SendServiceImpl.java:74)
 	at SenderService.SendToUspn.SendServiceImpl.sendToUspn(SendServiceImpl.java:62)
-	at SenderService.VIOsender.send(VIOsender.java:55)
+	at SenderService.VIOSender.send(VIOsender.java:55)
 	at Main.main(Main.java:14)
-2018-06-03 00:49:17,546 [ERROR][main            ][        SenderService.VIOsender] - FAILED
+2018-06-03 00:49:17,546 [ERROR][main            ][        SenderService.VIOSender] - FAILED
 java.lang.NullPointerException
 	at SenderService.SendToUspn.SendServiceImpl.sendToUspn(SendServiceImpl.java:74)
 	at SenderService.SendToUspn.SendServiceImpl.sendToUspn(SendServiceImpl.java:62)
-	at SenderService.VIOsender.send(VIOsender.java:55)
+	at SenderService.VIOSender.send(VIOsender.java:55)
 	at Main.main(Main.java:14)
-2018-06-03 01:09:49,302 [ERROR][main            ][        SenderService.VIOsender] - FAILED
+2018-06-03 01:09:49,302 [ERROR][main            ][        SenderService.VIOSender] - FAILED
 java.lang.IllegalArgumentException: @Headers value must be in the form "Name: Value". Found: "Content-type"
     for method SendService.sendToUspn
 	at retrofit2.ServiceMethod$Builder.methodError(ServiceMethod.java:755)
@@ -111,9 +111,9 @@ java.lang.IllegalArgumentException: @Headers value must be in the form "Name: Va
 	at com.sun.proxy.$Proxy0.sendToUspn(Unknown Source)
 	at SenderService.SendToUspn.SendServiceImpl.sendToUspn(SendServiceImpl.java:77)
 	at SenderService.SendToUspn.SendServiceImpl.sendToUspn(SendServiceImpl.java:64)
-	at SenderService.VIOsender.send(VIOsender.java:55)
+	at SenderService.VIOSender.send(VIOsender.java:55)
 	at Main.main(Main.java:14)
-2018-06-03 01:20:37,196 [ERROR][main            ][        SenderService.VIOsender] - FAILED
+2018-06-03 01:20:37,196 [ERROR][main            ][        SenderService.VIOSender] - FAILED
 java.lang.IllegalArgumentException: @Headers value must be in the form "Name: Value". Found: "Content-type"
     for method SendService.sendToUspn
 	at retrofit2.ServiceMethod$Builder.methodError(ServiceMethod.java:755)
@@ -126,9 +126,9 @@ java.lang.IllegalArgumentException: @Headers value must be in the form "Name: Va
 	at com.sun.proxy.$Proxy0.sendToUspn(Unknown Source)
 	at SenderService.SendToUspn.SendServiceImpl.sendToUspn(SendServiceImpl.java:77)
 	at SenderService.SendToUspn.SendServiceImpl.sendToUspn(SendServiceImpl.java:64)
-	at SenderService.VIOsender.send(VIOsender.java:55)
+	at SenderService.VIOSender.send(VIOsender.java:55)
 	at Main.main(Main.java:14)
-2018-06-03 01:31:17,035 [ERROR][main            ][        SenderService.VIOsender] - FAILED
+2018-06-03 01:31:17,035 [ERROR][main            ][        SenderService.VIOSender] - FAILED
 java.lang.IllegalArgumentException: @Field parameters can only be used with form encoding. (parameter #1)
     for method SendService.sendToUspn
 	at retrofit2.ServiceMethod$Builder.methodError(ServiceMethod.java:755)
@@ -142,9 +142,9 @@ java.lang.IllegalArgumentException: @Field parameters can only be used with form
 	at com.sun.proxy.$Proxy0.sendToUspn(Unknown Source)
 	at SenderService.SendToUspn.SendServiceImpl.sendToUspn(SendServiceImpl.java:77)
 	at SenderService.SendToUspn.SendServiceImpl.sendToUspn(SendServiceImpl.java:64)
-	at SenderService.VIOsender.send(VIOsender.java:55)
+	at SenderService.VIOSender.send(VIOsender.java:55)
 	at Main.main(Main.java:14)
-2018-06-03 01:34:15,427 [ERROR][main            ][        SenderService.VIOsender] - FAILED
+2018-06-03 01:34:15,427 [ERROR][main            ][        SenderService.VIOSender] - FAILED
 java.lang.IllegalArgumentException: Unable to create converter for class java.lang.String
     for method SendService.sendToUspn
 	at retrofit2.ServiceMethod$Builder.methodError(ServiceMethod.java:755)
@@ -155,7 +155,7 @@ java.lang.IllegalArgumentException: Unable to create converter for class java.la
 	at com.sun.proxy.$Proxy0.sendToUspn(Unknown Source)
 	at SenderService.SendToUspn.SendServiceImpl.sendToUspn(SendServiceImpl.java:80)
 	at SenderService.SendToUspn.SendServiceImpl.sendToUspn(SendServiceImpl.java:67)
-	at SenderService.VIOsender.send(VIOsender.java:55)
+	at SenderService.VIOSender.send(VIOsender.java:55)
 	at Main.main(Main.java:14)
 Caused by: java.lang.IllegalArgumentException: Could not locate ResponseBody converter for class java.lang.String.
   Tried:
@@ -164,7 +164,7 @@ Caused by: java.lang.IllegalArgumentException: Could not locate ResponseBody con
 	at retrofit2.Retrofit.responseBodyConverter(Retrofit.java:313)
 	at retrofit2.ServiceMethod$Builder.createResponseConverter(ServiceMethod.java:739)
 	... 8 more
-2018-06-03 01:35:31,117 [ERROR][main            ][        SenderService.VIOsender] - FAILED
+2018-06-03 01:35:31,117 [ERROR][main            ][        SenderService.VIOSender] - FAILED
 java.lang.IllegalArgumentException: Unable to create @Body converter for class java.lang.String (parameter #1)
     for method SendService.sendToUspn
 	at retrofit2.ServiceMethod$Builder.methodError(ServiceMethod.java:755)
@@ -177,7 +177,7 @@ java.lang.IllegalArgumentException: Unable to create @Body converter for class j
 	at com.sun.proxy.$Proxy0.sendToUspn(Unknown Source)
 	at SenderService.SendToUspn.SendServiceImpl.sendToUspn(SendServiceImpl.java:78)
 	at SenderService.SendToUspn.SendServiceImpl.sendToUspn(SendServiceImpl.java:63)
-	at SenderService.VIOsender.send(VIOsender.java:55)
+	at SenderService.VIOSender.send(VIOsender.java:55)
 	at Main.main(Main.java:14)
 Caused by: java.lang.IllegalArgumentException: Could not locate RequestBody converter for class java.lang.String.
   Tried:
@@ -186,23 +186,23 @@ Caused by: java.lang.IllegalArgumentException: Could not locate RequestBody conv
 	at retrofit2.Retrofit.requestBodyConverter(Retrofit.java:262)
 	at retrofit2.ServiceMethod$Builder.parseParameterAnnotation(ServiceMethod.java:713)
 	... 9 more
-2018-06-03 01:56:44,730 [ERROR][main            ][        SenderService.VIOsender] - FAILED
+2018-06-03 01:56:44,730 [ERROR][main            ][        SenderService.VIOSender] - FAILED
 java.lang.IllegalArgumentException: baseUrl must end in /: http://172.22.116.68:9080/vio-emulator
 	at retrofit2.Retrofit$Builder.baseUrl(Retrofit.java:515)
 	at retrofit2.Retrofit$Builder.baseUrl(Retrofit.java:458)
 	at SenderService.SendToUspn.SendServiceImpl.sendToUspn(SendServiceImpl.java:76)
 	at SenderService.SendToUspn.SendServiceImpl.sendToUspn(SendServiceImpl.java:68)
-	at SenderService.VIOsender.send(VIOsender.java:55)
+	at SenderService.VIOSender.send(VIOsender.java:55)
 	at Main.main(Main.java:14)
-2018-06-03 01:56:58,925 [ERROR][main            ][        SenderService.VIOsender] - FAILED
+2018-06-03 01:56:58,925 [ERROR][main            ][        SenderService.VIOSender] - FAILED
 java.lang.IllegalArgumentException: baseUrl must end in /: http://172.22.116.68:9080/vio-emulator
 	at retrofit2.Retrofit$Builder.baseUrl(Retrofit.java:515)
 	at retrofit2.Retrofit$Builder.baseUrl(Retrofit.java:458)
 	at SenderService.SendToUspn.SendServiceImpl.sendToUspn(SendServiceImpl.java:76)
 	at SenderService.SendToUspn.SendServiceImpl.sendToUspn(SendServiceImpl.java:68)
-	at SenderService.VIOsender.send(VIOsender.java:55)
+	at SenderService.VIOSender.send(VIOsender.java:55)
 	at Main.main(Main.java:14)
-2018-06-03 01:58:34,557 [ERROR][main            ][        SenderService.VIOsender] - FAILED
+2018-06-03 01:58:34,557 [ERROR][main            ][        SenderService.VIOSender] - FAILED
 java.lang.IllegalStateException: Expected a string but was BEGIN_OBJECT at line 1 column 2 path $
 	at com.google.gson.stream.JsonReader.nextString(JsonReader.java:825)
 	at com.google.gson.internal.bind.TypeAdapters$16.read(TypeAdapters.java:402)
@@ -214,9 +214,9 @@ java.lang.IllegalStateException: Expected a string but was BEGIN_OBJECT at line 
 	at retrofit2.OkHttpCall.execute(OkHttpCall.java:180)
 	at SenderService.SendToUspn.SendServiceImpl.sendToUspn(SendServiceImpl.java:84)
 	at SenderService.SendToUspn.SendServiceImpl.sendToUspn(SendServiceImpl.java:69)
-	at SenderService.VIOsender.send(VIOsender.java:55)
+	at SenderService.VIOSender.send(VIOsender.java:55)
 	at Main.main(Main.java:14)
-2018-06-03 01:58:59,137 [ERROR][main            ][        SenderService.VIOsender] - FAILED
+2018-06-03 01:58:59,137 [ERROR][main            ][        SenderService.VIOSender] - FAILED
 java.lang.IllegalStateException: Expected a string but was BEGIN_OBJECT at line 1 column 2 path $
 	at com.google.gson.stream.JsonReader.nextString(JsonReader.java:825)
 	at com.google.gson.internal.bind.TypeAdapters$16.read(TypeAdapters.java:402)
@@ -228,9 +228,9 @@ java.lang.IllegalStateException: Expected a string but was BEGIN_OBJECT at line 
 	at retrofit2.OkHttpCall.execute(OkHttpCall.java:180)
 	at SenderService.SendToUspn.SendServiceImpl.sendToUspn(SendServiceImpl.java:84)
 	at SenderService.SendToUspn.SendServiceImpl.sendToUspn(SendServiceImpl.java:69)
-	at SenderService.VIOsender.send(VIOsender.java:55)
+	at SenderService.VIOSender.send(VIOsender.java:55)
 	at Main.main(Main.java:14)
-2018-06-03 01:59:36,061 [ERROR][main            ][        SenderService.VIOsender] - FAILED
+2018-06-03 01:59:36,061 [ERROR][main            ][        SenderService.VIOSender] - FAILED
 java.lang.IllegalStateException: Expected a string but was BEGIN_OBJECT at line 1 column 2 path $
 	at com.google.gson.stream.JsonReader.nextString(JsonReader.java:825)
 	at com.google.gson.internal.bind.TypeAdapters$16.read(TypeAdapters.java:402)
@@ -242,15 +242,15 @@ java.lang.IllegalStateException: Expected a string but was BEGIN_OBJECT at line 
 	at retrofit2.OkHttpCall.execute(OkHttpCall.java:180)
 	at SenderService.SendToUspn.SendServiceImpl.sendToUspn(SendServiceImpl.java:84)
 	at SenderService.SendToUspn.SendServiceImpl.sendToUspn(SendServiceImpl.java:69)
-	at SenderService.VIOsender.send(VIOsender.java:55)
+	at SenderService.VIOSender.send(VIOsender.java:55)
 	at Main.main(Main.java:14)
-2018-06-03 02:00:22,858 [ERROR][main            ][        SenderService.VIOsender] - FAILED
+2018-06-03 02:00:22,858 [ERROR][main            ][        SenderService.VIOSender] - FAILED
 java.lang.NullPointerException
 	at SenderService.SendToUspn.SendServiceImpl.sendToUspn(SendServiceImpl.java:85)
 	at SenderService.SendToUspn.SendServiceImpl.sendToUspn(SendServiceImpl.java:69)
-	at SenderService.VIOsender.send(VIOsender.java:55)
+	at SenderService.VIOSender.send(VIOsender.java:55)
 	at Main.main(Main.java:14)
-2018-06-03 17:06:15,853 [ERROR][main            ][        SenderService.VIOsender] - FAILED
+2018-06-03 17:06:15,853 [ERROR][main            ][        SenderService.VIOSender] - FAILED
 java.lang.IllegalArgumentException: @Part annotation must supply a name or use MultipartBody.Part parameter type. (parameter #1)
     for method UploadService.upload
 	at retrofit2.ServiceMethod$Builder.methodError(ServiceMethod.java:755)
@@ -265,29 +265,29 @@ java.lang.IllegalArgumentException: @Part annotation must supply a name or use M
 	at SenderService.UploadToVio.UploadServiceImpl.upload(UploadServiceImpl.java:63)
 	at SenderService.UploadToVio.UploadServiceImpl.upload(UploadServiceImpl.java:46)
 	at SenderService.SendToUspn.SendServiceImpl.sendToUspn(SendServiceImpl.java:58)
-	at SenderService.VIOsender.send(VIOsender.java:55)
+	at SenderService.VIOSender.send(VIOsender.java:55)
 	at Main.main(Main.java:14)
-2018-06-03 17:18:26,677 [ERROR][main            ][        SenderService.VIOsender] - FAILED
+2018-06-03 17:18:26,677 [ERROR][main            ][        SenderService.VIOSender] - FAILED
 java.lang.NullPointerException
 	at SenderService.UploadToVio.UploadServiceImpl.upload(UploadServiceImpl.java:53)
 	at SenderService.SendToUspn.SendServiceImpl.sendToUspn(SendServiceImpl.java:58)
-	at SenderService.VIOsender.send(VIOsender.java:55)
+	at SenderService.VIOSender.send(VIOsender.java:55)
 	at Main.main(Main.java:14)
-2018-06-03 17:18:52,502 [ERROR][main            ][        SenderService.VIOsender] - FAILED
+2018-06-03 17:18:52,502 [ERROR][main            ][        SenderService.VIOSender] - FAILED
 java.lang.NullPointerException
 	at SenderService.UploadToVio.UploadServiceImpl.upload(UploadServiceImpl.java:53)
 	at SenderService.SendToUspn.SendServiceImpl.sendToUspn(SendServiceImpl.java:58)
-	at SenderService.VIOsender.send(VIOsender.java:55)
+	at SenderService.VIOSender.send(VIOsender.java:55)
 	at Main.main(Main.java:14)
-2018-06-03 17:41:46,395 [ERROR][main            ][        SenderService.VIOsender] - FAILED
+2018-06-03 17:41:46,395 [ERROR][main            ][        SenderService.VIOSender] - FAILED
 java.lang.ArrayIndexOutOfBoundsException: 1
 	at SenderService.UploadToVio.UploadServiceImpl.upload(UploadServiceImpl.java:72)
 	at SenderService.SendToUspn.SendServiceImpl.sendToUspn(SendServiceImpl.java:58)
-	at SenderService.VIOsender.send(VIOsender.java:55)
+	at SenderService.VIOSender.send(VIOsender.java:55)
 	at Main.main(Main.java:14)
-2018-06-03 17:49:43,207 [ERROR][main            ][        SenderService.VIOsender] - FAILED
+2018-06-03 17:49:43,207 [ERROR][main            ][        SenderService.VIOSender] - FAILED
 java.lang.ArrayIndexOutOfBoundsException: 0
 	at SenderService.UploadToVio.UploadServiceImpl.upload(UploadServiceImpl.java:73)
 	at SenderService.SendToUspn.SendServiceImpl.sendToUspn(SendServiceImpl.java:58)
-	at SenderService.VIOsender.send(VIOsender.java:55)
+	at SenderService.VIOSender.send(VIOsender.java:55)
 	at Main.main(Main.java:14)
