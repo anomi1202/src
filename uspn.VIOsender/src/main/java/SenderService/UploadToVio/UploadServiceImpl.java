@@ -22,22 +22,21 @@ import java.util.concurrent.Executors;
 
 public class UploadServiceImpl implements UploadServiceRest, UploadService {
     private Logger logger = LoggerFactory.getLogger(UploadServiceImpl.class);
-    private final String uri;
     private final int threadCount;
+    private Retrofit retrofit;
+    private UploadServiceRest uploadService;
 
     public UploadServiceImpl(String uri, int threadCount) {
-        this.uri = uri;
+        this.retrofit = new Retrofit.Builder()
+                .baseUrl(uri)
+                .addConverterFactory(GsonConverterFactory.create())
+                .build();
+        this.uploadService = retrofit.create(UploadServiceRest.class);
         this.threadCount = threadCount;
     }
 
     @Override
     public Call<ResponseBody> postRequest(MultipartBody.Part file) throws Exception {
-        Retrofit retrofit = new Retrofit.Builder()
-                .baseUrl(uri)
-                .addConverterFactory(GsonConverterFactory.create())
-                .build();
-        UploadServiceRest uploadService = retrofit.create(UploadServiceRest.class);
-
         return uploadService.postRequest(file);
     }
 

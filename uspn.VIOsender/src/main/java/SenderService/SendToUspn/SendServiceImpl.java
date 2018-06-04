@@ -18,22 +18,21 @@ import java.util.concurrent.Executors;
 
 public class SendServiceImpl implements SendService, SendServiceRest {
     private Logger logger = LoggerFactory.getLogger(SendServiceImpl.class);
-    private final String uri;
     private final int threadCount;
+    private Retrofit retrofit;
+    private SendServiceRest sendService;
 
     public SendServiceImpl(String uri, int threadCount) {
-        this.uri = uri;
+        this.retrofit = new Retrofit.Builder()
+                .baseUrl(uri)
+                .addConverterFactory(GsonConverterFactory.create())
+                .build();
+        this.sendService = retrofit.create(SendServiceRest.class);
         this.threadCount = threadCount;
     }
 
     @Override
     public Call<ResponseBody> send(Map<String, String> body) throws Exception {
-        Retrofit retrofit = new Retrofit.Builder()
-                .baseUrl(uri)
-                .addConverterFactory(GsonConverterFactory.create())
-                .build();
-        SendServiceRest sendService = retrofit.create(SendServiceRest.class);
-
         return sendService.send(body);
     }
 
