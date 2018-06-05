@@ -9,7 +9,9 @@ compileJava.options.encoding='UTF-8'
 
 repositories {
     mavenCentral()
+    maven { url "https://jitpack.io" }
 }
+
 
 dependencies {
     testCompile group: 'junit', name: 'junit', version: '4.12'
@@ -26,6 +28,8 @@ dependencies {
     compile group: 'com.squareup.retrofit2', name: 'retrofit', version: '2.4.0'
     // https://mvnrepository.com/artifact/com.squareup.retrofit2/converter-gson
     compile group: 'com.squareup.retrofit2', name: 'converter-gson', version: '2.4.0'
+
+
 
 
 

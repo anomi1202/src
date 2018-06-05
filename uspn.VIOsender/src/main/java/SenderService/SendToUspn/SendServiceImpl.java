@@ -38,6 +38,8 @@ public class SendServiceImpl implements SendService, SendServiceRest {
 
     @Override
     public String send(String fileId, DocumentType type, String uppId) throws Exception {
+        String requestMessage = null;
+
         Map<String, String> map = new HashMap<>();
         map.put("uppFileId", uppId);
         map.put("documentFileId", fileId);
@@ -45,7 +47,12 @@ public class SendServiceImpl implements SendService, SendServiceRest {
 
         Call<ResponseBody> responseBodyCall = send(map);
         Response<ResponseBody> execute = responseBodyCall.execute();
-        String requestMessage = execute.isSuccessful() ? execute.body().string() : execute.errorBody().string();
+
+        if (execute.isSuccessful()) {
+            requestMessage = execute.body().string();
+        } else {
+            throw new Exception(execute.errorBody().string());
+        }
 
         logger.info(String.format("Send service:" +
                         "\r\n\t%s method to URL: %s" +

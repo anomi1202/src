@@ -42,12 +42,20 @@ public class UploadServiceImpl implements UploadServiceRest, UploadService {
 
     @Override
     public String upload(File file) throws Exception {
+        String requestMessage = null;
+
         RequestBody body = RequestBody.create(MediaType.parse("multipart/form-data"), file);
         MultipartBody.Part multipartBody = MultipartBody.Part.createFormData("file", file.getName() , body);
 
         Call<ResponseBody> responseBodyCall = postRequest(multipartBody);
         Response<ResponseBody> executeResult = responseBodyCall.execute();
-        String requestMessage = executeResult.isSuccessful() ? executeResult.body().string().replaceAll("\"", "") : executeResult.errorBody().string();
+
+        if (executeResult.isSuccessful()) {
+            requestMessage = executeResult.body().string().replaceAll("\"", "");
+        } else {
+            throw new Exception(executeResult.errorBody().string());
+        }
+
         logger.info(String.format("Upload service:" +
                         "\r\n\t%s method to URL: %s" +
                         "\r\n\tUploading file: %s" +

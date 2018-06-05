@@ -1,11 +1,13 @@
 package USPN_WEB.documentHandlers.interfaces;
 
-import okhttp3.RequestBody;
+import Documents.disposal.DisposalDocument;
+import okhttp3.ResponseBody;
 import retrofit2.Call;
 import retrofit2.http.Body;
 import retrofit2.http.POST;
 import retrofit2.http.Query;
 
+import java.util.List;
 import java.util.Map;
 
 public interface DisposalHandlerService {
@@ -41,7 +43,7 @@ public interface DisposalHandlerService {
      ]
      * */
     @POST("npf/internalDocuments.json")
-    Call<RequestBody> getDisposalList(@Query("createDateRange.start") String createDateRangeStart);
+    Call<List<DisposalDocument>> getDisposalList(@Query("createDateRange.start") String createDateRangeStart) throws Exception;
 
 
     /**
@@ -57,11 +59,11 @@ public interface DisposalHandlerService {
      * @return объект Call<T>. После execute возвращается string = ""
      * */
     @POST("npf/confirmDisposal")
-    Call<RequestBody> confirmDisposal(
+    Call<ResponseBody> confirmDisposal(
             @Query("baseDocumentId") String baseDocumentId,
             @Query("baseDocumentNumber") String baseDocumentNumber,
             @Query("baseDocumentDate") String baseDocumentDate
-    );
+    )throws Exception;
 
     /**
      * Отражение распоряжения в УСПН
@@ -70,7 +72,7 @@ public interface DisposalHandlerService {
      * @return объект Call<T>. После execute возвращается boolean = true=OK/false=fail
      * */
     @POST("npf/reflectDisposal")
-    Call<RequestBody> reflectDisposal(@Body Map<String, String> body);
+    Call<ResponseBody> reflectDisposal(@Body Map<String, String> body) throws Exception;
 
     /**
      * Озыв распоряжения в УСПН
@@ -79,6 +81,6 @@ public interface DisposalHandlerService {
      * @return объект Call<T>. После execute возвращается boolean = true=OK/false=fail
      * */
     @POST("npf/rollbackDisposal")
-    Call<RequestBody> rollbackDisposal(@Body Map<String, String> body);
+    Call<ResponseBody> rollbackDisposal(@Body Map<String, String> body) throws Exception;
 
 }

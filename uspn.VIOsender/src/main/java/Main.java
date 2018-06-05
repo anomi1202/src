@@ -1,30 +1,26 @@
 import SenderService.SenderServiceBuilder;
+import USPN_WEB.DocHandlerServiceBuilder;
+import USPN_WEB.documentHandlers.interfaces.AuthorizationService;
+import okhttp3.RequestBody;
+import okhttp3.ResponseBody;
+import retrofit2.Call;
+import retrofit2.Response;
 
+import java.io.IOException;
 import java.nio.file.Path;
 import java.nio.file.Paths;
 import java.util.HashMap;
 
 public class Main {
     private static SenderServiceBuilder sender;
+    private static DocHandlerServiceBuilder docHandlerService;
 
-    public static void main(String[] args) {
+    public static void main(String[] args) throws Exception {
 
-        sender = SenderServiceBuilder.newInstance()
-                .documentToSend(Paths.get("src/main/resources/04-RNPF-S.zip"), 4)
-                .upp(Paths.get("src/main/resources/upp-file_file_ZOONP_4.xml.gz"))
-                .build();
-        sender.send();
+        docHandlerService = DocHandlerServiceBuilder.create();
+        docHandlerService.getIncomingDocList("01.06.2018").forEach(doc -> System.out.println(doc.getDatechange()));
 
-
-        HashMap<Path, Integer> map = new HashMap<>();
-        map.put(Paths.get("src/main/resources/04-RNPF-S.zip"), 4);
-        map.put(Paths.get("src/main/resources/04-RNPF-S_1.zip"), 4);
-
-        sender = SenderServiceBuilder.newInstance()
-                .documentsToSend(map)
-                .upp(Paths.get("src/main/resources/upp-file_file_ZOONP_4.xml.gz"))
-                .build();
-        sender.send();
+        docHandlerService.getDisposalList("01.05.2018").forEach((disp -> System.out.println(disp.getId())));
     }
 
 }

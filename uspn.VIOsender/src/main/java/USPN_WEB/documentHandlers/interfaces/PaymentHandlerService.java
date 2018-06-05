@@ -1,6 +1,7 @@
 package USPN_WEB.documentHandlers.interfaces;
 
-import okhttp3.RequestBody;
+import Documents.payment.Payment;
+import okhttp3.ResponseBody;
 import retrofit2.Call;
 import retrofit2.http.Body;
 import retrofit2.http.POST;
@@ -21,17 +22,17 @@ public interface PaymentHandlerService {
      *             }
      * @return объект Call<T> после execute возвращается JSON
     {
-    "id": 1643,
-    "number": "3",
-    "date": "04.06.2018 00:00:00",
-    "amount": 3,
-    "description": null,
-    "createDate": "04.06.2018",
-    "changeDate": null
+        "id": 1643,
+        "number": "3",
+        "date": "04.06.2018 00:00:00",
+        "amount": 3,
+        "description": null,
+        "createDate": "04.06.2018",
+        "changeDate": null
     }
      * */
     @POST("payments/new")
-    Call<RequestBody> createPayment(@Body Map<String, String> body);
+    Call<Payment> createPayment(@Body Payment newPayment) throws Exception;
 
     /**
      * Линковка ПП с распоряжением в УСПН
@@ -42,7 +43,7 @@ public interface PaymentHandlerService {
      * @return объект Call<T>. После execute возвращается boolean = true=OK/false=fail
      * */
     @POST("#/payments/linkToDocument")
-    Call<RequestBody> paymentsLinkToDocument(@Body Map<String, String> body);
+    Call<ResponseBody> paymentsLinkToDocument(@Body Map<String, String> body) throws Exception;
 
     /**
      * Линковка ПП с распоряжением в УСПН
@@ -53,7 +54,7 @@ public interface PaymentHandlerService {
      * @return объект Call<T>. После execute возвращается boolean = true=OK/false=fail
      * */
     @POST("#/payments/linkToDisposal")
-    Call<RequestBody> paymentsLinkToDisposal(@Body Map<String, String> body);
+    Call<ResponseBody> paymentsLinkToDisposal(@Body Map<String, String> body) throws Exception;
 
     /**
      * Подтверждение ПП в УСПН
@@ -62,6 +63,6 @@ public interface PaymentHandlerService {
      * @return объект Call<T>. После execute возвращается boolean = true=OK/false=fail
      * */
     @POST("npf/confirmPaymentOrders")
-    Call<RequestBody> confirmPaymentOrders(@Query("documentId") String documentId);
+    Call<ResponseBody> confirmPaymentOrders(@Query("documentId") String documentId) throws Exception;
 
 }

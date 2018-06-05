@@ -1,11 +1,11 @@
 package USPN_WEB.documentHandlers.interfaces;
 
-import okhttp3.RequestBody;
+import Documents.incoming.IncomingDocument;
+import okhttp3.ResponseBody;
 import retrofit2.Call;
-import retrofit2.http.Body;
-import retrofit2.http.POST;
-import retrofit2.http.Query;
+import retrofit2.http.*;
 
+import java.util.List;
 import java.util.Map;
 
 public interface IncomingDocHandlerService {
@@ -16,7 +16,10 @@ public interface IncomingDocHandlerService {
      * @return объект Call<T> с JSON-списком документов
      * */
     @POST("npf/incomingDocuments.json")
-    Call<RequestBody> getIncomingDocList(@Query("createDateRange.start") String createDateRangeStart);
+    Call<List<IncomingDocument>> getIncomingDocList(
+            @Query("createDocumentDateRange.start") String createDateRangeStart,
+            @Query("documentType") String documentType
+    ) throws Exception;
 
     /**
      * Отражение док-тов в УСПН
@@ -25,7 +28,7 @@ public interface IncomingDocHandlerService {
      * @return объект Call<T> После execute возвращается boolean = true=OK/false=fail
      * */
     @POST("npf/checkOnBaseControl")
-    Call<RequestBody> checkOnBaseControl(@Body Map<String, String> body);
+    Call<ResponseBody> checkOnBaseControl(@Body Map<String, String> body) throws Exception;
 
     /**
      * Отражение док-тов в УСПН
@@ -34,14 +37,14 @@ public interface IncomingDocHandlerService {
      * @return объект Call<T> После execute возвращается boolean = true=OK/false=fail
      * */
     @POST("npf/reflect")
-    Call<RequestBody> reflect(@Body Map<String, String> body);
+    Call<ResponseBody> reflect(@Body Map<String, String> body) throws Exception;
 
     /**
      * Отзыв док-тов в УСПН
      *
      * @param body словарь с парами отправляемого JSON файла - {"documentIds":[9137, 9138, 9139]}
-     * @return объект Call<T>
+     * @return объект Call<T> После execute возвращается boolean = true=OK/false=fail
      * */
     @POST("npf/rollback")
-    Call<RequestBody> rollback(@Body Map<String, String> body);
+    Call<ResponseBody> rollback(@Body Map<String, String> body) throws Exception;
 }
