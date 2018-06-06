@@ -5,7 +5,7 @@ import com.google.gson.annotations.SerializedName;
 
 public class IncomingDocument {
     @SerializedName("id")
-    private Integer id;
+    private long id;
 
     @SerializedName("archiveName")
     private String archiveName;
@@ -37,7 +37,7 @@ public class IncomingDocument {
     @SerializedName("linkdocument")
     private String linkdocument;
 
-    public Integer getId() {
+    public long getId() {
         return id;
     }
 

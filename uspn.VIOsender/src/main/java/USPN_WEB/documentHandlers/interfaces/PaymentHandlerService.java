@@ -1,68 +1,77 @@
 package USPN_WEB.documentHandlers.interfaces;
 
 import Documents.payment.Payment;
+import com.google.gson.JsonObject;
 import okhttp3.ResponseBody;
 import retrofit2.Call;
 import retrofit2.http.Body;
+import retrofit2.http.Field;
 import retrofit2.http.POST;
 import retrofit2.http.Query;
 
+import java.util.List;
 import java.util.Map;
 
 public interface PaymentHandlerService {
     /**
      * Cоздание ПП в УСПН
      *
-     * @param body словарь с парами отправляемого JSON файла
+     * @param newPayment отправляемый обьект. Отправляется как JSON
      *             {
      *                  "id":"",
      *                  "number":"3",
      *                  "date":"04.06.2018",
      *                  "amount":3
      *             }
-     * @return объект Call<T> после execute возвращается JSON
-    {
-        "id": 1643,
-        "number": "3",
-        "date": "04.06.2018 00:00:00",
-        "amount": 3,
-        "description": null,
-        "createDate": "04.06.2018",
-        "changeDate": null
-    }
+     * @return объект Call<T> после execute возвращается обьект Payment
      * */
     @POST("payments/new")
     Call<Payment> createPayment(@Body Payment newPayment) throws Exception;
 
     /**
-     * Линковка ПП с распоряжением в УСПН
+     * Получение списка ПП у документа в УСПН
      *
-     * @param body словарь с парами отправляемого JSON файла - {"baseDocumentId":7474,"ids":[1372]}
-     *             baseDocumentId - распоряжение
-     *             ids - массив ПП
-     * @return объект Call<T>. После execute возвращается boolean = true=OK/false=fail
+     * @param body отправляемый обьект. Отправляется как JSON
+     *             {
+     *                  "id":"",
+     *                  "number":"3",
+     *                  "date":"04.06.2018",
+     *                  "amount":3
+     *             }
+     * @return объект Call<T> после execute список обьектов Payment
      * */
-    @POST("#/payments/linkToDocument")
-    Call<ResponseBody> paymentsLinkToDocument(@Body Map<String, String> body) throws Exception;
+    @POST("payments/getPayments.json")
+    Call<List<Payment>> getPaymentsOfDocument(@Query("baseDocumentId") String baseDocumentId) throws Exception;
 
     /**
      * Линковка ПП с распоряжением в УСПН
      *
-     * @param body словарь с парами отправляемого JSON файла - {"baseDocumentId":7474,"ids":[1372]}
+     * @param json JSON с ID документа и ПП, отправляемых на линковку - {"baseDocumentId":7474,"ids":[1372]}
      *             baseDocumentId - распоряжение
      *             ids - массив ПП
-     * @return объект Call<T>. После execute возвращается boolean = true=OK/false=fail
+     * @return объект Call<T>. После execute возвращается boolean = true
+     * */
+    @POST("#/payments/linkToDocument")
+    Call<Boolean> paymentsLinkToDocument(@Body JsonObject json) throws Exception;
+
+    /**
+     * Линковка ПП с распоряжением в УСПН
+     *
+     * @param json JSON с ID распоряжения и ПП, отправляемых на линковку - {"baseDocumentId":7474,"ids":[1372]}
+     *             baseDocumentId - распоряжение
+     *             ids - массив ПП
+     * @return объект Call<T>. После execute возвращается boolean = true
      * */
     @POST("#/payments/linkToDisposal")
-    Call<ResponseBody> paymentsLinkToDisposal(@Body Map<String, String> body) throws Exception;
+    Call<Boolean> paymentsLinkToDisposal(@Body JsonObject json) throws Exception;
 
     /**
      * Подтверждение ПП в УСПН
      *
      * @param documentId ID подтверждаемого реестра/распоряжения
-     * @return объект Call<T>. После execute возвращается boolean = true=OK/false=fail
+     * @return объект Call<T>. После execute возвращается boolean = true
      * */
     @POST("npf/confirmPaymentOrders")
-    Call<ResponseBody> confirmPaymentOrders(@Query("documentId") String documentId) throws Exception;
+    Call<Boolean> confirmPaymentOrders(@Query("documentId") String documentId) throws Exception;
 
 }

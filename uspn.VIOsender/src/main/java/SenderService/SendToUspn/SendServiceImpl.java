@@ -3,6 +3,9 @@ package SenderService.SendToUspn;
 import Enums.DocumentType;
 import SenderService.SendToUspn.interfaces.SendService;
 import SenderService.SendToUspn.interfaces.SendServiceRest;
+import com.google.gson.Gson;
+import com.google.gson.GsonBuilder;
+import com.google.gson.JsonObject;
 import okhttp3.ResponseBody;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -23,29 +26,32 @@ public class SendServiceImpl implements SendService, SendServiceRest {
     private SendServiceRest sendService;
 
     public SendServiceImpl(String uri, int threadCount) {
+        Gson gson = new GsonBuilder()
+                .setPrettyPrinting()
+                .create();
         this.retrofit = new Retrofit.Builder()
                 .baseUrl(uri)
-                .addConverterFactory(GsonConverterFactory.create())
+                .addConverterFactory(GsonConverterFactory.create(gson))
                 .build();
         this.sendService = retrofit.create(SendServiceRest.class);
         this.threadCount = threadCount;
     }
 
     @Override
-    public Call<ResponseBody> send(Map<String, String> body) throws Exception {
-        return sendService.send(body);
+    public Call<ResponseBody> send(JsonObject json) throws Exception {
+        return sendService.send(json);
     }
 
     @Override
     public String send(String fileId, DocumentType type, String uppId) throws Exception {
         String requestMessage = null;
 
-        Map<String, String> map = new HashMap<>();
-        map.put("uppFileId", uppId);
-        map.put("documentFileId", fileId);
-        map.put("documentType", type.name());
+        JsonObject json = new JsonObject();
+        json.addProperty("uppFileId", uppId);
+        json.addProperty("documentFileId", fileId);
+        json.addProperty("documentType", type.name());
 
-        Call<ResponseBody> responseBodyCall = send(map);
+        Call<ResponseBody> responseBodyCall = send(json);
         Response<ResponseBody> execute = responseBodyCall.execute();
 
         if (execute.isSuccessful()) {

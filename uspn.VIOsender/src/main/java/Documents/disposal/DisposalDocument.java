@@ -5,7 +5,7 @@ import com.google.gson.annotations.SerializedName;
 
 public class DisposalDocument {
     @SerializedName("id")
-    private Integer id;
+    private long id;
 
     @SerializedName("number")
     private String number;
@@ -13,7 +13,10 @@ public class DisposalDocument {
     @SerializedName("status")
     private Status status;
 
-    public Integer getId() {
+    @SerializedName("date")
+    private String date;
+
+    public long getId() {
         return id;
     }
 
@@ -21,7 +24,15 @@ public class DisposalDocument {
         return number;
     }
 
-    public String getStatus() {
+    public String getStatusRUS() {
         return status.getStatus();
+    }
+
+    public String getStatusENG() {
+        return status.getNameUI();
+    }
+
+    public String getDate(){
+        return date;
     }
 }

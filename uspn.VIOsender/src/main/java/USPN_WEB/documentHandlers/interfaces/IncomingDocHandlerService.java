@@ -1,19 +1,20 @@
 package USPN_WEB.documentHandlers.interfaces;
 
 import Documents.incoming.IncomingDocument;
-import okhttp3.ResponseBody;
+import com.google.gson.JsonObject;
 import retrofit2.Call;
-import retrofit2.http.*;
+import retrofit2.http.Body;
+import retrofit2.http.POST;
+import retrofit2.http.Query;
 
 import java.util.List;
-import java.util.Map;
 
 public interface IncomingDocHandlerService {
     /**
      * Получение список док-тов в УСПН на форме входящих документов
      *
      * @param createDateRangeStart дата создания распоряжения - createDateRange.start=04.06.2018
-     * @return объект Call<T> с JSON-списком документов
+     * @return объект Call<T> после execute возвращается список обьектов IncomingDocument
      * */
     @POST("npf/incomingDocuments.json")
     Call<List<IncomingDocument>> getIncomingDocList(
@@ -22,29 +23,29 @@ public interface IncomingDocHandlerService {
     ) throws Exception;
 
     /**
-     * Отражение док-тов в УСПН
+     * Проверка БК док-тов в УСПН
      *
-     * @param body словарь с парами отправляемого JSON файла - {"documentIds":[9137, 9138, 9139]}
-     * @return объект Call<T> После execute возвращается boolean = true=OK/false=fail
+     * @param json JSON с ID документов, отправляемых на проверку БК - {"documentIds":[9137, 9138, 9139]}
+     * @return объект Call<T> После execute всегда возвращается boolean = true
      * */
     @POST("npf/checkOnBaseControl")
-    Call<ResponseBody> checkOnBaseControl(@Body Map<String, String> body) throws Exception;
+    Call<Boolean> checkOnBaseControl(@Body JsonObject json) throws Exception;
 
     /**
      * Отражение док-тов в УСПН
      *
-     * @param body словарь с парами отправляемого JSON файла - {"documentIds":[9137, 9138, 9139]}
-     * @return объект Call<T> После execute возвращается boolean = true=OK/false=fail
+     * @param json JSON с ID документов, отправляемых на отражение - {"documentIds":[9137, 9138, 9139]}
+     * @return объект Call<T> После execute всегда возвращается boolean = true
      * */
     @POST("npf/reflect")
-    Call<ResponseBody> reflect(@Body Map<String, String> body) throws Exception;
+    Call<Boolean> reflect(@Body JsonObject json) throws Exception;
 
     /**
      * Отзыв док-тов в УСПН
      *
-     * @param body словарь с парами отправляемого JSON файла - {"documentIds":[9137, 9138, 9139]}
-     * @return объект Call<T> После execute возвращается boolean = true=OK/false=fail
+     * @param json JSON с ID документов, отправляемых на отзыв - {"documentIds":[9137, 9138, 9139]}
+     * @return объект Call<T> После execute всегда возвращается boolean = true
      * */
     @POST("npf/rollback")
-    Call<ResponseBody> rollback(@Body Map<String, String> body) throws Exception;
+    Call<Boolean> rollback(@Body JsonObject json) throws Exception;
 }

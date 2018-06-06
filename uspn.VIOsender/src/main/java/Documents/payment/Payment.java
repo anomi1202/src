@@ -1,7 +1,6 @@
 
 package Documents.payment;
 
-import com.google.gson.annotations.Expose;
 import com.google.gson.annotations.SerializedName;
 
 public class Payment {
@@ -26,14 +25,23 @@ public class Payment {
     @SerializedName("changeDate")
     private String changeDate;
 
-    public Payment(String number, String date, Integer amount) {
-        this.id = "";
+    public static Payment newPayment() {
+        return new Payment();
+    }
+
+    public Payment withNumber(String number){
         this.number = number;
+        return this;
+    }
+
+    public Payment withDate(String date){
         this.date = date;
+        return this;
+    }
+
+    public Payment withAmount(Integer amount){
         this.amount = amount;
-        this.description = "";
-        this.createDate = "";
-        this.changeDate = "";
+        return this;
     }
 
     public String getId() {
