@@ -8,22 +8,17 @@ import java.util.HashMap;
 import java.util.Map;
 
 public class Document {
-    private long id;
     private String archiveName;
     private DocumentType type;
     private String number;
     private Integer amount;
     private IncomingDocType incomingDocType;
-    private Map<IncomingDocumentStatus, String> historyOfHandling;
+    private Map<String, String> historyOfHandling;
 
     public Document(String archiveName, DocumentType type) {
         this.archiveName = archiveName;
         this.type = type;
         this.historyOfHandling = new HashMap<>();
-    }
-
-    public long getId() {
-        return id;
     }
 
     public String getArchiveName() {
@@ -50,16 +45,12 @@ public class Document {
         return incomingDocType;
     }
 
-    public Map<IncomingDocumentStatus, String> getHistory(){
+    public Map<String, String> getHistory(){
         return historyOfHandling;
     }
 
-    public void addHistoryRecord(IncomingDocumentStatus status, String dateChange){
+    public void addHistoryRecord(String status, String dateChange){
         historyOfHandling.put(status, dateChange);
-    }
-
-    public void setId(long id) {
-        this.id = id;
     }
 
     public void setNumber(String number) {

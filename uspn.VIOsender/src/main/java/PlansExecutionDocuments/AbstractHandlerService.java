@@ -3,68 +3,79 @@ package PlansExecutionDocuments;
 import Documents.Document;
 import Documents.Enums.IncomingDocumentStatus;
 import Documents.forJson.incoming.IncomingDocument;
+import Documents.forJson.incoming.Status;
 import PlansExecutionDocuments.interfaces.HandlerService;
 import Services.USPNServices.DocHandlerService;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.List;
+import java.util.Optional;
 import java.util.stream.Stream;
 
 public abstract class AbstractHandlerService implements HandlerService {
-    private final long DEFAULT_WAIT = 30000;
+    private final Logger logger = LoggerFactory.getLogger(AbstractHandlerService.class);
+    private final long DEFAULT_WAIT = 1000;
     protected DocHandlerService docHandlerService;
     protected List<IncomingDocument> incomingDocList;
-    protected final String currentDate =  new SimpleDateFormat("dd.mm.yyyy").format(new Date());
+    protected final String currentDate =  new SimpleDateFormat("dd.MM.yyyy").format(new Date());
 
     AbstractHandlerService(){
         docHandlerService = DocHandlerService.create();
-        authorization();
     }
 
     @Override
     public void runHandler(List<Document> documentList){
-        authorization();
-        addHistoryRecord(documentList);
-        reflectDocument();
+        try {
+            authorization();
+            addHistoryRecord(documentList);
+            reflectDocument();
+            boolean isAllDocumentsReflected = false;
+            while (!isAllDocumentsReflected) {
+                waitSeconds();
+                isAllDocumentsReflected = checkStatusDocument(documentList, IncomingDocumentStatus.REFLECTED);
+            }
 
-        boolean isAllDocumentsReflected  = false;
-        while (!isAllDocumentsReflected){
-            waitSeconds();
-            isAllDocumentsReflected = checkStatusDocument(documentList, IncomingDocumentStatus.REMOVED);
-        }
-
-        rollbackDocument();
-        boolean isAllDocumentsRemoved  = false;
-        while (!isAllDocumentsRemoved){
-            waitSeconds();
-            isAllDocumentsRemoved = checkStatusDocument(documentList, IncomingDocumentStatus.REMOVED);
+            rollbackDocument();
+            boolean isAllDocumentsRemoved = false;
+            while (!isAllDocumentsRemoved) {
+                waitSeconds();
+                isAllDocumentsRemoved = checkStatusDocument(documentList, IncomingDocumentStatus.REMOVED);
+            }
+        } catch (Exception e) {
+            logger.error("FAILED", e);
         }
     }
 
     @Override
-    public void authorization() {
+    public void authorization() throws Exception{
         docHandlerService.authorizationService().doAuthorization();
     }
 
     @Override
-    public void getIncomingDocument() {
+    public void getIncomingDocument() throws Exception{
         incomingDocList = docHandlerService.incomingService().getIncomingDocList(currentDate);
     }
 
     @Override
-    public void addHistoryRecord(List<Document> documentList){
+    public void addHistoryRecord(List<Document> documentList) throws Exception{
         getIncomingDocument();
         documentList.forEach(
                 document -> {
-                    Stream<IncomingDocument> incomingDocCStream = incomingDocList.stream()
-                            .filter(incDoc -> incDoc.getArchiveName().equals(document.getArchiveName()));
+                    Optional<IncomingDocument> optionalDocument = incomingDocList.stream()
+                            .filter(incDoc -> incDoc.getArchiveName().equals(document.getArchiveName()))
+                            .findFirst();
+                    if (optionalDocument.isPresent()) {
+                        IncomingDocument incomingDoc = optionalDocument.get();
+                        String dateChange = incomingDoc.getDatechange();
+                        String statusDoc = incomingDoc.getStatus().getStatus();
+                        logger.info(String.format("Document with number %s have status: %s at changeTime %s"
+                                , incomingDoc.getNumber(), statusDoc, dateChange));
 
-                    String dateChange = incomingDocCStream.map(IncomingDocument::getDatechange).toString();
-                    IncomingDocumentStatus status = IncomingDocumentStatus
-                            .valueOf(incomingDocCStream.map(IncomingDocument::getStatus).findAny().get().getNameUI());
-
-                    document.addHistoryRecord(status, dateChange);
+                        document.addHistoryRecord(statusDoc, dateChange);
+                    }
                 }
         );
     }
@@ -78,7 +89,11 @@ public abstract class AbstractHandlerService implements HandlerService {
     }
 
     private boolean checkStatusDocument(List<Document> documentList, IncomingDocumentStatus status){
-        addHistoryRecord(documentList);
+        try {
+            addHistoryRecord(documentList);
+        } catch (Exception e) {
+            logger.error("FAILED", e);
+        }
         long reflectedDoc = incomingDocList.stream().filter(doc -> doc.getStatus().getNameUI().equals(status.name())).count();
         return (long) incomingDocList.size() == reflectedDoc;
     }

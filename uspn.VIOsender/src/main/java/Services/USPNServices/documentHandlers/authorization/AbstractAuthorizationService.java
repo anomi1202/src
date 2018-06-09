@@ -28,7 +28,7 @@ public abstract class AbstractAuthorizationService implements IAuthorizationServ
     @Override
     public Call<ResponseBody> getAuthCookie(String user, String pass, String submit) throws Exception {
         Call<ResponseBody> responseBody = authService.getAuthCookie(user, pass, submit);
-        logger.info(String.format("Authorization! Request to USPN: %s", responseBody.request().toString()));
+        logger.trace(String.format("Authorization! Request to USPN: %s", responseBody.request().toString()));
         return responseBody;
     }
 }

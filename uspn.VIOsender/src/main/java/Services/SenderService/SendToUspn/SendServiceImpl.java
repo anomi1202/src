@@ -13,6 +13,7 @@ import retrofit2.Call;
 import retrofit2.Response;
 import retrofit2.Retrofit;
 import retrofit2.converter.gson.GsonConverterFactory;
+import retrofit2.converter.scalars.ScalarsConverterFactory;
 
 import java.util.HashMap;
 import java.util.Map;
@@ -31,6 +32,7 @@ public class SendServiceImpl implements SendService, SendServiceRest {
                 .create();
         this.retrofit = new Retrofit.Builder()
                 .baseUrl(uri)
+                .addConverterFactory(ScalarsConverterFactory.create())
                 .addConverterFactory(GsonConverterFactory.create(gson))
                 .build();
         this.sendService = retrofit.create(SendServiceRest.class);
@@ -38,7 +40,7 @@ public class SendServiceImpl implements SendService, SendServiceRest {
     }
 
     @Override
-    public Call<ResponseBody> send(JsonObject json) throws Exception {
+    public Call<String> send(JsonObject json) throws Exception {
         return sendService.send(json);
     }
 
@@ -51,11 +53,11 @@ public class SendServiceImpl implements SendService, SendServiceRest {
         json.addProperty("documentFileId", fileId);
         json.addProperty("documentType", type.name());
 
-        Call<ResponseBody> responseBodyCall = send(json);
-        Response<ResponseBody> execute = responseBodyCall.execute();
+        Call<String> responseBodyCall = send(json);
+        Response<String> execute = responseBodyCall.execute();
 
         if (execute.isSuccessful()) {
-            requestMessage = execute.body().string();
+            requestMessage = execute.body();
         } else {
             throw new Exception(execute.errorBody().string());
         }

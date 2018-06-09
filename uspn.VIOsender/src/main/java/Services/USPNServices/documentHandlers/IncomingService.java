@@ -5,6 +5,7 @@ import Documents.Enums.IncomingDocumentStatus;
 import Documents.forJson.incoming.IncomingDocument;
 import Services.USPNServices.documentHandlers.incoming.AbstractIncomingService;
 import com.google.gson.Gson;
+import com.google.gson.GsonBuilder;
 import com.google.gson.JsonObject;
 import okhttp3.OkHttpClient;
 import org.slf4j.Logger;
@@ -102,7 +103,7 @@ public class IncomingService extends AbstractIncomingService {
         List<Object> collectID = incomingDocList.stream()
                 .filter(doc ->
                         doc.getType().getTypeName().equals(IncomingDocType.V_SVEDENIA.name())
-                                && doc.getStatus().getNameUI().equals(IncomingDocumentStatus.SAVE)
+                                && doc.getStatus().getNameUI().equals(IncomingDocumentStatus.SAVE.name())
                 )
                 .flatMapToLong(doc -> LongStream.of(doc.getId()))
                 .boxed().collect(Collectors.toList());
@@ -127,8 +128,8 @@ public class IncomingService extends AbstractIncomingService {
     public boolean rollbackDocument(List<IncomingDocument> incomingDocList){
         boolean bodyResponse = false;
 
-        List<Object> collectID = incomingDocList.stream()
-                .filter(doc -> doc.getStatus().getNameUI().equals(IncomingDocumentStatus.REFLECTED))
+        List<Long> collectID = incomingDocList.stream()
+                .filter(doc -> doc.getStatus().getNameUI().equals(IncomingDocumentStatus.REFLECTED.name()))
                 .flatMapToLong(doc -> LongStream.of(doc.getId()))
                 .boxed().collect(Collectors.toList());
         JsonObject json = new JsonObject();

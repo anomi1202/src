@@ -25,7 +25,7 @@ public abstract class AbstractHandlerService {
         CookieJar cookieJar = new CookieJar() {
             @Override
             public void saveFromResponse(HttpUrl url, List<Cookie> cookies) {
-                cookies.forEach(cookie -> logger.info("Save cookie:" + cookie.toString()));
+                cookies.forEach(cookie -> logger.trace("Save cookie:" + cookie.toString()));
                 cookieStore.put(url.host(), cookies);
             }
 
@@ -33,7 +33,7 @@ public abstract class AbstractHandlerService {
             public List<Cookie> loadForRequest(HttpUrl url) {
                 List<Cookie> cookies = cookieStore.get(url.host());
                 if (cookies != null) {
-                    cookies.forEach(cookie -> logger.info("Load cookie:" + cookie.toString()));
+                    cookies.forEach(cookie -> logger.trace("Load cookie:" + cookie.toString()));
                 }
                 return cookies != null ? cookies : new ArrayList<>();
             }
@@ -52,6 +52,7 @@ public abstract class AbstractHandlerService {
             String host = prop.getProperty("uspn.host");
             int port = Integer.parseInt(prop.getProperty("uspn.port", "8080"));
             String context = prop.getProperty("uspn.context");
+            context = context == null ? DEFAULT_CONTEXT : context;
 
             logger.info(String.format("Read properties file: %s" +
                             "\r\n\thost: %s" +

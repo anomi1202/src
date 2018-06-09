@@ -14,25 +14,25 @@ public interface HandlerService {
     /**
      * Авторизаация и получение cookies
      * */
-    void authorization();
+    void authorization() throws Exception;
 
     /**
      * Получение списка входящий документов из формы
      * */
-    void getIncomingDocument();
+    void getIncomingDocument() throws Exception;
 
     /**
      * Отражение документа
      * */
-    void reflectDocument();
+    void reflectDocument() throws Exception;
 
     /**
      * Отзыв документа
      * */
-    void rollbackDocument();
+    void rollbackDocument() throws Exception;
 
     /**
      * Добавление исторической записи об изменении статуса документа
      * */
-    void addHistoryRecord(List<Document> documentList);
+    void addHistoryRecord(List<Document> documentList) throws Exception;
 }

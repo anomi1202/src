@@ -8,8 +8,10 @@ public enum IncomingDocumentStatus {
     BK_PASSED("БК пройден"),
     MARKED_FOR_REFLECTION("Включен в распоряжение"),
     READY_FOR_REFLECTION("Готов к отражению"),
+    REFLECTION_PREPARED("Подготовлен к отражению"),
     REFLECTING("Отражение в СЧ"),
     REFLECTED("Отражен в СЧ"),
+    REMOVE_IN_PROCESSING("В процессе отзыва"),
     REMOVED("Отозван")
     ;
 

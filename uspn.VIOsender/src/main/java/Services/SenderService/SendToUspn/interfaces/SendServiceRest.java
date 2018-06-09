@@ -15,5 +15,5 @@ public interface SendServiceRest {
      * @return объект Call<T>
      */
     @POST("backend/process/sendNpfDocument")
-    Call<ResponseBody> send(@Body JsonObject json) throws Exception;
+    Call<String> send(@Body JsonObject json) throws Exception;
 }

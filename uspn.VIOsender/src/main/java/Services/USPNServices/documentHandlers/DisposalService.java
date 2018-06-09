@@ -55,7 +55,7 @@ public class DisposalService extends AbstractIDisposalService {
                 .collect(Collectors.toMap(
                         disp -> disp,
                         disp -> {
-                            SimpleDateFormat dateFormat = new SimpleDateFormat("dd.mm.yyyy");
+                            SimpleDateFormat dateFormat = new SimpleDateFormat("dd.MM.yyyy");
                             Response<String> stringResponse = null;
                             try {
                                 Date disposalDate = dateFormat.parse(disp.getDate());

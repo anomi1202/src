@@ -7,6 +7,7 @@ import Services.SenderService.UploadToVio.UploadServiceImpl;
 import Services.SenderService.UploadToVio.interfaces.UploadService;
 import com.google.gson.Gson;
 import com.google.gson.JsonElement;
+import com.google.gson.JsonObject;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -59,6 +60,8 @@ public class SenderService {
 
             uploadService = new UploadServiceImpl(uri, DEFAULT_THREAD_COUNT);
             sendService = new SendServiceImpl(uri, DEFAULT_THREAD_COUNT);
+
+            logger.info("START sender service!");
         } else {
             throw new Exception("URI is incorrect!");
         }
@@ -126,13 +129,15 @@ public class SenderService {
                             Map.Entry::getKey,
                             pair -> {
                                 String jsonRequest = sendedFiles.get(pair.getValue());
-                                JsonElement json = new Gson().fromJson(jsonRequest, JsonElement.class);
-                                return json.getAsString().equals("send NPF document");
+                                JsonObject json = new Gson().fromJson(jsonRequest, JsonObject.class);
+                                return json.get("message").getAsString().equals("send NPF document");
                             }));
         } catch (Exception e) {
             logger.error("FAILED", e);
         }
 
+
+        logger.info("STOP sender service!");
         return requestMap;
     }
 
