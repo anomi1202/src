@@ -39,3 +39,194 @@ com.ibm.msg.client.jms.DetailedIllegalStateException: JMSCC0020: Сеанс за
 2018-06-14 18:24:16,881 [INFO ][main            ][       JsonHandler.JsonHandler] - Generate JSON with requestId: 998021ee19d64ac1bc377a2462eb8719
 2018-06-14 18:24:16,897 [INFO ][main            ][       JsonHandler.JsonHandler] - Generate JSON with contentBody: H4sICEeiAVoEAM/U0F84NjAyMTYxNzQ3XzAwMF/Tzs/RLdFfMjAxNzA4MzFfMmZkZDQ1MDAtM2VlOS00MzgzLWIzMDQtYzQ2NzE4OGJlZGRiLlhNTAC1WMtu01AQ3SPxD1H2ju08nciYDQ8hwQqQ2JYkQCRIEKkoy0LKSyC1lFZUQFISEGKDCCGB0jz4hfEfcebajuPYcU0Aq67se2fOzJx52I5+8t6tm7G75Tv1Sq16Iq4mlHisXC3WSpXq9RPxy5fOSFo8Vl9dqZZWbtaq5RPxai1+0jh+TKfPtEP79IHexYBQrZ+I31hdvV2QZfplbiTMdXNDpm3zPm1TS6YmS8r0nlq4aEvUlpOKmpMUTVLycUu/cK9emWKsra0l1lKJ2p3rEFRU+cqF8xeLN8q3VqRKlZ0plh0t2qIPAaZ5eSqybdmP4KH5gA6w+wzrD2lCfXPTfIqVQYC7f4wZhPGeOgEIZoPGdGBu4HyEcx2e9KiLtTE8G1DHxUtLioo/4NUrhbpg6HytuLKKXEbwLDgfsSX1EvfqpTgqI4ZDnxGxl6zld/D/kHqI4Acie2A+m9l1FDsFVFYXtHUNoKesEHXZsxOs1gRTIxqY6wZ8wpGWTl+yFd29WX/kUId0K157ZW6VEbtQGwFg7GSIawUtMUHORrgfMqyzJ6QGBrXpPay+ZK8AsQvxDv6/RMW+ilnQuvx3Jhb4u4eLpqFllaSaVXPpnGXG3XHVnJ3ZJfj9Cwzdh4VDXPfgRR8n+/PTZ/EVdS1p87m75+67yYCVfQPJ9a4E6rTNhrD41YqSM2c+sTyYxuzTcuqF9oF8gAba5HY0N93KSsH4AiEbNMQV0ZE/qQW9b5wAA3Fsgc63yGgTHbCNuybud2FkoZJtJoylHegNUfWZdFbW8hmg+faOZABNjPpuIC9DZo0D5DUEPDQbLh8Aj6gSkCT5j7MUMBJoB5rfuKa5yj2RhY+KTJRRsXBkZLKanGVu5zYC41zKa130c1+Q+R3OPeXeAWMPWF48cHpi7XBON3we/cvZ9JpaYm7vIr4t+ojK/fJfZlLIfMrlknk1o6W1bNB88h+OVGCa/oJwHmJvwmvnAxxr2SJhYvBhxD0jZgp4fYHzE+3ydICLfpmjIfdoBDFAvMHZZJjpehT1Fhh4TAPubi5Xg2cU5x5wW+zXFNIvuzALR1NiGffSj/PnTKspSk7K5RQ8vLOxFBr5aI3ArLuZcxfnnknuRsQHmw6CJpyfWTaEJfi5aM/77oPReGiH0OehwYNbOPMHtRVcU21c9rn/GD5qTXlraZ8GTPN8JUWtoD2r29k+0xCtekKqxh0LO4La74zNMCBMsLfOAxioE/Z5gexcpiNkQKc9VMIvATP+tzn6QuPlMgPFZbMC1X+RCbHVYSoAsAFyxoaWT2c064CuX8BD/EJSrW3vx4LztjlEsr7bbxJdcxOOjQFtP2PMR3PU6fzFVzh7+dwpI3mtVEpnFEVKlct5KZ3SUtLVFL4FiulsTtW0q+VS6SqMOvI+EPf1h4tMMO585aTUS0mloGYLybyN4Bf2f0BggnE9CrGeG78cIOl5r5ugwBvWk5Z13TdGfr5aHNABZmZGgzfLA/i9ELPyJTeJiHwK7q5Pcxc5URCd/mKA29/HIb2GeBAAAA==
 2018-06-14 18:24:18,397 [INFO ][main            ][                     MqSender2] - Send JSON file: D:\!Projects\!USPN\04_07-SUD\regress\7\07_00004_upload_to_VIO_link_to_17_00001\testData\Reg_UOPS-S_SaveDocAndCont.json
+2018-06-14 19:07:45,206 [INFO ][main            ][       JsonHandler.JsonHandler] - Generate JSON with requestId: 63a131dadf2c4ef4b8e8b7e26809783c
+2018-06-14 19:07:45,211 [INFO ][main            ][       JsonHandler.JsonHandler] - Generate JSON with contentBody: H4sICEeiAVoEAM/U0F84NjAyMTYxNzQ3XzAwMF/Tzs/RLdFfMjAxNzA4MzFfMmZkZDQ1MDAtM2VlOS00MzgzLWIzMDQtYzQ2NzE4OGJlZGRiLlhNTAC1WMtu01AQ3SPxD1H2ju08nciYDQ8hwQqQ2JYkQCRIEKkoy0LKSyC1lFZUQFISEGKDCCGB0jz4hfEfcebajuPYcU0Aq67se2fOzJx52I5+8t6tm7G75Tv1Sq16Iq4mlHisXC3WSpXq9RPxy5fOSFo8Vl9dqZZWbtaq5RPxai1+0jh+TKfPtEP79IHexYBQrZ+I31hdvV2QZfplbiTMdXNDpm3zPm1TS6YmS8r0nlq4aEvUlpOKmpMUTVLycUu/cK9emWKsra0l1lKJ2p3rEFRU+cqF8xeLN8q3VqRKlZ0plh0t2qIPAaZ5eSqybdmP4KH5gA6w+wzrD2lCfXPTfIqVQYC7f4wZhPGeOgEIZoPGdGBu4HyEcx2e9KiLtTE8G1DHxUtLioo/4NUrhbpg6HytuLKKXEbwLDgfsSX1EvfqpTgqI4ZDnxGxl6zld/D/kHqI4Acie2A+m9l1FDsFVFYXtHUNoKesEHXZsxOs1gRTIxqY6wZ8wpGWTl+yFd29WX/kUId0K157ZW6VEbtQGwFg7GSIawUtMUHORrgfMqyzJ6QGBrXpPay+ZK8AsQvxDv6/RMW+ilnQuvx3Jhb4u4eLpqFllaSaVXPpnGXG3XHVnJ3ZJfj9Cwzdh4VDXPfgRR8n+/PTZ/EVdS1p87m75+67yYCVfQPJ9a4E6rTNhrD41YqSM2c+sTyYxuzTcuqF9oF8gAba5HY0N93KSsH4AiEbNMQV0ZE/qQW9b5wAA3Fsgc63yGgTHbCNuybud2FkoZJtJoylHegNUfWZdFbW8hmg+faOZABNjPpuIC9DZo0D5DUEPDQbLh8Aj6gSkCT5j7MUMBJoB5rfuKa5yj2RhY+KTJRRsXBkZLKanGVu5zYC41zKa130c1+Q+R3OPeXeAWMPWF48cHpi7XBON3we/cvZ9JpaYm7vIr4t+ojK/fJfZlLIfMrlknk1o6W1bNB88h+OVGCa/oJwHmJvwmvnAxxr2SJhYvBhxD0jZgp4fYHzE+3ydICLfpmjIfdoBDFAvMHZZJjpehT1Fhh4TAPubi5Xg2cU5x5wW+zXFNIvuzALR1NiGffSj/PnTKspSk7K5RQ8vLOxFBr5aI3ArLuZcxfnnknuRsQHmw6CJpyfWTaEJfi5aM/77oPReGiH0OehwYNbOPMHtRVcU21c9rn/GD5qTXlraZ8GTPN8JUWtoD2r29k+0xCtekKqxh0LO4La74zNMCBMsLfOAxioE/Z5gexcpiNkQKc9VMIvATP+tzn6QuPlMgPFZbMC1X+RCbHVYSoAsAFyxoaWT2c064CuX8BD/EJSrW3vx4LztjlEsr7bbxJdcxOOjQFtP2PMR3PU6fzFVzh7+dwpI3mtVEpnFEVKlct5KZ3SUtLVFL4FiulsTtW0q+VS6SqMOvI+EPf1h4tMMO585aTUS0mloGYLybyN4Bf2f0BggnE9CrGeG78cIOl5r5ugwBvWk5Z13TdGfr5aHNABZmZGgzfLA/i9ELPyJTeJiHwK7q5Pcxc5URCd/mKA29/HIb2GeBAAAA==
+2018-06-14 19:07:45,229 [ERROR][main            ][                      MQClient] - FAILED
+java.nio.file.NoSuchFileException: MQSender.properties
+	at sun.nio.fs.WindowsException.translateToIOException(WindowsException.java:79)
+	at sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:97)
+	at sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:102)
+	at sun.nio.fs.WindowsFileSystemProvider.newByteChannel(WindowsFileSystemProvider.java:230)
+	at java.nio.file.Files.newByteChannel(Files.java:361)
+	at java.nio.file.Files.newByteChannel(Files.java:407)
+	at java.nio.file.spi.FileSystemProvider.newInputStream(FileSystemProvider.java:384)
+	at java.nio.file.Files.newInputStream(Files.java:152)
+	at MQClient.initProp(MQClient.java:82)
+	at MQClient.newInstance(MQClient.java:32)
+	at MqSender2.send(MqSender2.java:99)
+	at MqSender2.run(MqSender2.java:52)
+	at MqSender2.main(MqSender2.java:35)
+2018-06-14 19:07:45,863 [ERROR][main            ][                      MQClient] - FAILED
+com.ibm.msg.client.jms.DetailedJMSException: JMSCC0005: Указанное значение '<null>' не разрешено для 'XMSC_WMQ_CHANNEL'. Данное значение не разрешено для указанного свойства. Измените значение на поддерживаемое значение для свойства.
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at com.ibm.msg.client.commonservices.j2se.NLSServices.createException(NLSServices.java:313)
+	at com.ibm.msg.client.commonservices.nls.NLSServices.createException(NLSServices.java:390)
+	at com.ibm.msg.client.jms.internal.JmsErrorUtils.createException(JmsErrorUtils.java:104)
+	at com.ibm.msg.client.jms.internal.JmsPropertyContextImpl.setObjectPropertyInternal(JmsPropertyContextImpl.java:482)
+	at com.ibm.msg.client.jms.internal.JmsPropertyContextImpl.setObjectProperty(JmsPropertyContextImpl.java:636)
+	at com.ibm.msg.client.jms.internal.JmsPropertyContextImpl.setStringProperty(JmsPropertyContextImpl.java:678)
+	at MQClient.createSession(MQClient.java:51)
+	at MQClient.newInstance(MQClient.java:34)
+	at MqSender2.send(MqSender2.java:99)
+	at MqSender2.run(MqSender2.java:52)
+	at MqSender2.main(MqSender2.java:35)
+2018-06-14 19:07:45,879 [ERROR][main            ][                      MQClient] - FAILED
+java.lang.NullPointerException
+	at MQClient.sendMessage(MQClient.java:119)
+	at MqSender2.send(MqSender2.java:105)
+	at MqSender2.run(MqSender2.java:52)
+	at MqSender2.main(MqSender2.java:35)
+2018-06-14 19:07:45,881 [INFO ][main            ][                     MqSender2] - Send JSON file: D:\!Projects\!USPN\04_07-SUD\regress\7\07_00004_upload_to_VIO_link_to_17_00001\testData\Reg_UOPS-S_SaveDocAndCont.json
+2018-06-14 19:08:17,654 [INFO ][main            ][       JsonHandler.JsonHandler] - Generate JSON with requestId: 3af45d1804874b68956e2787459073f7
+2018-06-14 19:08:17,659 [INFO ][main            ][       JsonHandler.JsonHandler] - Generate JSON with contentBody: H4sICEeiAVoEAM/U0F84NjAyMTYxNzQ3XzAwMF/Tzs/RLdFfMjAxNzA4MzFfMmZkZDQ1MDAtM2VlOS00MzgzLWIzMDQtYzQ2NzE4OGJlZGRiLlhNTAC1WMtu01AQ3SPxD1H2ju08nciYDQ8hwQqQ2JYkQCRIEKkoy0LKSyC1lFZUQFISEGKDCCGB0jz4hfEfcebajuPYcU0Aq67se2fOzJx52I5+8t6tm7G75Tv1Sq16Iq4mlHisXC3WSpXq9RPxy5fOSFo8Vl9dqZZWbtaq5RPxai1+0jh+TKfPtEP79IHexYBQrZ+I31hdvV2QZfplbiTMdXNDpm3zPm1TS6YmS8r0nlq4aEvUlpOKmpMUTVLycUu/cK9emWKsra0l1lKJ2p3rEFRU+cqF8xeLN8q3VqRKlZ0plh0t2qIPAaZ5eSqybdmP4KH5gA6w+wzrD2lCfXPTfIqVQYC7f4wZhPGeOgEIZoPGdGBu4HyEcx2e9KiLtTE8G1DHxUtLioo/4NUrhbpg6HytuLKKXEbwLDgfsSX1EvfqpTgqI4ZDnxGxl6zld/D/kHqI4Acie2A+m9l1FDsFVFYXtHUNoKesEHXZsxOs1gRTIxqY6wZ8wpGWTl+yFd29WX/kUId0K157ZW6VEbtQGwFg7GSIawUtMUHORrgfMqyzJ6QGBrXpPay+ZK8AsQvxDv6/RMW+ilnQuvx3Jhb4u4eLpqFllaSaVXPpnGXG3XHVnJ3ZJfj9Cwzdh4VDXPfgRR8n+/PTZ/EVdS1p87m75+67yYCVfQPJ9a4E6rTNhrD41YqSM2c+sTyYxuzTcuqF9oF8gAba5HY0N93KSsH4AiEbNMQV0ZE/qQW9b5wAA3Fsgc63yGgTHbCNuybud2FkoZJtJoylHegNUfWZdFbW8hmg+faOZABNjPpuIC9DZo0D5DUEPDQbLh8Aj6gSkCT5j7MUMBJoB5rfuKa5yj2RhY+KTJRRsXBkZLKanGVu5zYC41zKa130c1+Q+R3OPeXeAWMPWF48cHpi7XBON3we/cvZ9JpaYm7vIr4t+ojK/fJfZlLIfMrlknk1o6W1bNB88h+OVGCa/oJwHmJvwmvnAxxr2SJhYvBhxD0jZgp4fYHzE+3ydICLfpmjIfdoBDFAvMHZZJjpehT1Fhh4TAPubi5Xg2cU5x5wW+zXFNIvuzALR1NiGffSj/PnTKspSk7K5RQ8vLOxFBr5aI3ArLuZcxfnnknuRsQHmw6CJpyfWTaEJfi5aM/77oPReGiH0OehwYNbOPMHtRVcU21c9rn/GD5qTXlraZ8GTPN8JUWtoD2r29k+0xCtekKqxh0LO4La74zNMCBMsLfOAxioE/Z5gexcpiNkQKc9VMIvATP+tzn6QuPlMgPFZbMC1X+RCbHVYSoAsAFyxoaWT2c064CuX8BD/EJSrW3vx4LztjlEsr7bbxJdcxOOjQFtP2PMR3PU6fzFVzh7+dwpI3mtVEpnFEVKlct5KZ3SUtLVFL4FiulsTtW0q+VS6SqMOvI+EPf1h4tMMO585aTUS0mloGYLybyN4Bf2f0BggnE9CrGeG78cIOl5r5ugwBvWk5Z13TdGfr5aHNABZmZGgzfLA/i9ELPyJTeJiHwK7q5Pcxc5URCd/mKA29/HIb2GeBAAAA==
+2018-06-14 19:08:17,677 [ERROR][main            ][                      MQClient] - FAILED
+java.nio.file.NoSuchFileException: MQSender.properties
+	at sun.nio.fs.WindowsException.translateToIOException(WindowsException.java:79)
+	at sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:97)
+	at sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:102)
+	at sun.nio.fs.WindowsFileSystemProvider.newByteChannel(WindowsFileSystemProvider.java:230)
+	at java.nio.file.Files.newByteChannel(Files.java:361)
+	at java.nio.file.Files.newByteChannel(Files.java:407)
+	at java.nio.file.spi.FileSystemProvider.newInputStream(FileSystemProvider.java:384)
+	at java.nio.file.Files.newInputStream(Files.java:152)
+	at MQClient.initProp(MQClient.java:82)
+	at MQClient.newInstance(MQClient.java:32)
+	at MqSender2.send(MqSender2.java:99)
+	at MqSender2.run(MqSender2.java:52)
+	at MqSender2.main(MqSender2.java:35)
+2018-06-14 19:08:18,598 [ERROR][main            ][                      MQClient] - FAILED
+com.ibm.msg.client.jms.DetailedJMSException: JMSCC0005: Указанное значение '<null>' не разрешено для 'XMSC_WMQ_CHANNEL'. Данное значение не разрешено для указанного свойства. Измените значение на поддерживаемое значение для свойства.
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at com.ibm.msg.client.commonservices.j2se.NLSServices.createException(NLSServices.java:313)
+	at com.ibm.msg.client.commonservices.nls.NLSServices.createException(NLSServices.java:390)
+	at com.ibm.msg.client.jms.internal.JmsErrorUtils.createException(JmsErrorUtils.java:104)
+	at com.ibm.msg.client.jms.internal.JmsPropertyContextImpl.setObjectPropertyInternal(JmsPropertyContextImpl.java:482)
+	at com.ibm.msg.client.jms.internal.JmsPropertyContextImpl.setObjectProperty(JmsPropertyContextImpl.java:636)
+	at com.ibm.msg.client.jms.internal.JmsPropertyContextImpl.setStringProperty(JmsPropertyContextImpl.java:678)
+	at MQClient.createSession(MQClient.java:51)
+	at MQClient.newInstance(MQClient.java:34)
+	at MqSender2.send(MqSender2.java:99)
+	at MqSender2.run(MqSender2.java:52)
+	at MqSender2.main(MqSender2.java:35)
+2018-06-14 19:08:18,610 [ERROR][main            ][                      MQClient] - FAILED
+java.lang.NullPointerException
+	at MQClient.sendMessage(MQClient.java:119)
+	at MqSender2.send(MqSender2.java:105)
+	at MqSender2.run(MqSender2.java:52)
+	at MqSender2.main(MqSender2.java:35)
+2018-06-14 19:08:18,611 [INFO ][main            ][                     MqSender2] - Send JSON file: D:\!Projects\!USPN\04_07-SUD\regress\7\07_00004_upload_to_VIO_link_to_17_00001\testData\Reg_UOPS-S_SaveDocAndCont.json
+2018-06-14 19:08:23,029 [INFO ][main            ][       JsonHandler.JsonHandler] - Generate JSON with requestId: dc326d472448494fba3840740f33a86e
+2018-06-14 19:08:23,033 [INFO ][main            ][       JsonHandler.JsonHandler] - Generate JSON with contentBody: H4sICEeiAVoEAM/U0F84NjAyMTYxNzQ3XzAwMF/Tzs/RLdFfMjAxNzA4MzFfMmZkZDQ1MDAtM2VlOS00MzgzLWIzMDQtYzQ2NzE4OGJlZGRiLlhNTAC1WMtu01AQ3SPxD1H2ju08nciYDQ8hwQqQ2JYkQCRIEKkoy0LKSyC1lFZUQFISEGKDCCGB0jz4hfEfcebajuPYcU0Aq67se2fOzJx52I5+8t6tm7G75Tv1Sq16Iq4mlHisXC3WSpXq9RPxy5fOSFo8Vl9dqZZWbtaq5RPxai1+0jh+TKfPtEP79IHexYBQrZ+I31hdvV2QZfplbiTMdXNDpm3zPm1TS6YmS8r0nlq4aEvUlpOKmpMUTVLycUu/cK9emWKsra0l1lKJ2p3rEFRU+cqF8xeLN8q3VqRKlZ0plh0t2qIPAaZ5eSqybdmP4KH5gA6w+wzrD2lCfXPTfIqVQYC7f4wZhPGeOgEIZoPGdGBu4HyEcx2e9KiLtTE8G1DHxUtLioo/4NUrhbpg6HytuLKKXEbwLDgfsSX1EvfqpTgqI4ZDnxGxl6zld/D/kHqI4Acie2A+m9l1FDsFVFYXtHUNoKesEHXZsxOs1gRTIxqY6wZ8wpGWTl+yFd29WX/kUId0K157ZW6VEbtQGwFg7GSIawUtMUHORrgfMqyzJ6QGBrXpPay+ZK8AsQvxDv6/RMW+ilnQuvx3Jhb4u4eLpqFllaSaVXPpnGXG3XHVnJ3ZJfj9Cwzdh4VDXPfgRR8n+/PTZ/EVdS1p87m75+67yYCVfQPJ9a4E6rTNhrD41YqSM2c+sTyYxuzTcuqF9oF8gAba5HY0N93KSsH4AiEbNMQV0ZE/qQW9b5wAA3Fsgc63yGgTHbCNuybud2FkoZJtJoylHegNUfWZdFbW8hmg+faOZABNjPpuIC9DZo0D5DUEPDQbLh8Aj6gSkCT5j7MUMBJoB5rfuKa5yj2RhY+KTJRRsXBkZLKanGVu5zYC41zKa130c1+Q+R3OPeXeAWMPWF48cHpi7XBON3we/cvZ9JpaYm7vIr4t+ojK/fJfZlLIfMrlknk1o6W1bNB88h+OVGCa/oJwHmJvwmvnAxxr2SJhYvBhxD0jZgp4fYHzE+3ydICLfpmjIfdoBDFAvMHZZJjpehT1Fhh4TAPubi5Xg2cU5x5wW+zXFNIvuzALR1NiGffSj/PnTKspSk7K5RQ8vLOxFBr5aI3ArLuZcxfnnknuRsQHmw6CJpyfWTaEJfi5aM/77oPReGiH0OehwYNbOPMHtRVcU21c9rn/GD5qTXlraZ8GTPN8JUWtoD2r29k+0xCtekKqxh0LO4La74zNMCBMsLfOAxioE/Z5gexcpiNkQKc9VMIvATP+tzn6QuPlMgPFZbMC1X+RCbHVYSoAsAFyxoaWT2c064CuX8BD/EJSrW3vx4LztjlEsr7bbxJdcxOOjQFtP2PMR3PU6fzFVzh7+dwpI3mtVEpnFEVKlct5KZ3SUtLVFL4FiulsTtW0q+VS6SqMOvI+EPf1h4tMMO585aTUS0mloGYLybyN4Bf2f0BggnE9CrGeG78cIOl5r5ugwBvWk5Z13TdGfr5aHNABZmZGgzfLA/i9ELPyJTeJiHwK7q5Pcxc5URCd/mKA29/HIb2GeBAAAA==
+2018-06-14 19:08:23,052 [ERROR][main            ][                      MQClient] - FAILED
+java.nio.file.NoSuchFileException: MQSender.properties
+	at sun.nio.fs.WindowsException.translateToIOException(WindowsException.java:79)
+	at sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:97)
+	at sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:102)
+	at sun.nio.fs.WindowsFileSystemProvider.newByteChannel(WindowsFileSystemProvider.java:230)
+	at java.nio.file.Files.newByteChannel(Files.java:361)
+	at java.nio.file.Files.newByteChannel(Files.java:407)
+	at java.nio.file.spi.FileSystemProvider.newInputStream(FileSystemProvider.java:384)
+	at java.nio.file.Files.newInputStream(Files.java:152)
+	at MQClient.initProp(MQClient.java:82)
+	at MQClient.newInstance(MQClient.java:32)
+	at MqSender2.send(MqSender2.java:99)
+	at MqSender2.run(MqSender2.java:52)
+	at MqSender2.main(MqSender2.java:35)
+2018-06-14 19:08:23,640 [ERROR][main            ][                      MQClient] - FAILED
+com.ibm.msg.client.jms.DetailedJMSException: JMSCC0005: Указанное значение '<null>' не разрешено для 'XMSC_WMQ_CHANNEL'. Данное значение не разрешено для указанного свойства. Измените значение на поддерживаемое значение для свойства.
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at com.ibm.msg.client.commonservices.j2se.NLSServices.createException(NLSServices.java:313)
+	at com.ibm.msg.client.commonservices.nls.NLSServices.createException(NLSServices.java:390)
+	at com.ibm.msg.client.jms.internal.JmsErrorUtils.createException(JmsErrorUtils.java:104)
+	at com.ibm.msg.client.jms.internal.JmsPropertyContextImpl.setObjectPropertyInternal(JmsPropertyContextImpl.java:482)
+	at com.ibm.msg.client.jms.internal.JmsPropertyContextImpl.setObjectProperty(JmsPropertyContextImpl.java:636)
+	at com.ibm.msg.client.jms.internal.JmsPropertyContextImpl.setStringProperty(JmsPropertyContextImpl.java:678)
+	at MQClient.createSession(MQClient.java:51)
+	at MQClient.newInstance(MQClient.java:34)
+	at MqSender2.send(MqSender2.java:99)
+	at MqSender2.run(MqSender2.java:52)
+	at MqSender2.main(MqSender2.java:35)
+2018-06-14 19:08:23,659 [ERROR][main            ][                      MQClient] - FAILED
+java.lang.NullPointerException
+	at MQClient.sendMessage(MQClient.java:119)
+	at MqSender2.send(MqSender2.java:105)
+	at MqSender2.run(MqSender2.java:52)
+	at MqSender2.main(MqSender2.java:35)
+2018-06-14 19:08:23,660 [INFO ][main            ][                     MqSender2] - Send JSON file: D:\!Projects\!USPN\04_07-SUD\regress\7\07_00004_upload_to_VIO_link_to_17_00001\testData\Reg_UOPS-S_SaveDocAndCont.json
+2018-06-14 19:09:15,108 [INFO ][main            ][       JsonHandler.JsonHandler] - Generate JSON with requestId: 265e7bd19ea349b7874abd4e63441dd3
+2018-06-14 19:09:15,113 [INFO ][main            ][       JsonHandler.JsonHandler] - Generate JSON with contentBody: H4sICEeiAVoEAM/U0F84NjAyMTYxNzQ3XzAwMF/Tzs/RLdFfMjAxNzA4MzFfMmZkZDQ1MDAtM2VlOS00MzgzLWIzMDQtYzQ2NzE4OGJlZGRiLlhNTAC1WMtu01AQ3SPxD1H2ju08nciYDQ8hwQqQ2JYkQCRIEKkoy0LKSyC1lFZUQFISEGKDCCGB0jz4hfEfcebajuPYcU0Aq67se2fOzJx52I5+8t6tm7G75Tv1Sq16Iq4mlHisXC3WSpXq9RPxy5fOSFo8Vl9dqZZWbtaq5RPxai1+0jh+TKfPtEP79IHexYBQrZ+I31hdvV2QZfplbiTMdXNDpm3zPm1TS6YmS8r0nlq4aEvUlpOKmpMUTVLycUu/cK9emWKsra0l1lKJ2p3rEFRU+cqF8xeLN8q3VqRKlZ0plh0t2qIPAaZ5eSqybdmP4KH5gA6w+wzrD2lCfXPTfIqVQYC7f4wZhPGeOgEIZoPGdGBu4HyEcx2e9KiLtTE8G1DHxUtLioo/4NUrhbpg6HytuLKKXEbwLDgfsSX1EvfqpTgqI4ZDnxGxl6zld/D/kHqI4Acie2A+m9l1FDsFVFYXtHUNoKesEHXZsxOs1gRTIxqY6wZ8wpGWTl+yFd29WX/kUId0K157ZW6VEbtQGwFg7GSIawUtMUHORrgfMqyzJ6QGBrXpPay+ZK8AsQvxDv6/RMW+ilnQuvx3Jhb4u4eLpqFllaSaVXPpnGXG3XHVnJ3ZJfj9Cwzdh4VDXPfgRR8n+/PTZ/EVdS1p87m75+67yYCVfQPJ9a4E6rTNhrD41YqSM2c+sTyYxuzTcuqF9oF8gAba5HY0N93KSsH4AiEbNMQV0ZE/qQW9b5wAA3Fsgc63yGgTHbCNuybud2FkoZJtJoylHegNUfWZdFbW8hmg+faOZABNjPpuIC9DZo0D5DUEPDQbLh8Aj6gSkCT5j7MUMBJoB5rfuKa5yj2RhY+KTJRRsXBkZLKanGVu5zYC41zKa130c1+Q+R3OPeXeAWMPWF48cHpi7XBON3we/cvZ9JpaYm7vIr4t+ojK/fJfZlLIfMrlknk1o6W1bNB88h+OVGCa/oJwHmJvwmvnAxxr2SJhYvBhxD0jZgp4fYHzE+3ydICLfpmjIfdoBDFAvMHZZJjpehT1Fhh4TAPubi5Xg2cU5x5wW+zXFNIvuzALR1NiGffSj/PnTKspSk7K5RQ8vLOxFBr5aI3ArLuZcxfnnknuRsQHmw6CJpyfWTaEJfi5aM/77oPReGiH0OehwYNbOPMHtRVcU21c9rn/GD5qTXlraZ8GTPN8JUWtoD2r29k+0xCtekKqxh0LO4La74zNMCBMsLfOAxioE/Z5gexcpiNkQKc9VMIvATP+tzn6QuPlMgPFZbMC1X+RCbHVYSoAsAFyxoaWT2c064CuX8BD/EJSrW3vx4LztjlEsr7bbxJdcxOOjQFtP2PMR3PU6fzFVzh7+dwpI3mtVEpnFEVKlct5KZ3SUtLVFL4FiulsTtW0q+VS6SqMOvI+EPf1h4tMMO585aTUS0mloGYLybyN4Bf2f0BggnE9CrGeG78cIOl5r5ugwBvWk5Z13TdGfr5aHNABZmZGgzfLA/i9ELPyJTeJiHwK7q5Pcxc5URCd/mKA29/HIb2GeBAAAA==
+2018-06-14 19:09:15,132 [ERROR][main            ][                      MQClient] - FAILED
+java.nio.file.NoSuchFileException: MQSender.properties
+	at sun.nio.fs.WindowsException.translateToIOException(WindowsException.java:79)
+	at sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:97)
+	at sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:102)
+	at sun.nio.fs.WindowsFileSystemProvider.newByteChannel(WindowsFileSystemProvider.java:230)
+	at java.nio.file.Files.newByteChannel(Files.java:361)
+	at java.nio.file.Files.newByteChannel(Files.java:407)
+	at java.nio.file.spi.FileSystemProvider.newInputStream(FileSystemProvider.java:384)
+	at java.nio.file.Files.newInputStream(Files.java:152)
+	at MQClient.initProp(MQClient.java:82)
+	at MQClient.newInstance(MQClient.java:32)
+	at MqSender2.send(MqSender2.java:101)
+	at MqSender2.run(MqSender2.java:52)
+	at MqSender2.main(MqSender2.java:35)
+2018-06-14 19:09:15,761 [ERROR][main            ][                      MQClient] - FAILED
+com.ibm.msg.client.jms.DetailedJMSException: JMSCC0005: Указанное значение '<null>' не разрешено для 'XMSC_WMQ_CHANNEL'. Данное значение не разрешено для указанного свойства. Измените значение на поддерживаемое значение для свойства.
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at com.ibm.msg.client.commonservices.j2se.NLSServices.createException(NLSServices.java:313)
+	at com.ibm.msg.client.commonservices.nls.NLSServices.createException(NLSServices.java:390)
+	at com.ibm.msg.client.jms.internal.JmsErrorUtils.createException(JmsErrorUtils.java:104)
+	at com.ibm.msg.client.jms.internal.JmsPropertyContextImpl.setObjectPropertyInternal(JmsPropertyContextImpl.java:482)
+	at com.ibm.msg.client.jms.internal.JmsPropertyContextImpl.setObjectProperty(JmsPropertyContextImpl.java:636)
+	at com.ibm.msg.client.jms.internal.JmsPropertyContextImpl.setStringProperty(JmsPropertyContextImpl.java:678)
+	at MQClient.createSession(MQClient.java:51)
+	at MQClient.newInstance(MQClient.java:34)
+	at MqSender2.send(MqSender2.java:101)
+	at MqSender2.run(MqSender2.java:52)
+	at MqSender2.main(MqSender2.java:35)
+2018-06-14 19:09:15,773 [ERROR][main            ][                      MQClient] - FAILED
+java.lang.NullPointerException
+	at MQClient.sendMessage(MQClient.java:119)
+	at MqSender2.send(MqSender2.java:106)
+	at MqSender2.run(MqSender2.java:52)
+	at MqSender2.main(MqSender2.java:35)
+2018-06-14 19:09:15,774 [INFO ][main            ][                     MqSender2] - Send JSON file: D:\!Projects\!USPN\04_07-SUD\regress\7\07_00004_upload_to_VIO_link_to_17_00001\testData\Reg_UOPS-S_SaveDocAndCont.json
+2018-06-14 19:10:32,174 [INFO ][main            ][       JsonHandler.JsonHandler] - Generate JSON with requestId: 856fcb65bc654dbfbe7486a1939d386a
+2018-06-14 19:10:32,179 [INFO ][main            ][       JsonHandler.JsonHandler] - Generate JSON with contentBody: H4sICEeiAVoEAM/U0F84NjAyMTYxNzQ3XzAwMF/Tzs/RLdFfMjAxNzA4MzFfMmZkZDQ1MDAtM2VlOS00MzgzLWIzMDQtYzQ2NzE4OGJlZGRiLlhNTAC1WMtu01AQ3SPxD1H2ju08nciYDQ8hwQqQ2JYkQCRIEKkoy0LKSyC1lFZUQFISEGKDCCGB0jz4hfEfcebajuPYcU0Aq67se2fOzJx52I5+8t6tm7G75Tv1Sq16Iq4mlHisXC3WSpXq9RPxy5fOSFo8Vl9dqZZWbtaq5RPxai1+0jh+TKfPtEP79IHexYBQrZ+I31hdvV2QZfplbiTMdXNDpm3zPm1TS6YmS8r0nlq4aEvUlpOKmpMUTVLycUu/cK9emWKsra0l1lKJ2p3rEFRU+cqF8xeLN8q3VqRKlZ0plh0t2qIPAaZ5eSqybdmP4KH5gA6w+wzrD2lCfXPTfIqVQYC7f4wZhPGeOgEIZoPGdGBu4HyEcx2e9KiLtTE8G1DHxUtLioo/4NUrhbpg6HytuLKKXEbwLDgfsSX1EvfqpTgqI4ZDnxGxl6zld/D/kHqI4Acie2A+m9l1FDsFVFYXtHUNoKesEHXZsxOs1gRTIxqY6wZ8wpGWTl+yFd29WX/kUId0K157ZW6VEbtQGwFg7GSIawUtMUHORrgfMqyzJ6QGBrXpPay+ZK8AsQvxDv6/RMW+ilnQuvx3Jhb4u4eLpqFllaSaVXPpnGXG3XHVnJ3ZJfj9Cwzdh4VDXPfgRR8n+/PTZ/EVdS1p87m75+67yYCVfQPJ9a4E6rTNhrD41YqSM2c+sTyYxuzTcuqF9oF8gAba5HY0N93KSsH4AiEbNMQV0ZE/qQW9b5wAA3Fsgc63yGgTHbCNuybud2FkoZJtJoylHegNUfWZdFbW8hmg+faOZABNjPpuIC9DZo0D5DUEPDQbLh8Aj6gSkCT5j7MUMBJoB5rfuKa5yj2RhY+KTJRRsXBkZLKanGVu5zYC41zKa130c1+Q+R3OPeXeAWMPWF48cHpi7XBON3we/cvZ9JpaYm7vIr4t+ojK/fJfZlLIfMrlknk1o6W1bNB88h+OVGCa/oJwHmJvwmvnAxxr2SJhYvBhxD0jZgp4fYHzE+3ydICLfpmjIfdoBDFAvMHZZJjpehT1Fhh4TAPubi5Xg2cU5x5wW+zXFNIvuzALR1NiGffSj/PnTKspSk7K5RQ8vLOxFBr5aI3ArLuZcxfnnknuRsQHmw6CJpyfWTaEJfi5aM/77oPReGiH0OehwYNbOPMHtRVcU21c9rn/GD5qTXlraZ8GTPN8JUWtoD2r29k+0xCtekKqxh0LO4La74zNMCBMsLfOAxioE/Z5gexcpiNkQKc9VMIvATP+tzn6QuPlMgPFZbMC1X+RCbHVYSoAsAFyxoaWT2c064CuX8BD/EJSrW3vx4LztjlEsr7bbxJdcxOOjQFtP2PMR3PU6fzFVzh7+dwpI3mtVEpnFEVKlct5KZ3SUtLVFL4FiulsTtW0q+VS6SqMOvI+EPf1h4tMMO585aTUS0mloGYLybyN4Bf2f0BggnE9CrGeG78cIOl5r5ugwBvWk5Z13TdGfr5aHNABZmZGgzfLA/i9ELPyJTeJiHwK7q5Pcxc5URCd/mKA29/HIb2GeBAAAA==
+2018-06-14 19:10:34,817 [INFO ][main            ][                     MqSender2] - Send JSON file: D:\!Projects\!USPN\04_07-SUD\regress\7\07_00004_upload_to_VIO_link_to_17_00001\testData\Reg_UOPS-S_SaveDocAndCont.json
+2018-06-14 19:12:28,761 [INFO ][main            ][       JsonHandler.JsonHandler] - Generate JSON with requestId: d585dce5b6c944298c70d42e246fcc74
+2018-06-14 19:12:28,766 [INFO ][main            ][       JsonHandler.JsonHandler] - Generate JSON with contentBody: H4sICEeiAVoEAM/U0F84NjAyMTYxNzQ3XzAwMF/Tzs/RLdFfMjAxNzA4MzFfMmZkZDQ1MDAtM2VlOS00MzgzLWIzMDQtYzQ2NzE4OGJlZGRiLlhNTAC1WMtu01AQ3SPxD1H2ju08nciYDQ8hwQqQ2JYkQCRIEKkoy0LKSyC1lFZUQFISEGKDCCGB0jz4hfEfcebajuPYcU0Aq67se2fOzJx52I5+8t6tm7G75Tv1Sq16Iq4mlHisXC3WSpXq9RPxy5fOSFo8Vl9dqZZWbtaq5RPxai1+0jh+TKfPtEP79IHexYBQrZ+I31hdvV2QZfplbiTMdXNDpm3zPm1TS6YmS8r0nlq4aEvUlpOKmpMUTVLycUu/cK9emWKsra0l1lKJ2p3rEFRU+cqF8xeLN8q3VqRKlZ0plh0t2qIPAaZ5eSqybdmP4KH5gA6w+wzrD2lCfXPTfIqVQYC7f4wZhPGeOgEIZoPGdGBu4HyEcx2e9KiLtTE8G1DHxUtLioo/4NUrhbpg6HytuLKKXEbwLDgfsSX1EvfqpTgqI4ZDnxGxl6zld/D/kHqI4Acie2A+m9l1FDsFVFYXtHUNoKesEHXZsxOs1gRTIxqY6wZ8wpGWTl+yFd29WX/kUId0K157ZW6VEbtQGwFg7GSIawUtMUHORrgfMqyzJ6QGBrXpPay+ZK8AsQvxDv6/RMW+ilnQuvx3Jhb4u4eLpqFllaSaVXPpnGXG3XHVnJ3ZJfj9Cwzdh4VDXPfgRR8n+/PTZ/EVdS1p87m75+67yYCVfQPJ9a4E6rTNhrD41YqSM2c+sTyYxuzTcuqF9oF8gAba5HY0N93KSsH4AiEbNMQV0ZE/qQW9b5wAA3Fsgc63yGgTHbCNuybud2FkoZJtJoylHegNUfWZdFbW8hmg+faOZABNjPpuIC9DZo0D5DUEPDQbLh8Aj6gSkCT5j7MUMBJoB5rfuKa5yj2RhY+KTJRRsXBkZLKanGVu5zYC41zKa130c1+Q+R3OPeXeAWMPWF48cHpi7XBON3we/cvZ9JpaYm7vIr4t+ojK/fJfZlLIfMrlknk1o6W1bNB88h+OVGCa/oJwHmJvwmvnAxxr2SJhYvBhxD0jZgp4fYHzE+3ydICLfpmjIfdoBDFAvMHZZJjpehT1Fhh4TAPubi5Xg2cU5x5wW+zXFNIvuzALR1NiGffSj/PnTKspSk7K5RQ8vLOxFBr5aI3ArLuZcxfnnknuRsQHmw6CJpyfWTaEJfi5aM/77oPReGiH0OehwYNbOPMHtRVcU21c9rn/GD5qTXlraZ8GTPN8JUWtoD2r29k+0xCtekKqxh0LO4La74zNMCBMsLfOAxioE/Z5gexcpiNkQKc9VMIvATP+tzn6QuPlMgPFZbMC1X+RCbHVYSoAsAFyxoaWT2c064CuX8BD/EJSrW3vx4LztjlEsr7bbxJdcxOOjQFtP2PMR3PU6fzFVzh7+dwpI3mtVEpnFEVKlct5KZ3SUtLVFL4FiulsTtW0q+VS6SqMOvI+EPf1h4tMMO585aTUS0mloGYLybyN4Bf2f0BggnE9CrGeG78cIOl5r5ugwBvWk5Z13TdGfr5aHNABZmZGgzfLA/i9ELPyJTeJiHwK7q5Pcxc5URCd/mKA29/HIb2GeBAAAA==
+2018-06-14 19:12:31,590 [INFO ][main            ][                     MqSender2] - Send JSON file: D:\!Projects\!USPN\04_07-SUD\regress\7\07_00004_upload_to_VIO_link_to_17_00001\testData\Reg_UOPS-S_SaveDocAndCont.json
+2018-06-14 19:12:31,601 [INFO ][main            ][                     MqSender2] - EHD ID of document: 1611031
+2018-06-14 19:12:31,602 [INFO ][main            ][                     MqSender2] - RequestID of document: d585dce5b6c944298c70d42e246fcc74
+2018-06-14 19:12:47,628 [ERROR][main            ][                      MQClient] - FAILED
+java.lang.NullPointerException
+	at MQClient.sendMessage(MQClient.java:132)
+	at MqSender2.send(MqSender2.java:111)
+	at MqSender2.run(MqSender2.java:56)
+	at MqSender2.main(MqSender2.java:35)
+2018-06-14 19:12:47,869 [INFO ][main            ][                     MqSender2] - Send SOAP file: D:\!Projects\!USPN\04_07-SUD\regress\7\07_00004_upload_to_VIO_link_to_17_00001\testData\kvit\start-UOPS-S-63-ET.xml.
+2018-06-14 19:14:15,000 [INFO ][main            ][       JsonHandler.JsonHandler] - Generate JSON with requestId: c38150759b914e5eb3210db6ad1b3e85
+2018-06-14 19:14:15,004 [INFO ][main            ][       JsonHandler.JsonHandler] - Generate JSON with contentBody: H4sICEeiAVoEAM/U0F84NjAyMTYxNzQ3XzAwMF/Tzs/RLdFfMjAxNzA4MzFfMmZkZDQ1MDAtM2VlOS00MzgzLWIzMDQtYzQ2NzE4OGJlZGRiLlhNTAC1WMtu01AQ3SPxD1H2ju08nciYDQ8hwQqQ2JYkQCRIEKkoy0LKSyC1lFZUQFISEGKDCCGB0jz4hfEfcebajuPYcU0Aq67se2fOzJx52I5+8t6tm7G75Tv1Sq16Iq4mlHisXC3WSpXq9RPxy5fOSFo8Vl9dqZZWbtaq5RPxai1+0jh+TKfPtEP79IHexYBQrZ+I31hdvV2QZfplbiTMdXNDpm3zPm1TS6YmS8r0nlq4aEvUlpOKmpMUTVLycUu/cK9emWKsra0l1lKJ2p3rEFRU+cqF8xeLN8q3VqRKlZ0plh0t2qIPAaZ5eSqybdmP4KH5gA6w+wzrD2lCfXPTfIqVQYC7f4wZhPGeOgEIZoPGdGBu4HyEcx2e9KiLtTE8G1DHxUtLioo/4NUrhbpg6HytuLKKXEbwLDgfsSX1EvfqpTgqI4ZDnxGxl6zld/D/kHqI4Acie2A+m9l1FDsFVFYXtHUNoKesEHXZsxOs1gRTIxqY6wZ8wpGWTl+yFd29WX/kUId0K157ZW6VEbtQGwFg7GSIawUtMUHORrgfMqyzJ6QGBrXpPay+ZK8AsQvxDv6/RMW+ilnQuvx3Jhb4u4eLpqFllaSaVXPpnGXG3XHVnJ3ZJfj9Cwzdh4VDXPfgRR8n+/PTZ/EVdS1p87m75+67yYCVfQPJ9a4E6rTNhrD41YqSM2c+sTyYxuzTcuqF9oF8gAba5HY0N93KSsH4AiEbNMQV0ZE/qQW9b5wAA3Fsgc63yGgTHbCNuybud2FkoZJtJoylHegNUfWZdFbW8hmg+faOZABNjPpuIC9DZo0D5DUEPDQbLh8Aj6gSkCT5j7MUMBJoB5rfuKa5yj2RhY+KTJRRsXBkZLKanGVu5zYC41zKa130c1+Q+R3OPeXeAWMPWF48cHpi7XBON3we/cvZ9JpaYm7vIr4t+ojK/fJfZlLIfMrlknk1o6W1bNB88h+OVGCa/oJwHmJvwmvnAxxr2SJhYvBhxD0jZgp4fYHzE+3ydICLfpmjIfdoBDFAvMHZZJjpehT1Fhh4TAPubi5Xg2cU5x5wW+zXFNIvuzALR1NiGffSj/PnTKspSk7K5RQ8vLOxFBr5aI3ArLuZcxfnnknuRsQHmw6CJpyfWTaEJfi5aM/77oPReGiH0OehwYNbOPMHtRVcU21c9rn/GD5qTXlraZ8GTPN8JUWtoD2r29k+0xCtekKqxh0LO4La74zNMCBMsLfOAxioE/Z5gexcpiNkQKc9VMIvATP+tzn6QuPlMgPFZbMC1X+RCbHVYSoAsAFyxoaWT2c064CuX8BD/EJSrW3vx4LztjlEsr7bbxJdcxOOjQFtP2PMR3PU6fzFVzh7+dwpI3mtVEpnFEVKlct5KZ3SUtLVFL4FiulsTtW0q+VS6SqMOvI+EPf1h4tMMO585aTUS0mloGYLybyN4Bf2f0BggnE9CrGeG78cIOl5r5ugwBvWk5Z13TdGfr5aHNABZmZGgzfLA/i9ELPyJTeJiHwK7q5Pcxc5URCd/mKA29/HIb2GeBAAAA==
+2018-06-14 19:14:18,098 [INFO ][main            ][                     MqSender2] - Send JSON file: D:\!Projects\!USPN\04_07-SUD\regress\7\07_00004_upload_to_VIO_link_to_17_00001\testData\Reg_UOPS-S_SaveDocAndCont.json
+2018-06-14 19:14:18,105 [INFO ][main            ][                     MqSender2] - EHD ID of document: 1611033
+2018-06-14 19:14:18,106 [INFO ][main            ][                     MqSender2] - RequestID of document: c38150759b914e5eb3210db6ad1b3e85
+2018-06-14 19:14:34,020 [ERROR][main            ][                      MQClient] - FAILED
+java.lang.NullPointerException
+	at MQClient.sendMessage(MQClient.java:132)
+	at MqSender2.send(MqSender2.java:111)
+	at MqSender2.run(MqSender2.java:56)
+	at MqSender2.main(MqSender2.java:35)
+2018-06-14 19:14:34,263 [INFO ][main            ][                     MqSender2] - Send SOAP file: D:\!Projects\!USPN\04_07-SUD\regress\7\07_00004_upload_to_VIO_link_to_17_00001\testData\kvit\start-UOPS-S-63-ET.xml.

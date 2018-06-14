@@ -1,14 +1,17 @@
-import EHDComminucation.EhdPageHandler;
 import Enums.ESenderDocType;
 import JsonHandler.JsonHandler;
 import XmlHandler.XmlHandler;
 import com.beust.jcommander.JCommander;
 import com.beust.jcommander.Parameter;
 import com.beust.jcommander.ParameterException;
+import com.google.gson.Gson;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-import java.io.*;
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStream;
+import java.io.OutputStream;
 import java.nio.file.Files;
 import java.nio.file.Path;
 import java.nio.file.Paths;
@@ -23,9 +26,6 @@ public class MqSender2 {
 
     @Parameter(names = {"prop", "-p"}, description = "Path to MQSender2.properties")
     private static String MQSENDER2_PROPERTIES = "MQSender2.properties";
-
-    @Parameter(names = {"browser", "-br"}, description = "Start MQSender using headless browser")
-    private static boolean withBrowser = false;
 
     public static void main(String[] args) {
         MqSender2 mqSender2 = new MqSender2();
@@ -49,22 +49,20 @@ public class MqSender2 {
         try {
             JsonHandler jsonHandler = new JsonHandler(PATH_FILE_JSON, PATH_FILE_ARCHIVE_DOC);
             jsonHandler.jsonGenerate();
-            initPropForMQSender(ESenderDocType.JSON);
-            send(ESenderDocType.JSON);
+            ReplyMessage replyJsonMessage = send(ESenderDocType.JSON);
 
-//            if (PATH_FILE_SOAP != null) {
-//                initPropForMQSender(ESenderDocType.SOAP);
-//                initSoap(jsonHandler);
-//                send(ESenderDocType.SOAP);
-//            }
+            if (PATH_FILE_SOAP != null) {
+                initSoap(replyJsonMessage);
+                send(ESenderDocType.SOAP);
+            }
 
         } catch (Exception e) {
-            e.printStackTrace();
+            logger.error("FAILED", e);
         } finally {
             try{
                 Files.delete(Paths.get(MQSENDER_PROPERTIES));
             } catch (IOException e) {
-                e.printStackTrace();
+                logger.error("FAILED", e);
             }
         }
     }
@@ -83,15 +81,11 @@ public class MqSender2 {
         }
     }
 
-    private void initSoap(JsonHandler jsonHandler) throws IOException {
-        String docName = jsonHandler.getValueFromTag("documentNumber");
-        long documentRef = withBrowser ? new EhdPageHandler().searchDocument(docName).getDocumentId() : askUserAboutID();
+    private void initSoap(ReplyMessage replyJsonMessage) {
+        long documentRef = replyJsonMessage.getDocumentId();
         logger.info(String.format("EHD ID of document: %d", documentRef));
 
-        String requestID = jsonHandler.getValueFromTag("requestId");
-        if (requestID == null || requestID.isEmpty()) {
-            throw new IllegalArgumentException(String.format("Tag name 'requestID' is't exists in JSON '%s'", PATH_FILE_JSON));
-        }
+        String requestID = replyJsonMessage.getRequestId();
         logger.info(String.format("RequestID of document: %s", requestID));
 
         XmlHandler xmlHandler = new XmlHandler(PATH_FILE_SOAP);
@@ -99,50 +93,32 @@ public class MqSender2 {
         xmlHandler.setParamToSOAP("RequestId", requestID);
     }
 
-    private long askUserAboutID() throws IOException, NumberFormatException {
-        long docID;
-        System.out.print("Enter the ID of document in EHD: ");
-        try (BufferedReader reader = new BufferedReader(new InputStreamReader(System.in))) {
-            String id = reader.readLine();
-            docID = Integer.parseInt(id);
-
-            if (docID <= 0) {
-                logger.error(String.format("Incorrect ID: '%s'", id));
-                throw new NumberFormatException();
-            }
-        } catch (IOException e) {
-            throw e;
-        }
-
-        return docID;
-    }
-
-    private String send(ESenderDocType type) {
-        byte[] bytes;
+    private ReplyMessage send(ESenderDocType type) {
         String replyMessage = null;
         MQSender sender = new MQSender();
-        sender.newInstance();
 
         try {
             switch (type) {
                 case JSON:
+                    initPropForMQSender(ESenderDocType.JSON);
+                    sender.newInstance();
+                    replyMessage = sender.sendMessage(new String(Files.readAllBytes(PATH_FILE_JSON), "UTF-8"));
                     logger.info(String.format("Send JSON file: %s", PATH_FILE_JSON));
-                    bytes = Files.readAllBytes(PATH_FILE_JSON);
-                    replyMessage = sender.sendMessage(new String(bytes, "UTF-8"));
                     break;
                 case SOAP:
+                    initPropForMQSender(ESenderDocType.SOAP);
+                    sender.newInstance();
+                    sender.sendMessage(new String(Files.readAllBytes(PATH_FILE_SOAP), "UTF-8"));
                     logger.info(String.format("Send SOAP file: %s.", PATH_FILE_SOAP));
-                    bytes = Files.readAllBytes(PATH_FILE_SOAP);
-                    replyMessage = sender.sendMessage(new String(bytes, "UTF-8"));
                     break;
                 default:
                     break;
             }
         } catch (IOException e) {
-            e.printStackTrace();
+            logger.error("FAILED", e);
         }
 
-        return replyMessage;
+        return new Gson().fromJson(replyMessage, ReplyMessage.class);
     }
 
     private void initPropForMQSender(ESenderDocType type) throws IOException, NullPointerException {

@@ -1,8 +1,11 @@
 package JsonHandler;
 
+import com.google.gson.Gson;
+import com.google.gson.GsonBuilder;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
+import java.io.BufferedWriter;
 import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.Path;
@@ -10,38 +13,43 @@ import java.util.Base64;
 import java.util.UUID;
 
 
-public class JsonHandler extends AbstractJsonHandler{
+public class JsonHandler {
     private Logger logger = LoggerFactory.getLogger(JsonHandler.class);
-    private Path PATH_FILE_ARCHIVE_DOC;
+    private Path PATH_FILE_JSON;
+    private DocumentDescription documentJson;
     private String archDocBase64;
     private String requestId;
 
     public JsonHandler(Path PATH_FILE_JSON, Path PATH_FILE_ARCHIVE_DOC) throws IOException {
-        super(PATH_FILE_JSON);
+        this.PATH_FILE_JSON = PATH_FILE_JSON;
+        this.documentJson = new Gson().fromJson(Files.newBufferedReader(PATH_FILE_JSON), DocumentDescription.class);
         this.requestId = UUID.randomUUID().toString().replace("-", "");
 
         if (PATH_FILE_ARCHIVE_DOC != null) {
-            this.PATH_FILE_ARCHIVE_DOC = PATH_FILE_ARCHIVE_DOC;
-            archDocEncodeToBase64(PATH_FILE_ARCHIVE_DOC);
+            this.archDocBase64 = archDocEncodeToBase64(PATH_FILE_ARCHIVE_DOC);
         }
     }
 
     public void jsonGenerate() {
-        setValueToTag(PATH_FILE_JSON, "requestId", requestId);
+        documentJson.setRequestId(requestId);
         logger.info(String.format("Generate JSON with requestId: %s", requestId));
 
         if (archDocBase64 != null) {
-            setValueToTag(PATH_FILE_JSON, "contentBody", archDocBase64);
-            setValueToTag(PATH_FILE_JSON, "fileName", PATH_FILE_ARCHIVE_DOC.getFileName().toString());
+            documentJson.setContentBody(archDocBase64);
             logger.info(String.format("Generate JSON with contentBody: %s", archDocBase64));
+        }
+
+        try (BufferedWriter writer = Files.newBufferedWriter(PATH_FILE_JSON)){
+            writer.write(new GsonBuilder().setPrettyPrinting().create().toJson(documentJson));
+        } catch (IOException e) {
+            logger.error("FAILED", e);
         }
     }
 
-    private void archDocEncodeToBase64(Path archFilePath) throws IOException {
+    private String archDocEncodeToBase64(Path archFilePath) throws IOException {
         try {
             byte[] byteFile = Base64.getEncoder().encode(Files.readAllBytes(archFilePath));
-            archDocBase64 = new String(byteFile);
-
+            return new String(byteFile);
         } catch (IOException e) {
             logger.error("FAILED", e);
             throw e;

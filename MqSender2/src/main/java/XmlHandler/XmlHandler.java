@@ -32,7 +32,7 @@ public class XmlHandler {
         Path tempScrFilePath = null;
         try {
             tempScrFilePath = File.createTempFile(soapFilePath.getFileName().toString(), null, soapFilePath.getParent().toFile()).toPath();
-            setParamToSoap(replaceTagName, replaceTagValue, tempScrFilePath);
+            setParamToSOAP(replaceTagName, replaceTagValue, tempScrFilePath);
         }
          catch (IOException | XMLStreamException e) {
             logger.error("FAILED", e);
@@ -48,7 +48,7 @@ public class XmlHandler {
         }
     }
 
-    private void setParamToSoap(String replaceTagName, String replaceTagValue, Path tempScrFilePath) throws XMLStreamException, IOException {
+    private void setParamToSOAP(String replaceTagName, String replaceTagValue, Path tempScrFilePath) throws XMLStreamException, IOException {
         String[] replaceTagNameParts = replaceTagName.contains("::") ? replaceTagName.split("::") : new String[]{replaceTagName};
 
         try (XmlHandlerReader xmlHandlerReader = new XmlHandlerReader(Files.newInputStream(soapFilePath));

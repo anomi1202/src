@@ -1,3 +1,6 @@
 package Enums;
 
-public enum ESenderDocType {JSON, SOAP}
+public enum ESenderDocType {
+    JSON,
+    SOAP
+}
