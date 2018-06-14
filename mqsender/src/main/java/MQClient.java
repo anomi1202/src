@@ -1,3 +1,4 @@
+import com.ibm.mq.jms.MQQueue;
 import com.ibm.msg.client.jms.JmsConnectionFactory;
 import com.ibm.msg.client.jms.JmsFactoryFactory;
 import com.ibm.msg.client.wmq.WMQConstants;
@@ -21,10 +22,12 @@ public abstract class MQClient {
     protected int port = 1414;
     protected String manager = null;
     protected String destination = null;
+    protected String reply = null;
     protected boolean isTopic = false;
     protected Connection connection = null;
     protected Session session = null;
     protected Destination dest = null;
+    protected Destination replyQueue = null;
     protected boolean array = false;
     protected String bodyfile = null;
     protected String headfile = null;
@@ -63,6 +66,7 @@ public abstract class MQClient {
         connection = cf.createConnection();
         session = connection.createSession(false, Session.AUTO_ACKNOWLEDGE);
         dest = isTopic ? session.createTopic(destination) : session.createQueue(destination);
+        replyQueue = new MQQueue(reply);
     }
 
     protected void closeSession() {
@@ -138,6 +142,10 @@ public abstract class MQClient {
             throw new IllegalArgumentException("Destination name is not specified.");
 
         isTopic = destination.startsWith("topic://");
+
+        reply = properties.getProperty("mq.reply");
+        if (reply == null || reply.equals(""))
+            throw new IllegalArgumentException("Reply name is not specified.");
 
         String sarray = properties.getProperty("mq.send.as.text", "no");
         array = !("YES".equals(sarray.toUpperCase()) || "1".equals(sarray) || "ON".equals(sarray.toUpperCase()));

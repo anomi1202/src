@@ -1,6 +1,7 @@
 import Common.FileUtils;
 
 import javax.jms.*;
+import javax.xml.soap.Text;
 import java.io.IOException;
 import java.text.SimpleDateFormat;
 import java.util.Date;
@@ -50,16 +51,17 @@ public class MQSender extends MQClient {
         System.out.println("Delay (ms): " + sleep);
 
         MessageProducer producer = null;
+        MessageConsumer messageReader = null;
         Message message = null;
 
         try {
             producer = session.createProducer(dest);
-
+            messageReader = session.createConsumer(replyQueue);
             message = array ? (Message) session.createBytesMessage() : (Message) session.createTextMessage();
 
             // Start the connection
             connection.start();
-
+            String replymessage = null;
             for (int i = 0; i < count; i++) {
                 String text = messageContent;
 
@@ -78,9 +80,11 @@ public class MQSender extends MQClient {
                 }
 
                 // And, send the message
+                message.setJMSReplyTo(replyQueue);
                 producer.send(message);
-
                 Thread.sleep(sleep);
+
+                replymessage = ((TextMessage) messageReader.receive()).getText();
 
                 message.clearProperties();
                 message.clearBody();
@@ -91,15 +95,26 @@ public class MQSender extends MQClient {
             }
 
             System.out.println("Message has been successfully sent.");
+            System.out.println("Reply:\r\n\t" + replymessage);
         } catch (Exception e) {
             e.printStackTrace(System.err);
         } finally {
-            if (producer != null)
+            if (producer != null) {
+
                 try {
                     producer.close();
                 } catch (JMSException jmsex) {
                     System.out.println("Producer could not be closed.");
                 }
+            }
+
+            if (messageReader != null) {
+                try {
+                    messageReader.close();
+                } catch (JMSException jmsex) {
+                    System.out.println("MessageReader could not be closed.");
+                }
+            }
         }
     }
 
