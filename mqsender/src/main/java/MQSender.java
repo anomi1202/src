@@ -23,8 +23,7 @@ public class MQSender extends MQClient {
         JCommander jCommander = new JCommander(sender);
         try{
             jCommander.parse(args);
-            sender.newInstance();
-            sender.run();
+            sender.newInstance().run();
         } catch (ParameterException e){
             jCommander.usage();
         }

@@ -28,7 +28,7 @@ public abstract class MQClient {
     protected Destination destinationQueue = null;
     protected Destination replyQueue = null;
 
-    public void newInstance() {
+    public MQClient newInstance() {
         initProp();
         try {
             createSession();
@@ -37,9 +37,13 @@ public abstract class MQClient {
         } finally {
             closeSession();
         }
+
+        return this;
     }
 
-    protected void createSession() throws Exception {
+    protected abstract void run();
+
+    private void createSession() throws Exception {
         // Create a connection factory
         JmsFactoryFactory ff = JmsFactoryFactory.getInstance(WMQConstants.WMQ_PROVIDER);
         JmsConnectionFactory cf = ff.createConnectionFactory();
@@ -58,7 +62,7 @@ public abstract class MQClient {
         replyQueue = new MQQueue(reply);
     }
 
-    protected void closeSession() {
+    private void closeSession() {
         try{
             if (session != null){
                 session.close();
