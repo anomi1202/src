@@ -117,7 +117,7 @@ public class MqSender2 {
         return docID;
     }
 
-    private void send(ESenderDocType type) {
+    private String send(ESenderDocType type) {
         byte[] bytes;
         String replyMessage = null;
         MQSender sender = new MQSender();
@@ -142,7 +142,7 @@ public class MqSender2 {
             e.printStackTrace();
         }
 
-        System.out.println(replyMessage);
+        return replyMessage;
     }
 
     private void initPropForMQSender(ESenderDocType type) throws IOException, NullPointerException {
