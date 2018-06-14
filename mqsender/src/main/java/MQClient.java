@@ -28,22 +28,19 @@ public abstract class MQClient {
     protected Destination destinationQueue = null;
     protected Destination replyQueue = null;
 
-    public MQClient newInstance() {
+    public void newInstance() {
         initProp();
         try {
             createSession();
         } catch (Exception e) {
-            logger.error("FAILED", e);
-        } finally {
             closeSession();
+            logger.error("FAILED", e);
         }
-
-        return this;
     }
 
     protected abstract void run();
 
-    private void createSession() throws Exception {
+    protected void createSession() throws Exception {
         // Create a connection factory
         JmsFactoryFactory ff = JmsFactoryFactory.getInstance(WMQConstants.WMQ_PROVIDER);
         JmsConnectionFactory cf = ff.createConnectionFactory();
@@ -62,7 +59,7 @@ public abstract class MQClient {
         replyQueue = new MQQueue(reply);
     }
 
-    private void closeSession() {
+    protected void closeSession() {
         try{
             if (session != null){
                 session.close();
@@ -80,7 +77,7 @@ public abstract class MQClient {
         }
     }
 
-    private void initProp(){
+    protected void initProp(){
         Properties propFile = new Properties();
         try(InputStream is = Files.newInputStream(Paths.get(MQSENDER_PROPERTIES))){
             propFile.load(is);
