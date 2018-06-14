@@ -52,11 +52,11 @@ public class MqSender2 {
             initPropForMQSender(ESenderDocType.JSON);
             send(ESenderDocType.JSON);
 
-            if (PATH_FILE_SOAP != null) {
-                initPropForMQSender(ESenderDocType.SOAP);
-                initSoap(jsonHandler);
-                send(ESenderDocType.SOAP);
-            }
+//            if (PATH_FILE_SOAP != null) {
+//                initPropForMQSender(ESenderDocType.SOAP);
+//                initSoap(jsonHandler);
+//                send(ESenderDocType.SOAP);
+//            }
 
         } catch (Exception e) {
             e.printStackTrace();
@@ -118,18 +118,31 @@ public class MqSender2 {
     }
 
     private void send(ESenderDocType type) {
-        switch (type) {
-            case JSON:
-                logger.info(String.format("Send JSON file: %s", PATH_FILE_JSON));
-                new MQSender().run(new String[]{PATH_FILE_JSON.toString()});
-                break;
-            case SOAP:
-                logger.info(String.format("Send SOAP file: %s.", PATH_FILE_SOAP));
-                new MQSender().run(new String[]{PATH_FILE_SOAP.toString()});
-                break;
-            default:
-                break;
+        byte[] bytes;
+        String replyMessage = null;
+        MQSender sender = new MQSender();
+        sender.newInstance();
+
+        try {
+            switch (type) {
+                case JSON:
+                    logger.info(String.format("Send JSON file: %s", PATH_FILE_JSON));
+                    bytes = Files.readAllBytes(PATH_FILE_JSON);
+                    replyMessage = sender.sendMessage(new String(bytes, "UTF-8"));
+                    break;
+                case SOAP:
+                    logger.info(String.format("Send SOAP file: %s.", PATH_FILE_SOAP));
+                    bytes = Files.readAllBytes(PATH_FILE_SOAP);
+                    replyMessage = sender.sendMessage(new String(bytes, "UTF-8"));
+                    break;
+                default:
+                    break;
+            }
+        } catch (IOException e) {
+            e.printStackTrace();
         }
+
+        System.out.println(replyMessage);
     }
 
     private void initPropForMQSender(ESenderDocType type) throws IOException, NullPointerException {

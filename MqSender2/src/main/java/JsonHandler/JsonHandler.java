@@ -1,10 +1,10 @@
 package JsonHandler;
 
-import Common.FileUtils;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 import java.io.IOException;
+import java.nio.file.Files;
 import java.nio.file.Path;
 import java.util.Base64;
 import java.util.UUID;
@@ -39,7 +39,7 @@ public class JsonHandler extends AbstractJsonHandler{
 
     private void archDocEncodeToBase64(Path archFilePath) throws IOException {
         try {
-            byte[] byteFile = Base64.getEncoder().encode(FileUtils.loadFileData(archFilePath.toFile()));
+            byte[] byteFile = Base64.getEncoder().encode(Files.readAllBytes(archFilePath));
             archDocBase64 = new String(byteFile);
 
         } catch (IOException e) {
