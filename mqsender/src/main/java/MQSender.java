@@ -7,6 +7,7 @@ import com.google.gson.JsonElement;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
+import javax.jms.JMSException;
 import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.Path;
@@ -32,14 +33,18 @@ public class MQSender extends MQClient {
 
     protected void run() {
         String messageContent;
+        String replyMessageText = null;
         try {
             messageContent = new String(Files.readAllBytes(filePath), "UTF-8");
-        } catch (IOException e) {
+            replyMessageText = sendMessage(messageContent);
+        } catch (IOException | JMSException e) {
             logger.error("FAILED", e);
-            throw new IllegalArgumentException("Could not load a message from file '" + filePath.toString() + "'");
+            if (e instanceof IOException) {
+                throw new IllegalArgumentException("Could not load a message from file '" + filePath.toString() + "'");
+            }
         }
 
-        String replyMessageText = sendMessage(messageContent);
+
         JsonElement jsonElement = new Gson().fromJson(replyMessageText, JsonElement.class);
         String json = new GsonBuilder().setPrettyPrinting().create().toJson(jsonElement);
         System.out.println("Message has been successfully sent.");

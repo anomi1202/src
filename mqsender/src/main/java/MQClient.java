@@ -27,6 +27,7 @@ public abstract class MQClient {
     protected Session session = null;
     protected Destination destinationQueue = null;
     protected Destination replyQueue = null;
+    private long waitReply = 15000;
 
     public void newInstance() {
         initProp();
@@ -36,6 +37,10 @@ public abstract class MQClient {
             closeSession();
             logger.error("FAILED", e);
         }
+    }
+
+    public void setWaitReply(long waitReply){
+        this.waitReply = waitReply == 0 ? 10 : waitReply;
     }
 
     protected abstract void run();
@@ -107,13 +112,11 @@ public abstract class MQClient {
         }
     }
 
-    public String sendMessage(String messageContent){
-        String replyMessageText = null;
-
+    public String sendMessage(String messageContent) throws JMSException {
         MessageProducer producer = null;
         MessageConsumer messageReader = null;
         Message senderMessage;
-        TextMessage replyMessage;
+        TextMessage replyMessage = null;
 
         try {
             producer = session.createProducer(destinationQueue);
@@ -127,9 +130,7 @@ public abstract class MQClient {
             producer.send(senderMessage);
 
             //Get reply message with timeout 15 sec
-            replyMessage = (TextMessage) messageReader.receive(15000);
-
-            replyMessageText = replyMessage.getText();
+            replyMessage = (TextMessage) messageReader.receive(waitReply);
         } catch (Exception e) {
             logger.error("FAILED", e);
         } finally {
@@ -150,6 +151,6 @@ public abstract class MQClient {
             }
         }
 
-        return replyMessageText;
+        return replyMessage.getText();
     }
 }
