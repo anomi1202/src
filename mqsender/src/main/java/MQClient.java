@@ -28,19 +28,16 @@ public abstract class MQClient {
     protected Destination destinationQueue = null;
     protected Destination replyQueue = null;
 
-    protected void run() {
+    public void newInstance() {
         initProp();
         try {
             createSession();
-            doRun();
         } catch (Exception e) {
             logger.error("FAILED", e);
         } finally {
             closeSession();
         }
     }
-
-    protected abstract void doRun();
 
     protected void createSession() throws Exception {
         // Create a connection factory
