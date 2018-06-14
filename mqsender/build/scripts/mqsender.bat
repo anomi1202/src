@@ -63,7 +63,7 @@ set CMD_LINE_ARGS=%*
 :execute
 @rem Setup the command line
 
-set CLASSPATH=%APP_HOME%\lib\com.ibm.mq.jmqi.jar;%APP_HOME%\lib\jcommander-1.72.jar;%APP_HOME%\lib\gson-2.8.4.jar;%APP_HOME%\lib\com.ibm.mqjms.jar;%APP_HOME%\lib\dhbcore.jar;%APP_HOME%\lib\jta.jar;%APP_HOME%\lib\MQSender-1.0.3.jar;%APP_HOME%\lib\slf4j-api-1.7.25.jar;%APP_HOME%\lib\jms.jar;%APP_HOME%\lib\slf4j-log4j12-1.7.25.jar;%APP_HOME%\lib\log4j-1.2.17.jar
+set CLASSPATH=%APP_HOME%\lib\com.ibm.mq.jmqi.jar;%APP_HOME%\lib\jcommander-1.72.jar;%APP_HOME%\lib\gson-2.8.4.jar;%APP_HOME%\lib\com.ibm.mqjms.jar;%APP_HOME%\lib\dhbcore.jar;%APP_HOME%\lib\jta.jar;%APP_HOME%\lib\MQSender-1.0.6.jar;%APP_HOME%\lib\slf4j-api-1.7.25.jar;%APP_HOME%\lib\jms.jar;%APP_HOME%\lib\slf4j-log4j12-1.7.25.jar;%APP_HOME%\lib\log4j-1.2.17.jar
 
 @rem Execute mqsender
 "%JAVA_EXE%" %DEFAULT_JVM_OPTS% %JAVA_OPTS% %MQSENDER_OPTS%  -classpath "%CLASSPATH%" MQSender %CMD_LINE_ARGS%

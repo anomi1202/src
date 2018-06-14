@@ -28,19 +28,17 @@ public abstract class MQClient {
     protected Destination destinationQueue = null;
     protected Destination replyQueue = null;
 
-    protected void run() {
+    public void newInstance() {
         initProp();
         try {
             createSession();
-            doRun();
         } catch (Exception e) {
-            logger.error("FAILED", e);
-        } finally {
             closeSession();
+            logger.error("FAILED", e);
         }
     }
 
-    protected abstract void doRun();
+    protected abstract void run();
 
     protected void createSession() throws Exception {
         // Create a connection factory
@@ -79,7 +77,7 @@ public abstract class MQClient {
         }
     }
 
-    private void initProp(){
+    protected void initProp(){
         Properties propFile = new Properties();
         try(InputStream is = Files.newInputStream(Paths.get(MQSENDER_PROPERTIES))){
             propFile.load(is);

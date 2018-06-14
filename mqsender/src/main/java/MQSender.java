@@ -23,13 +23,14 @@ public class MQSender extends MQClient {
         JCommander jCommander = new JCommander(sender);
         try{
             jCommander.parse(args);
+            sender.newInstance();
             sender.run();
         } catch (ParameterException e){
             jCommander.usage();
         }
     }
 
-    protected void doRun() {
+    protected void run() {
         String messageContent;
         try {
             messageContent = new String(Files.readAllBytes(filePath), "UTF-8");
