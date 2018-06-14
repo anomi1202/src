@@ -1,0 +1,15 @@
+2018-06-14 17:02:40,627 [ERROR][main            ][                      MQClient] - FAILED
+java.lang.IllegalArgumentException: Could not load a message from file 'Reg_UOPS-S_SaveDocAndCont.json'
+	at MQSender.doRun(MQSender.java:40)
+	at MQClient.run(MQClient.java:38)
+	at MQSender.main(MQSender.java:25)
+2018-06-14 17:03:15,744 [ERROR][main            ][                      MQClient] - FAILED
+java.lang.IllegalArgumentException: Could not load a message from file 'Reg_UOPS-S_SaveDocAndCont.json'
+	at MQSender.doRun(MQSender.java:40)
+	at MQClient.run(MQClient.java:38)
+	at MQSender.main(MQSender.java:25)
+2018-06-14 17:03:50,559 [ERROR][main            ][                      MQClient] - FAILED
+java.lang.IllegalArgumentException: Could not load a message from file 'Reg_UOPS-S_SaveDocAndCont.json'
+	at MQSender.doRun(MQSender.java:40)
+	at MQClient.run(MQClient.java:38)
+	at MQSender.main(MQSender.java:25)
