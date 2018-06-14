@@ -1,6 +1,6 @@
 package Services.USPNServices.notificationHandlers.notification;
 
-import Documents.forJson.notification.Notification;
+import Documents.forJson.Notification;
 import retrofit2.Call;
 import retrofit2.http.POST;
 import retrofit2.http.Query;

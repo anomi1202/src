@@ -1,5 +1,5 @@
 
-package Documents.forJson.incoming;
+package Documents.forJson.common;
 
 import com.google.gson.annotations.SerializedName;
 

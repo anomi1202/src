@@ -1,6 +1,6 @@
 package Services.USPNServices.documentHandlers.incoming;
 
-import Documents.forJson.incoming.IncomingDocument;
+import Documents.forJson.IncomingDocument;
 import com.google.gson.JsonObject;
 import retrofit2.Call;
 import retrofit2.http.Body;
@@ -37,7 +37,7 @@ public interface IIncomingService {
      *
      * @param baseDocumentNumber дата создания распоряжения - baseDocumentNumber=суды-06-2018
      * @param baseDocumentDate дата распоряжения - baseDocumentDate=2018-06-07
-     * @param documentIds ID входящего документа - ocumentIds=9140
+     * @param documentIds ID входящего документа - documentIds=9140
      * @return объект Call<T> после execute возвращается список обьектов IncomingDocument
      * */
     @POST("npf/prepareDisposal")

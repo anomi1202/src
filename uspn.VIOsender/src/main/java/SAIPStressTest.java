@@ -2,7 +2,6 @@ import Documents.Document;
 import PlansExecutionDocuments.DocumentsSender;
 import PlansExecutionDocuments.RegisterHandler;
 import PlansExecutionDocuments.SvedeniaHandler;
-import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
 
 import java.io.BufferedWriter;
@@ -23,8 +22,8 @@ public class SAIPStressTest {
     private void doRunStressTest() {
         try {
             sendDocumentsToUspn();
-//            RegisterHandler.getInstance().runHandler(documentList);
             SvedeniaHandler.getInstance().runHandler(documentList);
+//            RegisterHandler.getInstance().runHandler(documentList);
         } catch (Exception e){
             e.printStackTrace();
         } finally {

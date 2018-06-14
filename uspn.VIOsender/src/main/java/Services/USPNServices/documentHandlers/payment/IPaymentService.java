@@ -1,6 +1,6 @@
 package Services.USPNServices.documentHandlers.payment;
 
-import Documents.forJson.payment.Payment;
+import Documents.forJson.Payment;
 import com.google.gson.JsonObject;
 import retrofit2.Call;
 import retrofit2.http.Body;

@@ -1,8 +1,11 @@
-package Documents.forJson.incoming;
+package Documents.forJson;
 
+import Documents.forJson.common.Status;
+import Documents.forJson.common.Type;
+import Documents.forJson.interfaces.IDocuments;
 import com.google.gson.annotations.SerializedName;
 
-public class IncomingDocument {
+public class IncomingDocument implements IDocuments{
 
     @SerializedName("id")
     private long id;
@@ -37,6 +40,7 @@ public class IncomingDocument {
     @SerializedName("linkdocument")
     private String linkdocument;
 
+    @Override
     public long getId() {
         return id;
     }
@@ -49,18 +53,26 @@ public class IncomingDocument {
         return docId;
     }
 
+    @Override
     public Type getType() {
         return type;
     }
 
-    public Status getStatus() {
-        return status;
+    @Override
+    public String getStatusRUS() {
+        return status.getStatus();
+    }
+
+    @Override
+    public String getStatusENG() {
+        return status.getNameUI();
     }
 
     public String getFilename() {
         return filename;
     }
 
+    @Override
     public String getNumber() {
         return number;
     }

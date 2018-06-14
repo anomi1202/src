@@ -1,6 +1,6 @@
 package Services.USPNServices.documentHandlers;
 
-import Documents.forJson.payment.Payment;
+import Documents.forJson.Payment;
 import Services.USPNServices.documentHandlers.payment.AbstractPaymentService;
 import com.google.gson.Gson;
 import com.google.gson.JsonObject;

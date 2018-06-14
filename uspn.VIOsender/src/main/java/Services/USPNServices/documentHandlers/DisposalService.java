@@ -1,7 +1,7 @@
 package Services.USPNServices.documentHandlers;
 
 import Documents.Enums.DisposalStatus;
-import Documents.forJson.disposal.DisposalDocument;
+import Documents.forJson.DisposalDocument;
 import Services.USPNServices.documentHandlers.disposal.AbstractIDisposalService;
 import com.google.gson.Gson;
 import com.google.gson.JsonObject;

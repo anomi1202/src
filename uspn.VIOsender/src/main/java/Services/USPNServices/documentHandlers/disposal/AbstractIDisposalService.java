@@ -1,6 +1,6 @@
 package Services.USPNServices.documentHandlers.disposal;
 
-import Documents.forJson.disposal.DisposalDocument;
+import Documents.forJson.DisposalDocument;
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
 import com.google.gson.JsonObject;
@@ -36,7 +36,7 @@ public abstract class AbstractIDisposalService implements IDisposalService {
     @Override
     public Call<List<DisposalDocument>> getDisposalList(String createDateRangeStart) throws Exception {
         Call<List<DisposalDocument>> responseBodyCall = disposalService.getDisposalList(createDateRangeStart);
-        logger.info(String.format("GET DISPOSAL LIST  with create date: %s", createDateRangeStart));
+        logger.trace(String.format("GET DISPOSAL LIST  with create date: %s", createDateRangeStart));
         logger.trace(String.format("Request to USPN: %s", responseBodyCall.request().toString()));
         return responseBodyCall;
     }

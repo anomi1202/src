@@ -1,6 +1,7 @@
 package PlansExecutionDocuments.interfaces;
 
 import Documents.Document;
+import Documents.Enums.IncomingDocumentStatus;
 
 import java.util.List;
 
@@ -17,22 +18,17 @@ public interface HandlerService {
     void authorization() throws Exception;
 
     /**
-     * Получение списка входящий документов из формы
-     * */
-    void getIncomingDocument() throws Exception;
-
-    /**
      * Отражение документа
      * */
-    void reflectDocument() throws Exception;
+    boolean reflectDocument() throws Exception;
 
     /**
      * Отзыв документа
      * */
-    void rollbackDocument() throws Exception;
+    boolean rollbackDocument() throws Exception;
 
     /**
-     * Добавление исторической записи об изменении статуса документа
+     * Проверка статуса документа
      * */
-    void addHistoryRecord(List<Document> documentList) throws Exception;
+    void waiteStatusOfDocument(IncomingDocumentStatus status) throws Exception;
 }

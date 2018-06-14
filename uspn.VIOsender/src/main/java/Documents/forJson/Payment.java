@@ -1,4 +1,4 @@
-package Documents.forJson.payment;
+package Documents.forJson;
 
 import com.google.gson.annotations.SerializedName;
 

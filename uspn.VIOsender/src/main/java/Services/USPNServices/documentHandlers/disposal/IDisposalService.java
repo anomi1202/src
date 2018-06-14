@@ -1,6 +1,6 @@
 package Services.USPNServices.documentHandlers.disposal;
 
-import Documents.forJson.disposal.DisposalDocument;
+import Documents.forJson.DisposalDocument;
 import com.google.gson.JsonObject;
 import retrofit2.Call;
 import retrofit2.http.Body;

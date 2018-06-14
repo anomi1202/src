@@ -1,6 +1,6 @@
 package Services.USPNServices.documentHandlers.payment;
 
-import Documents.forJson.payment.Payment;
+import Documents.forJson.Payment;
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
 import com.google.gson.JsonObject;
@@ -37,10 +37,10 @@ public abstract class AbstractPaymentService implements IPaymentService {
     public Call<Payment> createPayment(Payment newPayment) throws Exception {
         Call<Payment> responseBodyCall = paymentService.createPayment(newPayment);
         logger.info(String.format("CREATE new PAYMENT with:" +
-                "number: %d\r\n\t" +
+                "number: %s\r\n\t" +
                 "date: %s\r\n\t" +
                 "admount: %d"
-                , newPayment.getId()
+                , newPayment.getNumber()
                 , newPayment.getDate()
                 , newPayment.getAmount()
         ));
@@ -51,7 +51,7 @@ public abstract class AbstractPaymentService implements IPaymentService {
     @Override
     public Call<List<Payment>> paymentsOfDocument(long baseDocumentId) throws Exception {
         Call<List<Payment>> responseBodyCall = paymentService.paymentsOfDocument(baseDocumentId);
-        logger.info(String.format("GET PAYMENT LIST of DOCUMENT with ID: %d", baseDocumentId));
+        logger.trace(String.format("GET PAYMENT LIST of DOCUMENT with ID: %d", baseDocumentId));
         logger.trace(String.format("Request to USPN: %s", responseBodyCall.request().toString()));
         return responseBodyCall;
     }

@@ -1,6 +1,6 @@
 package Services.USPNServices.notificationHandlers;
 
-import Documents.forJson.notification.Notification;
+import Documents.forJson.Notification;
 import Services.USPNServices.notificationHandlers.notification.AbstractNotificationService;
 import okhttp3.OkHttpClient;
 import org.slf4j.Logger;

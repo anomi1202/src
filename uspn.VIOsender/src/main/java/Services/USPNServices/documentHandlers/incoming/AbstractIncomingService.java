@@ -1,6 +1,6 @@
 package Services.USPNServices.documentHandlers.incoming;
 
-import Documents.forJson.incoming.IncomingDocument;
+import Documents.forJson.IncomingDocument;
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
 import com.google.gson.JsonObject;
@@ -36,7 +36,7 @@ public abstract class AbstractIncomingService implements IIncomingService {
     @Override
     public Call<List<IncomingDocument>> getIncomingDocList(String createDateRangeStart, String documentType) throws Exception {
         Call<List<IncomingDocument>> responseBodyCall = inDocService.getIncomingDocList(createDateRangeStart, documentType);
-        logger.info(String.format("GET INCOMING LIST  with create date: %s", createDateRangeStart));
+        logger.trace(String.format("GET INCOMING LIST  with create date: %s", createDateRangeStart));
         logger.trace(String.format("Request to USPN: %s", responseBodyCall.request().toString()));
         return responseBodyCall;
     }
@@ -52,7 +52,9 @@ public abstract class AbstractIncomingService implements IIncomingService {
     @Override
     public Call<String> createDisposal(String baseDocumentNumber, String baseDocumentDate, String documentIds) throws Exception {
         Call<String> responseBodyCall = inDocService.createDisposal(baseDocumentNumber, baseDocumentDate, documentIds);
-        logger.info(String.format("CREATE DISPOSAL %s for REGISTER with IDs: %s", baseDocumentNumber, documentIds));
+        logger.info(String.format("CREATE DISPOSAL %s at %s for REGISTER with IDs: %s"
+                , baseDocumentNumber, baseDocumentDate
+                , documentIds));
         logger.trace(String.format("Request to USPN: %s\"", responseBodyCall.request().toString()));
         return responseBodyCall;
     }

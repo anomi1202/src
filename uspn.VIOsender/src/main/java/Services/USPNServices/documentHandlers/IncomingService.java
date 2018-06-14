@@ -2,10 +2,9 @@ package Services.USPNServices.documentHandlers;
 
 import Documents.Enums.IncomingDocType;
 import Documents.Enums.IncomingDocumentStatus;
-import Documents.forJson.incoming.IncomingDocument;
+import Documents.forJson.IncomingDocument;
 import Services.USPNServices.documentHandlers.incoming.AbstractIncomingService;
 import com.google.gson.Gson;
-import com.google.gson.GsonBuilder;
 import com.google.gson.JsonObject;
 import okhttp3.OkHttpClient;
 import org.slf4j.Logger;
@@ -76,12 +75,14 @@ public class IncomingService extends AbstractIncomingService {
     public boolean prepareAndCreateDisposal(String baseDocumentNumber, String baseDocumentDate, List<IncomingDocument> incomingDocuments){
         boolean bodyResponse = false;
         String documentIds = incomingDocuments.stream()
-                .filter(doc -> doc.getType().getTypeName().equals(IncomingDocType.V_REGISTERS.name()))
-                .map(doc -> String.valueOf(doc.getId()))
+                .filter(doc ->
+                        doc.getType().getTypeName().equals(IncomingDocType.V_REGISTERS.name()) &&
+                                doc.getStatusENG().equals(IncomingDocumentStatus.BK_PASSED.name())
+                ).map(doc -> String.valueOf(doc.getId()))
                 .collect(Collectors.joining(","));
         try {
             Response<String> v_documents = super.createDisposal(baseDocumentNumber, baseDocumentDate, documentIds).execute();
-            if (v_documents.body().equals("")){
+            if (v_documents.body().equals("\"\"")){
                 bodyResponse = true;
             } else {
                 throw new Exception(String.format("Disposal with number %s and date %s is already exists!", baseDocumentNumber, baseDocumentDate));
@@ -103,7 +104,7 @@ public class IncomingService extends AbstractIncomingService {
         List<Object> collectID = incomingDocList.stream()
                 .filter(doc ->
                         doc.getType().getTypeName().equals(IncomingDocType.V_SVEDENIA.name())
-                                && doc.getStatus().getNameUI().equals(IncomingDocumentStatus.SAVE.name())
+                                && doc.getStatusENG().equals(IncomingDocumentStatus.SAVE.name())
                 )
                 .flatMapToLong(doc -> LongStream.of(doc.getId()))
                 .boxed().collect(Collectors.toList());
@@ -129,7 +130,7 @@ public class IncomingService extends AbstractIncomingService {
         boolean bodyResponse = false;
 
         List<Long> collectID = incomingDocList.stream()
-                .filter(doc -> doc.getStatus().getNameUI().equals(IncomingDocumentStatus.REFLECTED.name()))
+                .filter(doc -> doc.getStatusENG().equals(IncomingDocumentStatus.REFLECTED.name()))
                 .flatMapToLong(doc -> LongStream.of(doc.getId()))
                 .boxed().collect(Collectors.toList());
         JsonObject json = new JsonObject();
