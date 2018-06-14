@@ -22,6 +22,15 @@
     <orderEntry type="module-library">
       <library>
         <CLASSES>
+          <root url="jar://$MODULE_DIR$/../../libs/com.ibm.mq.jmqi.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES>
           <root url="jar://$MODULE_DIR$/../../libs/jms.jar!/" />
         </CLASSES>
         <JAVADOC />
@@ -40,15 +49,6 @@
     <orderEntry type="module-library">
       <library>
         <CLASSES>
-          <root url="jar://$MODULE_DIR$/../../libs/com.ibm.mq.jmqi.jar!/" />
-        </CLASSES>
-        <JAVADOC />
-        <SOURCES />
-      </library>
-    </orderEntry>
-    <orderEntry type="module-library">
-      <library>
-        <CLASSES>
           <root url="jar://$MODULE_DIR$/../../libs/dhbcore.jar!/" />
         </CLASSES>
         <JAVADOC />
@@ -58,7 +58,7 @@
     <orderEntry type="module-library">
       <library>
         <CLASSES>
-          <root url="jar://$MODULE_DIR$/../../libs/MQSender-1.0.6.jar!/" />
+          <root url="jar://$MODULE_DIR$/../../libs/MQSender-1.0.7.jar!/" />
         </CLASSES>
         <JAVADOC />
         <SOURCES />

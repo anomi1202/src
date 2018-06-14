@@ -8,6 +8,7 @@ import com.google.gson.Gson;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
+import javax.jms.JMSException;
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStream;
@@ -100,21 +101,26 @@ public class MqSender2 {
         try {
             switch (type) {
                 case JSON:
+                    logger.info(String.format("Sending JSON file: %s", PATH_FILE_JSON));
                     initPropForMQSender(ESenderDocType.JSON);
                     sender.newInstance();
                     replyMessage = sender.sendMessage(new String(Files.readAllBytes(PATH_FILE_JSON), "UTF-8"));
-                    logger.info(String.format("Send JSON file: %s", PATH_FILE_JSON));
                     break;
                 case SOAP:
+                    logger.info(String.format("Sending SOAP file: %s.", PATH_FILE_SOAP));
                     initPropForMQSender(ESenderDocType.SOAP);
                     sender.newInstance();
-                    sender.sendMessage(new String(Files.readAllBytes(PATH_FILE_SOAP), "UTF-8"));
-                    logger.info(String.format("Send SOAP file: %s.", PATH_FILE_SOAP));
+                    sender.setWaitReply(100);
+                    try {
+                        sender.sendMessage(new String(Files.readAllBytes(PATH_FILE_SOAP), "UTF-8"));
+                    } catch (NullPointerException e){
+
+                    }
                     break;
                 default:
                     break;
             }
-        } catch (IOException e) {
+        } catch (IOException | JMSException e) {
             logger.error("FAILED", e);
         }
 
