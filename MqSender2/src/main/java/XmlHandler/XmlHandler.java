@@ -1,5 +1,6 @@
 package XmlHandler;
 
+import documents.ReplyMessage;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -23,18 +24,46 @@ import java.util.Set;
 public class XmlHandler {
     private Logger logger = LoggerFactory.getLogger(XmlHandler.class);
     private Path soapFilePath;
+    private ReplyMessage replyJsonMessage;
 
-    public XmlHandler(Path soapFilePath) {
+    public XmlHandler(Path soapFilePath, ReplyMessage replyJsonMessage) {
         this.soapFilePath = soapFilePath;
+        this.replyJsonMessage = replyJsonMessage;
     }
 
-    public void setParamToSOAP(String replaceTagName, String replaceTagValue) {
+    public void xmlGenerate(){
+        long documentRef = replyJsonMessage.getDocumentId();
+        logger.info(String.format("EHD ID of document: %d", documentRef));
+
+        String requestID = replyJsonMessage.getRequestId();
+        logger.info(String.format("RequestID of document: %s", requestID));
+
+        setParamToSOAP("DocumentRef::id", String.valueOf(documentRef));
+        setParamToSOAP("RequestId", requestID);
+    }
+
+    private XMLEvent setValueByAttrSoap(String attrName, String newValue, StartElement startElement) {
+        Iterator iterator = startElement.getAttributes();
+        Set<Attribute> attrSet = new HashSet<>();
+        while (iterator.hasNext()) {
+            Attribute attribute = (Attribute) iterator.next();
+            QName qName = attribute.getName();
+            if (attribute.getName().getLocalPart().equals(attrName)) {
+                attribute = XMLEventFactory.newInstance().createAttribute(qName, newValue);
+            }
+
+            attrSet.add(attribute);
+        }
+        return XMLEventFactory.newInstance().createStartElement(startElement.getName(), attrSet.iterator(), null);
+    }
+
+    private void setParamToSOAP(String replaceTagName, String replaceTagValue) {
         Path tempScrFilePath = null;
         try {
             tempScrFilePath = File.createTempFile(soapFilePath.getFileName().toString(), null, soapFilePath.getParent().toFile()).toPath();
             setParamToSOAP(replaceTagName, replaceTagValue, tempScrFilePath);
         }
-         catch (IOException | XMLStreamException e) {
+        catch (IOException | XMLStreamException e) {
             logger.error("FAILED", e);
         } finally {
             if (tempScrFilePath != null) {
@@ -80,20 +109,4 @@ public class XmlHandler {
             xmlEventWriter.flush();
         }
     }
-
-    private XMLEvent setValueByAttrSoap(String attrName, String newValue, StartElement startElement) {
-        Iterator iterator = startElement.getAttributes();
-        Set<Attribute> attrSet = new HashSet<>();
-        while (iterator.hasNext()) {
-            Attribute attribute = (Attribute) iterator.next();
-            QName qName = attribute.getName();
-            if (attribute.getName().getLocalPart().equals(attrName)) {
-                attribute = XMLEventFactory.newInstance().createAttribute(qName, newValue);
-            }
-
-            attrSet.add(attribute);
-        }
-        return XMLEventFactory.newInstance().createStartElement(startElement.getName(), attrSet.iterator(), null);
-    }
-
 }
