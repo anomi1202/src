@@ -2,8 +2,6 @@ import com.ibm.mq.jms.MQQueue;
 import com.ibm.msg.client.jms.JmsConnectionFactory;
 import com.ibm.msg.client.jms.JmsFactoryFactory;
 import com.ibm.msg.client.wmq.WMQConstants;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
 
 import javax.jms.*;
 import java.io.IOException;
@@ -13,7 +11,6 @@ import java.nio.file.Paths;
 import java.util.Properties;
 
 public abstract class MQClient {
-    private Logger logger = LoggerFactory.getLogger(MQClient.class);
     private final String MQSENDER_PROPERTIES = "MQSender.properties";
 
     private String host = null;
@@ -35,15 +32,13 @@ public abstract class MQClient {
             createSession();
         } catch (Exception e) {
             closeSession();
-            logger.error("FAILED", e);
+            e.printStackTrace();
         }
     }
 
     public void setWaitReply(long waitReply){
         this.waitReply = waitReply == 0 ? 10 : waitReply;
     }
-
-    protected abstract void run();
 
     protected void createSession() throws Exception {
         // Create a connection factory
@@ -108,7 +103,7 @@ public abstract class MQClient {
                 throw new IllegalArgumentException("Reply name is not specified.");
             }
         } catch (IOException e) {
-            logger.error("FAILED", e);
+            e.printStackTrace();
         }
     }
 
@@ -129,25 +124,25 @@ public abstract class MQClient {
             senderMessage.setJMSReplyTo(replyQueue);
             producer.send(senderMessage);
 
-            //Get reply message with timeout 15 sec
+            //Get reply message with default timeout 15 sec
             replyMessage = (TextMessage) messageReader.receive(waitReply);
         } catch (Exception e) {
-            logger.error("FAILED", e);
+            e.printStackTrace();
         } finally {
-            try {
-                if (producer != null) {
+            if (producer != null) {
+                try {
                     producer.close();
+                } catch (JMSException jmsex) {
+                    System.out.println("FAILED! Producer could not be closed.");
                 }
-            } catch (JMSException jmsex) {
-                logger.error("FAILED! Producer could not be closed.", jmsex);
             }
 
-            try {
-                if (messageReader != null) {
+            if (messageReader != null) {
+                try {
                     messageReader.close();
+                } catch (JMSException jmsex) {
+                    System.out.println("FAILED! Producer could not be closed.");
                 }
-            } catch (JMSException jmsex) {
-                logger.error("FAILED! Producer could not be closed.", jmsex);
             }
         }
 
