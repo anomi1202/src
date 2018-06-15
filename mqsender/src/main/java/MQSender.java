@@ -25,6 +25,8 @@ public class MQSender extends MQClient {
             sender.run();
         } catch (ParameterException e){
             jCommander.usage();
+        } catch (Exception e) {
+            e.printStackTrace();
         }
     }
 
