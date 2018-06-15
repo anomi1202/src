@@ -23,8 +23,8 @@ public abstract class MQClient {
     protected Connection connection = null;
     protected Session session = null;
     protected Destination destinationQueue = null;
-    protected Destination replyQueue = null;
-    private long waitReply = 15000;
+    protected Queue replyQueue = null;
+    protected long waitReply = 15000;
 
     public void newInstance() {
         initProp();
@@ -105,47 +105,5 @@ public abstract class MQClient {
         } catch (IOException e) {
             e.printStackTrace();
         }
-    }
-
-    public String sendMessage(String messageContent) throws JMSException {
-        MessageProducer producer = null;
-        MessageConsumer messageReader = null;
-        Message senderMessage;
-        TextMessage replyMessage = null;
-
-        try {
-            producer = session.createProducer(destinationQueue);
-            senderMessage = session.createTextMessage();
-            messageReader = session.createConsumer(replyQueue);
-
-            // Start the connection and send
-            connection.start();
-            ((TextMessage) senderMessage).setText(messageContent);
-            senderMessage.setJMSReplyTo(replyQueue);
-            producer.send(senderMessage);
-
-            //Get reply message with default timeout 15 sec
-            replyMessage = (TextMessage) messageReader.receive(waitReply);
-        } catch (Exception e) {
-            e.printStackTrace();
-        } finally {
-            if (producer != null) {
-                try {
-                    producer.close();
-                } catch (JMSException jmsex) {
-                    System.out.println("FAILED! Producer could not be closed.");
-                }
-            }
-
-            if (messageReader != null) {
-                try {
-                    messageReader.close();
-                } catch (JMSException jmsex) {
-                    System.out.println("FAILED! Producer could not be closed.");
-                }
-            }
-        }
-
-        return replyMessage.getText();
     }
 }
