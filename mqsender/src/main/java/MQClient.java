@@ -19,6 +19,8 @@ public abstract class MQClient {
     private String channel = null;
     private String destination = null;
     private String reply = null;
+    private String user = "";
+    private String password = "";
 
     protected Connection connection = null;
     protected Session session = null;
@@ -26,13 +28,13 @@ public abstract class MQClient {
     protected Queue replyQueue = null;
     protected long waitReply = 15000;
 
-    public void newInstance() {
+    public void newInstance() throws Exception {
         initProp();
         try {
             createSession();
         } catch (Exception e) {
             closeSession();
-            e.printStackTrace();
+            throw e;
         }
     }
 
@@ -53,7 +55,7 @@ public abstract class MQClient {
         cf.setStringProperty(WMQConstants.WMQ_QUEUE_MANAGER, manager);
 
         // Create JMS objects
-        connection = cf.createConnection();
+        connection = cf.createConnection(user, password);
         session = connection.createSession(false, Session.AUTO_ACKNOWLEDGE);
         destinationQueue = session.createQueue(destination);
         replyQueue = new MQQueue(reply);
@@ -102,6 +104,9 @@ public abstract class MQClient {
             if (reply == null || reply.equals("")) {
                 throw new IllegalArgumentException("Reply name is not specified.");
             }
+
+            user = propFile.getProperty("mq.user");
+            password = propFile.getProperty("mq.password");
         } catch (IOException e) {
             e.printStackTrace();
         }
