@@ -1,0 +1,464 @@
+----------------------------------START FFST------------------------------------
+D:\MyJavaProject\mqsender\FFDC\JMSCC0009.FDC PID:15500
+
+                                    FDCTitle
+                                            
+
+Product          :- IBM WebSphere MQ classes for JMS
+Date/Time        :- Fri Jun 15 15:58:40 NOVT 2018
+System time      :- 1529053120272
+Operating System :- Windows 7
+UserID           :- ruslan.kosykh
+Java Vendor      :- Oracle Corporation
+Java Version     :- 25.144-b01
+
+Source Class     :- com.ibm.msg.client.wmq.internal.WMQConnection
+Source Method    :- <init>
+ProbeID          :- XN00100C
+Thread           :- name=main priority=5 group=main ccl=sun.misc.Launcher$AppClassLoader@18b4aac2
+
+                                      Data
+                                      ----
+
+|   compcode  :-  2
+|   hconn     :-  com.ibm.mq.jmqi.remote.internal.RemoteHconn[connectionId=414D5143514D20202020202020202020929F1B5B7416EE20]
+|   reason    :-  2035
+
+                              Version information
+                              -------------------
+
+IBM WebSphere MQ
+7.0.1.0
+k000-L090724
+Production
+
+Common Services for Java Platform, Standard Edition
+7.0.1.0
+k000-L090724
+Production
+
+Java Message Service Client
+7.0.1.0
+k000-L090724
+Production
+
+WebSphere MQ classes for Java Message Service
+7.0.1.0
+k000-L090724
+Production
+
+
+
+                                  Stack trace
+                                  -----------
+
+Stack trace to show the location of the FFST call
+|   FFST Location  :-  java.lang.Exception
+|   	at com.ibm.msg.client.commonservices.trace.Trace.getCurrentPosition(Trace.java:1705)
+|   	at com.ibm.msg.client.commonservices.trace.Trace.createFFSTString(Trace.java:1644)
+|   	at com.ibm.msg.client.commonservices.trace.Trace.ffstInternal(Trace.java:1527)
+|   	at com.ibm.msg.client.commonservices.trace.Trace.ffst(Trace.java:1386)
+|   	at com.ibm.msg.client.wmq.internal.WMQConnection.<init>(WMQConnection.java:452)
+|   	at com.ibm.msg.client.wmq.factories.WMQConnectionFactory.createV7ProviderConnection(WMQConnectionFactory.java:6807)
+|   	at com.ibm.msg.client.wmq.factories.WMQConnectionFactory.createProviderConnection(WMQConnectionFactory.java:6204)
+|   	at com.ibm.msg.client.jms.admin.JmsConnectionFactoryImpl.createConnection(JmsConnectionFactoryImpl.java:278)
+|   	at com.ibm.mq.jms.MQConnectionFactory.createCommonConnection(MQConnectionFactory.java:6155)
+|   	at com.ibm.mq.jms.MQConnectionFactory.createConnection(MQConnectionFactory.java:6209)
+|   	at MQClient.createSession(MQClient.java:58)
+|   	at MQClient.newInstance(MQClient.java:34)
+|   	at MQSender.main(MQSender.java:24)
+|   
+
+                            Property Store Contents
+                            -----------------------
+
+All currently set properties
+|   awt.toolkit                    :-  sun.awt.windows.WToolkit
+|   file.encoding                  :-  UTF-8
+|   file.encoding.pkg              :-  sun.io
+|   file.separator                 :-  \
+|   java.awt.graphicsenv           :-  sun.awt.Win32GraphicsEnvironment
+|   java.awt.printerjob            :-  sun.awt.windows.WPrinterJob
+|   java.class.path                :-  C:\Program Files\Java\jdk1.8.0_144\jre\lib\charsets.jar;C:\Program Files\Java\jdk1.8.0_144\jre\lib\deploy.jar;C:\Program Files\Java\jdk1.8.0_144\jre\lib\ext\access-bridge-64.jar;C:\Program Files\Java\jdk1.8.0_144\jre\lib\ext\cldrdata.jar;C:\Program Files\Java\jdk1.8.0_144\jre\lib\ext\dnsns.jar;C:\Program Files\Java\jdk1.8.0_144\jre\lib\ext\jaccess.jar;C:\Program Files\Java\jdk1.8.0_144\jre\lib\ext\jfxrt.jar;C:\Program Files\Java\jdk1.8.0_144\jre\lib\ext\localedata.jar;C:\Program Files\Java\jdk1.8.0_144\jre\lib\ext\nashorn.jar;C:\Program Files\Java\jdk1.8.0_144\jre\lib\ext\sunec.jar;C:\Program Files\Java\jdk1.8.0_144\jre\lib\ext\sunjce_provider.jar;C:\Program Files\Java\jdk1.8.0_144\jre\lib\ext\sunmscapi.jar;C:\Program Files\Java\jdk1.8.0_144\jre\lib\ext\sunpkcs11.jar;C:\Program Files\Java\jdk1.8.0_144\jre\lib\ext\zipfs.jar;C:\Program Files\Java\jdk1.8.0_144\jre\lib\javaws.jar;C:\Program Files\Java\jdk1.8.0_144\jre\lib\jce.jar;C:\Program Files\Java\jdk1.8.0_144\jre\lib\jfr.jar;C:\Program Files\Java\jdk1.8.0_144\jre\lib\jfxswt.jar;C:\Program Files\Java\jdk1.8.0_144\jre\lib\jsse.jar;C:\Program Files\Java\jdk1.8.0_144\jre\lib\management-agent.jar;C:\Program Files\Java\jdk1.8.0_144\jre\lib\plugin.jar;C:\Program Files\Java\jdk1.8.0_144\jre\lib\resources.jar;C:\Program Files\Java\jdk1.8.0_144\jre\lib\rt.jar;D:\MyJavaProject\mqsender\out\production\classes;D:\MyJavaProject\mqsender\out\production\resources;D:\MyJavaProject\mqsender\libs\com.ibm.mqjms.jar;D:\MyJavaProject\mqsender\libs\com.ibm.mq.jmqi.jar;D:\MyJavaProject\mqsender\libs\jta.jar;D:\MyJavaProject\mqsender\libs\jms.jar;D:\MyJavaProject\mqsender\libs\dhbcore.jar;C:\Users\ruslan.kosykh\.gradle\caches\modules-2\files-2.1\com.beust\jcommander\1.72\6375e521c1e11d6563d4f25a07ce124ccf8cd171\jcommander-1.72.jar;C:\Users\ruslan.kosykh\.gradle\caches\modules-2\files-2.1\com.google.code.gson\gson\2.8.4\d0de1ca9b69e69d1d497ee3c6009d015f64dad57\gson-2.8.4.jar;C:\Program Files\JetBrains\IntelliJ IDEA 2017.3\lib\idea_rt.jar
+|   java.class.version             :-  52.0
+|   java.endorsed.dirs             :-  C:\Program Files\Java\jdk1.8.0_144\jre\lib\endorsed
+|   java.ext.dirs                  :-  C:\Program Files\Java\jdk1.8.0_144\jre\lib\ext;C:\Windows\Sun\Java\lib\ext
+|   java.home                      :-  C:\Program Files\Java\jdk1.8.0_144\jre
+|   java.io.tmpdir                 :-  C:\Users\RUSLAN~1.KOS\AppData\Local\Temp\
+|   java.library.path              :-  C:\Program Files\Java\jdk1.8.0_144\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\ProgramData\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\Intel\OpenCL SDK\2.0\bin\x86;C:\Program Files (x86)\Intel\OpenCL SDK\2.0\bin\x64;C:\Program Files (x86)\Skype\Phone\;C:\Program Files\TortoiseSVN\bin;C:\Program Files\PuTTY\;C:\apache-maven-3.5.0\bin;C:\Program Files\Java\jdk1.8.0_144\bin;C:\Program Files\OpenVPN\bin;D:\MyJavaProject\SeleniumDrivers;C:\Program Files\Git\cmd;C:\Program Files (x86)\IBM\WebSphere MQ\bin64;C:\Program Files (x86)\IBM\WebSphere MQ\bin;C:\Program Files (x86)\IBM\WebSphere MQ\tools\c\samples\bin;C:\Users\ruslan.kosykh\AppData\Local\atom\bin;C:\Users\ruslan.kosykh\AppData\Local\GitHubDesktop\bin;.
+|   java.runtime.name              :-  Java(TM) SE Runtime Environment
+|   java.runtime.version           :-  1.8.0_144-b01
+|   java.specification.name        :-  Java Platform API Specification
+|   java.specification.vendor      :-  Oracle Corporation
+|   java.specification.version     :-  1.8
+|   java.vendor                    :-  Oracle Corporation
+|   java.vendor.url                :-  http://java.oracle.com/
+|   java.vendor.url.bug            :-  http://bugreport.sun.com/bugreport/
+|   java.version                   :-  1.8.0_144
+|   java.vm.info                   :-  mixed mode
+|   java.vm.name                   :-  Java HotSpot(TM) 64-Bit Server VM
+|   java.vm.specification.name     :-  Java Virtual Machine Specification
+|   java.vm.specification.vendor   :-  Oracle Corporation
+|   java.vm.specification.version  :-  1.8
+|   java.vm.vendor                 :-  Oracle Corporation
+|   java.vm.version                :-  25.144-b01
+|   line.separator                 :-  
+|   
+|   os.arch                        :-  amd64
+|   os.name                        :-  Windows 7
+|   os.version                     :-  6.1
+|   path.separator                 :-  ;
+|   sun.arch.data.model            :-  64
+|   sun.boot.class.path            :-  C:\Program Files\Java\jdk1.8.0_144\jre\lib\resources.jar;C:\Program Files\Java\jdk1.8.0_144\jre\lib\rt.jar;C:\Program Files\Java\jdk1.8.0_144\jre\lib\sunrsasign.jar;C:\Program Files\Java\jdk1.8.0_144\jre\lib\jsse.jar;C:\Program Files\Java\jdk1.8.0_144\jre\lib\jce.jar;C:\Program Files\Java\jdk1.8.0_144\jre\lib\charsets.jar;C:\Program Files\Java\jdk1.8.0_144\jre\lib\jfr.jar;C:\Program Files\Java\jdk1.8.0_144\jre\classes
+|   sun.boot.library.path          :-  C:\Program Files\Java\jdk1.8.0_144\jre\bin
+|   sun.cpu.endian                 :-  little
+|   sun.cpu.isalist                :-  amd64
+|   sun.desktop                    :-  windows
+|   sun.io.unicode.encoding        :-  UnicodeLittle
+|   sun.java.command               :-  MQSender -p D:/!Projects/!USPN/04_07-SUD/regress/7/07_00004_upload_to_VIO_link_to_17_00001/testData/Reg_UOPS-S_SaveDocAndCont.json
+|   sun.java.launcher              :-  SUN_STANDARD
+|   sun.jnu.encoding               :-  Cp1251
+|   sun.management.compiler        :-  HotSpot 64-Bit Tiered Compilers
+|   sun.os.patch.level             :-  Service Pack 1
+|   user.country                   :-  RU
+|   user.dir                       :-  D:\MyJavaProject\mqsender
+|   user.home                      :-  C:\Users\ruslan.kosykh
+|   user.language                  :-  ru
+|   user.name                      :-  ruslan.kosykh
+|   user.script                    :-  
+|   user.timezone                  :-  
+|   user.variant                   :-  
+
+                           WorkQueueMananger Contents
+                           --------------------------
+
+|   Current ThreadPool size      :-  1
+|   Maintain ThreadPool size     :-  false
+|   Maximum ThreadPool size      :-  -1
+|   ThreadPool inactive timeout  :-  0
+
+                               Runtime properties
+                               ------------------
+
+|   Available processors         :-  4
+|   Free memory in bytes (now)   :-  222945080
+|   Max memory in bytes          :-  3799515136
+|   Total memory in bytes (now)  :-  257425408
+
+                           Component Manager Contents
+                           --------------------------
+
+Common Services Components:
+|   CMVC               :-  k000-L090724
+|   Class Name         :-  class com.ibm.msg.client.commonservices.j2se.J2SEComponent
+|   Component Name     :-  com.ibm.msg.client.commonservices.j2se
+|   Component Title    :-  Common Services for Java Platform, Standard Edition
+|   Factory Class      :-  class com.ibm.msg.client.commonservices.j2se.CommonServicesImplementation
+|   Version            :-  7.0.1.0
+|   inPreferenceTo[0]  :-  com.ibm.msg.client.commonservices.j2me
+
+Messaging Provider Components:
+|   CMVC             :-  k000-L090724
+|   Class Name       :-  class com.ibm.msg.client.wmq.factories.WMQComponent
+|   Component Name   :-  com.ibm.msg.client.wmq
+|   Component Title  :-  IBM WebSphere MQ
+|   Factory Class    :-  class com.ibm.msg.client.wmq.factories.WMQFactoryFactory
+|   Version          :-  7.0.1.0
+|   mqjbnd level     :-  CC=2;RC=2495;AMQ8568: Стандартная библиотека JNI 'mqjbnd' не была найдена. [3=mqjbnd]::no mqjbnd in java.library.path
+
+
+
+                             FFST Object Properties
+                             ----------------------
+
+All currently set properties
+|   XMSC_ADMIN_OBJECT_TYPE             :-  20
+|   XMSC_ASYNC_EXCEPTIONS              :-  -1
+|   XMSC_CLIENT_ID                     :-  <null>
+|   XMSC_CONNECTION_TYPE               :-  1
+|   XMSC_CONNECTION_TYPE_NAME          :-  com.ibm.msg.client.wmq
+|   XMSC_PASSWORD                      :-  uspnuser
+|   XMSC_RTT_DIRECT_AUTH               :-  0
+|   XMSC_RTT_PROXY_HOSTNAME            :-  <null>
+|   XMSC_RTT_PROXY_PORT                :-  443
+|   XMSC_USERID                        :-  uspnuser
+|   XMSC_WMQ_BROKER_CC_SUBQ            :-  SYSTEM.JMS.ND.CC.SUBSCRIBER.QUEUE
+|   XMSC_WMQ_BROKER_CONTROLQ           :-  SYSTEM.BROKER.CONTROL.QUEUE
+|   XMSC_WMQ_BROKER_PUBQ               :-  SYSTEM.BROKER.DEFAULT.STREAM
+|   XMSC_WMQ_BROKER_QMGR               :-  
+|   XMSC_WMQ_BROKER_SUBQ               :-  SYSTEM.JMS.ND.SUBSCRIBER.QUEUE
+|   XMSC_WMQ_CCDTURL                   :-  <null>
+|   XMSC_WMQ_CF_DESCRIPTION            :-  <null>
+|   XMSC_WMQ_CHANNEL                   :-  USPN.777000.SVRCONN
+|   XMSC_WMQ_CLEANUP_INTERVAL          :-  3600000
+|   XMSC_WMQ_CLEANUP_LEVEL             :-  1
+|   XMSC_WMQ_CLIENT_RECONNECT_OPTIONS  :-  0
+|   XMSC_WMQ_CLIENT_RECONNECT_TIMEOUT  :-  1800
+|   XMSC_WMQ_CLONE_SUPPORT             :-  0
+|   XMSC_WMQ_CONNECTION_MODE           :-  1
+|   XMSC_WMQ_CONNECTION_NAME_LIST      :-  localhost(1414)
+|   XMSC_WMQ_CONNECTION_TAG            :-  [B@7494e528
+|   XMSC_WMQ_CONNECT_OPTIONS           :-  0
+|   XMSC_WMQ_HEADER_COMP               :-  [0]
+|   XMSC_WMQ_HOST_NAME                 :-  172.22.116.68
+|   XMSC_WMQ_LOCAL_ADDRESS             :-  
+|   XMSC_WMQ_MAP_NAME_STYLE            :-  true
+|   XMSC_WMQ_MAX_BUFFER_SIZE           :-  1000
+|   XMSC_WMQ_MESSAGE_RETENTION         :-  1
+|   XMSC_WMQ_MESSAGE_SELECTION         :-  0
+|   XMSC_WMQ_MSG_BATCH_SIZE            :-  10
+|   XMSC_WMQ_MSG_COMP                  :-  [0]
+|   XMSC_WMQ_OPT_PUB                   :-  false
+|   XMSC_WMQ_OUTCOME_NOTIFICATION      :-  true
+|   XMSC_WMQ_POLLING_INTERVAL          :-  5000
+|   XMSC_WMQ_PORT                      :-  1414
+|   XMSC_WMQ_PROCESS_DURATION          :-  0
+|   XMSC_WMQ_PROVIDER_VERSION          :-  7
+|   XMSC_WMQ_PUB_ACK_INTERVAL          :-  25
+|   XMSC_WMQ_QMGR_CCSID                :-  819
+|   XMSC_WMQ_QUEUE_MANAGER             :-  QM
+|   XMSC_WMQ_RECEIVE_EXIT              :-  <null>
+|   XMSC_WMQ_RECEIVE_EXIT_INIT         :-  <null>
+|   XMSC_WMQ_RECEIVE_ISOLATION         :-  0
+|   XMSC_WMQ_RESCAN_INTERVAL           :-  5000
+|   XMSC_WMQ_SECURITY_EXIT             :-  <null>
+|   XMSC_WMQ_SECURITY_EXIT_INIT        :-  <null>
+|   XMSC_WMQ_SEND_CHECK_COUNT          :-  0
+|   XMSC_WMQ_SEND_EXIT                 :-  <null>
+|   XMSC_WMQ_SEND_EXIT_INIT            :-  <null>
+|   XMSC_WMQ_SHARE_CONV_ALLOWED        :-  1
+|   XMSC_WMQ_SPARSE_SUBSCRIPTIONS      :-  false
+|   XMSC_WMQ_SSL_CERT_STORES_COL       :-  <null>
+|   XMSC_WMQ_SSL_CERT_STORES_STR       :-  <null>
+|   XMSC_WMQ_SSL_CIPHER_SUITE          :-  <null>
+|   XMSC_WMQ_SSL_FIPS_REQUIRED         :-  false
+|   XMSC_WMQ_SSL_KEY_RESETCOUNT        :-  0
+|   XMSC_WMQ_SSL_PEER_NAME             :-  <null>
+|   XMSC_WMQ_SSL_SOCKET_FACTORY        :-  <null>
+|   XMSC_WMQ_STATUS_REFRESH_INTERVAL   :-  60000
+|   XMSC_WMQ_SUBSCRIPTION_STORE        :-  1
+|   XMSC_WMQ_SYNCPOINT_ALL_GETS        :-  false
+|   XMSC_WMQ_TARGET_CLIENT_MATCHING    :-  true
+|   XMSC_WMQ_TEMPORARY_MODEL           :-  SYSTEM.DEFAULT.MODEL.QUEUE
+|   XMSC_WMQ_TEMP_Q_PREFIX             :-  
+|   XMSC_WMQ_TEMP_TOPIC_PREFIX         :-  
+|   XMSC_WMQ_USE_CONNECTION_POOLING    :-  true
+|   brokerVersion                      :-  -1
+|   failIfQuiesce                      :-  1
+|   multicast                          :-  0
+|   version                            :-  7
+|   wildcardFormat                     :-  0
+
+                         Provider Specific Information
+                         -----------------------------
+
+Overview of JMS System
+Num. Connections : 1
+Num. Sessions    : 0
+Num. Consumers   : 0
+Num. Producers   : 0
+
+Detailed JMS System Information
+Connections      : 
+|   Instance                    :-  com.ibm.msg.client.wmq.internal.WMQConnection@343f4d3d
+|   connectOptions              :-  version:5 options:64 clientConn:[channelName:'USPN.777000.SVRCONN' version:6 channelType:6 transportType:2 desc:'<null>' qMgrName:'<null>' xmitQName:'<null>' connectionName:'172.22.116.68(1414)' mcaName:'<null>' modeName:'<null>' tpName:'<null>' batchSize:50 discInterval:6000 shortRetryCount:10 shortRetryInterval:60 longRetryCount:999999999 longRetryInterval:1200 seqNumberWrap:99999999 maxMsgLength:104857600 putAuthority:1 dataConversion:0 userIdentifier:'<null>' password:'<null>' mcaUserIdentifier:'<null>' mcaType:1 remoteUserIdentifier:'uspnuser' msgRetryExit:'<null>' msgRetryUserData:'<null>' msgRetryCount:10 heartbeatInterval:1 batchInterval:0 nonPersistentMsgSpeed:2 clustersDefined:0 networkPriority:0 mcaSecurityId:00000000000000000000000000000000000000000000000000000000000000000000000000000000 remoteSecurityId:00000000000000000000000000000000000000000000000000000000000000000000000000000000 sslCipherSpec:'<null>' sslPeerName:'<null>' sslClientAuth:0 keepAliveInterval:-1 localAddress:'<null>' batchHeartbeat:0 hdrCompList:(0,-1)msgCompList:(0,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1)clwlChannelRank:0 clwlChannelPriority:0 clwlChannelWeight:50 channelMonitoring:0 channelStatistics:0 exitNameLength:128 exitDataLength:32 sendExitsDefined:0 sendExit:'<null>' sendUserData:0000000000000000000000000000000000000000000000000000000000000000 sendExitPtr:<null> sendUserDataPtr:<null> receiveExitsDefined:0 receiveExit:'<null>' receiveUserData:0000000000000000000000000000000000000000000000000000000000000000 receiveExitPtr:<null> ReceiveUserDataPtr:<null> SharingConversations:999999999 propertyControl:0 maxInstances:999999999 maxInstancesPerClient:999999999 clientChannelWeight:0 connectionAffinity:1 ] connTag:0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 sslConfig:[version:1 keyRepository:'<null>' cryptoHardware:'<null>' authInfoRecCount:0 keyResetCount:0 fipsRequired:0 ] connectionId:414D5143514D20202020202020202020929F1B5B7416EE20 securityParms:[<null>] 
+|   exceptionListener           :-  <null>
+|   helper                      :-  <null>
+|   queueManagerName            :-  QM
+|   tempQPrefix                 :-  <null>
+|   temporaryDestinationNumber  :-  1
+|   temporaryModelQ             :-  <null>
+|   XMSC_ADMIN_OBJECT_TYPE             :-  20
+|   XMSC_ASYNC_EXCEPTIONS              :-  -1
+|   XMSC_CLIENT_ID                     :-  <null>
+|   XMSC_CONNECTION_TYPE               :-  1
+|   XMSC_CONNECTION_TYPE_NAME          :-  com.ibm.msg.client.wmq
+|   XMSC_PASSWORD                      :-  uspnuser
+|   XMSC_RTT_DIRECT_AUTH               :-  0
+|   XMSC_RTT_PROXY_HOSTNAME            :-  <null>
+|   XMSC_RTT_PROXY_PORT                :-  443
+|   XMSC_USERID                        :-  uspnuser
+|   XMSC_WMQ_BROKER_CC_SUBQ            :-  SYSTEM.JMS.ND.CC.SUBSCRIBER.QUEUE
+|   XMSC_WMQ_BROKER_CONTROLQ           :-  SYSTEM.BROKER.CONTROL.QUEUE
+|   XMSC_WMQ_BROKER_PUBQ               :-  SYSTEM.BROKER.DEFAULT.STREAM
+|   XMSC_WMQ_BROKER_QMGR               :-  
+|   XMSC_WMQ_BROKER_SUBQ               :-  SYSTEM.JMS.ND.SUBSCRIBER.QUEUE
+|   XMSC_WMQ_CCDTURL                   :-  <null>
+|   XMSC_WMQ_CF_DESCRIPTION            :-  <null>
+|   XMSC_WMQ_CHANNEL                   :-  USPN.777000.SVRCONN
+|   XMSC_WMQ_CLEANUP_INTERVAL          :-  3600000
+|   XMSC_WMQ_CLEANUP_LEVEL             :-  1
+|   XMSC_WMQ_CLIENT_RECONNECT_OPTIONS  :-  0
+|   XMSC_WMQ_CLIENT_RECONNECT_TIMEOUT  :-  1800
+|   XMSC_WMQ_CLONE_SUPPORT             :-  0
+|   XMSC_WMQ_CONNECTION_MODE           :-  1
+|   XMSC_WMQ_CONNECTION_NAME_LIST      :-  localhost(1414)
+|   XMSC_WMQ_CONNECTION_TAG            :-  [B@7494e528
+|   XMSC_WMQ_CONNECT_OPTIONS           :-  0
+|   XMSC_WMQ_HEADER_COMP               :-  [0]
+|   XMSC_WMQ_HOST_NAME                 :-  172.22.116.68
+|   XMSC_WMQ_LOCAL_ADDRESS             :-  
+|   XMSC_WMQ_MAP_NAME_STYLE            :-  true
+|   XMSC_WMQ_MAX_BUFFER_SIZE           :-  1000
+|   XMSC_WMQ_MESSAGE_RETENTION         :-  1
+|   XMSC_WMQ_MESSAGE_SELECTION         :-  0
+|   XMSC_WMQ_MSG_BATCH_SIZE            :-  10
+|   XMSC_WMQ_MSG_COMP                  :-  [0]
+|   XMSC_WMQ_OPT_PUB                   :-  false
+|   XMSC_WMQ_OUTCOME_NOTIFICATION      :-  true
+|   XMSC_WMQ_POLLING_INTERVAL          :-  5000
+|   XMSC_WMQ_PORT                      :-  1414
+|   XMSC_WMQ_PROCESS_DURATION          :-  0
+|   XMSC_WMQ_PROVIDER_VERSION          :-  7
+|   XMSC_WMQ_PUB_ACK_INTERVAL          :-  25
+|   XMSC_WMQ_QMGR_CCSID                :-  819
+|   XMSC_WMQ_QUEUE_MANAGER             :-  QM
+|   XMSC_WMQ_RECEIVE_EXIT              :-  <null>
+|   XMSC_WMQ_RECEIVE_EXIT_INIT         :-  <null>
+|   XMSC_WMQ_RECEIVE_ISOLATION         :-  0
+|   XMSC_WMQ_RESCAN_INTERVAL           :-  5000
+|   XMSC_WMQ_SECURITY_EXIT             :-  <null>
+|   XMSC_WMQ_SECURITY_EXIT_INIT        :-  <null>
+|   XMSC_WMQ_SEND_CHECK_COUNT          :-  0
+|   XMSC_WMQ_SEND_EXIT                 :-  <null>
+|   XMSC_WMQ_SEND_EXIT_INIT            :-  <null>
+|   XMSC_WMQ_SHARE_CONV_ALLOWED        :-  1
+|   XMSC_WMQ_SPARSE_SUBSCRIPTIONS      :-  false
+|   XMSC_WMQ_SSL_CERT_STORES_COL       :-  <null>
+|   XMSC_WMQ_SSL_CERT_STORES_STR       :-  <null>
+|   XMSC_WMQ_SSL_CIPHER_SUITE          :-  <null>
+|   XMSC_WMQ_SSL_FIPS_REQUIRED         :-  false
+|   XMSC_WMQ_SSL_KEY_RESETCOUNT        :-  0
+|   XMSC_WMQ_SSL_PEER_NAME             :-  <null>
+|   XMSC_WMQ_SSL_SOCKET_FACTORY        :-  <null>
+|   XMSC_WMQ_STATUS_REFRESH_INTERVAL   :-  60000
+|   XMSC_WMQ_SUBSCRIPTION_STORE        :-  1
+|   XMSC_WMQ_SYNCPOINT_ALL_GETS        :-  false
+|   XMSC_WMQ_TARGET_CLIENT_MATCHING    :-  true
+|   XMSC_WMQ_TEMPORARY_MODEL           :-  SYSTEM.DEFAULT.MODEL.QUEUE
+|   XMSC_WMQ_TEMP_Q_PREFIX             :-  
+|   XMSC_WMQ_TEMP_TOPIC_PREFIX         :-  
+|   XMSC_WMQ_USE_CONNECTION_POOLING    :-  true
+|   brokerVersion                      :-  -1
+|   failIfQuiesce                      :-  1
+|   multicast                          :-  0
+|   version                            :-  7
+|   wildcardFormat                     :-  0
+
+Sessions         : 
+Consumers        : 
+Producers        : 
+
+All Thread Information
+
+                          Name : Monitor Ctrl-Break
+                      Priority : 5
+                   ThreadGroup : java.lang.ThreadGroup[name=main,maxpri=10]
+                            ID : 6
+                         State : RUNNABLE
+                         Stack : java.net.SocketInputStream.socketRead0(SocketInputStream.java:-2)
+                               : java.net.SocketInputStream.socketRead(SocketInputStream.java:116)
+                               : java.net.SocketInputStream.read(SocketInputStream.java:171)
+                               : java.net.SocketInputStream.read(SocketInputStream.java:141)
+                               : sun.nio.cs.StreamDecoder.readBytes(StreamDecoder.java:284)
+                               : sun.nio.cs.StreamDecoder.implRead(StreamDecoder.java:326)
+                               : sun.nio.cs.StreamDecoder.read(StreamDecoder.java:178)
+                               : java.io.InputStreamReader.read(InputStreamReader.java:184)
+                               : java.io.BufferedReader.fill(BufferedReader.java:161)
+                               : java.io.BufferedReader.readLine(BufferedReader.java:324)
+                               : java.io.BufferedReader.readLine(BufferedReader.java:389)
+                               : com.intellij.rt.execution.application.AppMainV2$1.run(AppMainV2.java:64)
+
+                          Name : Attach Listener
+                      Priority : 5
+                   ThreadGroup : java.lang.ThreadGroup[name=system,maxpri=10]
+                            ID : 5
+                         State : RUNNABLE
+
+                          Name : JMSCCThreadPoolMaster
+                      Priority : 5
+                   ThreadGroup : java.lang.ThreadGroup[name=main,maxpri=10]
+                            ID : 13
+                         State : WAITING
+                         Stack : java.lang.Object.wait(Object.java:-2)
+                               : java.lang.Object.wait(Object.java:502)
+                               : com.ibm.msg.client.commonservices.j2se.workqueue.WorkQueueManagerImplementation$WorkQueueManagerThread.waitForNotification(WorkQueueManagerImplementation.java:651)
+                               : com.ibm.msg.client.commonservices.j2se.workqueue.WorkQueueManagerImplementation$WorkQueueManagerThread.waitForNotification(WorkQueueManagerImplementation.java:621)
+                               : com.ibm.msg.client.commonservices.j2se.workqueue.WorkQueueManagerImplementation$WorkQueueManagerThread.run(WorkQueueManagerImplementation.java:887)
+
+                          Name : main
+                      Priority : 5
+                   ThreadGroup : java.lang.ThreadGroup[name=main,maxpri=10]
+                            ID : 1
+                         State : RUNNABLE
+                         Stack : java.lang.Thread.dumpThreads(Thread.java:-2)
+                               : java.lang.Thread.getAllStackTraces(Thread.java:1610)
+                               : sun.reflect.NativeMethodAccessorImpl.invoke0(NativeMethodAccessorImpl.java:-2)
+                               : sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+                               : sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+                               : java.lang.reflect.Method.invoke(Method.java:498)
+                               : com.ibm.msg.client.commonservices.j2se.trace.DefaultTracer.getAllThreads(DefaultTracer.java:1410)
+                               : com.ibm.msg.client.commonservices.j2se.trace.DefaultTracer.generateThreadInfo(DefaultTracer.java:1231)
+                               : com.ibm.msg.client.commonservices.j2se.trace.DefaultTracer.access$1200(DefaultTracer.java:136)
+                               : com.ibm.msg.client.commonservices.j2se.trace.DefaultTracer$7.run(DefaultTracer.java:1184)
+                               : java.security.AccessController.doPrivileged(AccessController.java:-2)
+                               : com.ibm.msg.client.commonservices.j2se.trace.DefaultTracer.ffst(DefaultTracer.java:1121)
+                               : com.ibm.msg.client.commonservices.trace.Trace.ffstInternal(Trace.java:1532)
+                               : com.ibm.msg.client.commonservices.trace.Trace.ffst(Trace.java:1386)
+                               : com.ibm.msg.client.wmq.internal.WMQConnection.<init>(WMQConnection.java:452)
+                               : com.ibm.msg.client.wmq.factories.WMQConnectionFactory.createV7ProviderConnection(WMQConnectionFactory.java:6807)
+                               : com.ibm.msg.client.wmq.factories.WMQConnectionFactory.createProviderConnection(WMQConnectionFactory.java:6204)
+                               : com.ibm.msg.client.jms.admin.JmsConnectionFactoryImpl.createConnection(JmsConnectionFactoryImpl.java:278)
+                               : com.ibm.mq.jms.MQConnectionFactory.createCommonConnection(MQConnectionFactory.java:6155)
+                               : com.ibm.mq.jms.MQConnectionFactory.createConnection(MQConnectionFactory.java:6209)
+                               : MQClient.createSession(MQClient.java:58)
+                               : MQClient.newInstance(MQClient.java:34)
+                               : MQSender.main(MQSender.java:24)
+
+                          Name : RcvThread: com.ibm.mq.jmqi.remote.internal.RemoteTCPConnection[qmid=QM_2016-11-09_16.46.13                          ,fap=10,peer=/172.22.116.68,localport=50017,ssl=no]
+                      Priority : 5
+                   ThreadGroup : java.lang.ThreadGroup[name=JMSCCThreadPool,maxpri=10]
+                            ID : 14
+                         State : RUNNABLE
+                         Stack : java.net.SocketInputStream.socketRead0(SocketInputStream.java:-2)
+                               : java.net.SocketInputStream.socketRead(SocketInputStream.java:116)
+                               : java.net.SocketInputStream.read(SocketInputStream.java:171)
+                               : java.net.SocketInputStream.read(SocketInputStream.java:141)
+                               : com.ibm.mq.jmqi.remote.internal.RemoteTCPConnection.receive(RemoteTCPConnection.java:1324)
+                               : com.ibm.mq.jmqi.remote.internal.RemoteRcvThread.receiveBuffer(RemoteRcvThread.java:674)
+                               : com.ibm.mq.jmqi.remote.internal.RemoteRcvThread.receiveOneTSH(RemoteRcvThread.java:638)
+                               : com.ibm.mq.jmqi.remote.internal.RemoteRcvThread.run(RemoteRcvThread.java:136)
+                               : com.ibm.msg.client.commonservices.workqueue.WorkQueueItem.runTask(WorkQueueItem.java:209)
+                               : com.ibm.msg.client.commonservices.workqueue.SimpleWorkQueueItem.runItem(SimpleWorkQueueItem.java:100)
+                               : com.ibm.msg.client.commonservices.workqueue.WorkQueueItem.run(WorkQueueItem.java:224)
+                               : com.ibm.msg.client.commonservices.workqueue.WorkQueueManager.runWorkQueueItem(WorkQueueManager.java:298)
+                               : com.ibm.msg.client.commonservices.j2se.workqueue.WorkQueueManagerImplementation$ThreadPoolWorker.run(WorkQueueManagerImplementation.java:1220)
+
+                          Name : Reference Handler
+                      Priority : 10
+                   ThreadGroup : java.lang.ThreadGroup[name=system,maxpri=10]
+                            ID : 2
+                         State : WAITING
+                         Stack : java.lang.Object.wait(Object.java:-2)
+                               : java.lang.Object.wait(Object.java:502)
+                               : java.lang.ref.Reference.tryHandlePending(Reference.java:191)
+                               : java.lang.ref.Reference$ReferenceHandler.run(Reference.java:153)
+
+                          Name : Finalizer
+                      Priority : 8
+                   ThreadGroup : java.lang.ThreadGroup[name=system,maxpri=10]
+                            ID : 3
+                         State : WAITING
+                         Stack : java.lang.Object.wait(Object.java:-2)
+                               : java.lang.ref.ReferenceQueue.remove(ReferenceQueue.java:143)
+                               : java.lang.ref.ReferenceQueue.remove(ReferenceQueue.java:164)
+                               : java.lang.ref.Finalizer$FinalizerThread.run(Finalizer.java:209)
+
+                          Name : Signal Dispatcher
+                      Priority : 9
+                   ThreadGroup : java.lang.ThreadGroup[name=system,maxpri=10]
+                            ID : 4
+                         State : RUNNABLE
+
+First Failure Symptom Report completed at Fri Jun 15 15:58:40 NOVT 2018
+------------------------------------END FFST------------------------------------
