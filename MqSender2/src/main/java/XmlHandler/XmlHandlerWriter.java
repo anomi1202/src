@@ -17,7 +17,7 @@ public class XmlHandlerWriter implements AutoCloseable{
         writer = FACTORY.createXMLEventWriter(os);
     }
 
-    public XMLEventWriter getReader() {
+    public XMLEventWriter getWriter() {
         return writer;
     }
 
