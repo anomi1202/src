@@ -1,5 +1,7 @@
 package XmlHandler;
 
+import XmlHandler.interfaces.ISOAPHandler;
+import XmlHandler.interfaces.IXMLHandler;
 import documents.ReplyMessage;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -17,29 +19,97 @@ import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.Path;
 import java.nio.file.StandardCopyOption;
+import java.text.SimpleDateFormat;
+import java.util.Date;
 import java.util.HashSet;
 import java.util.Iterator;
 import java.util.Set;
 
-public class XmlHandler {
+public class XmlHandler implements ISOAPHandler, IXMLHandler {
     private Logger logger = LoggerFactory.getLogger(XmlHandler.class);
-    private Path soapFilePath;
+    private Path xmlFilePath;
     private ReplyMessage replyJsonMessage;
 
-    public XmlHandler(Path soapFilePath, ReplyMessage replyJsonMessage) {
-        this.soapFilePath = soapFilePath;
+    public XmlHandler(Path xmlFilePath, ReplyMessage replyJsonMessage) {
+        this.xmlFilePath = xmlFilePath;
         this.replyJsonMessage = replyJsonMessage;
     }
 
-    public void xmlGenerate(){
+    @Override
+    public void soapGenerate(){
         long documentRef = replyJsonMessage.getDocumentId();
         logger.info(String.format("EHD ID of document: %d", documentRef));
 
         String requestID = replyJsonMessage.getRequestId();
         logger.info(String.format("RequestID of document: %s", requestID));
 
-        setParamToSOAP("DocumentRef::id", String.valueOf(documentRef));
-        setParamToSOAP("RequestId", requestID);
+        setParam("DocumentRef::id", String.valueOf(documentRef));
+        setParam("RequestId", requestID);
+    }
+
+    @Override
+    public void xmlGenerate() {
+        String docNumber = getParam("Номер");
+        logger.info(String.format("Old number of document: %s", docNumber));
+
+        String currentDate = new SimpleDateFormat("dd-MM-yyyy").format(new Date());
+        String newDocNumber = docNumber.replaceAll("nagr-\\d\\d-\\d\\d-\\d\\d\\d\\d", "nagr-" + currentDate);
+        logger.info(String.format("New number of document: %s", newDocNumber));
+        setParam("Реквизиты-Номер", newDocNumber);
+    }
+
+    private void setParam(String replaceTagName, String replaceTagValue) {
+        Path tempScrFilePath = null;
+        try {
+            tempScrFilePath = File.createTempFile(xmlFilePath.getFileName().toString(), null, xmlFilePath.getParent().toFile()).toPath();
+            setParam(replaceTagName, replaceTagValue, tempScrFilePath);
+        }
+        catch (IOException | XMLStreamException e) {
+            logger.error("FAILED", e);
+        } finally {
+            if (tempScrFilePath != null) {
+                try {
+                    Files.delete(xmlFilePath);
+                    Files.move(tempScrFilePath, xmlFilePath);
+                } catch(IOException e){
+                    logger.error("FAILED", e);
+                }
+            }
+        }
+    }
+
+    private void setParam(String replaceTagName, String replaceTagValue, Path tempScrFilePath) throws XMLStreamException, IOException {
+        boolean isAttribute = replaceTagName.contains("::");
+        String[] replaceTagNameParts = isAttribute ? replaceTagName.split("::") : new String[]{replaceTagName};
+
+        try (XmlHandlerReader xmlHandlerReader = new XmlHandlerReader(Files.newInputStream(xmlFilePath));
+             XmlHandlerWriter xmlHandlerWriter = new XmlHandlerWriter(Files.newOutputStream(tempScrFilePath))
+        ) {
+            XMLEventReader xmlEventReader = xmlHandlerReader.getReader();
+            XMLEventWriter xmlEventWriter = xmlHandlerWriter.getWriter();
+
+            while (xmlEventReader.hasNext()) {
+                XMLEvent xmlEvent = xmlEventReader.nextEvent();
+
+                if (xmlEvent.isStartElement()) {
+                    StartElement startElement = xmlEvent.asStartElement();
+                    String tagName = startElement.getName().getLocalPart();
+
+                    if (isAttribute && tagName.contains(replaceTagNameParts[0])) {
+                        xmlEvent = setValueByAttrSoap(replaceTagNameParts[1], replaceTagValue, startElement);
+                    } else if (tagName.equals(replaceTagNameParts[0])) {
+                        xmlEventWriter.add(xmlEvent);
+                        xmlEvent = xmlEventReader.nextEvent();
+                        if (xmlEvent.isCharacters()) {
+                            xmlEvent = XMLEventFactory.newInstance().createCharacters(replaceTagValue);
+                        }
+                    }
+                }
+
+                xmlEventWriter.add(xmlEvent);
+            }
+            xmlEventWriter.flush();
+        }
     }
 
     private XMLEvent setValueByAttrSoap(String attrName, String newValue, StartElement startElement) {
@@ -57,56 +127,32 @@ public class XmlHandler {
         return XMLEventFactory.newInstance().createStartElement(startElement.getName(), attrSet.iterator(), null);
     }
 
-    private void setParamToSOAP(String replaceTagName, String replaceTagValue) {
-        Path tempScrFilePath = null;
-        try {
-            tempScrFilePath = File.createTempFile(soapFilePath.getFileName().toString(), null, soapFilePath.getParent().toFile()).toPath();
-            setParamToSOAP(replaceTagName, replaceTagValue, tempScrFilePath);
-        }
-        catch (IOException | XMLStreamException e) {
-            logger.error("FAILED", e);
-        } finally {
-            if (tempScrFilePath != null) {
-                try {
-                    Files.copy(tempScrFilePath, soapFilePath, StandardCopyOption.REPLACE_EXISTING);
-                    Files.delete(tempScrFilePath);
-                } catch(IOException e){
-                    logger.error("FAILED", e);
-                }
-            }
-        }
-    }
+    private String getParam(String tagName){
+        String[] replaceTagNameParts = tagName.contains("::") ? tagName.split("::") : new String[]{tagName};
 
-    private void setParamToSOAP(String replaceTagName, String replaceTagValue, Path tempScrFilePath) throws XMLStreamException, IOException {
-        String[] replaceTagNameParts = replaceTagName.contains("::") ? replaceTagName.split("::") : new String[]{replaceTagName};
-
-        try (XmlHandlerReader xmlHandlerReader = new XmlHandlerReader(Files.newInputStream(soapFilePath));
-             XmlHandlerWriter xmlHandlerWriter = new XmlHandlerWriter(Files.newOutputStream(tempScrFilePath))
-        ) {
+        try (XmlHandlerReader xmlHandlerReader = new XmlHandlerReader(Files.newInputStream(xmlFilePath))) {
             XMLEventReader xmlEventReader = xmlHandlerReader.getReader();
-            XMLEventWriter xmlEventWriter = xmlHandlerWriter.getReader();
 
             while (xmlEventReader.hasNext()) {
                 XMLEvent xmlEvent = xmlEventReader.nextEvent();
 
                 if (xmlEvent.isStartElement()) {
                     StartElement startElement = xmlEvent.asStartElement();
-                    String tagName = startElement.getName().getLocalPart();
+                    String l_tagName = startElement.getName().getLocalPart();
 
-                    if (replaceTagNameParts.length == 2 && tagName.contains(replaceTagNameParts[0])) {
-                        xmlEvent = setValueByAttrSoap(replaceTagNameParts[1], replaceTagValue, startElement);
-                    } else if (tagName.contains(replaceTagNameParts[0])) {
-                        xmlEventWriter.add(xmlEvent);
+                    if (l_tagName.contains(replaceTagNameParts[0])) {
                         xmlEvent = xmlEventReader.nextEvent();
                         if (xmlEvent.isCharacters()) {
-                            xmlEvent = XMLEventFactory.newInstance().createCharacters(replaceTagValue);
+                            return xmlEvent.asCharacters().getData();
                         }
                     }
                 }
 
-                xmlEventWriter.add(xmlEvent);
             }
-            xmlEventWriter.flush();
+        } catch (XMLStreamException | IOException e) {
+            e.printStackTrace();
         }
+
+        return null;
     }
 }
