@@ -8,5 +8,11 @@ public interface IXMLHandler {
     /**
      * Генерация XML-документа на основе шаблона
      * */
-    Path generateGzip() throws IOException, XMLStreamException;
+    Path xmlGenerate() throws IOException, XMLStreamException;
+
+
+    /**
+     * Генерация Gzip-архива
+     * */
+    Path compressToGzip(Path filePath) throws IOException;
 }

@@ -26,7 +26,7 @@ public abstract class AbstractMqSender2 {
         switch (type) {
             case JSON:
                 IXMLHandler xmlHandler = new XmlHandler(PATH_FILE_DOCUMENT, null);
-                Path gzipDocumentPath = xmlHandler.generateGzip();
+                Path gzipDocumentPath = xmlHandler.compressToGzip(xmlHandler.xmlGenerate());
 //                JsonHandler jsonHandler = new JsonHandler(PATH_FILE_JSON, PATH_FILE_DOCUMENT);
 //                jsonHandler.jsonGenerate();
 //                initPropForMQSender(ESenderDocType.JSON);

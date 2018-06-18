@@ -35,7 +35,7 @@ public class XmlHandler extends AbstractXmlHandler {
     }
 
     @Override
-    public Path generateGzip() throws IOException, XMLStreamException {
+    public Path xmlGenerate() throws IOException, XMLStreamException {
         String docNumber = getParam("Реквизиты-Номер");
         logger.info(String.format("Old number of document: %s", docNumber));
 
@@ -44,10 +44,11 @@ public class XmlHandler extends AbstractXmlHandler {
         logger.info(String.format("New number of document: %s", newDocNumber));
         setParam("Реквизиты-Номер", newDocNumber);
 
-        return compressToGzip(xmlFilePath);
+        return xmlFilePath;
     }
 
-    private Path compressToGzip(Path filePath) throws IOException {
+    @Override
+    public Path compressToGzip(Path filePath) throws IOException {
         Path gzipFilePath = Paths.get(xmlFilePath.getParent() + "/" + xmlFilePath.getFileName() + ".gz");
 
         try (GZIPOutputStream gzipWriter = new GZIPOutputStream(Files.newOutputStream(gzipFilePath))) {
@@ -57,4 +58,5 @@ public class XmlHandler extends AbstractXmlHandler {
 
         return gzipFilePath;
     }
+
 }

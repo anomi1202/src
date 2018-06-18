@@ -1350,3 +1350,5 @@ java.util.NoSuchElementException
 2018-06-18 19:20:32,853 [INFO ][main            ][         XmlHandler.XmlHandler] - New number of document: 4-00003_sk_prf-nagr-18-06-2018
 2018-06-18 19:21:37,639 [INFO ][main            ][         XmlHandler.XmlHandler] - Old number of document: 4-00003_sk_prf-nagr-15-06-2018
 2018-06-18 19:21:37,644 [INFO ][main            ][         XmlHandler.XmlHandler] - New number of document: 4-00003_sk_prf-nagr-18-06-2018
+2018-06-18 19:28:59,749 [INFO ][main            ][         XmlHandler.XmlHandler] - Old number of document: 4-00003_sk_prf-nagr-18-06-2018
+2018-06-18 19:28:59,755 [INFO ][main            ][         XmlHandler.XmlHandler] - New number of document: 4-00003_sk_prf-nagr-18-06-2018
