@@ -370,7 +370,7 @@ javax.xml.stream.XMLStreamException: java.net.MalformedURLException
 	at com.sun.xml.internal.stream.XMLInputFactoryImpl.createXMLStreamReader(XMLInputFactoryImpl.java:129)
 	at com.sun.xml.internal.stream.XMLInputFactoryImpl.createXMLEventReader(XMLInputFactoryImpl.java:78)
 	at XmlHandler.XmlEventHandler.<init>(XmlEventHandler.java:14)
-	at XmlHandler.XmlHandler.setParamToSOAP(XmlHandler.java:34)
+	at setParam(XmlHandler.java:34)
 	at MqSender2.main(MqSender2.java:45)
 Caused by: java.net.MalformedURLException
 	at java.net.URL.<init>(URL.java:627)
@@ -443,7 +443,7 @@ javax.xml.stream.XMLStreamException: ParseError at [row,col]:[1,39]
 Message: Premature end of file.
 	at com.sun.org.apache.xerces.internal.impl.XMLStreamReaderImpl.next(XMLStreamReaderImpl.java:604)
 	at com.sun.xml.internal.stream.XMLEventReaderImpl.nextEvent(XMLEventReaderImpl.java:83)
-	at XmlHandler.XmlHandler.setParamToSOAP(XmlHandler.java:49)
+	at setParam(XmlHandler.java:49)
 	at MqSender2.run(MqSender2.java:63)
 	at MqSender2.main(MqSender2.java:36)
 2018-05-22 18:33:02,976 [ERROR][main            ][         XmlHandler.XmlHandler] - FAILED
@@ -451,7 +451,7 @@ javax.xml.stream.XMLStreamException: ParseError at [row,col]:[1,39]
 Message: Premature end of file.
 	at com.sun.org.apache.xerces.internal.impl.XMLStreamReaderImpl.next(XMLStreamReaderImpl.java:604)
 	at com.sun.xml.internal.stream.XMLEventReaderImpl.nextEvent(XMLEventReaderImpl.java:83)
-	at XmlHandler.XmlHandler.setParamToSOAP(XmlHandler.java:49)
+	at setParam(XmlHandler.java:49)
 	at MqSender2.run(MqSender2.java:64)
 	at MqSender2.main(MqSender2.java:36)
 2018-05-22 18:33:02,988 [INFO ][main            ][                     MqSender2] - Send SOAP file: D:\YandexDisk\MqSender2\start-UOPS-S-63-ET.xml

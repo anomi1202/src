@@ -53,7 +53,7 @@ java.nio.file.NoSuchFileException: D:\YandexDisk\MqSender2\start-UOPS-S-63-ET.xm
 	at java.nio.file.TempFileHelper.create(TempFileHelper.java:138)
 	at java.nio.file.TempFileHelper.createTempFile(TempFileHelper.java:161)
 	at java.nio.file.Files.createTempFile(Files.java:852)
-	at XmlHandler.XmlHandler.setParamToSOAP(XmlHandler.java:33)
+	at setParam(XmlHandler.java:33)
 	at MqSender2.initSoap(MqSender2.java:76)
 	at MqSender2.run(MqSender2.java:56)
 	at MqSender2.main(MqSender2.java:36)

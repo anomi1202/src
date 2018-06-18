@@ -1,0 +1,179 @@
+2018-06-15 12:04:52,904 [INFO ][main            ][       JsonHandler.JsonHandler] - Generate JSON with requestId: 459f36788ded44de8df41069cf81a15e
+2018-06-15 12:04:52,913 [INFO ][main            ][       JsonHandler.JsonHandler] - Generate JSON with contentBody: H4sICEeiAVoEAM/U0F84NjAyMTYxNzQ3XzAwMF/Tzs/RLdFfMjAxNzA4MzFfMmZkZDQ1MDAtM2VlOS00MzgzLWIzMDQtYzQ2NzE4OGJlZGRiLlhNTAC1WMtu01AQ3SPxD1H2ju08nciYDQ8hwQqQ2JYkQCRIEKkoy0LKSyC1lFZUQFISEGKDCCGB0jz4hfEfcebajuPYcU0Aq67se2fOzJx52I5+8t6tm7G75Tv1Sq16Iq4mlHisXC3WSpXq9RPxy5fOSFo8Vl9dqZZWbtaq5RPxai1+0jh+TKfPtEP79IHexYBQrZ+I31hdvV2QZfplbiTMdXNDpm3zPm1TS6YmS8r0nlq4aEvUlpOKmpMUTVLycUu/cK9emWKsra0l1lKJ2p3rEFRU+cqF8xeLN8q3VqRKlZ0plh0t2qIPAaZ5eSqybdmP4KH5gA6w+wzrD2lCfXPTfIqVQYC7f4wZhPGeOgEIZoPGdGBu4HyEcx2e9KiLtTE8G1DHxUtLioo/4NUrhbpg6HytuLKKXEbwLDgfsSX1EvfqpTgqI4ZDnxGxl6zld/D/kHqI4Acie2A+m9l1FDsFVFYXtHUNoKesEHXZsxOs1gRTIxqY6wZ8wpGWTl+yFd29WX/kUId0K157ZW6VEbtQGwFg7GSIawUtMUHORrgfMqyzJ6QGBrXpPay+ZK8AsQvxDv6/RMW+ilnQuvx3Jhb4u4eLpqFllaSaVXPpnGXG3XHVnJ3ZJfj9Cwzdh4VDXPfgRR8n+/PTZ/EVdS1p87m75+67yYCVfQPJ9a4E6rTNhrD41YqSM2c+sTyYxuzTcuqF9oF8gAba5HY0N93KSsH4AiEbNMQV0ZE/qQW9b5wAA3Fsgc63yGgTHbCNuybud2FkoZJtJoylHegNUfWZdFbW8hmg+faOZABNjPpuIC9DZo0D5DUEPDQbLh8Aj6gSkCT5j7MUMBJoB5rfuKa5yj2RhY+KTJRRsXBkZLKanGVu5zYC41zKa130c1+Q+R3OPeXeAWMPWF48cHpi7XBON3we/cvZ9JpaYm7vIr4t+ojK/fJfZlLIfMrlknk1o6W1bNB88h+OVGCa/oJwHmJvwmvnAxxr2SJhYvBhxD0jZgp4fYHzE+3ydICLfpmjIfdoBDFAvMHZZJjpehT1Fhh4TAPubi5Xg2cU5x5wW+zXFNIvuzALR1NiGffSj/PnTKspSk7K5RQ8vLOxFBr5aI3ArLuZcxfnnknuRsQHmw6CJpyfWTaEJfi5aM/77oPReGiH0OehwYNbOPMHtRVcU21c9rn/GD5qTXlraZ8GTPN8JUWtoD2r29k+0xCtekKqxh0LO4La74zNMCBMsLfOAxioE/Z5gexcpiNkQKc9VMIvATP+tzn6QuPlMgPFZbMC1X+RCbHVYSoAsAFyxoaWT2c064CuX8BD/EJSrW3vx4LztjlEsr7bbxJdcxOOjQFtP2PMR3PU6fzFVzh7+dwpI3mtVEpnFEVKlct5KZ3SUtLVFL4FiulsTtW0q+VS6SqMOvI+EPf1h4tMMO585aTUS0mloGYLybyN4Bf2f0BggnE9CrGeG78cIOl5r5ugwBvWk5Z13TdGfr5aHNABZmZGgzfLA/i9ELPyJTeJiHwK7q5Pcxc5URCd/mKA29/HIb2GeBAAAA==
+2018-06-15 12:04:54,009 [INFO ][main            ][                     MqSender2] - Sending JSON file: D:\!Projects\!USPN\04_07-SUD\regress\7\07_00004_upload_to_VIO_link_to_17_00001\testData\Reg_UOPS-S_SaveDocAndCont.json
+2018-06-15 12:05:11,428 [ERROR][main            ][                     MqSender2] - FAILED
+java.lang.NullPointerException
+	at MqSender2.initSoap(MqSender2.java:87)
+	at MqSender2.run(MqSender2.java:57)
+	at MqSender2.main(MqSender2.java:37)
+2018-06-15 12:05:22,910 [INFO ][main            ][       JsonHandler.JsonHandler] - Generate JSON with requestId: 48011778121a4cabbefead1e936a1687
+2018-06-15 12:05:22,916 [INFO ][main            ][       JsonHandler.JsonHandler] - Generate JSON with contentBody: H4sICEeiAVoEAM/U0F84NjAyMTYxNzQ3XzAwMF/Tzs/RLdFfMjAxNzA4MzFfMmZkZDQ1MDAtM2VlOS00MzgzLWIzMDQtYzQ2NzE4OGJlZGRiLlhNTAC1WMtu01AQ3SPxD1H2ju08nciYDQ8hwQqQ2JYkQCRIEKkoy0LKSyC1lFZUQFISEGKDCCGB0jz4hfEfcebajuPYcU0Aq67se2fOzJx52I5+8t6tm7G75Tv1Sq16Iq4mlHisXC3WSpXq9RPxy5fOSFo8Vl9dqZZWbtaq5RPxai1+0jh+TKfPtEP79IHexYBQrZ+I31hdvV2QZfplbiTMdXNDpm3zPm1TS6YmS8r0nlq4aEvUlpOKmpMUTVLycUu/cK9emWKsra0l1lKJ2p3rEFRU+cqF8xeLN8q3VqRKlZ0plh0t2qIPAaZ5eSqybdmP4KH5gA6w+wzrD2lCfXPTfIqVQYC7f4wZhPGeOgEIZoPGdGBu4HyEcx2e9KiLtTE8G1DHxUtLioo/4NUrhbpg6HytuLKKXEbwLDgfsSX1EvfqpTgqI4ZDnxGxl6zld/D/kHqI4Acie2A+m9l1FDsFVFYXtHUNoKesEHXZsxOs1gRTIxqY6wZ8wpGWTl+yFd29WX/kUId0K157ZW6VEbtQGwFg7GSIawUtMUHORrgfMqyzJ6QGBrXpPay+ZK8AsQvxDv6/RMW+ilnQuvx3Jhb4u4eLpqFllaSaVXPpnGXG3XHVnJ3ZJfj9Cwzdh4VDXPfgRR8n+/PTZ/EVdS1p87m75+67yYCVfQPJ9a4E6rTNhrD41YqSM2c+sTyYxuzTcuqF9oF8gAba5HY0N93KSsH4AiEbNMQV0ZE/qQW9b5wAA3Fsgc63yGgTHbCNuybud2FkoZJtJoylHegNUfWZdFbW8hmg+faOZABNjPpuIC9DZo0D5DUEPDQbLh8Aj6gSkCT5j7MUMBJoB5rfuKa5yj2RhY+KTJRRsXBkZLKanGVu5zYC41zKa130c1+Q+R3OPeXeAWMPWF48cHpi7XBON3we/cvZ9JpaYm7vIr4t+ojK/fJfZlLIfMrlknk1o6W1bNB88h+OVGCa/oJwHmJvwmvnAxxr2SJhYvBhxD0jZgp4fYHzE+3ydICLfpmjIfdoBDFAvMHZZJjpehT1Fhh4TAPubi5Xg2cU5x5wW+zXFNIvuzALR1NiGffSj/PnTKspSk7K5RQ8vLOxFBr5aI3ArLuZcxfnnknuRsQHmw6CJpyfWTaEJfi5aM/77oPReGiH0OehwYNbOPMHtRVcU21c9rn/GD5qTXlraZ8GTPN8JUWtoD2r29k+0xCtekKqxh0LO4La74zNMCBMsLfOAxioE/Z5gexcpiNkQKc9VMIvATP+tzn6QuPlMgPFZbMC1X+RCbHVYSoAsAFyxoaWT2c064CuX8BD/EJSrW3vx4LztjlEsr7bbxJdcxOOjQFtP2PMR3PU6fzFVzh7+dwpI3mtVEpnFEVKlct5KZ3SUtLVFL4FiulsTtW0q+VS6SqMOvI+EPf1h4tMMO585aTUS0mloGYLybyN4Bf2f0BggnE9CrGeG78cIOl5r5ugwBvWk5Z13TdGfr5aHNABZmZGgzfLA/i9ELPyJTeJiHwK7q5Pcxc5URCd/mKA29/HIb2GeBAAAA==
+2018-06-15 12:05:22,949 [INFO ][main            ][                     MqSender2] - Sending JSON file: D:\!Projects\!USPN\04_07-SUD\regress\7\07_00004_upload_to_VIO_link_to_17_00001\testData\Reg_UOPS-S_SaveDocAndCont.json
+2018-06-15 12:05:43,959 [ERROR][main            ][                     MqSender2] - FAILED
+java.lang.NullPointerException
+	at MqSender2.initSoap(MqSender2.java:87)
+	at MqSender2.run(MqSender2.java:57)
+	at MqSender2.main(MqSender2.java:37)
+2018-06-15 12:07:16,413 [INFO ][main            ][       JsonHandler.JsonHandler] - Generate JSON with requestId: 54a64fb36d1a4fa7a3f39b02b9b9b37a
+2018-06-15 12:07:16,418 [INFO ][main            ][       JsonHandler.JsonHandler] - Generate JSON with contentBody: H4sICEeiAVoEAM/U0F84NjAyMTYxNzQ3XzAwMF/Tzs/RLdFfMjAxNzA4MzFfMmZkZDQ1MDAtM2VlOS00MzgzLWIzMDQtYzQ2NzE4OGJlZGRiLlhNTAC1WMtu01AQ3SPxD1H2ju08nciYDQ8hwQqQ2JYkQCRIEKkoy0LKSyC1lFZUQFISEGKDCCGB0jz4hfEfcebajuPYcU0Aq67se2fOzJx52I5+8t6tm7G75Tv1Sq16Iq4mlHisXC3WSpXq9RPxy5fOSFo8Vl9dqZZWbtaq5RPxai1+0jh+TKfPtEP79IHexYBQrZ+I31hdvV2QZfplbiTMdXNDpm3zPm1TS6YmS8r0nlq4aEvUlpOKmpMUTVLycUu/cK9emWKsra0l1lKJ2p3rEFRU+cqF8xeLN8q3VqRKlZ0plh0t2qIPAaZ5eSqybdmP4KH5gA6w+wzrD2lCfXPTfIqVQYC7f4wZhPGeOgEIZoPGdGBu4HyEcx2e9KiLtTE8G1DHxUtLioo/4NUrhbpg6HytuLKKXEbwLDgfsSX1EvfqpTgqI4ZDnxGxl6zld/D/kHqI4Acie2A+m9l1FDsFVFYXtHUNoKesEHXZsxOs1gRTIxqY6wZ8wpGWTl+yFd29WX/kUId0K157ZW6VEbtQGwFg7GSIawUtMUHORrgfMqyzJ6QGBrXpPay+ZK8AsQvxDv6/RMW+ilnQuvx3Jhb4u4eLpqFllaSaVXPpnGXG3XHVnJ3ZJfj9Cwzdh4VDXPfgRR8n+/PTZ/EVdS1p87m75+67yYCVfQPJ9a4E6rTNhrD41YqSM2c+sTyYxuzTcuqF9oF8gAba5HY0N93KSsH4AiEbNMQV0ZE/qQW9b5wAA3Fsgc63yGgTHbCNuybud2FkoZJtJoylHegNUfWZdFbW8hmg+faOZABNjPpuIC9DZo0D5DUEPDQbLh8Aj6gSkCT5j7MUMBJoB5rfuKa5yj2RhY+KTJRRsXBkZLKanGVu5zYC41zKa130c1+Q+R3OPeXeAWMPWF48cHpi7XBON3we/cvZ9JpaYm7vIr4t+ojK/fJfZlLIfMrlknk1o6W1bNB88h+OVGCa/oJwHmJvwmvnAxxr2SJhYvBhxD0jZgp4fYHzE+3ydICLfpmjIfdoBDFAvMHZZJjpehT1Fhh4TAPubi5Xg2cU5x5wW+zXFNIvuzALR1NiGffSj/PnTKspSk7K5RQ8vLOxFBr5aI3ArLuZcxfnnknuRsQHmw6CJpyfWTaEJfi5aM/77oPReGiH0OehwYNbOPMHtRVcU21c9rn/GD5qTXlraZ8GTPN8JUWtoD2r29k+0xCtekKqxh0LO4La74zNMCBMsLfOAxioE/Z5gexcpiNkQKc9VMIvATP+tzn6QuPlMgPFZbMC1X+RCbHVYSoAsAFyxoaWT2c064CuX8BD/EJSrW3vx4LztjlEsr7bbxJdcxOOjQFtP2PMR3PU6fzFVzh7+dwpI3mtVEpnFEVKlct5KZ3SUtLVFL4FiulsTtW0q+VS6SqMOvI+EPf1h4tMMO585aTUS0mloGYLybyN4Bf2f0BggnE9CrGeG78cIOl5r5ugwBvWk5Z13TdGfr5aHNABZmZGgzfLA/i9ELPyJTeJiHwK7q5Pcxc5URCd/mKA29/HIb2GeBAAAA==
+2018-06-15 12:07:16,438 [INFO ][main            ][                     MqSender2] - Sending JSON file: D:\!Projects\!USPN\04_07-SUD\regress\7\07_00004_upload_to_VIO_link_to_17_00001\testData\Reg_UOPS-S_SaveDocAndCont.json
+2018-06-15 12:07:18,219 [ERROR][main            ][                     MqSender2] - FAILED
+java.lang.Exception: Reply message is NULL!
+	at MqSender2.run(MqSender2.java:56)
+	at MqSender2.main(MqSender2.java:37)
+2018-06-15 12:07:58,774 [INFO ][main            ][       JsonHandler.JsonHandler] - Generate JSON with requestId: 758cc541a06e4cd3972d42b632697cd2
+2018-06-15 12:07:58,778 [INFO ][main            ][       JsonHandler.JsonHandler] - Generate JSON with contentBody: H4sICEeiAVoEAM/U0F84NjAyMTYxNzQ3XzAwMF/Tzs/RLdFfMjAxNzA4MzFfMmZkZDQ1MDAtM2VlOS00MzgzLWIzMDQtYzQ2NzE4OGJlZGRiLlhNTAC1WMtu01AQ3SPxD1H2ju08nciYDQ8hwQqQ2JYkQCRIEKkoy0LKSyC1lFZUQFISEGKDCCGB0jz4hfEfcebajuPYcU0Aq67se2fOzJx52I5+8t6tm7G75Tv1Sq16Iq4mlHisXC3WSpXq9RPxy5fOSFo8Vl9dqZZWbtaq5RPxai1+0jh+TKfPtEP79IHexYBQrZ+I31hdvV2QZfplbiTMdXNDpm3zPm1TS6YmS8r0nlq4aEvUlpOKmpMUTVLycUu/cK9emWKsra0l1lKJ2p3rEFRU+cqF8xeLN8q3VqRKlZ0plh0t2qIPAaZ5eSqybdmP4KH5gA6w+wzrD2lCfXPTfIqVQYC7f4wZhPGeOgEIZoPGdGBu4HyEcx2e9KiLtTE8G1DHxUtLioo/4NUrhbpg6HytuLKKXEbwLDgfsSX1EvfqpTgqI4ZDnxGxl6zld/D/kHqI4Acie2A+m9l1FDsFVFYXtHUNoKesEHXZsxOs1gRTIxqY6wZ8wpGWTl+yFd29WX/kUId0K157ZW6VEbtQGwFg7GSIawUtMUHORrgfMqyzJ6QGBrXpPay+ZK8AsQvxDv6/RMW+ilnQuvx3Jhb4u4eLpqFllaSaVXPpnGXG3XHVnJ3ZJfj9Cwzdh4VDXPfgRR8n+/PTZ/EVdS1p87m75+67yYCVfQPJ9a4E6rTNhrD41YqSM2c+sTyYxuzTcuqF9oF8gAba5HY0N93KSsH4AiEbNMQV0ZE/qQW9b5wAA3Fsgc63yGgTHbCNuybud2FkoZJtJoylHegNUfWZdFbW8hmg+faOZABNjPpuIC9DZo0D5DUEPDQbLh8Aj6gSkCT5j7MUMBJoB5rfuKa5yj2RhY+KTJRRsXBkZLKanGVu5zYC41zKa130c1+Q+R3OPeXeAWMPWF48cHpi7XBON3we/cvZ9JpaYm7vIr4t+ojK/fJfZlLIfMrlknk1o6W1bNB88h+OVGCa/oJwHmJvwmvnAxxr2SJhYvBhxD0jZgp4fYHzE+3ydICLfpmjIfdoBDFAvMHZZJjpehT1Fhh4TAPubi5Xg2cU5x5wW+zXFNIvuzALR1NiGffSj/PnTKspSk7K5RQ8vLOxFBr5aI3ArLuZcxfnnknuRsQHmw6CJpyfWTaEJfi5aM/77oPReGiH0OehwYNbOPMHtRVcU21c9rn/GD5qTXlraZ8GTPN8JUWtoD2r29k+0xCtekKqxh0LO4La74zNMCBMsLfOAxioE/Z5gexcpiNkQKc9VMIvATP+tzn6QuPlMgPFZbMC1X+RCbHVYSoAsAFyxoaWT2c064CuX8BD/EJSrW3vx4LztjlEsr7bbxJdcxOOjQFtP2PMR3PU6fzFVzh7+dwpI3mtVEpnFEVKlct5KZ3SUtLVFL4FiulsTtW0q+VS6SqMOvI+EPf1h4tMMO585aTUS0mloGYLybyN4Bf2f0BggnE9CrGeG78cIOl5r5ugwBvWk5Z13TdGfr5aHNABZmZGgzfLA/i9ELPyJTeJiHwK7q5Pcxc5URCd/mKA29/HIb2GeBAAAA==
+2018-06-15 12:07:58,798 [INFO ][main            ][                     MqSender2] - Sending JSON file: D:\!Projects\!USPN\04_07-SUD\regress\7\07_00004_upload_to_VIO_link_to_17_00001\testData\Reg_UOPS-S_SaveDocAndCont.json
+2018-06-15 12:08:01,814 [INFO ][main            ][                     MqSender2] - EHD ID of document: 1611178
+2018-06-15 12:08:01,816 [INFO ][main            ][                     MqSender2] - RequestID of document: 758cc541a06e4cd3972d42b632697cd2
+2018-06-15 12:08:01,971 [INFO ][main            ][                     MqSender2] - Sending SOAP file: D:\!Projects\!USPN\04_07-SUD\regress\7\07_00004_upload_to_VIO_link_to_17_00001\testData\Reg_UOPS-S_SaveDocAndCont.json
+2018-06-15 12:23:31,370 [INFO ][main            ][       JsonHandler.JsonHandler] - Generate JSON with requestId: 5343a540e9bd420fb3e0dce3a20ccad7
+2018-06-15 12:23:31,375 [INFO ][main            ][       JsonHandler.JsonHandler] - Generate JSON with contentBody: H4sICEeiAVoEAM/U0F84NjAyMTYxNzQ3XzAwMF/Tzs/RLdFfMjAxNzA4MzFfMmZkZDQ1MDAtM2VlOS00MzgzLWIzMDQtYzQ2NzE4OGJlZGRiLlhNTAC1WMtu01AQ3SPxD1H2ju08nciYDQ8hwQqQ2JYkQCRIEKkoy0LKSyC1lFZUQFISEGKDCCGB0jz4hfEfcebajuPYcU0Aq67se2fOzJx52I5+8t6tm7G75Tv1Sq16Iq4mlHisXC3WSpXq9RPxy5fOSFo8Vl9dqZZWbtaq5RPxai1+0jh+TKfPtEP79IHexYBQrZ+I31hdvV2QZfplbiTMdXNDpm3zPm1TS6YmS8r0nlq4aEvUlpOKmpMUTVLycUu/cK9emWKsra0l1lKJ2p3rEFRU+cqF8xeLN8q3VqRKlZ0plh0t2qIPAaZ5eSqybdmP4KH5gA6w+wzrD2lCfXPTfIqVQYC7f4wZhPGeOgEIZoPGdGBu4HyEcx2e9KiLtTE8G1DHxUtLioo/4NUrhbpg6HytuLKKXEbwLDgfsSX1EvfqpTgqI4ZDnxGxl6zld/D/kHqI4Acie2A+m9l1FDsFVFYXtHUNoKesEHXZsxOs1gRTIxqY6wZ8wpGWTl+yFd29WX/kUId0K157ZW6VEbtQGwFg7GSIawUtMUHORrgfMqyzJ6QGBrXpPay+ZK8AsQvxDv6/RMW+ilnQuvx3Jhb4u4eLpqFllaSaVXPpnGXG3XHVnJ3ZJfj9Cwzdh4VDXPfgRR8n+/PTZ/EVdS1p87m75+67yYCVfQPJ9a4E6rTNhrD41YqSM2c+sTyYxuzTcuqF9oF8gAba5HY0N93KSsH4AiEbNMQV0ZE/qQW9b5wAA3Fsgc63yGgTHbCNuybud2FkoZJtJoylHegNUfWZdFbW8hmg+faOZABNjPpuIC9DZo0D5DUEPDQbLh8Aj6gSkCT5j7MUMBJoB5rfuKa5yj2RhY+KTJRRsXBkZLKanGVu5zYC41zKa130c1+Q+R3OPeXeAWMPWF48cHpi7XBON3we/cvZ9JpaYm7vIr4t+ojK/fJfZlLIfMrlknk1o6W1bNB88h+OVGCa/oJwHmJvwmvnAxxr2SJhYvBhxD0jZgp4fYHzE+3ydICLfpmjIfdoBDFAvMHZZJjpehT1Fhh4TAPubi5Xg2cU5x5wW+zXFNIvuzALR1NiGffSj/PnTKspSk7K5RQ8vLOxFBr5aI3ArLuZcxfnnknuRsQHmw6CJpyfWTaEJfi5aM/77oPReGiH0OehwYNbOPMHtRVcU21c9rn/GD5qTXlraZ8GTPN8JUWtoD2r29k+0xCtekKqxh0LO4La74zNMCBMsLfOAxioE/Z5gexcpiNkQKc9VMIvATP+tzn6QuPlMgPFZbMC1X+RCbHVYSoAsAFyxoaWT2c064CuX8BD/EJSrW3vx4LztjlEsr7bbxJdcxOOjQFtP2PMR3PU6fzFVzh7+dwpI3mtVEpnFEVKlct5KZ3SUtLVFL4FiulsTtW0q+VS6SqMOvI+EPf1h4tMMO585aTUS0mloGYLybyN4Bf2f0BggnE9CrGeG78cIOl5r5ugwBvWk5Z13TdGfr5aHNABZmZGgzfLA/i9ELPyJTeJiHwK7q5Pcxc5URCd/mKA29/HIb2GeBAAAA==
+2018-06-15 12:23:31,393 [INFO ][main            ][                     MqSender2] - Sending JSON file: D:\!Projects\!USPN\04_07-SUD\regress\7\07_00004_upload_to_VIO_link_to_17_00001\testData\Reg_UOPS-S_SaveDocAndCont.json
+2018-06-15 12:23:34,485 [INFO ][main            ][         XmlHandler.XmlHandler] - EHD ID of document: 1611180
+2018-06-15 12:23:34,486 [INFO ][main            ][         XmlHandler.XmlHandler] - RequestID of document: 5343a540e9bd420fb3e0dce3a20ccad7
+2018-06-15 12:23:34,590 [INFO ][main            ][                     MqSender2] - Sending SOAP file: D:\!Projects\!USPN\04_07-SUD\regress\7\07_00004_upload_to_VIO_link_to_17_00001\testData\Reg_UOPS-S_SaveDocAndCont.json
+2018-06-15 19:11:19,024 [INFO ][main            ][       JsonHandler.JsonHandler] - Generate JSON with requestId: e2c9e4190606424f88c9cab1efd9ea2f
+2018-06-15 19:11:19,054 [INFO ][main            ][       JsonHandler.JsonHandler] - Generate JSON with contentBody: UEsDBBQAAAAIAA+OdUs+cVbcpgQAAEEWAAAXAAAAUk5QRi1TXzAwMDAzX3NrX3ByZi5YTUzFWF2P0kAUfTfxPxDeS1s+tkC69cVoTPRJTXwzCKhEBSMb18d1XTVGkzUsRqKyC+u+qQmusu66yP6F23/kmX5NoaUt9QMSoJ2599xz78ycTkc98+je3cTD6oNmrVFfTsopKZmo1suNSq1+azl59co5IZ9MNFdK9UrpbqNeXU7WG8kz2ulTKn2hNu3QHvUSQKg3l5O3V1buF0WRTvSNlL6mb4jU0h9Ti7ZF6jJLkXrmhUB9MS3JS4KkCJKcNP2Lj5o1B2N1dTW1mkk1HtyCoSSL1y5dvFy+Xb1XEmp1RqZctb3oNe35hGbNjknLDBuBob5Oh+h9ifanNKbv+qb+Ai1DH7pzY/phfKRdHwT9Cf2iQ30D32f4roHJPg3Q9gvMhrTL8bIAM/GatWLTqNDFRrm0grGMwMx/PBIx/VKPmpUkZkYCH9VlYjVZzeD/k/aRwQ9ktq6/tHodC1aSImbWAGUbaEBXTHRVnOjxd+uiUiMa6msaCoNP5nrzzvX7D25azrzfzUkMJKWaeVgtU60McQC3EQB+2aPE5guWxRjjNsL9MYO1+wyroYaIW9RPmCCq+GdgM5h1cNHVFCWDOsgFqWCG4T3cze5xN+H+mFUa0Q+MaXdEbUT7qT8x+enrUQauMP/AKYrCBi54xOZip1KfTjCuj5kFrvdh8R1fVtsjD523NDCt9Ve8j/fbWuJihtsdDWnO6ApEQbj3bgNvZfYwXNuWSaDZACEP2QTRNzW2WOk9fTYml7c/HK5DIwbzht5BSHfx3zNmzWvA2f1RYLaxmJ7TEMVcR9nHGsAMVtQDZBscWw6o13pWXcTwwljhdzAOxxodMBd+z11mz1/qwfTAniZIVS4okJQctAhgQZbB8B+s9MYR3birqfoOgDcu9WHyGvVs47eH6y7q+0YVo3mHht9iGsQeiX6BP2Ge7OK3hX8Et4Jyn/nD9TEX1pjI+WXaY/M63G7W/Ik3FJPEjO3BPr5HLomS8KSCfAnQr0Q6r4rhHj7aIIaIA1f4viF3I8jfDgNjssZ3CZbjbGdquUzCYkC35aWcvJRKp1XR0xcFqENtTUpJEtx5y8whCmfpALfnT4Xx+K9ptKMk0sd63aNuFBYLTIWzDAT/AMN3UVgsMBWbYxC0sfUd0jes2D4autPLwGvhu6bjLlmHxhYNTJ0z3iaOzK0flGKM4CfssYaWobldtCoRxzOAwDtDs06YKRwHxovJphUq0AagEYo7WY6xq8zhtlNbOHFqD8c7Im4EVeoYz4VvXmyWIttDufcpTKbZ/m9WHzD+inxHkO6/Ittzr6ppuY4l1X8sCH9A2+YVU5oXSZ0ziyXFi6Ru8IqmDvGkN57sLlRy/7rc/jOphbVbJc2myVMf++X7GNU/AMhXtkvXN6kDvhvWkYaXtcqO7ornr144q92sVGUld0MWcplcVcguZTJCvpKvCLn8Tal0Q5HLcq6KoLb9NAh/R2uxJNgrq3UukRfShSuyUszmi1nkPcPYjcfX29h8g2LHRfgfIrtXoo8l3+RPHk0Yvtto/WYd7/wwa0CHeH3I5rKqGB/Ay8J4FG6xVzAjcwectztjF3mgYOoc/eL2N1BLAQI/ABQAAAAIAA+OdUs+cVbcpgQAAEEWAAAXACQAAAAAAAAAIAAAAAAAAABSTlBGLVNfMDAwMDNfc2tfcHJmLlhNTAoAIAAAAAAAAQAYAC95SES2YtMBV3zamHp10wFXfNqYenXTAVBLBQYAAAAAAQABAGkAAADbBAAAAAA=
+2018-06-15 19:11:19,083 [INFO ][main            ][                     MqSender2] - Sending JSON file: D:\!Projects\!USPN\Stress_test\saip\typical_data_file\autotestFolder\Reg_04_RPNF-S_SaveDocAndCont.json
+2018-06-15 19:11:22,699 [INFO ][main            ][                     MqSender2] - JSON send successful!
+2018-06-15 19:15:31,374 [ERROR][main            ][                     MqSender2] - FAILED
+java.nio.file.NoSuchFileException: MQSender.properties
+	at sun.nio.fs.WindowsException.translateToIOException(WindowsException.java:79)
+	at sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:97)
+	at sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:102)
+	at sun.nio.fs.WindowsFileSystemProvider.implDelete(WindowsFileSystemProvider.java:269)
+	at sun.nio.fs.AbstractFileSystemProvider.delete(AbstractFileSystemProvider.java:103)
+	at java.nio.file.Files.delete(Files.java:1126)
+	at MqSender2.run(MqSender2.java:56)
+	at MqSender2.main(MqSender2.java:27)
+2018-06-15 19:16:33,925 [ERROR][main            ][                     MqSender2] - FAILED
+java.nio.file.NoSuchFileException: MQSender.properties
+	at sun.nio.fs.WindowsException.translateToIOException(WindowsException.java:79)
+	at sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:97)
+	at sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:102)
+	at sun.nio.fs.WindowsFileSystemProvider.implDelete(WindowsFileSystemProvider.java:269)
+	at sun.nio.fs.AbstractFileSystemProvider.delete(AbstractFileSystemProvider.java:103)
+	at java.nio.file.Files.delete(Files.java:1126)
+	at MqSender2.run(MqSender2.java:56)
+	at MqSender2.main(MqSender2.java:27)
+2018-06-15 19:19:21,019 [ERROR][main            ][                     MqSender2] - FAILED
+java.nio.file.NoSuchFileException: MQSender.properties
+	at sun.nio.fs.WindowsException.translateToIOException(WindowsException.java:79)
+	at sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:97)
+	at sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:102)
+	at sun.nio.fs.WindowsFileSystemProvider.implDelete(WindowsFileSystemProvider.java:269)
+	at sun.nio.fs.AbstractFileSystemProvider.delete(AbstractFileSystemProvider.java:103)
+	at java.nio.file.Files.delete(Files.java:1126)
+	at MqSender2.run(MqSender2.java:56)
+	at MqSender2.main(MqSender2.java:27)
+2018-06-15 19:20:37,343 [ERROR][main            ][                     MqSender2] - FAILED
+java.nio.file.NoSuchFileException: MQSender.properties
+	at sun.nio.fs.WindowsException.translateToIOException(WindowsException.java:79)
+	at sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:97)
+	at sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:102)
+	at sun.nio.fs.WindowsFileSystemProvider.implDelete(WindowsFileSystemProvider.java:269)
+	at sun.nio.fs.AbstractFileSystemProvider.delete(AbstractFileSystemProvider.java:103)
+	at java.nio.file.Files.delete(Files.java:1126)
+	at MqSender2.run(MqSender2.java:56)
+	at MqSender2.main(MqSender2.java:27)
+2018-06-15 19:22:47,247 [ERROR][main            ][                     MqSender2] - FAILED
+java.nio.file.NoSuchFileException: MQSender.properties
+	at sun.nio.fs.WindowsException.translateToIOException(WindowsException.java:79)
+	at sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:97)
+	at sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:102)
+	at sun.nio.fs.WindowsFileSystemProvider.implDelete(WindowsFileSystemProvider.java:269)
+	at sun.nio.fs.AbstractFileSystemProvider.delete(AbstractFileSystemProvider.java:103)
+	at java.nio.file.Files.delete(Files.java:1126)
+	at MqSender2.run(MqSender2.java:56)
+	at MqSender2.main(MqSender2.java:27)
+2018-06-15 19:23:11,963 [ERROR][main            ][                     MqSender2] - FAILED
+java.nio.file.NoSuchFileException: MQSender.properties
+	at sun.nio.fs.WindowsException.translateToIOException(WindowsException.java:79)
+	at sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:97)
+	at sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:102)
+	at sun.nio.fs.WindowsFileSystemProvider.implDelete(WindowsFileSystemProvider.java:269)
+	at sun.nio.fs.AbstractFileSystemProvider.delete(AbstractFileSystemProvider.java:103)
+	at java.nio.file.Files.delete(Files.java:1126)
+	at MqSender2.run(MqSender2.java:56)
+	at MqSender2.main(MqSender2.java:27)
+2018-06-15 19:23:49,071 [ERROR][main            ][                     MqSender2] - FAILED
+java.nio.file.NoSuchFileException: MQSender.properties
+	at sun.nio.fs.WindowsException.translateToIOException(WindowsException.java:79)
+	at sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:97)
+	at sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:102)
+	at sun.nio.fs.WindowsFileSystemProvider.implDelete(WindowsFileSystemProvider.java:269)
+	at sun.nio.fs.AbstractFileSystemProvider.delete(AbstractFileSystemProvider.java:103)
+	at java.nio.file.Files.delete(Files.java:1126)
+	at MqSender2.run(MqSender2.java:56)
+	at MqSender2.main(MqSender2.java:27)
+2018-06-15 19:25:53,663 [ERROR][main            ][                     MqSender2] - FAILED
+java.nio.file.NoSuchFileException: MQSender.properties
+	at sun.nio.fs.WindowsException.translateToIOException(WindowsException.java:79)
+	at sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:97)
+	at sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:102)
+	at sun.nio.fs.WindowsFileSystemProvider.implDelete(WindowsFileSystemProvider.java:269)
+	at sun.nio.fs.AbstractFileSystemProvider.delete(AbstractFileSystemProvider.java:103)
+	at java.nio.file.Files.delete(Files.java:1126)
+	at MqSender2.run(MqSender2.java:56)
+	at MqSender2.main(MqSender2.java:27)
+2018-06-15 19:26:06,003 [ERROR][main            ][                     MqSender2] - FAILED
+java.nio.file.NoSuchFileException: MQSender.properties
+	at sun.nio.fs.WindowsException.translateToIOException(WindowsException.java:79)
+	at sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:97)
+	at sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:102)
+	at sun.nio.fs.WindowsFileSystemProvider.implDelete(WindowsFileSystemProvider.java:269)
+	at sun.nio.fs.AbstractFileSystemProvider.delete(AbstractFileSystemProvider.java:103)
+	at java.nio.file.Files.delete(Files.java:1126)
+	at MqSender2.run(MqSender2.java:56)
+	at MqSender2.main(MqSender2.java:27)
+2018-06-15 19:26:14,164 [ERROR][main            ][                     MqSender2] - FAILED
+java.nio.file.NoSuchFileException: MQSender.properties
+	at sun.nio.fs.WindowsException.translateToIOException(WindowsException.java:79)
+	at sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:97)
+	at sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:102)
+	at sun.nio.fs.WindowsFileSystemProvider.implDelete(WindowsFileSystemProvider.java:269)
+	at sun.nio.fs.AbstractFileSystemProvider.delete(AbstractFileSystemProvider.java:103)
+	at java.nio.file.Files.delete(Files.java:1126)
+	at MqSender2.run(MqSender2.java:56)
+	at MqSender2.main(MqSender2.java:27)
+2018-06-15 19:26:25,542 [ERROR][main            ][                     MqSender2] - FAILED
+java.nio.file.NoSuchFileException: MQSender.properties
+	at sun.nio.fs.WindowsException.translateToIOException(WindowsException.java:79)
+	at sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:97)
+	at sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:102)
+	at sun.nio.fs.WindowsFileSystemProvider.implDelete(WindowsFileSystemProvider.java:269)
+	at sun.nio.fs.AbstractFileSystemProvider.delete(AbstractFileSystemProvider.java:103)
+	at java.nio.file.Files.delete(Files.java:1126)
+	at MqSender2.run(MqSender2.java:56)
+	at MqSender2.main(MqSender2.java:27)
+2018-06-15 19:26:51,032 [ERROR][main            ][                     MqSender2] - FAILED
+java.nio.file.NoSuchFileException: MQSender.properties
+	at sun.nio.fs.WindowsException.translateToIOException(WindowsException.java:79)
+	at sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:97)
+	at sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:102)
+	at sun.nio.fs.WindowsFileSystemProvider.implDelete(WindowsFileSystemProvider.java:269)
+	at sun.nio.fs.AbstractFileSystemProvider.delete(AbstractFileSystemProvider.java:103)
+	at java.nio.file.Files.delete(Files.java:1126)
+	at MqSender2.run(MqSender2.java:56)
+	at MqSender2.main(MqSender2.java:27)
+2018-06-15 19:27:11,688 [ERROR][main            ][                     MqSender2] - FAILED
+java.nio.file.NoSuchFileException: MQSender.properties
+	at sun.nio.fs.WindowsException.translateToIOException(WindowsException.java:79)
+	at sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:97)
+	at sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:102)
+	at sun.nio.fs.WindowsFileSystemProvider.implDelete(WindowsFileSystemProvider.java:269)
+	at sun.nio.fs.AbstractFileSystemProvider.delete(AbstractFileSystemProvider.java:103)
+	at java.nio.file.Files.delete(Files.java:1126)
+	at MqSender2.run(MqSender2.java:56)
+	at MqSender2.main(MqSender2.java:27)
+2018-06-15 19:33:21,699 [ERROR][main            ][                     MqSender2] - FAILED
+java.nio.file.NoSuchFileException: MQSender.properties
+	at sun.nio.fs.WindowsException.translateToIOException(WindowsException.java:79)
+	at sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:97)
+	at sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:102)
+	at sun.nio.fs.WindowsFileSystemProvider.implDelete(WindowsFileSystemProvider.java:269)
+	at sun.nio.fs.AbstractFileSystemProvider.delete(AbstractFileSystemProvider.java:103)
+	at java.nio.file.Files.delete(Files.java:1126)
+	at MqSender2.run(MqSender2.java:56)
+	at MqSender2.main(MqSender2.java:27)

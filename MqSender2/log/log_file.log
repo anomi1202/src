@@ -1,35 +1,1352 @@
-2018-06-15 12:04:52,904 [INFO ][main            ][       JsonHandler.JsonHandler] - Generate JSON with requestId: 459f36788ded44de8df41069cf81a15e
-2018-06-15 12:04:52,913 [INFO ][main            ][       JsonHandler.JsonHandler] - Generate JSON with contentBody: H4sICEeiAVoEAM/U0F84NjAyMTYxNzQ3XzAwMF/Tzs/RLdFfMjAxNzA4MzFfMmZkZDQ1MDAtM2VlOS00MzgzLWIzMDQtYzQ2NzE4OGJlZGRiLlhNTAC1WMtu01AQ3SPxD1H2ju08nciYDQ8hwQqQ2JYkQCRIEKkoy0LKSyC1lFZUQFISEGKDCCGB0jz4hfEfcebajuPYcU0Aq67se2fOzJx52I5+8t6tm7G75Tv1Sq16Iq4mlHisXC3WSpXq9RPxy5fOSFo8Vl9dqZZWbtaq5RPxai1+0jh+TKfPtEP79IHexYBQrZ+I31hdvV2QZfplbiTMdXNDpm3zPm1TS6YmS8r0nlq4aEvUlpOKmpMUTVLycUu/cK9emWKsra0l1lKJ2p3rEFRU+cqF8xeLN8q3VqRKlZ0plh0t2qIPAaZ5eSqybdmP4KH5gA6w+wzrD2lCfXPTfIqVQYC7f4wZhPGeOgEIZoPGdGBu4HyEcx2e9KiLtTE8G1DHxUtLioo/4NUrhbpg6HytuLKKXEbwLDgfsSX1EvfqpTgqI4ZDnxGxl6zld/D/kHqI4Acie2A+m9l1FDsFVFYXtHUNoKesEHXZsxOs1gRTIxqY6wZ8wpGWTl+yFd29WX/kUId0K157ZW6VEbtQGwFg7GSIawUtMUHORrgfMqyzJ6QGBrXpPay+ZK8AsQvxDv6/RMW+ilnQuvx3Jhb4u4eLpqFllaSaVXPpnGXG3XHVnJ3ZJfj9Cwzdh4VDXPfgRR8n+/PTZ/EVdS1p87m75+67yYCVfQPJ9a4E6rTNhrD41YqSM2c+sTyYxuzTcuqF9oF8gAba5HY0N93KSsH4AiEbNMQV0ZE/qQW9b5wAA3Fsgc63yGgTHbCNuybud2FkoZJtJoylHegNUfWZdFbW8hmg+faOZABNjPpuIC9DZo0D5DUEPDQbLh8Aj6gSkCT5j7MUMBJoB5rfuKa5yj2RhY+KTJRRsXBkZLKanGVu5zYC41zKa130c1+Q+R3OPeXeAWMPWF48cHpi7XBON3we/cvZ9JpaYm7vIr4t+ojK/fJfZlLIfMrlknk1o6W1bNB88h+OVGCa/oJwHmJvwmvnAxxr2SJhYvBhxD0jZgp4fYHzE+3ydICLfpmjIfdoBDFAvMHZZJjpehT1Fhh4TAPubi5Xg2cU5x5wW+zXFNIvuzALR1NiGffSj/PnTKspSk7K5RQ8vLOxFBr5aI3ArLuZcxfnnknuRsQHmw6CJpyfWTaEJfi5aM/77oPReGiH0OehwYNbOPMHtRVcU21c9rn/GD5qTXlraZ8GTPN8JUWtoD2r29k+0xCtekKqxh0LO4La74zNMCBMsLfOAxioE/Z5gexcpiNkQKc9VMIvATP+tzn6QuPlMgPFZbMC1X+RCbHVYSoAsAFyxoaWT2c064CuX8BD/EJSrW3vx4LztjlEsr7bbxJdcxOOjQFtP2PMR3PU6fzFVzh7+dwpI3mtVEpnFEVKlct5KZ3SUtLVFL4FiulsTtW0q+VS6SqMOvI+EPf1h4tMMO585aTUS0mloGYLybyN4Bf2f0BggnE9CrGeG78cIOl5r5ugwBvWk5Z13TdGfr5aHNABZmZGgzfLA/i9ELPyJTeJiHwK7q5Pcxc5URCd/mKA29/HIb2GeBAAAA==
-2018-06-15 12:04:54,009 [INFO ][main            ][                     MqSender2] - Sending JSON file: D:\!Projects\!USPN\04_07-SUD\regress\7\07_00004_upload_to_VIO_link_to_17_00001\testData\Reg_UOPS-S_SaveDocAndCont.json
-2018-06-15 12:05:11,428 [ERROR][main            ][                     MqSender2] - FAILED
-java.lang.NullPointerException
-	at MqSender2.initSoap(MqSender2.java:87)
-	at MqSender2.run(MqSender2.java:57)
-	at MqSender2.main(MqSender2.java:37)
-2018-06-15 12:05:22,910 [INFO ][main            ][       JsonHandler.JsonHandler] - Generate JSON with requestId: 48011778121a4cabbefead1e936a1687
-2018-06-15 12:05:22,916 [INFO ][main            ][       JsonHandler.JsonHandler] - Generate JSON with contentBody: H4sICEeiAVoEAM/U0F84NjAyMTYxNzQ3XzAwMF/Tzs/RLdFfMjAxNzA4MzFfMmZkZDQ1MDAtM2VlOS00MzgzLWIzMDQtYzQ2NzE4OGJlZGRiLlhNTAC1WMtu01AQ3SPxD1H2ju08nciYDQ8hwQqQ2JYkQCRIEKkoy0LKSyC1lFZUQFISEGKDCCGB0jz4hfEfcebajuPYcU0Aq67se2fOzJx52I5+8t6tm7G75Tv1Sq16Iq4mlHisXC3WSpXq9RPxy5fOSFo8Vl9dqZZWbtaq5RPxai1+0jh+TKfPtEP79IHexYBQrZ+I31hdvV2QZfplbiTMdXNDpm3zPm1TS6YmS8r0nlq4aEvUlpOKmpMUTVLycUu/cK9emWKsra0l1lKJ2p3rEFRU+cqF8xeLN8q3VqRKlZ0plh0t2qIPAaZ5eSqybdmP4KH5gA6w+wzrD2lCfXPTfIqVQYC7f4wZhPGeOgEIZoPGdGBu4HyEcx2e9KiLtTE8G1DHxUtLioo/4NUrhbpg6HytuLKKXEbwLDgfsSX1EvfqpTgqI4ZDnxGxl6zld/D/kHqI4Acie2A+m9l1FDsFVFYXtHUNoKesEHXZsxOs1gRTIxqY6wZ8wpGWTl+yFd29WX/kUId0K157ZW6VEbtQGwFg7GSIawUtMUHORrgfMqyzJ6QGBrXpPay+ZK8AsQvxDv6/RMW+ilnQuvx3Jhb4u4eLpqFllaSaVXPpnGXG3XHVnJ3ZJfj9Cwzdh4VDXPfgRR8n+/PTZ/EVdS1p87m75+67yYCVfQPJ9a4E6rTNhrD41YqSM2c+sTyYxuzTcuqF9oF8gAba5HY0N93KSsH4AiEbNMQV0ZE/qQW9b5wAA3Fsgc63yGgTHbCNuybud2FkoZJtJoylHegNUfWZdFbW8hmg+faOZABNjPpuIC9DZo0D5DUEPDQbLh8Aj6gSkCT5j7MUMBJoB5rfuKa5yj2RhY+KTJRRsXBkZLKanGVu5zYC41zKa130c1+Q+R3OPeXeAWMPWF48cHpi7XBON3we/cvZ9JpaYm7vIr4t+ojK/fJfZlLIfMrlknk1o6W1bNB88h+OVGCa/oJwHmJvwmvnAxxr2SJhYvBhxD0jZgp4fYHzE+3ydICLfpmjIfdoBDFAvMHZZJjpehT1Fhh4TAPubi5Xg2cU5x5wW+zXFNIvuzALR1NiGffSj/PnTKspSk7K5RQ8vLOxFBr5aI3ArLuZcxfnnknuRsQHmw6CJpyfWTaEJfi5aM/77oPReGiH0OehwYNbOPMHtRVcU21c9rn/GD5qTXlraZ8GTPN8JUWtoD2r29k+0xCtekKqxh0LO4La74zNMCBMsLfOAxioE/Z5gexcpiNkQKc9VMIvATP+tzn6QuPlMgPFZbMC1X+RCbHVYSoAsAFyxoaWT2c064CuX8BD/EJSrW3vx4LztjlEsr7bbxJdcxOOjQFtP2PMR3PU6fzFVzh7+dwpI3mtVEpnFEVKlct5KZ3SUtLVFL4FiulsTtW0q+VS6SqMOvI+EPf1h4tMMO585aTUS0mloGYLybyN4Bf2f0BggnE9CrGeG78cIOl5r5ugwBvWk5Z13TdGfr5aHNABZmZGgzfLA/i9ELPyJTeJiHwK7q5Pcxc5URCd/mKA29/HIb2GeBAAAA==
-2018-06-15 12:05:22,949 [INFO ][main            ][                     MqSender2] - Sending JSON file: D:\!Projects\!USPN\04_07-SUD\regress\7\07_00004_upload_to_VIO_link_to_17_00001\testData\Reg_UOPS-S_SaveDocAndCont.json
-2018-06-15 12:05:43,959 [ERROR][main            ][                     MqSender2] - FAILED
-java.lang.NullPointerException
-	at MqSender2.initSoap(MqSender2.java:87)
-	at MqSender2.run(MqSender2.java:57)
-	at MqSender2.main(MqSender2.java:37)
-2018-06-15 12:07:16,413 [INFO ][main            ][       JsonHandler.JsonHandler] - Generate JSON with requestId: 54a64fb36d1a4fa7a3f39b02b9b9b37a
-2018-06-15 12:07:16,418 [INFO ][main            ][       JsonHandler.JsonHandler] - Generate JSON with contentBody: H4sICEeiAVoEAM/U0F84NjAyMTYxNzQ3XzAwMF/Tzs/RLdFfMjAxNzA4MzFfMmZkZDQ1MDAtM2VlOS00MzgzLWIzMDQtYzQ2NzE4OGJlZGRiLlhNTAC1WMtu01AQ3SPxD1H2ju08nciYDQ8hwQqQ2JYkQCRIEKkoy0LKSyC1lFZUQFISEGKDCCGB0jz4hfEfcebajuPYcU0Aq67se2fOzJx52I5+8t6tm7G75Tv1Sq16Iq4mlHisXC3WSpXq9RPxy5fOSFo8Vl9dqZZWbtaq5RPxai1+0jh+TKfPtEP79IHexYBQrZ+I31hdvV2QZfplbiTMdXNDpm3zPm1TS6YmS8r0nlq4aEvUlpOKmpMUTVLycUu/cK9emWKsra0l1lKJ2p3rEFRU+cqF8xeLN8q3VqRKlZ0plh0t2qIPAaZ5eSqybdmP4KH5gA6w+wzrD2lCfXPTfIqVQYC7f4wZhPGeOgEIZoPGdGBu4HyEcx2e9KiLtTE8G1DHxUtLioo/4NUrhbpg6HytuLKKXEbwLDgfsSX1EvfqpTgqI4ZDnxGxl6zld/D/kHqI4Acie2A+m9l1FDsFVFYXtHUNoKesEHXZsxOs1gRTIxqY6wZ8wpGWTl+yFd29WX/kUId0K157ZW6VEbtQGwFg7GSIawUtMUHORrgfMqyzJ6QGBrXpPay+ZK8AsQvxDv6/RMW+ilnQuvx3Jhb4u4eLpqFllaSaVXPpnGXG3XHVnJ3ZJfj9Cwzdh4VDXPfgRR8n+/PTZ/EVdS1p87m75+67yYCVfQPJ9a4E6rTNhrD41YqSM2c+sTyYxuzTcuqF9oF8gAba5HY0N93KSsH4AiEbNMQV0ZE/qQW9b5wAA3Fsgc63yGgTHbCNuybud2FkoZJtJoylHegNUfWZdFbW8hmg+faOZABNjPpuIC9DZo0D5DUEPDQbLh8Aj6gSkCT5j7MUMBJoB5rfuKa5yj2RhY+KTJRRsXBkZLKanGVu5zYC41zKa130c1+Q+R3OPeXeAWMPWF48cHpi7XBON3we/cvZ9JpaYm7vIr4t+ojK/fJfZlLIfMrlknk1o6W1bNB88h+OVGCa/oJwHmJvwmvnAxxr2SJhYvBhxD0jZgp4fYHzE+3ydICLfpmjIfdoBDFAvMHZZJjpehT1Fhh4TAPubi5Xg2cU5x5wW+zXFNIvuzALR1NiGffSj/PnTKspSk7K5RQ8vLOxFBr5aI3ArLuZcxfnnknuRsQHmw6CJpyfWTaEJfi5aM/77oPReGiH0OehwYNbOPMHtRVcU21c9rn/GD5qTXlraZ8GTPN8JUWtoD2r29k+0xCtekKqxh0LO4La74zNMCBMsLfOAxioE/Z5gexcpiNkQKc9VMIvATP+tzn6QuPlMgPFZbMC1X+RCbHVYSoAsAFyxoaWT2c064CuX8BD/EJSrW3vx4LztjlEsr7bbxJdcxOOjQFtP2PMR3PU6fzFVzh7+dwpI3mtVEpnFEVKlct5KZ3SUtLVFL4FiulsTtW0q+VS6SqMOvI+EPf1h4tMMO585aTUS0mloGYLybyN4Bf2f0BggnE9CrGeG78cIOl5r5ugwBvWk5Z13TdGfr5aHNABZmZGgzfLA/i9ELPyJTeJiHwK7q5Pcxc5URCd/mKA29/HIb2GeBAAAA==
-2018-06-15 12:07:16,438 [INFO ][main            ][                     MqSender2] - Sending JSON file: D:\!Projects\!USPN\04_07-SUD\regress\7\07_00004_upload_to_VIO_link_to_17_00001\testData\Reg_UOPS-S_SaveDocAndCont.json
-2018-06-15 12:07:18,219 [ERROR][main            ][                     MqSender2] - FAILED
-java.lang.Exception: Reply message is NULL!
+2018-06-18 10:18:30,836 [ERROR][main            ][                     MqSender2] - FAILED
+java.nio.file.NoSuchFileException: MQSender.properties
+	at sun.nio.fs.WindowsException.translateToIOException(WindowsException.java:79)
+	at sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:97)
+	at sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:102)
+	at sun.nio.fs.WindowsFileSystemProvider.implDelete(WindowsFileSystemProvider.java:269)
+	at sun.nio.fs.AbstractFileSystemProvider.delete(AbstractFileSystemProvider.java:103)
+	at java.nio.file.Files.delete(Files.java:1126)
 	at MqSender2.run(MqSender2.java:56)
-	at MqSender2.main(MqSender2.java:37)
-2018-06-15 12:07:58,774 [INFO ][main            ][       JsonHandler.JsonHandler] - Generate JSON with requestId: 758cc541a06e4cd3972d42b632697cd2
-2018-06-15 12:07:58,778 [INFO ][main            ][       JsonHandler.JsonHandler] - Generate JSON with contentBody: H4sICEeiAVoEAM/U0F84NjAyMTYxNzQ3XzAwMF/Tzs/RLdFfMjAxNzA4MzFfMmZkZDQ1MDAtM2VlOS00MzgzLWIzMDQtYzQ2NzE4OGJlZGRiLlhNTAC1WMtu01AQ3SPxD1H2ju08nciYDQ8hwQqQ2JYkQCRIEKkoy0LKSyC1lFZUQFISEGKDCCGB0jz4hfEfcebajuPYcU0Aq67se2fOzJx52I5+8t6tm7G75Tv1Sq16Iq4mlHisXC3WSpXq9RPxy5fOSFo8Vl9dqZZWbtaq5RPxai1+0jh+TKfPtEP79IHexYBQrZ+I31hdvV2QZfplbiTMdXNDpm3zPm1TS6YmS8r0nlq4aEvUlpOKmpMUTVLycUu/cK9emWKsra0l1lKJ2p3rEFRU+cqF8xeLN8q3VqRKlZ0plh0t2qIPAaZ5eSqybdmP4KH5gA6w+wzrD2lCfXPTfIqVQYC7f4wZhPGeOgEIZoPGdGBu4HyEcx2e9KiLtTE8G1DHxUtLioo/4NUrhbpg6HytuLKKXEbwLDgfsSX1EvfqpTgqI4ZDnxGxl6zld/D/kHqI4Acie2A+m9l1FDsFVFYXtHUNoKesEHXZsxOs1gRTIxqY6wZ8wpGWTl+yFd29WX/kUId0K157ZW6VEbtQGwFg7GSIawUtMUHORrgfMqyzJ6QGBrXpPay+ZK8AsQvxDv6/RMW+ilnQuvx3Jhb4u4eLpqFllaSaVXPpnGXG3XHVnJ3ZJfj9Cwzdh4VDXPfgRR8n+/PTZ/EVdS1p87m75+67yYCVfQPJ9a4E6rTNhrD41YqSM2c+sTyYxuzTcuqF9oF8gAba5HY0N93KSsH4AiEbNMQV0ZE/qQW9b5wAA3Fsgc63yGgTHbCNuybud2FkoZJtJoylHegNUfWZdFbW8hmg+faOZABNjPpuIC9DZo0D5DUEPDQbLh8Aj6gSkCT5j7MUMBJoB5rfuKa5yj2RhY+KTJRRsXBkZLKanGVu5zYC41zKa130c1+Q+R3OPeXeAWMPWF48cHpi7XBON3we/cvZ9JpaYm7vIr4t+ojK/fJfZlLIfMrlknk1o6W1bNB88h+OVGCa/oJwHmJvwmvnAxxr2SJhYvBhxD0jZgp4fYHzE+3ydICLfpmjIfdoBDFAvMHZZJjpehT1Fhh4TAPubi5Xg2cU5x5wW+zXFNIvuzALR1NiGffSj/PnTKspSk7K5RQ8vLOxFBr5aI3ArLuZcxfnnknuRsQHmw6CJpyfWTaEJfi5aM/77oPReGiH0OehwYNbOPMHtRVcU21c9rn/GD5qTXlraZ8GTPN8JUWtoD2r29k+0xCtekKqxh0LO4La74zNMCBMsLfOAxioE/Z5gexcpiNkQKc9VMIvATP+tzn6QuPlMgPFZbMC1X+RCbHVYSoAsAFyxoaWT2c064CuX8BD/EJSrW3vx4LztjlEsr7bbxJdcxOOjQFtP2PMR3PU6fzFVzh7+dwpI3mtVEpnFEVKlct5KZ3SUtLVFL4FiulsTtW0q+VS6SqMOvI+EPf1h4tMMO585aTUS0mloGYLybyN4Bf2f0BggnE9CrGeG78cIOl5r5ugwBvWk5Z13TdGfr5aHNABZmZGgzfLA/i9ELPyJTeJiHwK7q5Pcxc5URCd/mKA29/HIb2GeBAAAA==
-2018-06-15 12:07:58,798 [INFO ][main            ][                     MqSender2] - Sending JSON file: D:\!Projects\!USPN\04_07-SUD\regress\7\07_00004_upload_to_VIO_link_to_17_00001\testData\Reg_UOPS-S_SaveDocAndCont.json
-2018-06-15 12:08:01,814 [INFO ][main            ][                     MqSender2] - EHD ID of document: 1611178
-2018-06-15 12:08:01,816 [INFO ][main            ][                     MqSender2] - RequestID of document: 758cc541a06e4cd3972d42b632697cd2
-2018-06-15 12:08:01,971 [INFO ][main            ][                     MqSender2] - Sending SOAP file: D:\!Projects\!USPN\04_07-SUD\regress\7\07_00004_upload_to_VIO_link_to_17_00001\testData\Reg_UOPS-S_SaveDocAndCont.json
-2018-06-15 12:23:31,370 [INFO ][main            ][       JsonHandler.JsonHandler] - Generate JSON with requestId: 5343a540e9bd420fb3e0dce3a20ccad7
-2018-06-15 12:23:31,375 [INFO ][main            ][       JsonHandler.JsonHandler] - Generate JSON with contentBody: H4sICEeiAVoEAM/U0F84NjAyMTYxNzQ3XzAwMF/Tzs/RLdFfMjAxNzA4MzFfMmZkZDQ1MDAtM2VlOS00MzgzLWIzMDQtYzQ2NzE4OGJlZGRiLlhNTAC1WMtu01AQ3SPxD1H2ju08nciYDQ8hwQqQ2JYkQCRIEKkoy0LKSyC1lFZUQFISEGKDCCGB0jz4hfEfcebajuPYcU0Aq67se2fOzJx52I5+8t6tm7G75Tv1Sq16Iq4mlHisXC3WSpXq9RPxy5fOSFo8Vl9dqZZWbtaq5RPxai1+0jh+TKfPtEP79IHexYBQrZ+I31hdvV2QZfplbiTMdXNDpm3zPm1TS6YmS8r0nlq4aEvUlpOKmpMUTVLycUu/cK9emWKsra0l1lKJ2p3rEFRU+cqF8xeLN8q3VqRKlZ0plh0t2qIPAaZ5eSqybdmP4KH5gA6w+wzrD2lCfXPTfIqVQYC7f4wZhPGeOgEIZoPGdGBu4HyEcx2e9KiLtTE8G1DHxUtLioo/4NUrhbpg6HytuLKKXEbwLDgfsSX1EvfqpTgqI4ZDnxGxl6zld/D/kHqI4Acie2A+m9l1FDsFVFYXtHUNoKesEHXZsxOs1gRTIxqY6wZ8wpGWTl+yFd29WX/kUId0K157ZW6VEbtQGwFg7GSIawUtMUHORrgfMqyzJ6QGBrXpPay+ZK8AsQvxDv6/RMW+ilnQuvx3Jhb4u4eLpqFllaSaVXPpnGXG3XHVnJ3ZJfj9Cwzdh4VDXPfgRR8n+/PTZ/EVdS1p87m75+67yYCVfQPJ9a4E6rTNhrD41YqSM2c+sTyYxuzTcuqF9oF8gAba5HY0N93KSsH4AiEbNMQV0ZE/qQW9b5wAA3Fsgc63yGgTHbCNuybud2FkoZJtJoylHegNUfWZdFbW8hmg+faOZABNjPpuIC9DZo0D5DUEPDQbLh8Aj6gSkCT5j7MUMBJoB5rfuKa5yj2RhY+KTJRRsXBkZLKanGVu5zYC41zKa130c1+Q+R3OPeXeAWMPWF48cHpi7XBON3we/cvZ9JpaYm7vIr4t+ojK/fJfZlLIfMrlknk1o6W1bNB88h+OVGCa/oJwHmJvwmvnAxxr2SJhYvBhxD0jZgp4fYHzE+3ydICLfpmjIfdoBDFAvMHZZJjpehT1Fhh4TAPubi5Xg2cU5x5wW+zXFNIvuzALR1NiGffSj/PnTKspSk7K5RQ8vLOxFBr5aI3ArLuZcxfnnknuRsQHmw6CJpyfWTaEJfi5aM/77oPReGiH0OehwYNbOPMHtRVcU21c9rn/GD5qTXlraZ8GTPN8JUWtoD2r29k+0xCtekKqxh0LO4La74zNMCBMsLfOAxioE/Z5gexcpiNkQKc9VMIvATP+tzn6QuPlMgPFZbMC1X+RCbHVYSoAsAFyxoaWT2c064CuX8BD/EJSrW3vx4LztjlEsr7bbxJdcxOOjQFtP2PMR3PU6fzFVzh7+dwpI3mtVEpnFEVKlct5KZ3SUtLVFL4FiulsTtW0q+VS6SqMOvI+EPf1h4tMMO585aTUS0mloGYLybyN4Bf2f0BggnE9CrGeG78cIOl5r5ugwBvWk5Z13TdGfr5aHNABZmZGgzfLA/i9ELPyJTeJiHwK7q5Pcxc5URCd/mKA29/HIb2GeBAAAA==
-2018-06-15 12:23:31,393 [INFO ][main            ][                     MqSender2] - Sending JSON file: D:\!Projects\!USPN\04_07-SUD\regress\7\07_00004_upload_to_VIO_link_to_17_00001\testData\Reg_UOPS-S_SaveDocAndCont.json
-2018-06-15 12:23:34,485 [INFO ][main            ][         XmlHandler.XmlHandler] - EHD ID of document: 1611180
-2018-06-15 12:23:34,486 [INFO ][main            ][         XmlHandler.XmlHandler] - RequestID of document: 5343a540e9bd420fb3e0dce3a20ccad7
-2018-06-15 12:23:34,590 [INFO ][main            ][                     MqSender2] - Sending SOAP file: D:\!Projects\!USPN\04_07-SUD\regress\7\07_00004_upload_to_VIO_link_to_17_00001\testData\Reg_UOPS-S_SaveDocAndCont.json
+	at MqSender2.main(MqSender2.java:27)
+2018-06-18 10:19:58,312 [ERROR][main            ][                     MqSender2] - FAILED
+java.nio.file.NoSuchFileException: MQSender.properties
+	at sun.nio.fs.WindowsException.translateToIOException(WindowsException.java:79)
+	at sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:97)
+	at sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:102)
+	at sun.nio.fs.WindowsFileSystemProvider.implDelete(WindowsFileSystemProvider.java:269)
+	at sun.nio.fs.AbstractFileSystemProvider.delete(AbstractFileSystemProvider.java:103)
+	at java.nio.file.Files.delete(Files.java:1126)
+	at MqSender2.run(MqSender2.java:56)
+	at MqSender2.main(MqSender2.java:27)
+2018-06-18 10:20:25,938 [ERROR][main            ][                     MqSender2] - FAILED
+java.nio.file.NoSuchFileException: MQSender.properties
+	at sun.nio.fs.WindowsException.translateToIOException(WindowsException.java:79)
+	at sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:97)
+	at sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:102)
+	at sun.nio.fs.WindowsFileSystemProvider.implDelete(WindowsFileSystemProvider.java:269)
+	at sun.nio.fs.AbstractFileSystemProvider.delete(AbstractFileSystemProvider.java:103)
+	at java.nio.file.Files.delete(Files.java:1126)
+	at MqSender2.run(MqSender2.java:56)
+	at MqSender2.main(MqSender2.java:27)
+2018-06-18 10:20:49,262 [ERROR][main            ][                     MqSender2] - FAILED
+java.nio.file.NoSuchFileException: MQSender.properties
+	at sun.nio.fs.WindowsException.translateToIOException(WindowsException.java:79)
+	at sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:97)
+	at sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:102)
+	at sun.nio.fs.WindowsFileSystemProvider.implDelete(WindowsFileSystemProvider.java:269)
+	at sun.nio.fs.AbstractFileSystemProvider.delete(AbstractFileSystemProvider.java:103)
+	at java.nio.file.Files.delete(Files.java:1126)
+	at MqSender2.run(MqSender2.java:56)
+	at MqSender2.main(MqSender2.java:27)
+2018-06-18 10:21:14,065 [ERROR][main            ][                     MqSender2] - FAILED
+java.nio.file.NoSuchFileException: MQSender.properties
+	at sun.nio.fs.WindowsException.translateToIOException(WindowsException.java:79)
+	at sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:97)
+	at sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:102)
+	at sun.nio.fs.WindowsFileSystemProvider.implDelete(WindowsFileSystemProvider.java:269)
+	at sun.nio.fs.AbstractFileSystemProvider.delete(AbstractFileSystemProvider.java:103)
+	at java.nio.file.Files.delete(Files.java:1126)
+	at MqSender2.run(MqSender2.java:56)
+	at MqSender2.main(MqSender2.java:27)
+2018-06-18 10:21:58,039 [ERROR][main            ][                     MqSender2] - FAILED
+java.nio.file.NoSuchFileException: MQSender.properties
+	at sun.nio.fs.WindowsException.translateToIOException(WindowsException.java:79)
+	at sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:97)
+	at sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:102)
+	at sun.nio.fs.WindowsFileSystemProvider.implDelete(WindowsFileSystemProvider.java:269)
+	at sun.nio.fs.AbstractFileSystemProvider.delete(AbstractFileSystemProvider.java:103)
+	at java.nio.file.Files.delete(Files.java:1126)
+	at MqSender2.run(MqSender2.java:56)
+	at MqSender2.main(MqSender2.java:27)
+2018-06-18 10:22:16,554 [ERROR][main            ][                     MqSender2] - FAILED
+java.nio.file.NoSuchFileException: MQSender.properties
+	at sun.nio.fs.WindowsException.translateToIOException(WindowsException.java:79)
+	at sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:97)
+	at sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:102)
+	at sun.nio.fs.WindowsFileSystemProvider.implDelete(WindowsFileSystemProvider.java:269)
+	at sun.nio.fs.AbstractFileSystemProvider.delete(AbstractFileSystemProvider.java:103)
+	at java.nio.file.Files.delete(Files.java:1126)
+	at MqSender2.run(MqSender2.java:56)
+	at MqSender2.main(MqSender2.java:27)
+2018-06-18 10:22:33,446 [ERROR][main            ][                     MqSender2] - FAILED
+java.nio.file.NoSuchFileException: MQSender.properties
+	at sun.nio.fs.WindowsException.translateToIOException(WindowsException.java:79)
+	at sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:97)
+	at sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:102)
+	at sun.nio.fs.WindowsFileSystemProvider.implDelete(WindowsFileSystemProvider.java:269)
+	at sun.nio.fs.AbstractFileSystemProvider.delete(AbstractFileSystemProvider.java:103)
+	at java.nio.file.Files.delete(Files.java:1126)
+	at MqSender2.run(MqSender2.java:56)
+	at MqSender2.main(MqSender2.java:27)
+2018-06-18 10:34:52,248 [ERROR][main            ][                     MqSender2] - FAILED
+java.nio.file.NoSuchFileException: MQSender.properties
+	at sun.nio.fs.WindowsException.translateToIOException(WindowsException.java:79)
+	at sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:97)
+	at sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:102)
+	at sun.nio.fs.WindowsFileSystemProvider.implDelete(WindowsFileSystemProvider.java:269)
+	at sun.nio.fs.AbstractFileSystemProvider.delete(AbstractFileSystemProvider.java:103)
+	at java.nio.file.Files.delete(Files.java:1126)
+	at MqSender2.run(MqSender2.java:56)
+	at MqSender2.main(MqSender2.java:27)
+2018-06-18 10:35:30,954 [ERROR][main            ][                     MqSender2] - FAILED
+java.nio.file.NoSuchFileException: MQSender.properties
+	at sun.nio.fs.WindowsException.translateToIOException(WindowsException.java:79)
+	at sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:97)
+	at sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:102)
+	at sun.nio.fs.WindowsFileSystemProvider.implDelete(WindowsFileSystemProvider.java:269)
+	at sun.nio.fs.AbstractFileSystemProvider.delete(AbstractFileSystemProvider.java:103)
+	at java.nio.file.Files.delete(Files.java:1126)
+	at MqSender2.run(MqSender2.java:56)
+	at MqSender2.main(MqSender2.java:27)
+2018-06-18 10:39:39,942 [ERROR][main            ][         XmlHandler.XmlHandler] - FAILED
+java.nio.file.AccessDeniedException: D:\!Projects\!USPN\Stress_test\saip\typical_data_file\autotestFolder\RNPF-S_00003_sk_prf.XML1131673473599558497.tmp -> D:\!Projects\!USPN\Stress_test\saip\typical_data_file\autotestFolder\RNPF-S_00003_sk_prf.XML
+	at sun.nio.fs.WindowsException.translateToIOException(WindowsException.java:83)
+	at sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:97)
+	at sun.nio.fs.WindowsFileCopy.copy(WindowsFileCopy.java:205)
+	at sun.nio.fs.WindowsFileSystemProvider.copy(WindowsFileSystemProvider.java:278)
+	at java.nio.file.Files.copy(Files.java:1274)
+	at XmlHandler.XmlHandler.setParam(XmlHandler.java:69)
+	at XmlHandler.XmlHandler.xmlGenerate(XmlHandler.java:55)
+	at AbstractMqSender2.preparingDocument(AbstractMqSender2.java:29)
+	at MqSender2.run(MqSender2.java:42)
+	at MqSender2.main(MqSender2.java:27)
+2018-06-18 10:39:39,961 [ERROR][main            ][                     MqSender2] - FAILED
+java.nio.file.NoSuchFileException: MQSender.properties
+	at sun.nio.fs.WindowsException.translateToIOException(WindowsException.java:79)
+	at sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:97)
+	at sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:102)
+	at sun.nio.fs.WindowsFileSystemProvider.implDelete(WindowsFileSystemProvider.java:269)
+	at sun.nio.fs.AbstractFileSystemProvider.delete(AbstractFileSystemProvider.java:103)
+	at java.nio.file.Files.delete(Files.java:1126)
+	at MqSender2.run(MqSender2.java:56)
+	at MqSender2.main(MqSender2.java:27)
+2018-06-18 10:40:23,501 [ERROR][main            ][         XmlHandler.XmlHandler] - FAILED
+java.nio.file.AccessDeniedException: D:\!Projects\!USPN\Stress_test\saip\typical_data_file\autotestFolder\RNPF-S_00003_sk_prf.XML1027624908760043235.tmp -> D:\!Projects\!USPN\Stress_test\saip\typical_data_file\autotestFolder\RNPF-S_00003_sk_prf.XML
+	at sun.nio.fs.WindowsException.translateToIOException(WindowsException.java:83)
+	at sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:97)
+	at sun.nio.fs.WindowsFileCopy.copy(WindowsFileCopy.java:205)
+	at sun.nio.fs.WindowsFileSystemProvider.copy(WindowsFileSystemProvider.java:278)
+	at java.nio.file.Files.copy(Files.java:1274)
+	at XmlHandler.XmlHandler.setParam(XmlHandler.java:69)
+	at XmlHandler.XmlHandler.xmlGenerate(XmlHandler.java:55)
+	at AbstractMqSender2.preparingDocument(AbstractMqSender2.java:29)
+	at MqSender2.run(MqSender2.java:42)
+	at MqSender2.main(MqSender2.java:27)
+2018-06-18 10:40:23,511 [ERROR][main            ][                     MqSender2] - FAILED
+java.nio.file.NoSuchFileException: MQSender.properties
+	at sun.nio.fs.WindowsException.translateToIOException(WindowsException.java:79)
+	at sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:97)
+	at sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:102)
+	at sun.nio.fs.WindowsFileSystemProvider.implDelete(WindowsFileSystemProvider.java:269)
+	at sun.nio.fs.AbstractFileSystemProvider.delete(AbstractFileSystemProvider.java:103)
+	at java.nio.file.Files.delete(Files.java:1126)
+	at MqSender2.run(MqSender2.java:56)
+	at MqSender2.main(MqSender2.java:27)
+2018-06-18 10:42:53,644 [INFO ][main            ][         XmlHandler.XmlHandler] - Old number of document: null
+2018-06-18 10:42:59,755 [ERROR][main            ][                     MqSender2] - FAILED
+java.lang.NullPointerException
+	at XmlHandler.XmlHandler.xmlGenerate(XmlHandler.java:56)
+	at AbstractMqSender2.preparingDocument(AbstractMqSender2.java:29)
+	at MqSender2.run(MqSender2.java:42)
+	at MqSender2.main(MqSender2.java:27)
+2018-06-18 10:42:59,760 [ERROR][main            ][                     MqSender2] - FAILED
+java.nio.file.NoSuchFileException: MQSender.properties
+	at sun.nio.fs.WindowsException.translateToIOException(WindowsException.java:79)
+	at sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:97)
+	at sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:102)
+	at sun.nio.fs.WindowsFileSystemProvider.implDelete(WindowsFileSystemProvider.java:269)
+	at sun.nio.fs.AbstractFileSystemProvider.delete(AbstractFileSystemProvider.java:103)
+	at java.nio.file.Files.delete(Files.java:1126)
+	at MqSender2.run(MqSender2.java:56)
+	at MqSender2.main(MqSender2.java:27)
+2018-06-18 10:44:09,871 [INFO ][main            ][         XmlHandler.XmlHandler] - Old number of document: 4-00003_sk_prf-nagr-18-06-2018
+2018-06-18 10:44:09,877 [INFO ][main            ][         XmlHandler.XmlHandler] - New number of document: 4-00003_sk_prf-nagr-18-06-2018
+2018-06-18 10:44:10,286 [ERROR][main            ][         XmlHandler.XmlHandler] - FAILED
+java.nio.file.AccessDeniedException: D:\!Projects\!USPN\Stress_test\saip\typical_data_file\autotestFolder\RNPF-S_00003_sk_prf.XML714361824003036037.tmp -> D:\!Projects\!USPN\Stress_test\saip\typical_data_file\autotestFolder\RNPF-S_00003_sk_prf.XML
+	at sun.nio.fs.WindowsException.translateToIOException(WindowsException.java:83)
+	at sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:97)
+	at sun.nio.fs.WindowsFileCopy.copy(WindowsFileCopy.java:205)
+	at sun.nio.fs.WindowsFileSystemProvider.copy(WindowsFileSystemProvider.java:278)
+	at java.nio.file.Files.copy(Files.java:1274)
+	at XmlHandler.XmlHandler.setParam(XmlHandler.java:72)
+	at XmlHandler.XmlHandler.xmlGenerate(XmlHandler.java:58)
+	at AbstractMqSender2.preparingDocument(AbstractMqSender2.java:29)
+	at MqSender2.run(MqSender2.java:42)
+	at MqSender2.main(MqSender2.java:27)
+2018-06-18 10:44:10,300 [ERROR][main            ][                     MqSender2] - FAILED
+java.nio.file.NoSuchFileException: MQSender.properties
+	at sun.nio.fs.WindowsException.translateToIOException(WindowsException.java:79)
+	at sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:97)
+	at sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:102)
+	at sun.nio.fs.WindowsFileSystemProvider.implDelete(WindowsFileSystemProvider.java:269)
+	at sun.nio.fs.AbstractFileSystemProvider.delete(AbstractFileSystemProvider.java:103)
+	at java.nio.file.Files.delete(Files.java:1126)
+	at MqSender2.run(MqSender2.java:56)
+	at MqSender2.main(MqSender2.java:27)
+2018-06-18 10:44:55,822 [INFO ][main            ][         XmlHandler.XmlHandler] - Old number of document: 4-00003_sk_prf-nagr-15-06-2018
+2018-06-18 10:45:03,482 [INFO ][main            ][         XmlHandler.XmlHandler] - New number of document: 4-00003_sk_prf-nagr-18-06-2018
+2018-06-18 10:45:06,973 [ERROR][main            ][         XmlHandler.XmlHandler] - FAILED
+java.nio.file.AccessDeniedException: D:\!Projects\!USPN\Stress_test\saip\typical_data_file\autotestFolder\RNPF-S_00003_sk_prf.XML7799637070122766762.tmp -> D:\!Projects\!USPN\Stress_test\saip\typical_data_file\autotestFolder\RNPF-S_00003_sk_prf.XML
+	at sun.nio.fs.WindowsException.translateToIOException(WindowsException.java:83)
+	at sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:97)
+	at sun.nio.fs.WindowsFileCopy.copy(WindowsFileCopy.java:205)
+	at sun.nio.fs.WindowsFileSystemProvider.copy(WindowsFileSystemProvider.java:278)
+	at java.nio.file.Files.copy(Files.java:1274)
+	at XmlHandler.XmlHandler.setParam(XmlHandler.java:72)
+	at XmlHandler.XmlHandler.xmlGenerate(XmlHandler.java:58)
+	at AbstractMqSender2.preparingDocument(AbstractMqSender2.java:29)
+	at MqSender2.run(MqSender2.java:42)
+	at MqSender2.main(MqSender2.java:27)
+2018-06-18 10:45:33,928 [ERROR][main            ][                     MqSender2] - FAILED
+java.nio.file.NoSuchFileException: MQSender.properties
+	at sun.nio.fs.WindowsException.translateToIOException(WindowsException.java:79)
+	at sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:97)
+	at sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:102)
+	at sun.nio.fs.WindowsFileSystemProvider.implDelete(WindowsFileSystemProvider.java:269)
+	at sun.nio.fs.AbstractFileSystemProvider.delete(AbstractFileSystemProvider.java:103)
+	at java.nio.file.Files.delete(Files.java:1126)
+	at MqSender2.run(MqSender2.java:56)
+	at MqSender2.main(MqSender2.java:27)
+2018-06-18 10:45:44,784 [INFO ][main            ][         XmlHandler.XmlHandler] - Old number of document: 4-00003_sk_prf-nagr-18-06-2018
+2018-06-18 10:45:49,819 [INFO ][main            ][         XmlHandler.XmlHandler] - New number of document: 4-00003_sk_prf-nagr-18-06-2018
+2018-06-18 10:46:52,769 [ERROR][main            ][         XmlHandler.XmlHandler] - FAILED
+java.nio.file.AccessDeniedException: D:\!Projects\!USPN\Stress_test\saip\typical_data_file\autotestFolder\RNPF-S_00003_sk_prf.XML1648211879776082817.tmp -> D:\!Projects\!USPN\Stress_test\saip\typical_data_file\autotestFolder\RNPF-S_00003_sk_prf.XML
+	at sun.nio.fs.WindowsException.translateToIOException(WindowsException.java:83)
+	at sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:97)
+	at sun.nio.fs.WindowsFileCopy.copy(WindowsFileCopy.java:205)
+	at sun.nio.fs.WindowsFileSystemProvider.copy(WindowsFileSystemProvider.java:278)
+	at java.nio.file.Files.copy(Files.java:1274)
+	at XmlHandler.XmlHandler.setParam(XmlHandler.java:72)
+	at XmlHandler.XmlHandler.xmlGenerate(XmlHandler.java:58)
+	at AbstractMqSender2.preparingDocument(AbstractMqSender2.java:29)
+	at MqSender2.run(MqSender2.java:42)
+	at MqSender2.main(MqSender2.java:27)
+2018-06-18 10:46:57,948 [ERROR][main            ][                     MqSender2] - FAILED
+java.nio.file.NoSuchFileException: MQSender.properties
+	at sun.nio.fs.WindowsException.translateToIOException(WindowsException.java:79)
+	at sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:97)
+	at sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:102)
+	at sun.nio.fs.WindowsFileSystemProvider.implDelete(WindowsFileSystemProvider.java:269)
+	at sun.nio.fs.AbstractFileSystemProvider.delete(AbstractFileSystemProvider.java:103)
+	at java.nio.file.Files.delete(Files.java:1126)
+	at MqSender2.run(MqSender2.java:56)
+	at MqSender2.main(MqSender2.java:27)
+2018-06-18 10:48:31,262 [INFO ][main            ][         XmlHandler.XmlHandler] - Old number of document: 4-00003_sk_prf-nagr-15-06-2018
+2018-06-18 10:48:31,268 [INFO ][main            ][         XmlHandler.XmlHandler] - New number of document: 4-00003_sk_prf-nagr-18-06-2018
+2018-06-18 10:49:56,292 [ERROR][main            ][         XmlHandler.XmlHandler] - FAILED
+java.nio.file.AccessDeniedException: D:\!Projects\!USPN\Stress_test\saip\typical_data_file\autotestFolder\RNPF-S_00003_sk_prf.XML4451851732337366972.tmp -> D:\!Projects\!USPN\Stress_test\saip\typical_data_file\autotestFolder\RNPF-S_00003_sk_prf.XML
+	at sun.nio.fs.WindowsException.translateToIOException(WindowsException.java:83)
+	at sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:97)
+	at sun.nio.fs.WindowsFileCopy.copy(WindowsFileCopy.java:205)
+	at sun.nio.fs.WindowsFileSystemProvider.copy(WindowsFileSystemProvider.java:278)
+	at java.nio.file.Files.copy(Files.java:1274)
+	at XmlHandler.XmlHandler.setParam(XmlHandler.java:72)
+	at XmlHandler.XmlHandler.xmlGenerate(XmlHandler.java:58)
+	at AbstractMqSender2.preparingDocument(AbstractMqSender2.java:29)
+	at MqSender2.run(MqSender2.java:42)
+	at MqSender2.main(MqSender2.java:27)
+2018-06-18 10:55:20,181 [ERROR][main            ][                     MqSender2] - FAILED
+java.nio.file.NoSuchFileException: MQSender.properties
+	at sun.nio.fs.WindowsException.translateToIOException(WindowsException.java:79)
+	at sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:97)
+	at sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:102)
+	at sun.nio.fs.WindowsFileSystemProvider.implDelete(WindowsFileSystemProvider.java:269)
+	at sun.nio.fs.AbstractFileSystemProvider.delete(AbstractFileSystemProvider.java:103)
+	at java.nio.file.Files.delete(Files.java:1126)
+	at MqSender2.run(MqSender2.java:56)
+	at MqSender2.main(MqSender2.java:27)
+2018-06-18 10:55:51,128 [INFO ][main            ][         XmlHandler.XmlHandler] - Old number of document: 4-00003_sk_prf-nagr-15-06-2018
+2018-06-18 10:55:51,133 [INFO ][main            ][         XmlHandler.XmlHandler] - New number of document: 4-00003_sk_prf-nagr-18-06-2018
+2018-06-18 10:59:01,244 [ERROR][main            ][         XmlHandler.XmlHandler] - FAILED
+java.nio.file.AccessDeniedException: D:\!Projects\!USPN\Stress_test\saip\typical_data_file\autotestFolder\RNPF-S_00003_sk_prf.XML4900303053428964577.tmp -> D:\!Projects\!USPN\Stress_test\saip\typical_data_file\autotestFolder\RNPF-S_00003_sk_prf.XML
+	at sun.nio.fs.WindowsException.translateToIOException(WindowsException.java:83)
+	at sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:97)
+	at sun.nio.fs.WindowsFileCopy.copy(WindowsFileCopy.java:205)
+	at sun.nio.fs.WindowsFileSystemProvider.copy(WindowsFileSystemProvider.java:278)
+	at java.nio.file.Files.copy(Files.java:1274)
+	at XmlHandler.XmlHandler.setParam(XmlHandler.java:72)
+	at XmlHandler.XmlHandler.xmlGenerate(XmlHandler.java:58)
+	at AbstractMqSender2.preparingDocument(AbstractMqSender2.java:29)
+	at MqSender2.run(MqSender2.java:42)
+	at MqSender2.main(MqSender2.java:27)
+2018-06-18 10:59:12,897 [ERROR][main            ][                     MqSender2] - FAILED
+java.nio.file.NoSuchFileException: MQSender.properties
+	at sun.nio.fs.WindowsException.translateToIOException(WindowsException.java:79)
+	at sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:97)
+	at sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:102)
+	at sun.nio.fs.WindowsFileSystemProvider.implDelete(WindowsFileSystemProvider.java:269)
+	at sun.nio.fs.AbstractFileSystemProvider.delete(AbstractFileSystemProvider.java:103)
+	at java.nio.file.Files.delete(Files.java:1126)
+	at MqSender2.run(MqSender2.java:56)
+	at MqSender2.main(MqSender2.java:27)
+2018-06-18 11:00:10,747 [INFO ][main            ][         XmlHandler.XmlHandler] - Old number of document: 4-00003_sk_prf-nagr-18-06-2018
+2018-06-18 11:00:10,754 [INFO ][main            ][         XmlHandler.XmlHandler] - New number of document: 4-00003_sk_prf-nagr-18-06-2018
+2018-06-18 11:00:28,215 [ERROR][main            ][         XmlHandler.XmlHandler] - FAILED
+java.nio.file.AccessDeniedException: D:\!Projects\!USPN\Stress_test\saip\typical_data_file\autotestFolder\RNPF-S_00003_sk_prf.XML8247788907929280267.tmp -> D:\!Projects\!USPN\Stress_test\saip\typical_data_file\autotestFolder\RNPF-S_00003_sk_prf.XML
+	at sun.nio.fs.WindowsException.translateToIOException(WindowsException.java:83)
+	at sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:97)
+	at sun.nio.fs.WindowsFileCopy.copy(WindowsFileCopy.java:205)
+	at sun.nio.fs.WindowsFileSystemProvider.copy(WindowsFileSystemProvider.java:278)
+	at java.nio.file.Files.copy(Files.java:1274)
+	at XmlHandler.XmlHandler.setParam(XmlHandler.java:72)
+	at XmlHandler.XmlHandler.xmlGenerate(XmlHandler.java:58)
+	at AbstractMqSender2.preparingDocument(AbstractMqSender2.java:29)
+	at MqSender2.run(MqSender2.java:42)
+	at MqSender2.main(MqSender2.java:27)
+2018-06-18 11:00:28,223 [ERROR][main            ][                     MqSender2] - FAILED
+java.nio.file.NoSuchFileException: MQSender.properties
+	at sun.nio.fs.WindowsException.translateToIOException(WindowsException.java:79)
+	at sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:97)
+	at sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:102)
+	at sun.nio.fs.WindowsFileSystemProvider.implDelete(WindowsFileSystemProvider.java:269)
+	at sun.nio.fs.AbstractFileSystemProvider.delete(AbstractFileSystemProvider.java:103)
+	at java.nio.file.Files.delete(Files.java:1126)
+	at MqSender2.run(MqSender2.java:56)
+	at MqSender2.main(MqSender2.java:27)
+2018-06-18 11:00:33,805 [INFO ][main            ][         XmlHandler.XmlHandler] - Old number of document: null
+2018-06-18 11:00:33,812 [ERROR][main            ][                     MqSender2] - FAILED
+java.lang.NullPointerException
+	at XmlHandler.XmlHandler.xmlGenerate(XmlHandler.java:56)
+	at AbstractMqSender2.preparingDocument(AbstractMqSender2.java:29)
+	at MqSender2.run(MqSender2.java:42)
+	at MqSender2.main(MqSender2.java:27)
+2018-06-18 11:00:33,816 [ERROR][main            ][                     MqSender2] - FAILED
+java.nio.file.NoSuchFileException: MQSender.properties
+	at sun.nio.fs.WindowsException.translateToIOException(WindowsException.java:79)
+	at sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:97)
+	at sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:102)
+	at sun.nio.fs.WindowsFileSystemProvider.implDelete(WindowsFileSystemProvider.java:269)
+	at sun.nio.fs.AbstractFileSystemProvider.delete(AbstractFileSystemProvider.java:103)
+	at java.nio.file.Files.delete(Files.java:1126)
+	at MqSender2.run(MqSender2.java:56)
+	at MqSender2.main(MqSender2.java:27)
+2018-06-18 11:00:40,885 [INFO ][main            ][         XmlHandler.XmlHandler] - Old number of document: null
+2018-06-18 11:00:40,892 [ERROR][main            ][                     MqSender2] - FAILED
+java.lang.NullPointerException
+	at XmlHandler.XmlHandler.xmlGenerate(XmlHandler.java:56)
+	at AbstractMqSender2.preparingDocument(AbstractMqSender2.java:29)
+	at MqSender2.run(MqSender2.java:42)
+	at MqSender2.main(MqSender2.java:27)
+2018-06-18 11:00:40,896 [ERROR][main            ][                     MqSender2] - FAILED
+java.nio.file.NoSuchFileException: MQSender.properties
+	at sun.nio.fs.WindowsException.translateToIOException(WindowsException.java:79)
+	at sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:97)
+	at sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:102)
+	at sun.nio.fs.WindowsFileSystemProvider.implDelete(WindowsFileSystemProvider.java:269)
+	at sun.nio.fs.AbstractFileSystemProvider.delete(AbstractFileSystemProvider.java:103)
+	at java.nio.file.Files.delete(Files.java:1126)
+	at MqSender2.run(MqSender2.java:56)
+	at MqSender2.main(MqSender2.java:27)
+2018-06-18 11:00:52,701 [INFO ][main            ][         XmlHandler.XmlHandler] - Old number of document: 4-00003_sk_prf-nagr-18-06-2018
+2018-06-18 11:00:52,707 [INFO ][main            ][         XmlHandler.XmlHandler] - New number of document: 4-00003_sk_prf-nagr-18-06-2018
+2018-06-18 11:01:25,199 [ERROR][main            ][         XmlHandler.XmlHandler] - FAILED
+java.nio.file.AccessDeniedException: D:\!Projects\!USPN\Stress_test\saip\typical_data_file\autotestFolder\RNPF-S_00003_sk_prf.XML1719259658224338382.tmp -> D:\!Projects\!USPN\Stress_test\saip\typical_data_file\autotestFolder\RNPF-S_00003_sk_prf.XML
+	at sun.nio.fs.WindowsException.translateToIOException(WindowsException.java:83)
+	at sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:97)
+	at sun.nio.fs.WindowsFileCopy.copy(WindowsFileCopy.java:205)
+	at sun.nio.fs.WindowsFileSystemProvider.copy(WindowsFileSystemProvider.java:278)
+	at java.nio.file.Files.copy(Files.java:1274)
+	at XmlHandler.XmlHandler.setParam(XmlHandler.java:72)
+	at XmlHandler.XmlHandler.xmlGenerate(XmlHandler.java:58)
+	at AbstractMqSender2.preparingDocument(AbstractMqSender2.java:29)
+	at MqSender2.run(MqSender2.java:42)
+	at MqSender2.main(MqSender2.java:27)
+2018-06-18 11:01:25,208 [ERROR][main            ][                     MqSender2] - FAILED
+java.nio.file.NoSuchFileException: MQSender.properties
+	at sun.nio.fs.WindowsException.translateToIOException(WindowsException.java:79)
+	at sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:97)
+	at sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:102)
+	at sun.nio.fs.WindowsFileSystemProvider.implDelete(WindowsFileSystemProvider.java:269)
+	at sun.nio.fs.AbstractFileSystemProvider.delete(AbstractFileSystemProvider.java:103)
+	at java.nio.file.Files.delete(Files.java:1126)
+	at MqSender2.run(MqSender2.java:56)
+	at MqSender2.main(MqSender2.java:27)
+2018-06-18 11:02:04,989 [INFO ][main            ][         XmlHandler.XmlHandler] - Old number of document: 4-00003_sk_prf-nagr-15-06-2018
+2018-06-18 11:02:04,993 [INFO ][main            ][         XmlHandler.XmlHandler] - New number of document: 4-00003_sk_prf-nagr-18-06-2018
+2018-06-18 11:02:05,661 [ERROR][main            ][         XmlHandler.XmlHandler] - FAILED
+java.nio.file.AccessDeniedException: D:\!Projects\!USPN\Stress_test\saip\typical_data_file\autotestFolder\RNPF-S_00003_sk_prf.XML3780046303369747784.tmp -> D:\!Projects\!USPN\Stress_test\saip\typical_data_file\autotestFolder\RNPF-S_00003_sk_prf.XML
+	at sun.nio.fs.WindowsException.translateToIOException(WindowsException.java:83)
+	at sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:97)
+	at sun.nio.fs.WindowsFileCopy.copy(WindowsFileCopy.java:205)
+	at sun.nio.fs.WindowsFileSystemProvider.copy(WindowsFileSystemProvider.java:278)
+	at java.nio.file.Files.copy(Files.java:1274)
+	at XmlHandler.XmlHandler.setParam(XmlHandler.java:72)
+	at XmlHandler.XmlHandler.xmlGenerate(XmlHandler.java:58)
+	at AbstractMqSender2.preparingDocument(AbstractMqSender2.java:29)
+	at MqSender2.run(MqSender2.java:42)
+	at MqSender2.main(MqSender2.java:27)
+2018-06-18 11:02:05,671 [ERROR][main            ][                     MqSender2] - FAILED
+java.nio.file.NoSuchFileException: MQSender.properties
+	at sun.nio.fs.WindowsException.translateToIOException(WindowsException.java:79)
+	at sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:97)
+	at sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:102)
+	at sun.nio.fs.WindowsFileSystemProvider.implDelete(WindowsFileSystemProvider.java:269)
+	at sun.nio.fs.AbstractFileSystemProvider.delete(AbstractFileSystemProvider.java:103)
+	at java.nio.file.Files.delete(Files.java:1126)
+	at MqSender2.run(MqSender2.java:56)
+	at MqSender2.main(MqSender2.java:27)
+2018-06-18 11:02:57,228 [INFO ][main            ][         XmlHandler.XmlHandler] - Old number of document: 4-00003_sk_prf-nagr-18-06-2018
+2018-06-18 11:02:57,234 [INFO ][main            ][         XmlHandler.XmlHandler] - New number of document: 4-00003_sk_prf-nagr-18-06-2018
+2018-06-18 11:02:57,849 [ERROR][main            ][         XmlHandler.XmlHandler] - FAILED
+java.nio.file.AccessDeniedException: D:\!Projects\!USPN\Stress_test\saip\typical_data_file\autotestFolder\RNPF-S_00003_sk_prf.XML -> D:\!Projects\!USPN\Stress_test\saip\typical_data_file\autotestFolder\RNPF-S_00003_sk_prf.XML8351373451605455311.tmp
+	at sun.nio.fs.WindowsException.translateToIOException(WindowsException.java:83)
+	at sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:97)
+	at sun.nio.fs.WindowsFileCopy.copy(WindowsFileCopy.java:205)
+	at sun.nio.fs.WindowsFileSystemProvider.copy(WindowsFileSystemProvider.java:278)
+	at java.nio.file.Files.copy(Files.java:1274)
+	at XmlHandler.XmlHandler.setParam(XmlHandler.java:72)
+	at XmlHandler.XmlHandler.xmlGenerate(XmlHandler.java:58)
+	at AbstractMqSender2.preparingDocument(AbstractMqSender2.java:29)
+	at MqSender2.run(MqSender2.java:42)
+	at MqSender2.main(MqSender2.java:27)
+2018-06-18 11:02:57,863 [ERROR][main            ][                     MqSender2] - FAILED
+java.nio.file.NoSuchFileException: MQSender.properties
+	at sun.nio.fs.WindowsException.translateToIOException(WindowsException.java:79)
+	at sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:97)
+	at sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:102)
+	at sun.nio.fs.WindowsFileSystemProvider.implDelete(WindowsFileSystemProvider.java:269)
+	at sun.nio.fs.AbstractFileSystemProvider.delete(AbstractFileSystemProvider.java:103)
+	at java.nio.file.Files.delete(Files.java:1126)
+	at MqSender2.run(MqSender2.java:56)
+	at MqSender2.main(MqSender2.java:27)
+2018-06-18 11:03:55,831 [INFO ][main            ][         XmlHandler.XmlHandler] - Old number of document: 4-00003_sk_prf-nagr-15-06-2018
+2018-06-18 11:03:55,837 [INFO ][main            ][         XmlHandler.XmlHandler] - New number of document: 4-00003_sk_prf-nagr-18-06-2018
+2018-06-18 11:03:56,274 [ERROR][main            ][         XmlHandler.XmlHandler] - FAILED
+java.nio.file.AccessDeniedException: D:\!Projects\!USPN\Stress_test\saip\typical_data_file\autotestFolder\RNPF-S_00003_sk_prf.XML -> D:\!Projects\!USPN\Stress_test\saip\typical_data_file\autotestFolder\RNPF-S_00003_sk_prf.XML2201895333377915561.tmp
+	at sun.nio.fs.WindowsException.translateToIOException(WindowsException.java:83)
+	at sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:97)
+	at sun.nio.fs.WindowsFileCopy.copy(WindowsFileCopy.java:205)
+	at sun.nio.fs.WindowsFileSystemProvider.copy(WindowsFileSystemProvider.java:278)
+	at java.nio.file.Files.copy(Files.java:1274)
+	at XmlHandler.XmlHandler.setParam(XmlHandler.java:72)
+	at XmlHandler.XmlHandler.xmlGenerate(XmlHandler.java:58)
+	at AbstractMqSender2.preparingDocument(AbstractMqSender2.java:29)
+	at MqSender2.run(MqSender2.java:42)
+	at MqSender2.main(MqSender2.java:27)
+2018-06-18 11:03:56,281 [ERROR][main            ][                     MqSender2] - FAILED
+java.nio.file.NoSuchFileException: MQSender.properties
+	at sun.nio.fs.WindowsException.translateToIOException(WindowsException.java:79)
+	at sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:97)
+	at sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:102)
+	at sun.nio.fs.WindowsFileSystemProvider.implDelete(WindowsFileSystemProvider.java:269)
+	at sun.nio.fs.AbstractFileSystemProvider.delete(AbstractFileSystemProvider.java:103)
+	at java.nio.file.Files.delete(Files.java:1126)
+	at MqSender2.run(MqSender2.java:56)
+	at MqSender2.main(MqSender2.java:27)
+2018-06-18 11:06:30,664 [INFO ][main            ][         XmlHandler.XmlHandler] - Old number of document: 4-00003_sk_prf-nagr-15-06-2018
+2018-06-18 11:06:30,672 [INFO ][main            ][         XmlHandler.XmlHandler] - New number of document: 4-00003_sk_prf-nagr-18-06-2018
+2018-06-18 11:07:08,558 [ERROR][main            ][         XmlHandler.XmlHandler] - FAILED
+java.nio.file.AccessDeniedException: D:\!Projects\!USPN\Stress_test\saip\typical_data_file\autotestFolder\RNPF-S_00003_sk_prf.XML -> D:\!Projects\!USPN\Stress_test\saip\typical_data_file\autotestFolder\RNPF-S_00003_sk_prf.XML1952579353264626332.tmp
+	at sun.nio.fs.WindowsException.translateToIOException(WindowsException.java:83)
+	at sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:97)
+	at sun.nio.fs.WindowsFileCopy.copy(WindowsFileCopy.java:205)
+	at sun.nio.fs.WindowsFileSystemProvider.copy(WindowsFileSystemProvider.java:278)
+	at java.nio.file.Files.copy(Files.java:1274)
+	at XmlHandler.XmlHandler.setParam(XmlHandler.java:72)
+	at XmlHandler.XmlHandler.xmlGenerate(XmlHandler.java:58)
+	at AbstractMqSender2.preparingDocument(AbstractMqSender2.java:29)
+	at MqSender2.run(MqSender2.java:42)
+	at MqSender2.main(MqSender2.java:27)
+2018-06-18 11:07:12,785 [ERROR][main            ][                     MqSender2] - FAILED
+java.nio.file.NoSuchFileException: MQSender.properties
+	at sun.nio.fs.WindowsException.translateToIOException(WindowsException.java:79)
+	at sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:97)
+	at sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:102)
+	at sun.nio.fs.WindowsFileSystemProvider.implDelete(WindowsFileSystemProvider.java:269)
+	at sun.nio.fs.AbstractFileSystemProvider.delete(AbstractFileSystemProvider.java:103)
+	at java.nio.file.Files.delete(Files.java:1126)
+	at MqSender2.run(MqSender2.java:56)
+	at MqSender2.main(MqSender2.java:27)
+2018-06-18 11:07:58,115 [INFO ][main            ][         XmlHandler.XmlHandler] - Old number of document: 4-00003_sk_prf-nagr-15-06-2018
+2018-06-18 11:07:58,121 [INFO ][main            ][         XmlHandler.XmlHandler] - New number of document: 4-00003_sk_prf-nagr-18-06-2018
+2018-06-18 11:08:20,856 [ERROR][main            ][         XmlHandler.XmlHandler] - FAILED
+java.nio.file.AccessDeniedException: D:\!Projects\!USPN\Stress_test\saip\typical_data_file\autotestFolder\RNPF-S_00003_sk_prf.XML -> D:\!Projects\!USPN\Stress_test\saip\typical_data_file\autotestFolder\RNPF-S_00003_sk_prf.XML9074998639002665803.tmp
+	at sun.nio.fs.WindowsException.translateToIOException(WindowsException.java:83)
+	at sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:97)
+	at sun.nio.fs.WindowsFileCopy.copy(WindowsFileCopy.java:205)
+	at sun.nio.fs.WindowsFileSystemProvider.copy(WindowsFileSystemProvider.java:278)
+	at java.nio.file.Files.copy(Files.java:1274)
+	at XmlHandler.XmlHandler.setParam(XmlHandler.java:72)
+	at XmlHandler.XmlHandler.xmlGenerate(XmlHandler.java:58)
+	at AbstractMqSender2.preparingDocument(AbstractMqSender2.java:29)
+	at MqSender2.run(MqSender2.java:42)
+	at MqSender2.main(MqSender2.java:27)
+2018-06-18 11:08:30,687 [ERROR][main            ][                     MqSender2] - FAILED
+java.nio.file.NoSuchFileException: MQSender.properties
+	at sun.nio.fs.WindowsException.translateToIOException(WindowsException.java:79)
+	at sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:97)
+	at sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:102)
+	at sun.nio.fs.WindowsFileSystemProvider.implDelete(WindowsFileSystemProvider.java:269)
+	at sun.nio.fs.AbstractFileSystemProvider.delete(AbstractFileSystemProvider.java:103)
+	at java.nio.file.Files.delete(Files.java:1126)
+	at MqSender2.run(MqSender2.java:56)
+	at MqSender2.main(MqSender2.java:27)
+2018-06-18 11:10:43,409 [INFO ][main            ][         XmlHandler.XmlHandler] - Old number of document: 4-00003_sk_prf-nagr-15-06-2018
+2018-06-18 11:10:43,416 [INFO ][main            ][         XmlHandler.XmlHandler] - New number of document: 4-00003_sk_prf-nagr-18-06-2018
+2018-06-18 11:10:56,849 [ERROR][main            ][         XmlHandler.XmlHandler] - FAILED
+java.nio.file.AccessDeniedException: D:\!Projects\!USPN\Stress_test\saip\typical_data_file\autotestFolder\RNPF-S_00003_sk_prf.XML718485146872464006.tmp -> D:\!Projects\!USPN\Stress_test\saip\typical_data_file\autotestFolder\RNPF-S_00003_sk_prf.XML
+	at sun.nio.fs.WindowsException.translateToIOException(WindowsException.java:83)
+	at sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:97)
+	at sun.nio.fs.WindowsFileCopy.copy(WindowsFileCopy.java:205)
+	at sun.nio.fs.WindowsFileSystemProvider.copy(WindowsFileSystemProvider.java:278)
+	at java.nio.file.Files.copy(Files.java:1274)
+	at XmlHandler.XmlHandler.setParam(XmlHandler.java:72)
+	at XmlHandler.XmlHandler.xmlGenerate(XmlHandler.java:58)
+	at AbstractMqSender2.preparingDocument(AbstractMqSender2.java:29)
+	at MqSender2.run(MqSender2.java:42)
+	at MqSender2.main(MqSender2.java:27)
+2018-06-18 11:11:11,773 [ERROR][main            ][                     MqSender2] - FAILED
+java.nio.file.NoSuchFileException: MQSender.properties
+	at sun.nio.fs.WindowsException.translateToIOException(WindowsException.java:79)
+	at sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:97)
+	at sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:102)
+	at sun.nio.fs.WindowsFileSystemProvider.implDelete(WindowsFileSystemProvider.java:269)
+	at sun.nio.fs.AbstractFileSystemProvider.delete(AbstractFileSystemProvider.java:103)
+	at java.nio.file.Files.delete(Files.java:1126)
+	at MqSender2.run(MqSender2.java:56)
+	at MqSender2.main(MqSender2.java:27)
+2018-06-18 11:12:41,066 [INFO ][main            ][         XmlHandler.XmlHandler] - Old number of document: 4-00003_sk_prf-nagr-15-06-2018
+2018-06-18 11:12:41,071 [INFO ][main            ][         XmlHandler.XmlHandler] - New number of document: 4-00003_sk_prf-nagr-18-06-2018
+2018-06-18 11:12:41,531 [ERROR][main            ][         XmlHandler.XmlHandler] - FAILED
+java.nio.file.FileAlreadyExistsException: D:\!Projects\!USPN\Stress_test\saip\typical_data_file\autotestFolder\RNPF-S_00003_sk_prf.XML8076757446834314007.tmp -> D:\!Projects\!USPN\Stress_test\saip\typical_data_file\autotestFolder\RNPF-S_00003_sk_prf.XML
+	at sun.nio.fs.WindowsException.translateToIOException(WindowsException.java:81)
+	at sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:97)
+	at sun.nio.fs.WindowsFileCopy.move(WindowsFileCopy.java:387)
+	at sun.nio.fs.WindowsFileSystemProvider.move(WindowsFileSystemProvider.java:287)
+	at java.nio.file.Files.move(Files.java:1395)
+	at XmlHandler.XmlHandler.setParam(XmlHandler.java:73)
+	at XmlHandler.XmlHandler.xmlGenerate(XmlHandler.java:58)
+	at AbstractMqSender2.preparingDocument(AbstractMqSender2.java:29)
+	at MqSender2.run(MqSender2.java:42)
+	at MqSender2.main(MqSender2.java:27)
+2018-06-18 11:12:41,547 [ERROR][main            ][                     MqSender2] - FAILED
+java.nio.file.NoSuchFileException: MQSender.properties
+	at sun.nio.fs.WindowsException.translateToIOException(WindowsException.java:79)
+	at sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:97)
+	at sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:102)
+	at sun.nio.fs.WindowsFileSystemProvider.implDelete(WindowsFileSystemProvider.java:269)
+	at sun.nio.fs.AbstractFileSystemProvider.delete(AbstractFileSystemProvider.java:103)
+	at java.nio.file.Files.delete(Files.java:1126)
+	at MqSender2.run(MqSender2.java:56)
+	at MqSender2.main(MqSender2.java:27)
+2018-06-18 11:13:17,423 [INFO ][main            ][         XmlHandler.XmlHandler] - Old number of document: 4-00003_sk_prf-nagr-18-06-2018
+2018-06-18 11:13:17,430 [INFO ][main            ][         XmlHandler.XmlHandler] - New number of document: 4-00003_sk_prf-nagr-18-06-2018
+2018-06-18 11:13:32,254 [ERROR][main            ][         XmlHandler.XmlHandler] - FAILED
+java.nio.file.FileAlreadyExistsException: D:\!Projects\!USPN\Stress_test\saip\typical_data_file\autotestFolder\RNPF-S_00003_sk_prf.XML4191658167462955530.tmp -> D:\!Projects\!USPN\Stress_test\saip\typical_data_file\autotestFolder\RNPF-S_00003_sk_prf.XML
+	at sun.nio.fs.WindowsException.translateToIOException(WindowsException.java:81)
+	at sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:97)
+	at sun.nio.fs.WindowsFileCopy.move(WindowsFileCopy.java:387)
+	at sun.nio.fs.WindowsFileSystemProvider.move(WindowsFileSystemProvider.java:287)
+	at java.nio.file.Files.move(Files.java:1395)
+	at XmlHandler.XmlHandler.setParam(XmlHandler.java:73)
+	at XmlHandler.XmlHandler.xmlGenerate(XmlHandler.java:58)
+	at AbstractMqSender2.preparingDocument(AbstractMqSender2.java:29)
+	at MqSender2.run(MqSender2.java:42)
+	at MqSender2.main(MqSender2.java:27)
+2018-06-18 11:13:32,264 [ERROR][main            ][                     MqSender2] - FAILED
+java.nio.file.NoSuchFileException: MQSender.properties
+	at sun.nio.fs.WindowsException.translateToIOException(WindowsException.java:79)
+	at sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:97)
+	at sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:102)
+	at sun.nio.fs.WindowsFileSystemProvider.implDelete(WindowsFileSystemProvider.java:269)
+	at sun.nio.fs.AbstractFileSystemProvider.delete(AbstractFileSystemProvider.java:103)
+	at java.nio.file.Files.delete(Files.java:1126)
+	at MqSender2.run(MqSender2.java:56)
+	at MqSender2.main(MqSender2.java:27)
+2018-06-18 11:15:24,901 [INFO ][main            ][         XmlHandler.XmlHandler] - Old number of document: 4-00003_sk_prf
+2018-06-18 11:15:24,906 [INFO ][main            ][         XmlHandler.XmlHandler] - New number of document: 4-00003_sk_prf
+2018-06-18 11:15:25,278 [ERROR][main            ][         XmlHandler.XmlHandler] - FAILED
+java.nio.file.FileAlreadyExistsException: D:\!Projects\!USPN\Stress_test\saip\typical_data_file\autotestFolder\RNPF-S_00003_sk_prf.XML3457442455497051628.tmp -> D:\!Projects\!USPN\Stress_test\saip\typical_data_file\autotestFolder\RNPF-S_00003_sk_prf.XML
+	at sun.nio.fs.WindowsException.translateToIOException(WindowsException.java:81)
+	at sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:97)
+	at sun.nio.fs.WindowsFileCopy.move(WindowsFileCopy.java:387)
+	at sun.nio.fs.WindowsFileSystemProvider.move(WindowsFileSystemProvider.java:287)
+	at java.nio.file.Files.move(Files.java:1395)
+	at XmlHandler.XmlHandler.setParam(XmlHandler.java:73)
+	at XmlHandler.XmlHandler.xmlGenerate(XmlHandler.java:58)
+	at AbstractMqSender2.preparingDocument(AbstractMqSender2.java:29)
+	at MqSender2.run(MqSender2.java:42)
+	at MqSender2.main(MqSender2.java:27)
+2018-06-18 11:15:25,287 [ERROR][main            ][                     MqSender2] - FAILED
+java.nio.file.NoSuchFileException: MQSender.properties
+	at sun.nio.fs.WindowsException.translateToIOException(WindowsException.java:79)
+	at sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:97)
+	at sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:102)
+	at sun.nio.fs.WindowsFileSystemProvider.implDelete(WindowsFileSystemProvider.java:269)
+	at sun.nio.fs.AbstractFileSystemProvider.delete(AbstractFileSystemProvider.java:103)
+	at java.nio.file.Files.delete(Files.java:1126)
+	at MqSender2.run(MqSender2.java:56)
+	at MqSender2.main(MqSender2.java:27)
+2018-06-18 14:57:46,115 [INFO ][main            ][         XmlHandler.XmlHandler] - Old number of document: 4-00003_sk_prf-nagr-15-06-2018
+2018-06-18 14:57:46,119 [INFO ][main            ][         XmlHandler.XmlHandler] - New number of document: 4-00003_sk_prf-nagr-18-06-2018
+2018-06-18 14:57:46,494 [ERROR][main            ][         XmlHandler.XmlHandler] - FAILED
+java.nio.file.FileAlreadyExistsException: D:\!Projects\!USPN\Stress_test\saip\typical_data_file\autotestFolder\RNPF-S_00003_sk_prf.XML2366023971280303529.tmp -> D:\!Projects\!USPN\Stress_test\saip\typical_data_file\autotestFolder\RNPF-S_00003_sk_prf.XML
+	at sun.nio.fs.WindowsException.translateToIOException(WindowsException.java:81)
+	at sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:97)
+	at sun.nio.fs.WindowsFileCopy.move(WindowsFileCopy.java:387)
+	at sun.nio.fs.WindowsFileSystemProvider.move(WindowsFileSystemProvider.java:287)
+	at java.nio.file.Files.move(Files.java:1395)
+	at XmlHandler.XmlHandler.setParam(XmlHandler.java:73)
+	at XmlHandler.XmlHandler.xmlGenerate(XmlHandler.java:58)
+	at AbstractMqSender2.preparingDocument(AbstractMqSender2.java:29)
+	at MqSender2.run(MqSender2.java:42)
+	at MqSender2.main(MqSender2.java:27)
+2018-06-18 14:57:46,502 [ERROR][main            ][                     MqSender2] - FAILED
+java.nio.file.NoSuchFileException: MQSender.properties
+	at sun.nio.fs.WindowsException.translateToIOException(WindowsException.java:79)
+	at sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:97)
+	at sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:102)
+	at sun.nio.fs.WindowsFileSystemProvider.implDelete(WindowsFileSystemProvider.java:269)
+	at sun.nio.fs.AbstractFileSystemProvider.delete(AbstractFileSystemProvider.java:103)
+	at java.nio.file.Files.delete(Files.java:1126)
+	at MqSender2.run(MqSender2.java:56)
+	at MqSender2.main(MqSender2.java:27)
+2018-06-18 14:58:39,364 [INFO ][main            ][         XmlHandler.XmlHandler] - Old number of document: 4-00003_sk_prf-nagr-15-06-2018
+2018-06-18 14:58:39,373 [INFO ][main            ][         XmlHandler.XmlHandler] - New number of document: 4-00003_sk_prf-nagr-18-06-2018
+2018-06-18 14:58:39,808 [ERROR][main            ][         XmlHandler.XmlHandler] - FAILED
+java.nio.file.FileAlreadyExistsException: D:\!Projects\!USPN\Stress_test\saip\typical_data_file\autotestFolder\RNPF-S_00003_sk_prf.XML7760521210115894073.tmp -> D:\!Projects\!USPN\Stress_test\saip\typical_data_file\autotestFolder\RNPF-S_00003_sk_prf.XML
+	at sun.nio.fs.WindowsException.translateToIOException(WindowsException.java:81)
+	at sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:97)
+	at sun.nio.fs.WindowsFileCopy.move(WindowsFileCopy.java:387)
+	at sun.nio.fs.WindowsFileSystemProvider.move(WindowsFileSystemProvider.java:287)
+	at java.nio.file.Files.move(Files.java:1395)
+	at XmlHandler.XmlHandler.setParam(XmlHandler.java:73)
+	at XmlHandler.XmlHandler.xmlGenerate(XmlHandler.java:58)
+	at AbstractMqSender2.preparingDocument(AbstractMqSender2.java:29)
+	at MqSender2.run(MqSender2.java:42)
+	at MqSender2.main(MqSender2.java:27)
+2018-06-18 14:58:39,822 [ERROR][main            ][                     MqSender2] - FAILED
+java.lang.NullPointerException
+	at XmlHandler.XmlHandler.setParam(XmlHandler.java:103)
+	at XmlHandler.XmlHandler.setParam(XmlHandler.java:65)
+	at XmlHandler.XmlHandler.xmlGenerate(XmlHandler.java:58)
+	at AbstractMqSender2.preparingDocument(AbstractMqSender2.java:29)
+	at MqSender2.run(MqSender2.java:42)
+	at MqSender2.main(MqSender2.java:27)
+2018-06-18 14:58:39,824 [ERROR][main            ][                     MqSender2] - FAILED
+java.nio.file.NoSuchFileException: MQSender.properties
+	at sun.nio.fs.WindowsException.translateToIOException(WindowsException.java:79)
+	at sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:97)
+	at sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:102)
+	at sun.nio.fs.WindowsFileSystemProvider.implDelete(WindowsFileSystemProvider.java:269)
+	at sun.nio.fs.AbstractFileSystemProvider.delete(AbstractFileSystemProvider.java:103)
+	at java.nio.file.Files.delete(Files.java:1126)
+	at MqSender2.run(MqSender2.java:56)
+	at MqSender2.main(MqSender2.java:27)
+2018-06-18 14:59:21,508 [INFO ][main            ][         XmlHandler.XmlHandler] - Old number of document: null
+2018-06-18 14:59:21,514 [ERROR][main            ][                     MqSender2] - FAILED
+java.lang.NullPointerException
+	at XmlHandler.XmlHandler.xmlGenerate(XmlHandler.java:56)
+	at AbstractMqSender2.preparingDocument(AbstractMqSender2.java:29)
+	at MqSender2.run(MqSender2.java:42)
+	at MqSender2.main(MqSender2.java:27)
+2018-06-18 14:59:21,519 [ERROR][main            ][                     MqSender2] - FAILED
+java.nio.file.NoSuchFileException: MQSender.properties
+	at sun.nio.fs.WindowsException.translateToIOException(WindowsException.java:79)
+	at sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:97)
+	at sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:102)
+	at sun.nio.fs.WindowsFileSystemProvider.implDelete(WindowsFileSystemProvider.java:269)
+	at sun.nio.fs.AbstractFileSystemProvider.delete(AbstractFileSystemProvider.java:103)
+	at java.nio.file.Files.delete(Files.java:1126)
+	at MqSender2.run(MqSender2.java:56)
+	at MqSender2.main(MqSender2.java:27)
+2018-06-18 15:00:21,353 [INFO ][main            ][         XmlHandler.XmlHandler] - Old number of document: null
+2018-06-18 15:00:21,360 [ERROR][main            ][                     MqSender2] - FAILED
+java.lang.NullPointerException
+	at XmlHandler.XmlHandler.xmlGenerate(XmlHandler.java:56)
+	at AbstractMqSender2.preparingDocument(AbstractMqSender2.java:29)
+	at MqSender2.run(MqSender2.java:42)
+	at MqSender2.main(MqSender2.java:27)
+2018-06-18 15:00:21,366 [ERROR][main            ][                     MqSender2] - FAILED
+java.nio.file.NoSuchFileException: MQSender.properties
+	at sun.nio.fs.WindowsException.translateToIOException(WindowsException.java:79)
+	at sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:97)
+	at sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:102)
+	at sun.nio.fs.WindowsFileSystemProvider.implDelete(WindowsFileSystemProvider.java:269)
+	at sun.nio.fs.AbstractFileSystemProvider.delete(AbstractFileSystemProvider.java:103)
+	at java.nio.file.Files.delete(Files.java:1126)
+	at MqSender2.run(MqSender2.java:56)
+	at MqSender2.main(MqSender2.java:27)
+2018-06-18 15:00:47,579 [INFO ][main            ][         XmlHandler.XmlHandler] - Old number of document: 4-00003_sk_prf
+2018-06-18 15:00:47,584 [INFO ][main            ][         XmlHandler.XmlHandler] - New number of document: 4-00003_sk_prf
+2018-06-18 15:00:47,835 [ERROR][main            ][         XmlHandler.XmlHandler] - FAILED
+java.nio.file.AccessDeniedException: D:\!Projects\!USPN\Stress_test\saip\typical_data_file\autotestFolder\RNPF-S_00003_sk_prf.XML1559387358067745423.tmp -> D:\!Projects\!USPN\Stress_test\saip\typical_data_file\autotestFolder\RNPF-S_00003_sk_prf.XML
+	at sun.nio.fs.WindowsException.translateToIOException(WindowsException.java:83)
+	at sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:97)
+	at sun.nio.fs.WindowsFileCopy.copy(WindowsFileCopy.java:205)
+	at sun.nio.fs.WindowsFileSystemProvider.copy(WindowsFileSystemProvider.java:278)
+	at java.nio.file.Files.copy(Files.java:1274)
+	at XmlHandler.XmlHandler.setParam(XmlHandler.java:72)
+	at XmlHandler.XmlHandler.xmlGenerate(XmlHandler.java:58)
+	at AbstractMqSender2.preparingDocument(AbstractMqSender2.java:29)
+	at MqSender2.run(MqSender2.java:42)
+	at MqSender2.main(MqSender2.java:27)
+2018-06-18 15:00:47,843 [ERROR][main            ][                     MqSender2] - FAILED
+java.lang.NullPointerException
+	at XmlHandler.XmlHandler.setParam(XmlHandler.java:103)
+	at XmlHandler.XmlHandler.setParam(XmlHandler.java:65)
+	at XmlHandler.XmlHandler.xmlGenerate(XmlHandler.java:58)
+	at AbstractMqSender2.preparingDocument(AbstractMqSender2.java:29)
+	at MqSender2.run(MqSender2.java:42)
+	at MqSender2.main(MqSender2.java:27)
+2018-06-18 15:00:47,844 [ERROR][main            ][                     MqSender2] - FAILED
+java.nio.file.NoSuchFileException: MQSender.properties
+	at sun.nio.fs.WindowsException.translateToIOException(WindowsException.java:79)
+	at sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:97)
+	at sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:102)
+	at sun.nio.fs.WindowsFileSystemProvider.implDelete(WindowsFileSystemProvider.java:269)
+	at sun.nio.fs.AbstractFileSystemProvider.delete(AbstractFileSystemProvider.java:103)
+	at java.nio.file.Files.delete(Files.java:1126)
+	at MqSender2.run(MqSender2.java:56)
+	at MqSender2.main(MqSender2.java:27)
+2018-06-18 15:01:57,953 [INFO ][main            ][         XmlHandler.XmlHandler] - Old number of document: 4-00003_sk_prf
+2018-06-18 15:01:57,959 [INFO ][main            ][         XmlHandler.XmlHandler] - New number of document: 4-00003_sk_prf
+2018-06-18 15:01:58,245 [ERROR][main            ][         XmlHandler.XmlHandler] - FAILED
+java.nio.file.AccessDeniedException: D:\!Projects\!USPN\Stress_test\saip\typical_data_file\autotestFolder\RNPF-S_00003_sk_prf.XML4563635158373128149.tmp -> D:\!Projects\!USPN\Stress_test\saip\typical_data_file\autotestFolder\RNPF-S_00003_sk_prf.XML
+	at sun.nio.fs.WindowsException.translateToIOException(WindowsException.java:83)
+	at sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:97)
+	at sun.nio.fs.WindowsFileCopy.copy(WindowsFileCopy.java:205)
+	at sun.nio.fs.WindowsFileSystemProvider.copy(WindowsFileSystemProvider.java:278)
+	at java.nio.file.Files.copy(Files.java:1274)
+	at XmlHandler.XmlHandler.setParam(XmlHandler.java:72)
+	at XmlHandler.XmlHandler.xmlGenerate(XmlHandler.java:58)
+	at AbstractMqSender2.preparingDocument(AbstractMqSender2.java:29)
+	at MqSender2.run(MqSender2.java:42)
+	at MqSender2.main(MqSender2.java:27)
+2018-06-18 15:01:58,253 [ERROR][main            ][                     MqSender2] - FAILED
+java.lang.NullPointerException
+	at XmlHandler.XmlHandler.setParam(XmlHandler.java:103)
+	at XmlHandler.XmlHandler.setParam(XmlHandler.java:65)
+	at XmlHandler.XmlHandler.xmlGenerate(XmlHandler.java:58)
+	at AbstractMqSender2.preparingDocument(AbstractMqSender2.java:29)
+	at MqSender2.run(MqSender2.java:42)
+	at MqSender2.main(MqSender2.java:27)
+2018-06-18 15:01:58,254 [ERROR][main            ][                     MqSender2] - FAILED
+java.nio.file.NoSuchFileException: MQSender.properties
+	at sun.nio.fs.WindowsException.translateToIOException(WindowsException.java:79)
+	at sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:97)
+	at sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:102)
+	at sun.nio.fs.WindowsFileSystemProvider.implDelete(WindowsFileSystemProvider.java:269)
+	at sun.nio.fs.AbstractFileSystemProvider.delete(AbstractFileSystemProvider.java:103)
+	at java.nio.file.Files.delete(Files.java:1126)
+	at MqSender2.run(MqSender2.java:56)
+	at MqSender2.main(MqSender2.java:27)
+2018-06-18 15:02:25,573 [INFO ][main            ][         XmlHandler.XmlHandler] - Old number of document: 4-00003_sk_prf
+2018-06-18 15:02:25,578 [INFO ][main            ][         XmlHandler.XmlHandler] - New number of document: 4-00003_sk_prf
+2018-06-18 15:02:25,975 [ERROR][main            ][         XmlHandler.XmlHandler] - FAILED
+java.nio.file.AccessDeniedException: D:\!Projects\!USPN\Stress_test\saip\typical_data_file\autotestFolder\RNPF-S_00003_sk_prf.XML7341786279843766965.tmp -> D:\!Projects\!USPN\Stress_test\saip\typical_data_file\autotestFolder\RNPF-S_00003_sk_prf.XML
+	at sun.nio.fs.WindowsException.translateToIOException(WindowsException.java:83)
+	at sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:97)
+	at sun.nio.fs.WindowsFileCopy.copy(WindowsFileCopy.java:205)
+	at sun.nio.fs.WindowsFileSystemProvider.copy(WindowsFileSystemProvider.java:278)
+	at java.nio.file.Files.copy(Files.java:1274)
+	at XmlHandler.XmlHandler.setParam(XmlHandler.java:72)
+	at XmlHandler.XmlHandler.xmlGenerate(XmlHandler.java:58)
+	at AbstractMqSender2.preparingDocument(AbstractMqSender2.java:29)
+	at MqSender2.run(MqSender2.java:42)
+	at MqSender2.main(MqSender2.java:27)
+2018-06-18 15:02:25,988 [ERROR][main            ][                     MqSender2] - FAILED
+java.lang.NullPointerException
+	at XmlHandler.XmlHandler.setParam(XmlHandler.java:103)
+	at XmlHandler.XmlHandler.setParam(XmlHandler.java:65)
+	at XmlHandler.XmlHandler.xmlGenerate(XmlHandler.java:58)
+	at AbstractMqSender2.preparingDocument(AbstractMqSender2.java:29)
+	at MqSender2.run(MqSender2.java:42)
+	at MqSender2.main(MqSender2.java:27)
+2018-06-18 15:02:25,990 [ERROR][main            ][                     MqSender2] - FAILED
+java.nio.file.NoSuchFileException: MQSender.properties
+	at sun.nio.fs.WindowsException.translateToIOException(WindowsException.java:79)
+	at sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:97)
+	at sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:102)
+	at sun.nio.fs.WindowsFileSystemProvider.implDelete(WindowsFileSystemProvider.java:269)
+	at sun.nio.fs.AbstractFileSystemProvider.delete(AbstractFileSystemProvider.java:103)
+	at java.nio.file.Files.delete(Files.java:1126)
+	at MqSender2.run(MqSender2.java:56)
+	at MqSender2.main(MqSender2.java:27)
+2018-06-18 15:03:10,037 [INFO ][main            ][         XmlHandler.XmlHandler] - Old number of document: 4-00003_sk_prf
+2018-06-18 15:03:10,044 [INFO ][main            ][         XmlHandler.XmlHandler] - New number of document: 4-00003_sk_prf
+2018-06-18 15:03:28,955 [ERROR][main            ][         XmlHandler.XmlHandler] - FAILED
+java.nio.file.AccessDeniedException: D:\!Projects\!USPN\Stress_test\saip\typical_data_file\autotestFolder\RNPF-S_00003_sk_prf.XML1713244942651815311.tmp -> D:\!Projects\!USPN\Stress_test\saip\typical_data_file\autotestFolder\RNPF-S_00003_sk_prf.XML
+	at sun.nio.fs.WindowsException.translateToIOException(WindowsException.java:83)
+	at sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:97)
+	at sun.nio.fs.WindowsFileCopy.copy(WindowsFileCopy.java:205)
+	at sun.nio.fs.WindowsFileSystemProvider.copy(WindowsFileSystemProvider.java:278)
+	at java.nio.file.Files.copy(Files.java:1274)
+	at XmlHandler.XmlHandler.setParam(XmlHandler.java:72)
+	at XmlHandler.XmlHandler.xmlGenerate(XmlHandler.java:58)
+	at AbstractMqSender2.preparingDocument(AbstractMqSender2.java:29)
+	at MqSender2.run(MqSender2.java:42)
+	at MqSender2.main(MqSender2.java:27)
+2018-06-18 15:03:28,965 [ERROR][main            ][                     MqSender2] - FAILED
+java.nio.file.NoSuchFileException: MQSender.properties
+	at sun.nio.fs.WindowsException.translateToIOException(WindowsException.java:79)
+	at sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:97)
+	at sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:102)
+	at sun.nio.fs.WindowsFileSystemProvider.implDelete(WindowsFileSystemProvider.java:269)
+	at sun.nio.fs.AbstractFileSystemProvider.delete(AbstractFileSystemProvider.java:103)
+	at java.nio.file.Files.delete(Files.java:1126)
+	at MqSender2.run(MqSender2.java:56)
+	at MqSender2.main(MqSender2.java:27)
+2018-06-18 15:03:46,853 [INFO ][main            ][         XmlHandler.XmlHandler] - Old number of document: 4-00003_sk_prf
+2018-06-18 15:03:46,859 [INFO ][main            ][         XmlHandler.XmlHandler] - New number of document: 4-00003_sk_prf
+2018-06-18 15:08:52,087 [ERROR][main            ][         XmlHandler.XmlHandler] - FAILED
+java.nio.file.AccessDeniedException: D:\!Projects\!USPN\Stress_test\saip\typical_data_file\autotestFolder\RNPF-S_00003_sk_prf.XML4270154803867617487.tmp -> D:\!Projects\!USPN\Stress_test\saip\typical_data_file\autotestFolder\RNPF-S_00003_sk_prf.XML
+	at sun.nio.fs.WindowsException.translateToIOException(WindowsException.java:83)
+	at sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:97)
+	at sun.nio.fs.WindowsFileCopy.copy(WindowsFileCopy.java:205)
+	at sun.nio.fs.WindowsFileSystemProvider.copy(WindowsFileSystemProvider.java:278)
+	at java.nio.file.Files.copy(Files.java:1274)
+	at XmlHandler.XmlHandler.setParam(XmlHandler.java:72)
+	at XmlHandler.XmlHandler.xmlGenerate(XmlHandler.java:58)
+	at AbstractMqSender2.preparingDocument(AbstractMqSender2.java:29)
+	at MqSender2.run(MqSender2.java:42)
+	at MqSender2.main(MqSender2.java:27)
+2018-06-18 15:08:52,098 [ERROR][main            ][                     MqSender2] - FAILED
+java.nio.file.NoSuchFileException: MQSender.properties
+	at sun.nio.fs.WindowsException.translateToIOException(WindowsException.java:79)
+	at sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:97)
+	at sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:102)
+	at sun.nio.fs.WindowsFileSystemProvider.implDelete(WindowsFileSystemProvider.java:269)
+	at sun.nio.fs.AbstractFileSystemProvider.delete(AbstractFileSystemProvider.java:103)
+	at java.nio.file.Files.delete(Files.java:1126)
+	at MqSender2.run(MqSender2.java:56)
+	at MqSender2.main(MqSender2.java:27)
+2018-06-18 15:17:41,832 [INFO ][main            ][         XmlHandler.XmlHandler] - Old number of document: 4-00003_sk_prf-nagr-15-05-2018
+2018-06-18 15:17:41,838 [INFO ][main            ][         XmlHandler.XmlHandler] - New number of document: 4-00003_sk_prf-nagr-18-06-2018
+2018-06-18 15:17:42,379 [ERROR][main            ][         XmlHandler.XmlHandler] - FAILED
+java.nio.file.AccessDeniedException: D:\!Projects\!USPN\Stress_test\saip\typical_data_file\autotestFolder\RNPF-S_00003_sk_prf.XML3044250771290337943.tmp -> D:\!Projects\!USPN\Stress_test\saip\typical_data_file\autotestFolder\RNPF-S_00003_sk_prf.XML
+	at sun.nio.fs.WindowsException.translateToIOException(WindowsException.java:83)
+	at sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:97)
+	at sun.nio.fs.WindowsFileCopy.copy(WindowsFileCopy.java:205)
+	at sun.nio.fs.WindowsFileSystemProvider.copy(WindowsFileSystemProvider.java:278)
+	at java.nio.file.Files.copy(Files.java:1274)
+	at XmlHandler.XmlHandler.setParam(XmlHandler.java:72)
+	at XmlHandler.XmlHandler.xmlGenerate(XmlHandler.java:58)
+	at AbstractMqSender2.preparingDocument(AbstractMqSender2.java:29)
+	at MqSender2.run(MqSender2.java:42)
+	at MqSender2.main(MqSender2.java:27)
+2018-06-18 15:17:42,387 [ERROR][main            ][                     MqSender2] - FAILED
+java.nio.file.NoSuchFileException: MQSender.properties
+	at sun.nio.fs.WindowsException.translateToIOException(WindowsException.java:79)
+	at sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:97)
+	at sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:102)
+	at sun.nio.fs.WindowsFileSystemProvider.implDelete(WindowsFileSystemProvider.java:269)
+	at sun.nio.fs.AbstractFileSystemProvider.delete(AbstractFileSystemProvider.java:103)
+	at java.nio.file.Files.delete(Files.java:1126)
+	at MqSender2.run(MqSender2.java:56)
+	at MqSender2.main(MqSender2.java:27)
+2018-06-18 15:18:28,281 [INFO ][main            ][         XmlHandler.XmlHandler] - Old number of document: null
+2018-06-18 15:18:28,287 [ERROR][main            ][                     MqSender2] - FAILED
+java.lang.NullPointerException
+	at XmlHandler.XmlHandler.xmlGenerate(XmlHandler.java:56)
+	at AbstractMqSender2.preparingDocument(AbstractMqSender2.java:29)
+	at MqSender2.run(MqSender2.java:42)
+	at MqSender2.main(MqSender2.java:27)
+2018-06-18 15:18:28,292 [ERROR][main            ][                     MqSender2] - FAILED
+java.nio.file.NoSuchFileException: MQSender.properties
+	at sun.nio.fs.WindowsException.translateToIOException(WindowsException.java:79)
+	at sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:97)
+	at sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:102)
+	at sun.nio.fs.WindowsFileSystemProvider.implDelete(WindowsFileSystemProvider.java:269)
+	at sun.nio.fs.AbstractFileSystemProvider.delete(AbstractFileSystemProvider.java:103)
+	at java.nio.file.Files.delete(Files.java:1126)
+	at MqSender2.run(MqSender2.java:56)
+	at MqSender2.main(MqSender2.java:27)
+2018-06-18 15:18:41,046 [INFO ][main            ][         XmlHandler.XmlHandler] - Old number of document: 4-00003_sk_prf-nagr-15-05-2018
+2018-06-18 15:18:41,051 [INFO ][main            ][         XmlHandler.XmlHandler] - New number of document: 4-00003_sk_prf-nagr-18-06-2018
+2018-06-18 15:18:41,453 [ERROR][main            ][         XmlHandler.XmlHandler] - FAILED
+java.nio.file.AccessDeniedException: D:\!Projects\!USPN\Stress_test\saip\typical_data_file\autotestFolder\RNPF-S_00003_sk_prf.XML6194427562432530874.tmp -> D:\!Projects\!USPN\Stress_test\saip\typical_data_file\autotestFolder\RNPF-S_00003_sk_prf.XML
+	at sun.nio.fs.WindowsException.translateToIOException(WindowsException.java:83)
+	at sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:97)
+	at sun.nio.fs.WindowsFileCopy.copy(WindowsFileCopy.java:205)
+	at sun.nio.fs.WindowsFileSystemProvider.copy(WindowsFileSystemProvider.java:278)
+	at java.nio.file.Files.copy(Files.java:1274)
+	at XmlHandler.XmlHandler.setParam(XmlHandler.java:72)
+	at XmlHandler.XmlHandler.xmlGenerate(XmlHandler.java:58)
+	at AbstractMqSender2.preparingDocument(AbstractMqSender2.java:29)
+	at MqSender2.run(MqSender2.java:42)
+	at MqSender2.main(MqSender2.java:27)
+2018-06-18 15:18:41,465 [ERROR][main            ][                     MqSender2] - FAILED
+java.nio.file.NoSuchFileException: MQSender.properties
+	at sun.nio.fs.WindowsException.translateToIOException(WindowsException.java:79)
+	at sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:97)
+	at sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:102)
+	at sun.nio.fs.WindowsFileSystemProvider.implDelete(WindowsFileSystemProvider.java:269)
+	at sun.nio.fs.AbstractFileSystemProvider.delete(AbstractFileSystemProvider.java:103)
+	at java.nio.file.Files.delete(Files.java:1126)
+	at MqSender2.run(MqSender2.java:56)
+	at MqSender2.main(MqSender2.java:27)
+2018-06-18 15:18:58,669 [INFO ][main            ][         XmlHandler.XmlHandler] - Old number of document: 4-00003_sk_prf-nagr-15-05-2018
+2018-06-18 15:18:58,676 [INFO ][main            ][         XmlHandler.XmlHandler] - New number of document: 4-00003_sk_prf-nagr-18-06-2018
+2018-06-18 15:19:41,957 [ERROR][main            ][         XmlHandler.XmlHandler] - FAILED
+java.nio.file.AccessDeniedException: D:\!Projects\!USPN\Stress_test\saip\typical_data_file\autotestFolder\RNPF-S_00003_sk_prf.XML5792716452577444768.tmp -> D:\!Projects\!USPN\Stress_test\saip\typical_data_file\autotestFolder\RNPF-S_00003_sk_prf.XML
+	at sun.nio.fs.WindowsException.translateToIOException(WindowsException.java:83)
+	at sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:97)
+	at sun.nio.fs.WindowsFileCopy.copy(WindowsFileCopy.java:205)
+	at sun.nio.fs.WindowsFileSystemProvider.copy(WindowsFileSystemProvider.java:278)
+	at java.nio.file.Files.copy(Files.java:1274)
+	at XmlHandler.XmlHandler.setParam(XmlHandler.java:72)
+	at XmlHandler.XmlHandler.xmlGenerate(XmlHandler.java:58)
+	at AbstractMqSender2.preparingDocument(AbstractMqSender2.java:29)
+	at MqSender2.run(MqSender2.java:42)
+	at MqSender2.main(MqSender2.java:27)
+2018-06-18 15:19:41,972 [ERROR][main            ][                     MqSender2] - FAILED
+java.nio.file.NoSuchFileException: MQSender.properties
+	at sun.nio.fs.WindowsException.translateToIOException(WindowsException.java:79)
+	at sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:97)
+	at sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:102)
+	at sun.nio.fs.WindowsFileSystemProvider.implDelete(WindowsFileSystemProvider.java:269)
+	at sun.nio.fs.AbstractFileSystemProvider.delete(AbstractFileSystemProvider.java:103)
+	at java.nio.file.Files.delete(Files.java:1126)
+	at MqSender2.run(MqSender2.java:56)
+	at MqSender2.main(MqSender2.java:27)
+2018-06-18 15:22:30,518 [INFO ][main            ][         XmlHandler.XmlHandler] - Old number of document: 4-00003_sk_prf-nagr-15-05-2018
+2018-06-18 15:22:30,523 [INFO ][main            ][         XmlHandler.XmlHandler] - New number of document: 4-00003_sk_prf-nagr-18-06-2018
+2018-06-18 15:22:53,484 [ERROR][main            ][         XmlHandler.XmlHandler] - FAILED
+java.nio.file.AccessDeniedException: D:\!Projects\!USPN\Stress_test\saip\typical_data_file\autotestFolder\RNPF-S_00003_sk_prf.XML8698625674869453441.tmp -> D:\!Projects\!USPN\Stress_test\saip\typical_data_file\autotestFolder\RNPF-S_00003_sk_prf.XML
+	at sun.nio.fs.WindowsException.translateToIOException(WindowsException.java:83)
+	at sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:97)
+	at sun.nio.fs.WindowsFileCopy.copy(WindowsFileCopy.java:205)
+	at sun.nio.fs.WindowsFileSystemProvider.copy(WindowsFileSystemProvider.java:278)
+	at java.nio.file.Files.copy(Files.java:1274)
+	at XmlHandler.XmlHandler.setParam(XmlHandler.java:72)
+	at XmlHandler.XmlHandler.xmlGenerate(XmlHandler.java:58)
+	at AbstractMqSender2.preparingDocument(AbstractMqSender2.java:29)
+	at MqSender2.run(MqSender2.java:42)
+	at MqSender2.main(MqSender2.java:27)
+2018-06-18 15:22:53,492 [ERROR][main            ][                     MqSender2] - FAILED
+java.nio.file.NoSuchFileException: MQSender.properties
+	at sun.nio.fs.WindowsException.translateToIOException(WindowsException.java:79)
+	at sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:97)
+	at sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:102)
+	at sun.nio.fs.WindowsFileSystemProvider.implDelete(WindowsFileSystemProvider.java:269)
+	at sun.nio.fs.AbstractFileSystemProvider.delete(AbstractFileSystemProvider.java:103)
+	at java.nio.file.Files.delete(Files.java:1126)
+	at MqSender2.run(MqSender2.java:56)
+	at MqSender2.main(MqSender2.java:27)
+2018-06-18 15:23:39,441 [INFO ][main            ][         XmlHandler.XmlHandler] - Old number of document: 4-00003_sk_prf-nagr-15-05-2018
+2018-06-18 15:23:39,447 [INFO ][main            ][         XmlHandler.XmlHandler] - New number of document: 4-00003_sk_prf-nagr-18-06-2018
+2018-06-18 15:24:10,080 [ERROR][main            ][         XmlHandler.XmlHandler] - FAILED
+java.nio.file.AccessDeniedException: D:\!Projects\!USPN\Stress_test\saip\typical_data_file\autotestFolder\RNPF-S_00003_sk_prf.XML5614049179828065661.tmp -> D:\!Projects\!USPN\Stress_test\saip\typical_data_file\autotestFolder\RNPF-S_00003_sk_prf.XML
+	at sun.nio.fs.WindowsException.translateToIOException(WindowsException.java:83)
+	at sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:97)
+	at sun.nio.fs.WindowsFileCopy.copy(WindowsFileCopy.java:205)
+	at sun.nio.fs.WindowsFileSystemProvider.copy(WindowsFileSystemProvider.java:278)
+	at java.nio.file.Files.copy(Files.java:1274)
+	at XmlHandler.XmlHandler.setParam(XmlHandler.java:72)
+	at XmlHandler.XmlHandler.xmlGenerate(XmlHandler.java:58)
+	at AbstractMqSender2.preparingDocument(AbstractMqSender2.java:29)
+	at MqSender2.run(MqSender2.java:42)
+	at MqSender2.main(MqSender2.java:27)
+2018-06-18 15:24:10,095 [ERROR][main            ][                     MqSender2] - FAILED
+java.nio.file.NoSuchFileException: MQSender.properties
+	at sun.nio.fs.WindowsException.translateToIOException(WindowsException.java:79)
+	at sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:97)
+	at sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:102)
+	at sun.nio.fs.WindowsFileSystemProvider.implDelete(WindowsFileSystemProvider.java:269)
+	at sun.nio.fs.AbstractFileSystemProvider.delete(AbstractFileSystemProvider.java:103)
+	at java.nio.file.Files.delete(Files.java:1126)
+	at MqSender2.run(MqSender2.java:56)
+	at MqSender2.main(MqSender2.java:27)
+2018-06-18 15:52:48,695 [INFO ][main            ][         XmlHandler.XmlHandler] - Old number of document: null
+2018-06-18 15:52:48,702 [ERROR][main            ][                     MqSender2] - FAILED
+java.lang.NullPointerException
+	at XmlHandler.XmlHandler.xmlGenerate(XmlHandler.java:56)
+	at AbstractMqSender2.preparingDocument(AbstractMqSender2.java:29)
+	at MqSender2.run(MqSender2.java:42)
+	at MqSender2.main(MqSender2.java:27)
+2018-06-18 15:52:48,708 [ERROR][main            ][                     MqSender2] - FAILED
+java.nio.file.NoSuchFileException: MQSender.properties
+	at sun.nio.fs.WindowsException.translateToIOException(WindowsException.java:79)
+	at sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:97)
+	at sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:102)
+	at sun.nio.fs.WindowsFileSystemProvider.implDelete(WindowsFileSystemProvider.java:269)
+	at sun.nio.fs.AbstractFileSystemProvider.delete(AbstractFileSystemProvider.java:103)
+	at java.nio.file.Files.delete(Files.java:1126)
+	at MqSender2.run(MqSender2.java:56)
+	at MqSender2.main(MqSender2.java:27)
+2018-06-18 15:53:03,507 [INFO ][main            ][         XmlHandler.XmlHandler] - Old number of document: 4-00003_sk_prf-nagr-15-05-2018
+2018-06-18 15:53:03,513 [INFO ][main            ][         XmlHandler.XmlHandler] - New number of document: 4-00003_sk_prf-nagr-18-06-2018
+2018-06-18 15:54:39,554 [ERROR][main            ][         XmlHandler.XmlHandler] - FAILED
+java.nio.file.AccessDeniedException: D:\!Projects\!USPN\Stress_test\saip\typical_data_file\autotestFolder\RNPF-S_00003_sk_prf.XML1490579640408139312.tmp -> D:\!Projects\!USPN\Stress_test\saip\typical_data_file\autotestFolder\RNPF-S_00003_sk_prf.XML
+	at sun.nio.fs.WindowsException.translateToIOException(WindowsException.java:83)
+	at sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:97)
+	at sun.nio.fs.WindowsFileCopy.copy(WindowsFileCopy.java:205)
+	at sun.nio.fs.WindowsFileSystemProvider.copy(WindowsFileSystemProvider.java:278)
+	at java.nio.file.Files.copy(Files.java:1274)
+	at XmlHandler.XmlHandler.setParam(XmlHandler.java:72)
+	at XmlHandler.XmlHandler.xmlGenerate(XmlHandler.java:58)
+	at AbstractMqSender2.preparingDocument(AbstractMqSender2.java:29)
+	at MqSender2.run(MqSender2.java:42)
+	at MqSender2.main(MqSender2.java:27)
+2018-06-18 15:54:39,563 [ERROR][main            ][                     MqSender2] - FAILED
+java.nio.file.NoSuchFileException: MQSender.properties
+	at sun.nio.fs.WindowsException.translateToIOException(WindowsException.java:79)
+	at sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:97)
+	at sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:102)
+	at sun.nio.fs.WindowsFileSystemProvider.implDelete(WindowsFileSystemProvider.java:269)
+	at sun.nio.fs.AbstractFileSystemProvider.delete(AbstractFileSystemProvider.java:103)
+	at java.nio.file.Files.delete(Files.java:1126)
+	at MqSender2.run(MqSender2.java:56)
+	at MqSender2.main(MqSender2.java:27)
+2018-06-18 15:55:33,350 [INFO ][main            ][         XmlHandler.XmlHandler] - Old number of document: 4-00003_sk_prf-nagr-15-05-2018
+2018-06-18 15:55:33,355 [INFO ][main            ][         XmlHandler.XmlHandler] - New number of document: 4-00003_sk_prf-nagr-18-06-2018
+2018-06-18 15:55:33,925 [ERROR][main            ][         XmlHandler.XmlHandler] - FAILED
+java.nio.file.AccessDeniedException: D:\!Projects\!USPN\Stress_test\saip\typical_data_file\autotestFolder\RNPF-S_00003_sk_prf.XML843547251895623865.tmp -> D:\!Projects\!USPN\Stress_test\saip\typical_data_file\autotestFolder\RNPF-S_00003_sk_prf.XML
+	at sun.nio.fs.WindowsException.translateToIOException(WindowsException.java:83)
+	at sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:97)
+	at sun.nio.fs.WindowsFileCopy.copy(WindowsFileCopy.java:205)
+	at sun.nio.fs.WindowsFileSystemProvider.copy(WindowsFileSystemProvider.java:278)
+	at java.nio.file.Files.copy(Files.java:1274)
+	at XmlHandler.XmlHandler.setParam(XmlHandler.java:72)
+	at XmlHandler.XmlHandler.xmlGenerate(XmlHandler.java:58)
+	at AbstractMqSender2.preparingDocument(AbstractMqSender2.java:29)
+	at MqSender2.run(MqSender2.java:42)
+	at MqSender2.main(MqSender2.java:27)
+2018-06-18 15:55:33,932 [ERROR][main            ][                     MqSender2] - FAILED
+java.nio.file.NoSuchFileException: MQSender.properties
+	at sun.nio.fs.WindowsException.translateToIOException(WindowsException.java:79)
+	at sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:97)
+	at sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:102)
+	at sun.nio.fs.WindowsFileSystemProvider.implDelete(WindowsFileSystemProvider.java:269)
+	at sun.nio.fs.AbstractFileSystemProvider.delete(AbstractFileSystemProvider.java:103)
+	at java.nio.file.Files.delete(Files.java:1126)
+	at MqSender2.run(MqSender2.java:56)
+	at MqSender2.main(MqSender2.java:27)
+2018-06-18 16:16:27,682 [INFO ][main            ][         XmlHandler.XmlHandler] - Old number of document: 4-00003_sk_prf-nagr-15-06-2018
+2018-06-18 16:16:27,688 [INFO ][main            ][         XmlHandler.XmlHandler] - New number of document: 4-00003_sk_prf-nagr-18-06-2018
+2018-06-18 16:17:14,884 [ERROR][main            ][         XmlHandler.XmlHandler] - FAILED
+java.nio.file.AccessDeniedException: D:\!Projects\!USPN\Stress_test\saip\typical_data_file\autotestFolder\RNPF-S_00003_sk_prf.XML3135877125194897697.tmp -> D:\!Projects\!USPN\Stress_test\saip\typical_data_file\autotestFolder\RNPF-S_00003_sk_prf.XML
+	at sun.nio.fs.WindowsException.translateToIOException(WindowsException.java:83)
+	at sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:97)
+	at sun.nio.fs.WindowsFileCopy.copy(WindowsFileCopy.java:205)
+	at sun.nio.fs.WindowsFileSystemProvider.copy(WindowsFileSystemProvider.java:278)
+	at java.nio.file.Files.copy(Files.java:1274)
+	at XmlHandler.XmlHandler.setParam(XmlHandler.java:72)
+	at XmlHandler.XmlHandler.xmlGenerate(XmlHandler.java:58)
+	at AbstractMqSender2.preparingDocument(AbstractMqSender2.java:29)
+	at MqSender2.run(MqSender2.java:42)
+	at MqSender2.main(MqSender2.java:27)
+2018-06-18 16:17:17,215 [ERROR][main            ][                     MqSender2] - FAILED
+java.nio.file.NoSuchFileException: MQSender.properties
+	at sun.nio.fs.WindowsException.translateToIOException(WindowsException.java:79)
+	at sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:97)
+	at sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:102)
+	at sun.nio.fs.WindowsFileSystemProvider.implDelete(WindowsFileSystemProvider.java:269)
+	at sun.nio.fs.AbstractFileSystemProvider.delete(AbstractFileSystemProvider.java:103)
+	at java.nio.file.Files.delete(Files.java:1126)
+	at MqSender2.run(MqSender2.java:56)
+	at MqSender2.main(MqSender2.java:27)
+2018-06-18 16:18:38,208 [INFO ][main            ][         XmlHandler.XmlHandler] - Old number of document: 4-00003_sk_prf-nagr-15-06-2018
+2018-06-18 16:18:38,215 [INFO ][main            ][         XmlHandler.XmlHandler] - New number of document: 4-00003_sk_prf-nagr-18-06-2018
+2018-06-18 16:18:38,701 [ERROR][main            ][                     MqSender2] - FAILED
+java.nio.file.NoSuchFileException: MQSender.properties
+	at sun.nio.fs.WindowsException.translateToIOException(WindowsException.java:79)
+	at sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:97)
+	at sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:102)
+	at sun.nio.fs.WindowsFileSystemProvider.implDelete(WindowsFileSystemProvider.java:269)
+	at sun.nio.fs.AbstractFileSystemProvider.delete(AbstractFileSystemProvider.java:103)
+	at java.nio.file.Files.delete(Files.java:1126)
+	at MqSender2.run(MqSender2.java:56)
+	at MqSender2.main(MqSender2.java:27)
+2018-06-18 16:19:33,502 [INFO ][main            ][         XmlHandler.XmlHandler] - Old number of document: 4-00003_sk_prf-nagr-15-06-2018
+2018-06-18 16:19:33,507 [INFO ][main            ][         XmlHandler.XmlHandler] - New number of document: 4-00003_sk_prf-nagr-18-06-2018
+2018-06-18 16:19:33,889 [ERROR][main            ][                     MqSender2] - FAILED
+java.nio.file.NoSuchFileException: MQSender.properties
+	at sun.nio.fs.WindowsException.translateToIOException(WindowsException.java:79)
+	at sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:97)
+	at sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:102)
+	at sun.nio.fs.WindowsFileSystemProvider.implDelete(WindowsFileSystemProvider.java:269)
+	at sun.nio.fs.AbstractFileSystemProvider.delete(AbstractFileSystemProvider.java:103)
+	at java.nio.file.Files.delete(Files.java:1126)
+	at MqSender2.run(MqSender2.java:56)
+	at MqSender2.main(MqSender2.java:27)
+2018-06-18 16:19:51,456 [INFO ][main            ][         XmlHandler.XmlHandler] - Old number of document: 4-00003_sk_prf-nagr-15-06-2018
+2018-06-18 16:19:51,464 [INFO ][main            ][         XmlHandler.XmlHandler] - New number of document: 4-00003_sk_prf-nagr-18-06-2018
+2018-06-18 16:22:04,819 [ERROR][main            ][                     MqSender2] - FAILED
+java.nio.file.NoSuchFileException: MQSender.properties
+	at sun.nio.fs.WindowsException.translateToIOException(WindowsException.java:79)
+	at sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:97)
+	at sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:102)
+	at sun.nio.fs.WindowsFileSystemProvider.implDelete(WindowsFileSystemProvider.java:269)
+	at sun.nio.fs.AbstractFileSystemProvider.delete(AbstractFileSystemProvider.java:103)
+	at java.nio.file.Files.delete(Files.java:1126)
+	at MqSender2.run(MqSender2.java:56)
+	at MqSender2.main(MqSender2.java:27)
+2018-06-18 16:22:48,230 [INFO ][main            ][         XmlHandler.XmlHandler] - Old number of document: 4-00003_sk_prf-nagr-15-06-2018
+2018-06-18 16:22:48,236 [INFO ][main            ][         XmlHandler.XmlHandler] - New number of document: 4-00003_sk_prf-nagr-18-06-2018
+2018-06-18 16:22:48,738 [ERROR][main            ][         XmlHandler.XmlHandler] - FAILED
+java.nio.file.AccessDeniedException: D:\!Projects\!USPN\Stress_test\saip\typical_data_file\autotestFolder\RNPF-S_00003_sk_prf.XML3038318774597386670.tmp -> D:\!Projects\!USPN\Stress_test\saip\typical_data_file\autotestFolder\RNPF-S_00003_sk_prf.XML
+	at sun.nio.fs.WindowsException.translateToIOException(WindowsException.java:83)
+	at sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:97)
+	at sun.nio.fs.WindowsFileCopy.copy(WindowsFileCopy.java:205)
+	at sun.nio.fs.WindowsFileSystemProvider.copy(WindowsFileSystemProvider.java:278)
+	at java.nio.file.Files.copy(Files.java:1274)
+	at XmlHandler.XmlHandler.setParam(XmlHandler.java:74)
+	at XmlHandler.XmlHandler.xmlGenerate(XmlHandler.java:59)
+	at AbstractMqSender2.preparingDocument(AbstractMqSender2.java:29)
+	at MqSender2.run(MqSender2.java:42)
+	at MqSender2.main(MqSender2.java:27)
+2018-06-18 16:22:48,755 [ERROR][main            ][                     MqSender2] - FAILED
+java.nio.file.NoSuchFileException: MQSender.properties
+	at sun.nio.fs.WindowsException.translateToIOException(WindowsException.java:79)
+	at sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:97)
+	at sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:102)
+	at sun.nio.fs.WindowsFileSystemProvider.implDelete(WindowsFileSystemProvider.java:269)
+	at sun.nio.fs.AbstractFileSystemProvider.delete(AbstractFileSystemProvider.java:103)
+	at java.nio.file.Files.delete(Files.java:1126)
+	at MqSender2.run(MqSender2.java:56)
+	at MqSender2.main(MqSender2.java:27)
+2018-06-18 16:29:54,947 [INFO ][main            ][         XmlHandler.XmlHandler] - Old number of document: null
+2018-06-18 16:29:54,952 [ERROR][main            ][                     MqSender2] - FAILED
+java.lang.NullPointerException
+	at XmlHandler.XmlHandler.xmlGenerate(XmlHandler.java:57)
+	at AbstractMqSender2.preparingDocument(AbstractMqSender2.java:29)
+	at MqSender2.run(MqSender2.java:42)
+	at MqSender2.main(MqSender2.java:27)
+2018-06-18 16:30:09,718 [INFO ][main            ][         XmlHandler.XmlHandler] - Old number of document: 4-00003_sk_prf-nagr-15-06-2018
+2018-06-18 16:30:09,723 [INFO ][main            ][         XmlHandler.XmlHandler] - New number of document: 4-00003_sk_prf-nagr-18-06-2018
+2018-06-18 16:30:10,180 [ERROR][main            ][         XmlHandler.XmlHandler] - FAILED
+java.nio.file.AccessDeniedException: D:\!Projects\!USPN\Stress_test\saip\typical_data_file\autotestFolder\RNPF-S_00003_sk_prf.XML1102175645594221597.tmp -> D:\!Projects\!USPN\Stress_test\saip\typical_data_file\autotestFolder\RNPF-S_00003_sk_prf.XML
+	at sun.nio.fs.WindowsException.translateToIOException(WindowsException.java:83)
+	at sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:97)
+	at sun.nio.fs.WindowsFileCopy.copy(WindowsFileCopy.java:205)
+	at sun.nio.fs.WindowsFileSystemProvider.copy(WindowsFileSystemProvider.java:278)
+	at java.nio.file.Files.copy(Files.java:1274)
+	at XmlHandler.XmlHandler.setParam(XmlHandler.java:74)
+	at XmlHandler.XmlHandler.xmlGenerate(XmlHandler.java:59)
+	at AbstractMqSender2.preparingDocument(AbstractMqSender2.java:29)
+	at MqSender2.run(MqSender2.java:42)
+	at MqSender2.main(MqSender2.java:27)
+2018-06-18 16:34:31,563 [INFO ][main            ][         XmlHandler.XmlHandler] - Old number of document: null
+2018-06-18 16:34:31,571 [ERROR][main            ][                     MqSender2] - FAILED
+java.lang.NullPointerException
+	at XmlHandler.XmlHandler.xmlGenerate(XmlHandler.java:57)
+	at AbstractMqSender2.preparingDocument(AbstractMqSender2.java:29)
+	at MqSender2.run(MqSender2.java:42)
+	at MqSender2.main(MqSender2.java:27)
+2018-06-18 16:41:04,224 [INFO ][main            ][         XmlHandler.XmlHandler] - Old number of document: nagr-18-06-2018
+2018-06-18 16:41:04,229 [INFO ][main            ][         XmlHandler.XmlHandler] - New number of document: nagr-18-06-2018
+2018-06-18 16:41:04,790 [ERROR][main            ][         XmlHandler.XmlHandler] - FAILED
+java.nio.file.AccessDeniedException: D:\!Projects\!USPN\Stress_test\saip\typical_data_file\autotestFolder\RNPF-S_00003_sk_prf.XML5025818285230675515.tmp -> D:\!Projects\!USPN\Stress_test\saip\typical_data_file\autotestFolder\RNPF-S_00003_sk_prf.XML
+	at sun.nio.fs.WindowsException.translateToIOException(WindowsException.java:83)
+	at sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:97)
+	at sun.nio.fs.WindowsFileCopy.copy(WindowsFileCopy.java:205)
+	at sun.nio.fs.WindowsFileSystemProvider.copy(WindowsFileSystemProvider.java:278)
+	at java.nio.file.Files.copy(Files.java:1274)
+	at XmlHandler.XmlHandler.setParam(XmlHandler.java:73)
+	at XmlHandler.XmlHandler.xmlGenerate(XmlHandler.java:59)
+	at AbstractMqSender2.preparingDocument(AbstractMqSender2.java:29)
+	at MqSender2.run(MqSender2.java:42)
+	at MqSender2.main(MqSender2.java:27)
+2018-06-18 16:41:31,768 [INFO ][main            ][         XmlHandler.XmlHandler] - Old number of document: 4-00003_sk_prf-nagr-18-06-2018
+2018-06-18 16:41:31,773 [INFO ][main            ][         XmlHandler.XmlHandler] - New number of document: 4-00003_sk_prf-nagr-18-06-2018
+2018-06-18 16:41:32,451 [ERROR][main            ][         XmlHandler.XmlHandler] - FAILED
+java.nio.file.AccessDeniedException: D:\!Projects\!USPN\Stress_test\saip\typical_data_file\autotestFolder\RNPF-S_00003_sk_prf.XML7096620390987370787.tmp -> D:\!Projects\!USPN\Stress_test\saip\typical_data_file\autotestFolder\RNPF-S_00003_sk_prf.XML
+	at sun.nio.fs.WindowsException.translateToIOException(WindowsException.java:83)
+	at sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:97)
+	at sun.nio.fs.WindowsFileCopy.copy(WindowsFileCopy.java:205)
+	at sun.nio.fs.WindowsFileSystemProvider.copy(WindowsFileSystemProvider.java:278)
+	at java.nio.file.Files.copy(Files.java:1274)
+	at XmlHandler.XmlHandler.setParam(XmlHandler.java:73)
+	at XmlHandler.XmlHandler.xmlGenerate(XmlHandler.java:59)
+	at AbstractMqSender2.preparingDocument(AbstractMqSender2.java:29)
+	at MqSender2.run(MqSender2.java:42)
+	at MqSender2.main(MqSender2.java:27)
+2018-06-18 16:43:24,924 [INFO ][main            ][         XmlHandler.XmlHandler] - Old number of document: 4-00003_sk_prf-nagr-15-06-2018
+2018-06-18 16:43:48,585 [INFO ][main            ][         XmlHandler.XmlHandler] - New number of document: 4-00003_sk_prf-nagr-18-06-2018
+2018-06-18 16:43:49,894 [ERROR][main            ][         XmlHandler.XmlHandler] - FAILED
+java.nio.file.AccessDeniedException: D:\!Projects\!USPN\Stress_test\saip\typical_data_file\autotestFolder\RNPF-S_00003_sk_prf.XML9034268743116769543.tmp -> D:\!Projects\!USPN\Stress_test\saip\typical_data_file\autotestFolder\RNPF-S_00003_sk_prf.XML
+	at sun.nio.fs.WindowsException.translateToIOException(WindowsException.java:83)
+	at sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:97)
+	at sun.nio.fs.WindowsFileCopy.copy(WindowsFileCopy.java:205)
+	at sun.nio.fs.WindowsFileSystemProvider.copy(WindowsFileSystemProvider.java:278)
+	at java.nio.file.Files.copy(Files.java:1274)
+	at XmlHandler.XmlHandler.setParam(XmlHandler.java:73)
+	at XmlHandler.XmlHandler.xmlGenerate(XmlHandler.java:59)
+	at AbstractMqSender2.preparingDocument(AbstractMqSender2.java:29)
+	at MqSender2.run(MqSender2.java:42)
+	at MqSender2.main(MqSender2.java:27)
+2018-06-18 16:48:14,642 [INFO ][main            ][         XmlHandler.XmlHandler] - Old number of document: 4-00003_sk_prf-nagr-15-06-2018
+2018-06-18 16:48:14,648 [INFO ][main            ][         XmlHandler.XmlHandler] - New number of document: 4-00003_sk_prf-nagr-18-06-2018
+2018-06-18 16:48:15,077 [ERROR][main            ][         XmlHandler.XmlHandler] - FAILED
+java.nio.file.AccessDeniedException: D:\!Projects\!USPN\Stress_test\saip\typical_data_file\autotestFolder\RNPF-S_00003_sk_prf.XML857704435513580723.tmp -> D:\!Projects\!USPN\Stress_test\saip\typical_data_file\autotestFolder\RNPF-S_00003_sk_prf.XML
+	at sun.nio.fs.WindowsException.translateToIOException(WindowsException.java:83)
+	at sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:97)
+	at sun.nio.fs.WindowsFileCopy.copy(WindowsFileCopy.java:205)
+	at sun.nio.fs.WindowsFileSystemProvider.copy(WindowsFileSystemProvider.java:278)
+	at java.nio.file.Files.copy(Files.java:1274)
+	at XmlHandler.XmlHandler.setParam(XmlHandler.java:73)
+	at XmlHandler.XmlHandler.xmlGenerate(XmlHandler.java:59)
+	at AbstractMqSender2.preparingDocument(AbstractMqSender2.java:29)
+	at MqSender2.run(MqSender2.java:42)
+	at MqSender2.main(MqSender2.java:27)
+2018-06-18 16:48:57,395 [INFO ][main            ][         XmlHandler.XmlHandler] - Old number of document: 4-00003_sk_prf-nagr-15-06-2018
+2018-06-18 16:48:57,402 [INFO ][main            ][         XmlHandler.XmlHandler] - New number of document: 4-00003_sk_prf-nagr-18-06-2018
+2018-06-18 16:50:23,465 [INFO ][main            ][         XmlHandler.XmlHandler] - Old number of document: 4-00003_sk_prf-nagr-15-06-2018
+2018-06-18 16:50:24,916 [INFO ][main            ][         XmlHandler.XmlHandler] - New number of document: 4-00003_sk_prf-nagr-18-06-2018
+2018-06-18 16:51:21,971 [ERROR][main            ][         XmlHandler.XmlHandler] - FAILED
+java.nio.file.AccessDeniedException: D:\!Projects\!USPN\Stress_test\saip\typical_data_file\autotestFolder\RNPF-S_00003_sk_prf.XML5733908327964423123.tmp -> D:\!Projects\!USPN\Stress_test\saip\typical_data_file\autotestFolder\RNPF-S_00003_sk_prf.XML
+	at sun.nio.fs.WindowsException.translateToIOException(WindowsException.java:83)
+	at sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:97)
+	at sun.nio.fs.WindowsFileCopy.copy(WindowsFileCopy.java:205)
+	at sun.nio.fs.WindowsFileSystemProvider.copy(WindowsFileSystemProvider.java:278)
+	at java.nio.file.Files.copy(Files.java:1274)
+	at XmlHandler.XmlHandler.setParam(XmlHandler.java:73)
+	at XmlHandler.XmlHandler.xmlGenerate(XmlHandler.java:59)
+	at AbstractMqSender2.preparingDocument(AbstractMqSender2.java:29)
+	at MqSender2.run(MqSender2.java:42)
+	at MqSender2.main(MqSender2.java:27)
+2018-06-18 16:51:54,123 [INFO ][main            ][         XmlHandler.XmlHandler] - Old number of document: 4-00003_sk_prf-nagr-15-06-2018
+2018-06-18 16:51:54,128 [INFO ][main            ][         XmlHandler.XmlHandler] - New number of document: 4-00003_sk_prf-nagr-18-06-2018
+2018-06-18 16:52:27,087 [ERROR][main            ][         XmlHandler.XmlHandler] - FAILED
+java.nio.file.AccessDeniedException: D:\!Projects\!USPN\Stress_test\saip\typical_data_file\autotestFolder\RNPF-S_00003_sk_prf.XML8712462517304006107.tmp -> D:\!Projects\!USPN\Stress_test\saip\typical_data_file\autotestFolder\RNPF-S_00003_sk_prf.XML
+	at sun.nio.fs.WindowsException.translateToIOException(WindowsException.java:83)
+	at sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:97)
+	at sun.nio.fs.WindowsFileCopy.copy(WindowsFileCopy.java:205)
+	at sun.nio.fs.WindowsFileSystemProvider.copy(WindowsFileSystemProvider.java:278)
+	at java.nio.file.Files.copy(Files.java:1274)
+	at XmlHandler.XmlHandler.setParam(XmlHandler.java:73)
+	at XmlHandler.XmlHandler.xmlGenerate(XmlHandler.java:59)
+	at AbstractMqSender2.preparingDocument(AbstractMqSender2.java:29)
+	at MqSender2.run(MqSender2.java:42)
+	at MqSender2.main(MqSender2.java:27)
+2018-06-18 16:54:03,388 [INFO ][main            ][         XmlHandler.XmlHandler] - Old number of document: nagr-15-06-2018
+2018-06-18 16:54:03,393 [INFO ][main            ][         XmlHandler.XmlHandler] - New number of document: nagr-18-06-2018
+2018-06-18 16:54:22,643 [INFO ][main            ][         XmlHandler.XmlHandler] - Old number of document: nagr-18-06-2018
+2018-06-18 16:54:22,647 [INFO ][main            ][         XmlHandler.XmlHandler] - New number of document: nagr-18-06-2018
+2018-06-18 16:54:23,214 [ERROR][main            ][         XmlHandler.XmlHandler] - FAILED
+java.nio.file.AccessDeniedException: D:\!Projects\!USPN\Stress_test\saip\typical_data_file\autotestFolder\RNPF-S_00003_sk_prf.XML9087813172944833612.tmp -> D:\!Projects\!USPN\Stress_test\saip\typical_data_file\autotestFolder\RNPF-S_00003_sk_prf.XML
+	at sun.nio.fs.WindowsException.translateToIOException(WindowsException.java:83)
+	at sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:97)
+	at sun.nio.fs.WindowsFileCopy.copy(WindowsFileCopy.java:205)
+	at sun.nio.fs.WindowsFileSystemProvider.copy(WindowsFileSystemProvider.java:278)
+	at java.nio.file.Files.copy(Files.java:1274)
+	at XmlHandler.XmlHandler.setParam(XmlHandler.java:74)
+	at XmlHandler.XmlHandler.xmlGenerate(XmlHandler.java:60)
+	at AbstractMqSender2.preparingDocument(AbstractMqSender2.java:29)
+	at MqSender2.run(MqSender2.java:42)
+	at MqSender2.main(MqSender2.java:27)
+2018-06-18 16:57:13,561 [INFO ][main            ][         XmlHandler.XmlHandler] - Old number of document: 4-00003_sk_prf-nagr-15-06-2018
+2018-06-18 16:57:13,565 [INFO ][main            ][         XmlHandler.XmlHandler] - New number of document: 4-00003_sk_prf-nagr-18-06-2018
+2018-06-18 16:59:53,096 [INFO ][main            ][         XmlHandler.XmlHandler] - Old number of document: 4-00003_sk_prf-nagr-15-06-2018
+2018-06-18 16:59:53,102 [INFO ][main            ][         XmlHandler.XmlHandler] - New number of document: 4-00003_sk_prf-nagr-18-06-2018
+2018-06-18 17:37:13,911 [ERROR][main            ][         XmlHandler.XmlHandler] - FAILED
+javax.xml.stream.XMLStreamException: ParseError at [row,col]:[4,27]
+Message: Open quote is expected for attribute "Номер" associated with an  element type  "Реквизиты:".
+	at com.sun.org.apache.xerces.internal.impl.XMLStreamReaderImpl.next(XMLStreamReaderImpl.java:604)
+	at com.sun.xml.internal.stream.XMLEventReaderImpl.nextEvent(XMLEventReaderImpl.java:83)
+	at XmlHandler.XmlHandler.getParam(XmlHandler.java:148)
+	at XmlHandler.XmlHandler.xmlGenerate(XmlHandler.java:52)
+	at AbstractMqSender2.preparingDocument(AbstractMqSender2.java:29)
+	at MqSender2.run(MqSender2.java:42)
+	at MqSender2.main(MqSender2.java:27)
+2018-06-18 17:37:13,925 [INFO ][main            ][         XmlHandler.XmlHandler] - Old number of document: 
+2018-06-18 17:37:13,926 [INFO ][main            ][         XmlHandler.XmlHandler] - New number of document: 
+2018-06-18 17:41:20,525 [ERROR][main            ][                     MqSender2] - FAILED
+java.util.NoSuchElementException
+	at com.sun.xml.internal.stream.XMLEventReaderImpl.nextEvent(XMLEventReaderImpl.java:88)
+	at XmlHandler.XmlHandler.getParam(XmlHandler.java:160)
+	at XmlHandler.XmlHandler.xmlGenerate(XmlHandler.java:52)
+	at AbstractMqSender2.preparingDocument(AbstractMqSender2.java:29)
+	at MqSender2.run(MqSender2.java:42)
+	at MqSender2.main(MqSender2.java:27)
+2018-06-18 17:44:03,034 [INFO ][main            ][         XmlHandler.XmlHandler] - Old number of document: nullnullnullnull1159053nullnullnullnullnullnullnullnullnullnullnullnullnullnullnullnullnullnullnullnullnullnullnullnullnullnullnullnullnullnullnullnullnullnullnullnullnullnullnullnullnullnullnullnullnullnullnullnullnullnullnullnullnullnullnullnullnullnullnullnullnullnullnull
+2018-06-18 17:44:03,041 [INFO ][main            ][         XmlHandler.XmlHandler] - New number of document: nullnullnullnull1159053nullnullnullnullnullnullnullnullnullnullnullnullnullnullnullnullnullnullnullnullnullnullnullnullnullnullnullnullnullnullnullnullnullnullnullnullnullnullnullnullnullnullnullnullnullnullnullnullnullnullnullnullnullnullnullnullnullnullnullnullnullnullnull
+2018-06-18 17:44:30,081 [INFO ][main            ][         XmlHandler.XmlHandler] - Old number of document: 1159053
+2018-06-18 17:44:30,087 [INFO ][main            ][         XmlHandler.XmlHandler] - New number of document: 1159053
+2018-06-18 17:44:32,743 [ERROR][main            ][                     MqSender2] - FAILED
+java.util.NoSuchElementException
+	at com.sun.xml.internal.stream.XMLEventReaderImpl.nextEvent(XMLEventReaderImpl.java:88)
+	at XmlHandler.XmlHandler.setParam(XmlHandler.java:107)
+	at XmlHandler.XmlHandler.setParam(XmlHandler.java:65)
+	at XmlHandler.XmlHandler.xmlGenerate(XmlHandler.java:58)
+	at AbstractMqSender2.preparingDocument(AbstractMqSender2.java:29)
+	at MqSender2.run(MqSender2.java:42)
+	at MqSender2.main(MqSender2.java:27)
+2018-06-18 17:49:36,999 [ERROR][main            ][                     MqSender2] - FAILED
+java.util.NoSuchElementException
+	at com.sun.xml.internal.stream.XMLEventReaderImpl.nextEvent(XMLEventReaderImpl.java:88)
+	at XmlHandler.XmlHandler.getParam(XmlHandler.java:158)
+	at XmlHandler.XmlHandler.xmlGenerate(XmlHandler.java:52)
+	at AbstractMqSender2.preparingDocument(AbstractMqSender2.java:29)
+	at MqSender2.run(MqSender2.java:42)
+	at MqSender2.main(MqSender2.java:27)
+2018-06-18 18:59:32,571 [ERROR][main            ][                     MqSender2] - FAILED
+java.util.NoSuchElementException
+	at com.sun.xml.internal.stream.XMLEventReaderImpl.nextEvent(XMLEventReaderImpl.java:88)
+	at XmlHandler.AbstractXmlHandler.getParam(AbstractXmlHandler.java:132)
+	at XmlHandler.XmlHandler.xmlGenerate(XmlHandler.java:39)
+	at AbstractMqSender2.preparingDocument(AbstractMqSender2.java:29)
+	at MqSender2.run(MqSender2.java:42)
+	at MqSender2.main(MqSender2.java:27)
+2018-06-18 19:02:58,645 [ERROR][main            ][                     MqSender2] - FAILED
+java.util.NoSuchElementException
+	at com.sun.xml.internal.stream.XMLEventReaderImpl.nextEvent(XMLEventReaderImpl.java:88)
+	at XmlHandler.AbstractXmlHandler.getParam(AbstractXmlHandler.java:132)
+	at XmlHandler.XmlHandler.generateGzip(XmlHandler.java:39)
+	at AbstractMqSender2.preparingDocument(AbstractMqSender2.java:29)
+	at MqSender2.run(MqSender2.java:42)
+	at MqSender2.main(MqSender2.java:27)
+2018-06-18 19:04:03,006 [ERROR][main            ][                     MqSender2] - FAILED
+java.util.NoSuchElementException
+	at com.sun.xml.internal.stream.XMLEventReaderImpl.nextEvent(XMLEventReaderImpl.java:88)
+	at XmlHandler.AbstractXmlHandler.getParam(AbstractXmlHandler.java:132)
+	at XmlHandler.XmlHandler.generateGzip(XmlHandler.java:39)
+	at AbstractMqSender2.preparingDocument(AbstractMqSender2.java:29)
+	at MqSender2.run(MqSender2.java:42)
+	at MqSender2.main(MqSender2.java:27)
+2018-06-18 19:05:22,949 [ERROR][main            ][                     MqSender2] - FAILED
+java.util.NoSuchElementException
+	at com.sun.xml.internal.stream.XMLEventReaderImpl.nextEvent(XMLEventReaderImpl.java:88)
+	at XmlHandler.AbstractXmlHandler.getParam(AbstractXmlHandler.java:132)
+	at XmlHandler.XmlHandler.generateGzip(XmlHandler.java:39)
+	at AbstractMqSender2.preparingDocument(AbstractMqSender2.java:29)
+	at MqSender2.run(MqSender2.java:42)
+	at MqSender2.main(MqSender2.java:27)
+2018-06-18 19:08:40,844 [ERROR][main            ][                     MqSender2] - FAILED
+java.util.NoSuchElementException
+	at com.sun.xml.internal.stream.XMLEventReaderImpl.nextEvent(XMLEventReaderImpl.java:88)
+	at XmlHandler.AbstractXmlHandler.getParam(AbstractXmlHandler.java:132)
+	at XmlHandler.XmlHandler.generateGzip(XmlHandler.java:39)
+	at AbstractMqSender2.preparingDocument(AbstractMqSender2.java:29)
+	at MqSender2.run(MqSender2.java:42)
+	at MqSender2.main(MqSender2.java:27)
+2018-06-18 19:08:58,900 [INFO ][main            ][         XmlHandler.XmlHandler] - Old number of document: 
+2018-06-18 19:08:58,909 [INFO ][main            ][         XmlHandler.XmlHandler] - New number of document: 
+2018-06-18 19:08:59,184 [ERROR][main            ][                     MqSender2] - FAILED
+java.util.NoSuchElementException
+	at com.sun.xml.internal.stream.XMLEventReaderImpl.nextEvent(XMLEventReaderImpl.java:88)
+	at XmlHandler.AbstractXmlHandler.setParam(AbstractXmlHandler.java:80)
+	at XmlHandler.AbstractXmlHandler.setParam(AbstractXmlHandler.java:42)
+	at XmlHandler.XmlHandler.generateGzip(XmlHandler.java:45)
+	at AbstractMqSender2.preparingDocument(AbstractMqSender2.java:29)
+	at MqSender2.run(MqSender2.java:42)
+	at MqSender2.main(MqSender2.java:27)
+2018-06-18 19:09:37,917 [INFO ][main            ][         XmlHandler.XmlHandler] - Old number of document: 
+2018-06-18 19:09:37,921 [INFO ][main            ][         XmlHandler.XmlHandler] - New number of document: 
+2018-06-18 19:10:16,346 [INFO ][main            ][         XmlHandler.XmlHandler] - Old number of document: 4-00003_sk_prf-nagr-15-06-2018
+2018-06-18 19:10:16,350 [INFO ][main            ][         XmlHandler.XmlHandler] - New number of document: 4-00003_sk_prf-nagr-18-06-2018
+2018-06-18 19:10:16,679 [ERROR][main            ][                     MqSender2] - FAILED
+java.util.NoSuchElementException
+	at com.sun.xml.internal.stream.XMLEventReaderImpl.nextEvent(XMLEventReaderImpl.java:88)
+	at XmlHandler.AbstractXmlHandler.setParam(AbstractXmlHandler.java:80)
+	at XmlHandler.AbstractXmlHandler.setParam(AbstractXmlHandler.java:42)
+	at XmlHandler.XmlHandler.generateGzip(XmlHandler.java:45)
+	at AbstractMqSender2.preparingDocument(AbstractMqSender2.java:29)
+	at MqSender2.run(MqSender2.java:42)
+	at MqSender2.main(MqSender2.java:27)
+2018-06-18 19:13:05,590 [INFO ][main            ][         XmlHandler.XmlHandler] - Old number of document: 4-00003_sk_prf-nagr-15-06-2018
+2018-06-18 19:13:05,594 [INFO ][main            ][         XmlHandler.XmlHandler] - New number of document: 4-00003_sk_prf-nagr-18-06-2018
+2018-06-18 19:13:43,476 [INFO ][main            ][         XmlHandler.XmlHandler] - Old number of document: 4-00003_sk_prf-nagr-15-06-2018
+2018-06-18 19:13:43,483 [INFO ][main            ][         XmlHandler.XmlHandler] - New number of document: 4-00003_sk_prf-nagr-18-06-2018
+2018-06-18 19:17:02,801 [INFO ][main            ][         XmlHandler.XmlHandler] - Old number of document: 4-00003_sk_prf-nagr-15-06-2018
+2018-06-18 19:17:02,807 [INFO ][main            ][         XmlHandler.XmlHandler] - New number of document: 4-00003_sk_prf-nagr-18-06-2018
+2018-06-18 19:19:01,290 [INFO ][main            ][         XmlHandler.XmlHandler] - Old number of document: 4-00003_sk_prf-nagr-15-06-2018
+2018-06-18 19:19:01,297 [INFO ][main            ][         XmlHandler.XmlHandler] - New number of document: 4-00003_sk_prf-nagr-18-06-2018
+2018-06-18 19:19:38,590 [INFO ][main            ][         XmlHandler.XmlHandler] - Old number of document: 4-00003_sk_prf-nagr-15-06-2018
+2018-06-18 19:19:38,597 [INFO ][main            ][         XmlHandler.XmlHandler] - New number of document: 4-00003_sk_prf-nagr-18-06-2018
+2018-06-18 19:20:32,848 [INFO ][main            ][         XmlHandler.XmlHandler] - Old number of document: 4-00003_sk_prf-nagr-15-06-2018
+2018-06-18 19:20:32,853 [INFO ][main            ][         XmlHandler.XmlHandler] - New number of document: 4-00003_sk_prf-nagr-18-06-2018
+2018-06-18 19:21:37,639 [INFO ][main            ][         XmlHandler.XmlHandler] - Old number of document: 4-00003_sk_prf-nagr-15-06-2018
+2018-06-18 19:21:37,644 [INFO ][main            ][         XmlHandler.XmlHandler] - New number of document: 4-00003_sk_prf-nagr-18-06-2018
