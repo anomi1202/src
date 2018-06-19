@@ -362,7 +362,7 @@ Caused by: org.xml.sax.SAXParseException; lineNumber: 1; columnNumber: 1; Conten
 	with DocumentRef id: 1
 	with RequestId: 42ae3d2a70f24cf7a92130e71d793ca8.
 2018-05-18 18:39:03,583 [INFO ][main            ][                     MqSender2] - Send JSON file: D:/!Projects/!USPN/04_07-SUD/regress/7/07_00004_upload_to_VIO_link_to_17_00001/testData/Reg_UOPS-S_SaveDocAndCont.json
-2018-05-22 15:30:31,668 [ERROR][main            ][         XmlHandler.XmlHandler] - FAILED
+2018-05-22 15:30:31,668 [ERROR][main            ][         handlers.xml.XmlHandler] - FAILED
 javax.xml.stream.XMLStreamException: java.net.MalformedURLException
 	at com.sun.org.apache.xerces.internal.impl.XMLStreamReaderImpl.setInputSource(XMLStreamReaderImpl.java:212)
 	at com.sun.org.apache.xerces.internal.impl.XMLStreamReaderImpl.<init>(XMLStreamReaderImpl.java:184)
@@ -387,7 +387,7 @@ Caused by: java.lang.NullPointerException
 	... 14 more
 2018-05-22 18:06:30,385 [INFO ][main            ][                     MqSender2] - Send JSON file: D:\YandexDisk\MqSender2\Reg_UOPS-S_SaveDocAndCont.json
 2018-05-22 18:06:37,070 [INFO ][main            ][                     MqSender2] - Entered ID of document: 11111
-2018-05-22 18:06:37,073 [ERROR][main            ][       JsonHandler.JsonHandler] - FAILDE
+2018-05-22 18:06:37,073 [ERROR][main            ][       handlers.json.JsonHandler] - FAILDE
 java.nio.file.NoSuchFileException: D:\YandexDisk\MqSender2\Reg_UOPS-S_SaveDocAndCont.json
 	at sun.nio.fs.WindowsException.translateToIOException(WindowsException.java:79)
 	at sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:97)
@@ -399,7 +399,7 @@ java.nio.file.NoSuchFileException: D:\YandexDisk\MqSender2\Reg_UOPS-S_SaveDocAnd
 	at java.nio.file.Files.newInputStream(Files.java:152)
 	at java.nio.file.Files.newBufferedReader(Files.java:2784)
 	at java.nio.file.Files.newBufferedReader(Files.java:2816)
-	at JsonHandler.JsonHandler.getValueFromTag(JsonHandler.java:30)
+	at handlers.json.JsonHandler.getValueFromTag(JsonHandler.java:30)
 	at MqSender2.run(MqSender2.java:54)
 	at MqSender2.main(MqSender2.java:34)
 2018-05-22 18:09:31,742 [INFO ][main            ][                     MqSender2] - Send JSON file: D:\YandexDisk\MqSender2\Reg_UOPS-S_SaveDocAndCont.json
@@ -438,7 +438,7 @@ java.nio.file.NoSuchFileException: D:\YandexDisk\MqSender2\Reg_UOPS-S_SaveDocAnd
 	with RequestId: 42ae3d2a71111111111111.
 2018-05-22 18:32:49,289 [INFO ][main            ][                     MqSender2] - Send JSON file: D:\YandexDisk\MqSender2\Reg_UOPS-S_SaveDocAndCont.json
 2018-05-22 18:33:02,915 [INFO ][main            ][                     MqSender2] - Entered ID of document: 100
-2018-05-22 18:33:02,965 [ERROR][main            ][         XmlHandler.XmlHandler] - FAILED
+2018-05-22 18:33:02,965 [ERROR][main            ][         handlers.xml.XmlHandler] - FAILED
 javax.xml.stream.XMLStreamException: ParseError at [row,col]:[1,39]
 Message: Premature end of file.
 	at com.sun.org.apache.xerces.internal.impl.XMLStreamReaderImpl.next(XMLStreamReaderImpl.java:604)
@@ -446,7 +446,7 @@ Message: Premature end of file.
 	at setParam(XmlHandler.java:49)
 	at MqSender2.run(MqSender2.java:63)
 	at MqSender2.main(MqSender2.java:36)
-2018-05-22 18:33:02,976 [ERROR][main            ][         XmlHandler.XmlHandler] - FAILED
+2018-05-22 18:33:02,976 [ERROR][main            ][         handlers.xml.XmlHandler] - FAILED
 javax.xml.stream.XMLStreamException: ParseError at [row,col]:[1,39]
 Message: Premature end of file.
 	at com.sun.org.apache.xerces.internal.impl.XMLStreamReaderImpl.next(XMLStreamReaderImpl.java:604)
