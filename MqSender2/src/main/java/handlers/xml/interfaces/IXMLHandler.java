@@ -2,17 +2,20 @@ package handlers.xml.interfaces;
 
 import javax.xml.stream.XMLStreamException;
 import java.io.IOException;
-import java.nio.file.Path;
 
 public interface IXMLHandler {
     /**
-     * Генерация XML-документа на основе шаблона
+     * Поиск значения в XML документе по тегам/атрибутам_тегов
+     * @param tagsPair - пара тегов в формате "ParentTag::ChildrenTag"
+     *                 example 1:
+     *                 <ParentTag>
+     *                      <ChildrenTag>value</ChildrenTag>
+     *                 </ParentTag>
+     *                 return - "value"
+     *
+     *                 example 2:
+     *                 <ParentTag ChildrenTag="value"/>
+     *                 return - "value"
      * */
-    Path xmlGenerate() throws IOException, XMLStreamException;
-
-
-    /**
-     * Генерация Gzip-архива
-     * */
-    Path compressToGzip(Path filePath) throws IOException;
+    String getParam(String tagsPair) throws IOException, XMLStreamException;
 }

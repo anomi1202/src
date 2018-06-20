@@ -1,13 +1,18 @@
 package handlers.xml.interfaces;
 
+import handlers.xml.XmlHandler;
+
 import javax.xml.bind.JAXBException;
-import javax.xml.stream.XMLStreamException;
-import java.io.IOException;
 import java.nio.file.Path;
 
 public interface ISOAPHandler {
     /**
-     * Генерация SOAP-квитанции на основе шаблона
+     * Геренация SOAP-квитанции
      * */
-    Path soapGenerate() throws IOException, XMLStreamException, JAXBException;
+    ISOAPHandler soapGenerate();
+
+    /**
+     * Запись SOAP-квитанции в файл по указанному пути
+     */
+    void soapWriteTo(Path filePath) throws JAXBException;
 }

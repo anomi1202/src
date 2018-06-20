@@ -1,4 +1,3 @@
-import Enums.DocumentType;
 import Enums.ESenderDocType;
 import com.beust.jcommander.JCommander;
 import com.beust.jcommander.Parameter;
@@ -10,13 +9,14 @@ import org.slf4j.LoggerFactory;
 
 import javax.jms.JMSException;
 import javax.jms.TextMessage;
-import java.io.BufferedReader;
 import java.io.IOException;
 import java.nio.file.Files;
+import java.nio.file.Path;
 import java.nio.file.Paths;
 
 public class MqSender2 extends AbstractMqSender2{
     private static Logger logger = LoggerFactory.getLogger(MqSender2.class);
+
     public static void main(String[] args) {
         MqSender2 mqSender2 = new MqSender2();
         JCommander jCommander = new JCommander(mqSender2);
@@ -30,61 +30,59 @@ public class MqSender2 extends AbstractMqSender2{
     }
 
     public void run() {
-        initDocumentsPath();
-        if (PATH_FILE_JSON == null) {
-            logger.info("PATH_FILE_JSON is NULL");
-            return;
-        }
+        Path PATH_FILE_JSON = null;
+        Path PATH_FILE_SOAP = null;
 
         try {
-            preparingSenderFiles(ESenderDocType.JSON, null);
-            ReplyMessage replyJsonMessage = send(ESenderDocType.JSON);
+            PATH_FILE_JSON = preparingSenderFiles(ESenderDocType.JSON, null);
+            ReplyMessage replyJsonMessage = send(PATH_FILE_JSON);
             if (replyJsonMessage == null){
                 throw new Exception("Reply from JSON message is NULL!");
             }
 
-
             PATH_FILE_SOAP = preparingSenderFiles(ESenderDocType.SOAP, replyJsonMessage);
-            send(ESenderDocType.SOAP);
+            send(PATH_FILE_SOAP);
         } catch (Exception e) {
             logger.error("FAILED", e);
         } finally {
-            try{
-                Files.deleteIfExists(PATH_FILE_SOAP);
-                Files.deleteIfExists(Paths.get(MQSENDER_PROPERTIES));
-            } catch (IOException e) {
-                logger.error("FAILED", e);
-            }
+            clearTemplateFile(PATH_FILE_JSON);
+            clearTemplateFile(PATH_FILE_SOAP);
+            clearTemplateFile(MQSENDER_PROPERTIES);
         }
     }
 
-    private ReplyMessage send(ESenderDocType type) {
+    private ReplyMessage send(Path senderFilePath) {
         String replyMessageText = null;
-        TextMessage replyMessage = null;
         MQSender sender = new MQSender();
 
         try {
-            switch (type) {
-                case JSON:
-                    logger.info(String.format("Sending %s file: %s",type.name(), PATH_FILE_JSON));
-                    sender.newInstance();
-                    replyMessage = sender.sendMessage(new String(Files.readAllBytes(PATH_FILE_JSON), "UTF-8"));
-                    break;
-                case SOAP:
-                    logger.info(String.format("Sending %s file: %s",type.name(), PATH_FILE_SOAP));
-                    sender.newInstance();
-                    sender.setWaitReply(100);
-                    replyMessage = sender.sendMessage(new String(Files.readAllBytes(PATH_FILE_SOAP), "UTF-8"));
-                    break;
-                default:
-                    break;
+            logger.info(String.format("Sending file: %s", senderFilePath));
+            sender.newInstance();
+
+            if (senderFilePath.getFileName().toString().endsWith(".json")) {
+                sender.setWaitReply(15000);
+            } else {
+                sender.setWaitReply(100);
             }
+            TextMessage replyMessage = sender.sendMessage(new String(Files.readAllBytes(senderFilePath), "UTF-8"));
             replyMessageText = replyMessage != null ? replyMessage.getText() : null;
-            logger.info(String.format("%s send successful!", type.name()));
+            logger.info("Send successful!");
         } catch (IOException | JMSException e) {
             logger.error("FAILED", e);
         }
 
         return new Gson().fromJson(replyMessageText, ReplyMessage.class);
+    }
+
+    private void clearTemplateFile(Path filePath){
+        try {
+            if (filePath != null){
+                Files.deleteIfExists(filePath);
+            } else {
+                throw new Exception("PATH_FILE_SOAP is NULL!");
+            }
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
     }
 }
