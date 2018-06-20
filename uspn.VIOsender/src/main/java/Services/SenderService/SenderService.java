@@ -83,7 +83,7 @@ public class SenderService {
         try {
             documentsMap.forEach((docToSend, type) -> {
                 docMap.put(docToSend, type);
-                logger.info(String.format("Add document to send: %s %s", docToSend.getName(), type));
+                logger.info(String.format("Add document to send: %-30s %s", type, docToSend.getName()));
             });
 
             return this;
@@ -134,7 +134,6 @@ public class SenderService {
         } catch (Exception e) {
             logger.error("FAILED", e);
         }
-
 
         logger.info("STOP sender service!");
         return requestMap;

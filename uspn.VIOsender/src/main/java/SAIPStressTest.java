@@ -22,7 +22,7 @@ public class SAIPStressTest {
     private void doRunStressTest() {
         try {
             sendDocumentsToUspn();
-            SvedeniaHandler.getInstance().runHandler(documentList);
+//            SvedeniaHandler.getInstance().runHandler(documentList);
 //            RegisterHandler.getInstance().runHandler(documentList);
         } catch (Exception e){
             e.printStackTrace();

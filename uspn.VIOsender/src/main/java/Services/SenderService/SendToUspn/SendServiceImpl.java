@@ -61,7 +61,7 @@ public class SendServiceImpl implements SendService, SendServiceRest {
             throw new Exception(execute.errorBody().string());
         }
 
-        logger.info(String.format("Send service. Send file %s with ID to USPN: %s", type.getCyrillicName(), fileId));
+        logger.info(String.format("Send service. Send file %-10s with ID %s to USPN", type.getCyrillicName(), fileId));
         logger.trace(String.format("Send service:" +
                         "\r\n\t%s method to URL: %s" +
                         "\r\n\tSending file ID: %s" +

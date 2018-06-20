@@ -78,7 +78,7 @@ public class DocumentsSender {
                         DocumentType docType = DocumentType.valueOf(key.split("doc.")[1]);
                         String[] docArchiveNames = prop.getProperty(key).split(",");
                         Arrays.stream(docArchiveNames)
-                                .forEach(archiveName -> documentsList.add(new Document(archiveName, docType)));
+                                .forEach(archiveName -> documentsList.add(new Document(archiveName.trim(), docType)));
                     });
 
             logger.info(String.format("Get documents list from %s\r\n\t" +

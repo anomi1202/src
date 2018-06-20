@@ -15,6 +15,6 @@ public interface UploadServiceRest {
      * @return объект Call<T>
      */
     @Multipart
-    @POST("backend/userFile")
+    @POST("userFile")
     Call<ResponseBody> postRequest(@Part MultipartBody.Part file) throws Exception;
 }

@@ -1,0 +1,332 @@
+2018-06-20 10:41:01,387 [INFO ][main            ][PlansExecutionDocuments.DocumentsSender] - Get documents list from USPN.properties
+	folder: D:\!Projects\!USPN\Stress_test\saip\typical_data_file
+	found 10 documents
+2018-06-20 10:41:01,392 [INFO ][main            ][Services.SenderService.SenderService] - Read properties file: USPN.properties
+	host: 172.22.116.68
+	port: 9080
+	context: vio-emulator
+2018-06-20 10:41:01,404 [INFO ][main            ][Services.SenderService.SenderService] - Add upp to send: upp-file_file_ZOONP_4.xml.gz 
+2018-06-20 10:41:01,407 [INFO ][main            ][Services.SenderService.SenderService] - Add document to send:  10k_06-РНПФ-С_конт.отчет.xml.zip V_MSK_DEATH
+2018-06-20 10:41:01,408 [INFO ][main            ][Services.SenderService.SenderService] - Add document to send: 10k_08-ЗСПННПФ.xml.zip V_UVED_OZV_SPN
+2018-06-20 10:41:01,408 [INFO ][main            ][Services.SenderService.SenderService] - Add document to send: 10k_39-ИНСПН-В.xml.zip V_UVED_INV_EST_P
+2018-06-20 10:41:01,408 [INFO ][main            ][Services.SenderService.SenderService] - Add document to send: 10k_07-УОПС-С.xml.zip V_UVED_COURT
+2018-06-20 10:41:01,409 [INFO ][main            ][Services.SenderService.SenderService] - Add document to send: 10k_26-ПСПН-НПФ.xml.zip V_SVEDENIYA_PEREDANI
+2018-06-20 10:41:01,409 [INFO ][main            ][Services.SenderService.SenderService] - Add document to send: 10k_27-РСПННПФ.xml.zip V_UVED_O_NAZNACHENII
+2018-06-20 10:41:01,409 [INFO ][main            ][Services.SenderService.SenderService] - Add document to send: 10k_40-ИНСПН.xml.zip V_UVED_INV_NOT_EST_P
+2018-06-20 10:41:01,410 [INFO ][main            ][Services.SenderService.SenderService] - Add document to send:  10k_04-РНПФ-С_конт.отчет.xml.zip V_SPN_R_SUD
+2018-06-20 10:41:01,410 [INFO ][main            ][Services.SenderService.SenderService] - Add document to send: 10k_06-РНПФ-УМ.xml.zip V_MSK_DEATH
+2018-06-20 10:41:01,410 [INFO ][main            ][Services.SenderService.SenderService] - Add document to send: 10k_04-РНПФ-С.xml.zip V_SPN_R_SUD
+2018-06-20 10:41:01,410 [INFO ][main            ][Services.SenderService.SenderService] - Generate URL link to webApp: http://172.22.116.68:9080/vio-emulator/
+2018-06-20 10:41:03,256 [INFO ][main            ][Services.SenderService.SenderService] - START sender service!
+2018-06-20 10:41:03,503 [ERROR][main            ][Services.SenderService.SenderService] - FAILED
+java.lang.Exception: Error 404: 
+
+	at Services.SenderService.UploadToVio.UploadServiceImpl.upload(UploadServiceImpl.java:56)
+	at Services.SenderService.SenderService.send(SenderService.java:112)
+	at PlansExecutionDocuments.DocumentsSender.sendDocument(DocumentsSender.java:51)
+	at SAIPStressTest.sendDocumentsToUspn(SAIPStressTest.java:48)
+	at SAIPStressTest.doRunStressTest(SAIPStressTest.java:24)
+	at SAIPStressTest.main(SAIPStressTest.java:19)
+2018-06-20 10:41:03,506 [INFO ][main            ][Services.SenderService.SenderService] - STOP sender service!
+2018-06-20 10:45:40,952 [INFO ][main            ][PlansExecutionDocuments.DocumentsSender] - Get documents list from USPN.properties
+	folder: D:\!Projects\!USPN\Stress_test\saip\typical_data_file
+	found 10 documents
+2018-06-20 10:45:40,960 [INFO ][main            ][Services.SenderService.SenderService] - Read properties file: USPN.properties
+	host: 172.22.116.68
+	port: 9080
+	context: vio-emulator
+2018-06-20 10:45:40,972 [INFO ][main            ][Services.SenderService.SenderService] - Add upp to send: upp-file_file_ZOONP_4.xml.gz 
+2018-06-20 10:45:40,976 [INFO ][main            ][Services.SenderService.SenderService] - Add document to send:  10k_06-РНПФ-С_конт.отчет.xml.zip V_MSK_DEATH
+2018-06-20 10:45:40,977 [INFO ][main            ][Services.SenderService.SenderService] - Add document to send: 10k_08-ЗСПННПФ.xml.zip V_UVED_OZV_SPN
+2018-06-20 10:45:40,977 [INFO ][main            ][Services.SenderService.SenderService] - Add document to send: 10k_39-ИНСПН-В.xml.zip V_UVED_INV_EST_P
+2018-06-20 10:45:40,978 [INFO ][main            ][Services.SenderService.SenderService] - Add document to send: 10k_07-УОПС-С.xml.zip V_UVED_COURT
+2018-06-20 10:45:40,978 [INFO ][main            ][Services.SenderService.SenderService] - Add document to send: 10k_26-ПСПН-НПФ.xml.zip V_SVEDENIYA_PEREDANI
+2018-06-20 10:45:40,979 [INFO ][main            ][Services.SenderService.SenderService] - Add document to send: 10k_27-РСПННПФ.xml.zip V_UVED_O_NAZNACHENII
+2018-06-20 10:45:40,979 [INFO ][main            ][Services.SenderService.SenderService] - Add document to send: 10k_40-ИНСПН.xml.zip V_UVED_INV_NOT_EST_P
+2018-06-20 10:45:40,979 [INFO ][main            ][Services.SenderService.SenderService] - Add document to send:  10k_04-РНПФ-С_конт.отчет.xml.zip V_SPN_R_SUD
+2018-06-20 10:45:40,980 [INFO ][main            ][Services.SenderService.SenderService] - Add document to send: 10k_06-РНПФ-УМ.xml.zip V_MSK_DEATH
+2018-06-20 10:45:40,980 [INFO ][main            ][Services.SenderService.SenderService] - Add document to send: 10k_04-РНПФ-С.xml.zip V_SPN_R_SUD
+2018-06-20 10:45:40,980 [INFO ][main            ][Services.SenderService.SenderService] - Generate URL link to webApp: http://172.22.116.68:9080/vio-emulator/
+2018-06-20 10:45:42,149 [INFO ][main            ][Services.SenderService.SenderService] - START sender service!
+2018-06-20 10:45:42,453 [INFO ][main            ][Services.SenderService.UploadToVio.UploadServiceImpl] - Upload service. ID: 9 - file: upp-file_file_ZOONP_4.xml.gz
+2018-06-20 10:45:42,455 [TRACE][main            ][Services.SenderService.UploadToVio.UploadServiceImpl] - Upload service:
+	POST method to URL: http://172.22.116.68:9080/vio-emulator/userFile
+	Uploading file: upp-file_file_ZOONP_4.xml.gz
+	Request message: 9
+2018-06-20 10:45:42,527 [ERROR][main            ][Services.SenderService.SenderService] - FAILED
+java.io.FileNotFoundException: D:\!Projects\!USPN\Stress_test\saip\typical_data_file\ 10k_06-РНПФ-С_конт.отчет.xml.zip (Не удается найти указанный файл)
+	at java.io.FileInputStream.open0(Native Method)
+	at java.io.FileInputStream.open(FileInputStream.java:195)
+	at java.io.FileInputStream.<init>(FileInputStream.java:138)
+	at okio.Okio.source(Okio.java:168)
+	at okhttp3.RequestBody$3.writeTo(RequestBody.java:119)
+	at okhttp3.MultipartBody.writeOrCountBytes(MultipartBody.java:173)
+	at okhttp3.MultipartBody.writeTo(MultipartBody.java:114)
+	at okhttp3.internal.http.CallServerInterceptor.intercept(CallServerInterceptor.java:72)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:147)
+	at okhttp3.internal.connection.ConnectInterceptor.intercept(ConnectInterceptor.java:45)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:147)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:121)
+	at okhttp3.internal.cache.CacheInterceptor.intercept(CacheInterceptor.java:93)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:147)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:121)
+	at okhttp3.internal.http.BridgeInterceptor.intercept(BridgeInterceptor.java:93)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:147)
+	at okhttp3.internal.http.RetryAndFollowUpInterceptor.intercept(RetryAndFollowUpInterceptor.java:126)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:147)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:121)
+	at okhttp3.RealCall.getResponseWithInterceptorChain(RealCall.java:200)
+	at okhttp3.RealCall.execute(RealCall.java:77)
+	at retrofit2.OkHttpCall.execute(OkHttpCall.java:180)
+	at Services.SenderService.UploadToVio.UploadServiceImpl.upload(UploadServiceImpl.java:51)
+	at Services.SenderService.UploadToVio.UploadServiceImpl.upload(UploadServiceImpl.java:80)
+	at Services.SenderService.SenderService.send(SenderService.java:114)
+	at PlansExecutionDocuments.DocumentsSender.sendDocument(DocumentsSender.java:51)
+	at SAIPStressTest.sendDocumentsToUspn(SAIPStressTest.java:48)
+	at SAIPStressTest.doRunStressTest(SAIPStressTest.java:24)
+	at SAIPStressTest.main(SAIPStressTest.java:19)
+2018-06-20 10:45:42,536 [INFO ][main            ][Services.SenderService.SenderService] - STOP sender service!
+2018-06-20 10:51:00,833 [INFO ][main            ][PlansExecutionDocuments.DocumentsSender] - Get documents list from USPN.properties
+	folder: D:\!Projects\!USPN\Stress_test\saip\typical_data_file
+	found 10 documents
+2018-06-20 10:51:00,842 [INFO ][main            ][Services.SenderService.SenderService] - Read properties file: USPN.properties
+	host: 172.22.116.68
+	port: 9080
+	context: vio-emulator
+2018-06-20 10:51:00,863 [INFO ][main            ][Services.SenderService.SenderService] - Add upp to send: upp-file_file_ZOONP_4.xml.gz 
+2018-06-20 10:51:00,867 [INFO ][main            ][Services.SenderService.SenderService] - Add document to send: 10k_08-ЗСПННПФ.xml.zip V_UVED_OZV_SPN
+2018-06-20 10:51:00,868 [INFO ][main            ][Services.SenderService.SenderService] - Add document to send: 10k_39-ИНСПН-В.xml.zip V_UVED_INV_EST_P
+2018-06-20 10:51:00,868 [INFO ][main            ][Services.SenderService.SenderService] - Add document to send: 10k_04_РНПФ-С.xml.zip V_SPN_R_SUD
+2018-06-20 10:51:00,869 [INFO ][main            ][Services.SenderService.SenderService] - Add document to send: 10k_26-ПСПН-НПФ.xml.zip V_SVEDENIYA_PEREDANI
+2018-06-20 10:51:00,869 [INFO ][main            ][Services.SenderService.SenderService] - Add document to send: 10k_07_УОПС-С.xml.zip V_UVED_COURT
+2018-06-20 10:51:00,869 [INFO ][main            ][Services.SenderService.SenderService] - Add document to send: 10k_27-РСПННПФ.xml.zip V_UVED_O_NAZNACHENII
+2018-06-20 10:51:00,870 [INFO ][main            ][Services.SenderService.SenderService] - Add document to send:  10k_06-РНПФ-УМ_конт.отчет.xml.zip V_MSK_DEATH
+2018-06-20 10:51:00,870 [INFO ][main            ][Services.SenderService.SenderService] - Add document to send: 10k_40-ИНСПН.xml.zip V_UVED_INV_NOT_EST_P
+2018-06-20 10:51:00,871 [INFO ][main            ][Services.SenderService.SenderService] - Add document to send:  10k_04-РНПФ-С_конт.отчет.xml.zip V_SPN_R_SUD
+2018-06-20 10:51:00,871 [INFO ][main            ][Services.SenderService.SenderService] - Add document to send: 10k_06-РНПФ-УМ.xml.zip V_MSK_DEATH
+2018-06-20 10:51:00,873 [INFO ][main            ][Services.SenderService.SenderService] - Generate URL link to webApp: http://172.22.116.68:9080/vio-emulator/
+2018-06-20 10:51:02,074 [INFO ][main            ][Services.SenderService.SenderService] - START sender service!
+2018-06-20 10:51:02,382 [INFO ][main            ][Services.SenderService.UploadToVio.UploadServiceImpl] - Upload service. ID: 10 - file: upp-file_file_ZOONP_4.xml.gz
+2018-06-20 10:51:02,384 [TRACE][main            ][Services.SenderService.UploadToVio.UploadServiceImpl] - Upload service:
+	POST method to URL: http://172.22.116.68:9080/vio-emulator/userFile
+	Uploading file: upp-file_file_ZOONP_4.xml.gz
+	Request message: 10
+2018-06-20 10:51:03,513 [INFO ][main            ][Services.SenderService.UploadToVio.UploadServiceImpl] - Upload service. ID: 11 - file: 10k_08-ЗСПННПФ.xml.zip
+2018-06-20 10:51:03,514 [TRACE][main            ][Services.SenderService.UploadToVio.UploadServiceImpl] - Upload service:
+	POST method to URL: http://172.22.116.68:9080/vio-emulator/userFile
+	Uploading file: 10k_08-ЗСПННПФ.xml.zip
+	Request message: 11
+2018-06-20 10:51:04,376 [INFO ][main            ][Services.SenderService.UploadToVio.UploadServiceImpl] - Upload service. ID: 12 - file: 10k_39-ИНСПН-В.xml.zip
+2018-06-20 10:51:04,376 [TRACE][main            ][Services.SenderService.UploadToVio.UploadServiceImpl] - Upload service:
+	POST method to URL: http://172.22.116.68:9080/vio-emulator/userFile
+	Uploading file: 10k_39-ИНСПН-В.xml.zip
+	Request message: 12
+2018-06-20 10:51:05,130 [INFO ][main            ][Services.SenderService.UploadToVio.UploadServiceImpl] - Upload service. ID: 13 - file: 10k_04_РНПФ-С.xml.zip
+2018-06-20 10:51:05,130 [TRACE][main            ][Services.SenderService.UploadToVio.UploadServiceImpl] - Upload service:
+	POST method to URL: http://172.22.116.68:9080/vio-emulator/userFile
+	Uploading file: 10k_04_РНПФ-С.xml.zip
+	Request message: 13
+2018-06-20 10:51:06,093 [INFO ][main            ][Services.SenderService.UploadToVio.UploadServiceImpl] - Upload service. ID: 14 - file: 10k_26-ПСПН-НПФ.xml.zip
+2018-06-20 10:51:06,093 [TRACE][main            ][Services.SenderService.UploadToVio.UploadServiceImpl] - Upload service:
+	POST method to URL: http://172.22.116.68:9080/vio-emulator/userFile
+	Uploading file: 10k_26-ПСПН-НПФ.xml.zip
+	Request message: 14
+2018-06-20 10:51:06,898 [INFO ][main            ][Services.SenderService.UploadToVio.UploadServiceImpl] - Upload service. ID: 15 - file: 10k_07_УОПС-С.xml.zip
+2018-06-20 10:51:06,898 [TRACE][main            ][Services.SenderService.UploadToVio.UploadServiceImpl] - Upload service:
+	POST method to URL: http://172.22.116.68:9080/vio-emulator/userFile
+	Uploading file: 10k_07_УОПС-С.xml.zip
+	Request message: 15
+2018-06-20 10:51:08,870 [INFO ][main            ][Services.SenderService.UploadToVio.UploadServiceImpl] - Upload service. ID: 16 - file: 10k_27-РСПННПФ.xml.zip
+2018-06-20 10:51:08,871 [TRACE][main            ][Services.SenderService.UploadToVio.UploadServiceImpl] - Upload service:
+	POST method to URL: http://172.22.116.68:9080/vio-emulator/userFile
+	Uploading file: 10k_27-РСПННПФ.xml.zip
+	Request message: 16
+2018-06-20 10:51:08,939 [ERROR][main            ][Services.SenderService.SenderService] - FAILED
+java.io.FileNotFoundException: D:\!Projects\!USPN\Stress_test\saip\typical_data_file\ 10k_06-РНПФ-УМ_конт.отчет.xml.zip (Не удается найти указанный файл)
+	at java.io.FileInputStream.open0(Native Method)
+	at java.io.FileInputStream.open(FileInputStream.java:195)
+	at java.io.FileInputStream.<init>(FileInputStream.java:138)
+	at okio.Okio.source(Okio.java:168)
+	at okhttp3.RequestBody$3.writeTo(RequestBody.java:119)
+	at okhttp3.MultipartBody.writeOrCountBytes(MultipartBody.java:173)
+	at okhttp3.MultipartBody.writeTo(MultipartBody.java:114)
+	at okhttp3.internal.http.CallServerInterceptor.intercept(CallServerInterceptor.java:72)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:147)
+	at okhttp3.internal.connection.ConnectInterceptor.intercept(ConnectInterceptor.java:45)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:147)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:121)
+	at okhttp3.internal.cache.CacheInterceptor.intercept(CacheInterceptor.java:93)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:147)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:121)
+	at okhttp3.internal.http.BridgeInterceptor.intercept(BridgeInterceptor.java:93)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:147)
+	at okhttp3.internal.http.RetryAndFollowUpInterceptor.intercept(RetryAndFollowUpInterceptor.java:126)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:147)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:121)
+	at okhttp3.RealCall.getResponseWithInterceptorChain(RealCall.java:200)
+	at okhttp3.RealCall.execute(RealCall.java:77)
+	at retrofit2.OkHttpCall.execute(OkHttpCall.java:180)
+	at Services.SenderService.UploadToVio.UploadServiceImpl.upload(UploadServiceImpl.java:51)
+	at Services.SenderService.UploadToVio.UploadServiceImpl.upload(UploadServiceImpl.java:80)
+	at Services.SenderService.SenderService.send(SenderService.java:114)
+	at PlansExecutionDocuments.DocumentsSender.sendDocument(DocumentsSender.java:51)
+	at SAIPStressTest.sendDocumentsToUspn(SAIPStressTest.java:48)
+	at SAIPStressTest.doRunStressTest(SAIPStressTest.java:24)
+	at SAIPStressTest.main(SAIPStressTest.java:19)
+2018-06-20 10:51:08,944 [INFO ][main            ][Services.SenderService.SenderService] - STOP sender service!
+2018-06-20 10:59:47,950 [INFO ][main            ][PlansExecutionDocuments.DocumentsSender] - Get documents list from USPN.properties
+	folder: D:\!Projects\!USPN\Stress_test\saip\typical_data_file
+	found 10 documents
+2018-06-20 10:59:47,956 [INFO ][main            ][Services.SenderService.SenderService] - Read properties file: USPN.properties
+	host: 172.22.116.68
+	port: 9080
+	context: vio-emulator
+2018-06-20 10:59:47,968 [INFO ][main            ][Services.SenderService.SenderService] - Add upp to send: upp-file_file_ZOONP_4.xml.gz 
+2018-06-20 10:59:47,973 [INFO ][main            ][Services.SenderService.SenderService] - Add document to send: V_UVED_OZV_SPN 10k_08-ЗСПННПФ.xml.zip
+2018-06-20 10:59:47,973 [INFO ][main            ][Services.SenderService.SenderService] - Add document to send: V_UVED_INV_EST_P 10k_39-ИНСПН-В.xml.zip
+2018-06-20 10:59:47,973 [INFO ][main            ][Services.SenderService.SenderService] - Add document to send: V_SPN_R_SUD 10k_04_РНПФ-С.xml.zip
+2018-06-20 10:59:47,974 [INFO ][main            ][Services.SenderService.SenderService] - Add document to send: V_SVEDENIYA_PEREDANI 10k_26-ПСПН-НПФ.xml.zip
+2018-06-20 10:59:47,974 [INFO ][main            ][Services.SenderService.SenderService] - Add document to send: V_UVED_COURT 10k_07_УОПС-С.xml.zip
+2018-06-20 10:59:47,974 [INFO ][main            ][Services.SenderService.SenderService] - Add document to send: V_SPN_R_SUD 10k_04-РНПФ-С_конт.отчет.xml.zip
+2018-06-20 10:59:47,975 [INFO ][main            ][Services.SenderService.SenderService] - Add document to send: V_UVED_O_NAZNACHENII 10k_27-РСПННПФ.xml.zip
+2018-06-20 10:59:47,975 [INFO ][main            ][Services.SenderService.SenderService] - Add document to send: V_UVED_INV_NOT_EST_P 10k_40-ИНСПН.xml.zip
+2018-06-20 10:59:47,975 [INFO ][main            ][Services.SenderService.SenderService] - Add document to send: V_MSK_DEATH 10k_06-РНПФ-УМ_конт.отчет.xml.zip
+2018-06-20 10:59:47,975 [INFO ][main            ][Services.SenderService.SenderService] - Add document to send: V_MSK_DEATH 10k_06-РНПФ-УМ.xml.zip
+2018-06-20 10:59:47,975 [INFO ][main            ][Services.SenderService.SenderService] - Generate URL link to webApp: http://172.22.116.68:9080/vio-emulator/
+2018-06-20 10:59:49,021 [INFO ][main            ][Services.SenderService.SenderService] - START sender service!
+2018-06-20 10:59:49,400 [INFO ][main            ][Services.SenderService.UploadToVio.UploadServiceImpl] - Upload service. ID: 17 - file: upp-file_file_ZOONP_4.xml.gz
+2018-06-20 10:59:49,402 [TRACE][main            ][Services.SenderService.UploadToVio.UploadServiceImpl] - Upload service:
+	POST method to URL: http://172.22.116.68:9080/vio-emulator/userFile
+	Uploading file: upp-file_file_ZOONP_4.xml.gz
+	Request message: 17
+2018-06-20 10:59:50,716 [INFO ][main            ][Services.SenderService.UploadToVio.UploadServiceImpl] - Upload service. ID: 18 - file: 10k_08-ЗСПННПФ.xml.zip
+2018-06-20 10:59:50,716 [TRACE][main            ][Services.SenderService.UploadToVio.UploadServiceImpl] - Upload service:
+	POST method to URL: http://172.22.116.68:9080/vio-emulator/userFile
+	Uploading file: 10k_08-ЗСПННПФ.xml.zip
+	Request message: 18
+2018-06-20 10:59:51,406 [INFO ][main            ][Services.SenderService.UploadToVio.UploadServiceImpl] - Upload service. ID: 19 - file: 10k_39-ИНСПН-В.xml.zip
+2018-06-20 10:59:51,407 [TRACE][main            ][Services.SenderService.UploadToVio.UploadServiceImpl] - Upload service:
+	POST method to URL: http://172.22.116.68:9080/vio-emulator/userFile
+	Uploading file: 10k_39-ИНСПН-В.xml.zip
+	Request message: 19
+2018-06-20 10:59:52,159 [INFO ][main            ][Services.SenderService.UploadToVio.UploadServiceImpl] - Upload service. ID: 20 - file: 10k_04_РНПФ-С.xml.zip
+2018-06-20 10:59:52,160 [TRACE][main            ][Services.SenderService.UploadToVio.UploadServiceImpl] - Upload service:
+	POST method to URL: http://172.22.116.68:9080/vio-emulator/userFile
+	Uploading file: 10k_04_РНПФ-С.xml.zip
+	Request message: 20
+2018-06-20 10:59:53,440 [INFO ][main            ][Services.SenderService.UploadToVio.UploadServiceImpl] - Upload service. ID: 21 - file: 10k_26-ПСПН-НПФ.xml.zip
+2018-06-20 10:59:53,441 [TRACE][main            ][Services.SenderService.UploadToVio.UploadServiceImpl] - Upload service:
+	POST method to URL: http://172.22.116.68:9080/vio-emulator/userFile
+	Uploading file: 10k_26-ПСПН-НПФ.xml.zip
+	Request message: 21
+2018-06-20 10:59:54,198 [INFO ][main            ][Services.SenderService.UploadToVio.UploadServiceImpl] - Upload service. ID: 22 - file: 10k_07_УОПС-С.xml.zip
+2018-06-20 10:59:54,199 [TRACE][main            ][Services.SenderService.UploadToVio.UploadServiceImpl] - Upload service:
+	POST method to URL: http://172.22.116.68:9080/vio-emulator/userFile
+	Uploading file: 10k_07_УОПС-С.xml.zip
+	Request message: 22
+2018-06-20 10:59:55,512 [INFO ][main            ][Services.SenderService.UploadToVio.UploadServiceImpl] - Upload service. ID: 23 - file: 10k_04-РНПФ-С_конт.отчет.xml.zip
+2018-06-20 10:59:55,513 [TRACE][main            ][Services.SenderService.UploadToVio.UploadServiceImpl] - Upload service:
+	POST method to URL: http://172.22.116.68:9080/vio-emulator/userFile
+	Uploading file: 10k_04-РНПФ-С_конт.отчет.xml.zip
+	Request message: 23
+2018-06-20 10:59:57,069 [INFO ][main            ][Services.SenderService.UploadToVio.UploadServiceImpl] - Upload service. ID: 24 - file: 10k_27-РСПННПФ.xml.zip
+2018-06-20 10:59:57,070 [TRACE][main            ][Services.SenderService.UploadToVio.UploadServiceImpl] - Upload service:
+	POST method to URL: http://172.22.116.68:9080/vio-emulator/userFile
+	Uploading file: 10k_27-РСПННПФ.xml.zip
+	Request message: 24
+2018-06-20 10:59:58,327 [INFO ][main            ][Services.SenderService.UploadToVio.UploadServiceImpl] - Upload service. ID: 25 - file: 10k_40-ИНСПН.xml.zip
+2018-06-20 10:59:58,327 [TRACE][main            ][Services.SenderService.UploadToVio.UploadServiceImpl] - Upload service:
+	POST method to URL: http://172.22.116.68:9080/vio-emulator/userFile
+	Uploading file: 10k_40-ИНСПН.xml.zip
+	Request message: 25
+2018-06-20 10:59:59,282 [INFO ][main            ][Services.SenderService.UploadToVio.UploadServiceImpl] - Upload service. ID: 26 - file: 10k_06-РНПФ-УМ_конт.отчет.xml.zip
+2018-06-20 10:59:59,282 [TRACE][main            ][Services.SenderService.UploadToVio.UploadServiceImpl] - Upload service:
+	POST method to URL: http://172.22.116.68:9080/vio-emulator/userFile
+	Uploading file: 10k_06-РНПФ-УМ_конт.отчет.xml.zip
+	Request message: 26
+2018-06-20 11:00:00,645 [INFO ][main            ][Services.SenderService.UploadToVio.UploadServiceImpl] - Upload service. ID: 27 - file: 10k_06-РНПФ-УМ.xml.zip
+2018-06-20 11:00:00,646 [TRACE][main            ][Services.SenderService.UploadToVio.UploadServiceImpl] - Upload service:
+	POST method to URL: http://172.22.116.68:9080/vio-emulator/userFile
+	Uploading file: 10k_06-РНПФ-УМ.xml.zip
+	Request message: 27
+2018-06-20 11:00:00,896 [INFO ][main            ][Services.SenderService.SendToUspn.SendServiceImpl] - Send service. Send file УОПС-С with ID to USPN: 22
+2018-06-20 11:00:00,897 [TRACE][main            ][Services.SenderService.SendToUspn.SendServiceImpl] - Send service:
+	POST method to URL: http://172.22.116.68:9080/vio-emulator/process/sendNpfDocument
+	Sending file ID: 22
+	Sending UPP ID: 17
+	Request message: {
+  "message" : "send NPF document"
+}
+2018-06-20 11:00:01,056 [INFO ][main            ][Services.SenderService.SendToUspn.SendServiceImpl] - Send service. Send file РНПФ-С with ID to USPN: 23
+2018-06-20 11:00:01,056 [TRACE][main            ][Services.SenderService.SendToUspn.SendServiceImpl] - Send service:
+	POST method to URL: http://172.22.116.68:9080/vio-emulator/process/sendNpfDocument
+	Sending file ID: 23
+	Sending UPP ID: 17
+	Request message: {
+  "message" : "send NPF document"
+}
+2018-06-20 11:00:01,234 [INFO ][main            ][Services.SenderService.SendToUspn.SendServiceImpl] - Send service. Send file РСПННПФ with ID to USPN: 24
+2018-06-20 11:00:01,234 [TRACE][main            ][Services.SenderService.SendToUspn.SendServiceImpl] - Send service:
+	POST method to URL: http://172.22.116.68:9080/vio-emulator/process/sendNpfDocument
+	Sending file ID: 24
+	Sending UPP ID: 17
+	Request message: {
+  "message" : "send NPF document"
+}
+2018-06-20 11:00:01,406 [INFO ][main            ][Services.SenderService.SendToUspn.SendServiceImpl] - Send service. Send file ИНСПН with ID to USPN: 25
+2018-06-20 11:00:01,407 [TRACE][main            ][Services.SenderService.SendToUspn.SendServiceImpl] - Send service:
+	POST method to URL: http://172.22.116.68:9080/vio-emulator/process/sendNpfDocument
+	Sending file ID: 25
+	Sending UPP ID: 17
+	Request message: {
+  "message" : "send NPF document"
+}
+2018-06-20 11:00:01,556 [INFO ][main            ][Services.SenderService.SendToUspn.SendServiceImpl] - Send service. Send file РНПФ-УМ with ID to USPN: 26
+2018-06-20 11:00:01,556 [TRACE][main            ][Services.SenderService.SendToUspn.SendServiceImpl] - Send service:
+	POST method to URL: http://172.22.116.68:9080/vio-emulator/process/sendNpfDocument
+	Sending file ID: 26
+	Sending UPP ID: 17
+	Request message: {
+  "message" : "send NPF document"
+}
+2018-06-20 11:00:01,715 [INFO ][main            ][Services.SenderService.SendToUspn.SendServiceImpl] - Send service. Send file РНПФ-УМ with ID to USPN: 27
+2018-06-20 11:00:01,716 [TRACE][main            ][Services.SenderService.SendToUspn.SendServiceImpl] - Send service:
+	POST method to URL: http://172.22.116.68:9080/vio-emulator/process/sendNpfDocument
+	Sending file ID: 27
+	Sending UPP ID: 17
+	Request message: {
+  "message" : "send NPF document"
+}
+2018-06-20 11:00:01,882 [INFO ][main            ][Services.SenderService.SendToUspn.SendServiceImpl] - Send service. Send file ЗСПННПФ with ID to USPN: 18
+2018-06-20 11:00:01,883 [TRACE][main            ][Services.SenderService.SendToUspn.SendServiceImpl] - Send service:
+	POST method to URL: http://172.22.116.68:9080/vio-emulator/process/sendNpfDocument
+	Sending file ID: 18
+	Sending UPP ID: 17
+	Request message: {
+  "message" : "send NPF document"
+}
+2018-06-20 11:00:02,043 [INFO ][main            ][Services.SenderService.SendToUspn.SendServiceImpl] - Send service. Send file ИНСПН-В with ID to USPN: 19
+2018-06-20 11:00:02,043 [TRACE][main            ][Services.SenderService.SendToUspn.SendServiceImpl] - Send service:
+	POST method to URL: http://172.22.116.68:9080/vio-emulator/process/sendNpfDocument
+	Sending file ID: 19
+	Sending UPP ID: 17
+	Request message: {
+  "message" : "send NPF document"
+}
+2018-06-20 11:00:02,203 [INFO ][main            ][Services.SenderService.SendToUspn.SendServiceImpl] - Send service. Send file РНПФ-С with ID to USPN: 20
+2018-06-20 11:00:02,204 [TRACE][main            ][Services.SenderService.SendToUspn.SendServiceImpl] - Send service:
+	POST method to URL: http://172.22.116.68:9080/vio-emulator/process/sendNpfDocument
+	Sending file ID: 20
+	Sending UPP ID: 17
+	Request message: {
+  "message" : "send NPF document"
+}
+2018-06-20 11:00:02,386 [INFO ][main            ][Services.SenderService.SendToUspn.SendServiceImpl] - Send service. Send file ПСПН-НПФ with ID to USPN: 21
+2018-06-20 11:00:02,388 [TRACE][main            ][Services.SenderService.SendToUspn.SendServiceImpl] - Send service:
+	POST method to URL: http://172.22.116.68:9080/vio-emulator/process/sendNpfDocument
+	Sending file ID: 21
+	Sending UPP ID: 17
+	Request message: {
+  "message" : "send NPF document"
+}
+2018-06-20 11:00:02,414 [INFO ][main            ][Services.SenderService.SenderService] - STOP sender service!

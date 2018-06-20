@@ -1,40 +1,52 @@
 [
   {
-    "archiveName": "RNPF-S_00003_sk_prf.zip",
+    "archiveName": "10k_39-ИНСПН-В.xml.zip",
+    "type": "V_UVED_INV_EST_P",
+    "historyOfHandling": {}
+  },
+  {
+    "archiveName": "10k_40-ИНСПН.xml.zip",
+    "type": "V_UVED_INV_NOT_EST_P",
+    "historyOfHandling": {}
+  },
+  {
+    "archiveName": "10k_26-ПСПН-НПФ.xml.zip",
+    "type": "V_SVEDENIYA_PEREDANI",
+    "historyOfHandling": {}
+  },
+  {
+    "archiveName": "10k_27-РСПННПФ.xml.zip",
+    "type": "V_UVED_O_NAZNACHENII",
+    "historyOfHandling": {}
+  },
+  {
+    "archiveName": "10k_04_РНПФ-С.xml.zip",
     "type": "V_SPN_R_SUD",
-    "historyOfHandling": {
-      "Отражен в СЧ": "14.06.2018 07:35:33",
-      "БК пройден": "14.06.2018 07:33:21",
-      "Отражение в СЧ": "14.06.2018 07:35:33",
-      "Готов к отражению": "14.06.2018 07:35:21",
-      "Сохранен": "14.06.2018 07:28:49",
-      "В процессе БК": "14.06.2018 07:33:14",
-      "В процессе отзыва": "14.06.2018 07:40:43",
-      "Отозван": "14.06.2018 07:40:43",
-      "Подготовлен к отражению в СЧ": "14.06.2018 07:35:32"
-    }
+    "historyOfHandling": {}
   },
   {
-    "archiveName": "UOPS-S_check_sk_pfr.zip",
-    "type": "V_UVED_COURT",
-    "historyOfHandling": {
-      "Отражен в СЧ": "14.06.2018 07:29:57",
-      "Отражение в СЧ": "14.06.2018 07:29:57",
-      "Готов к отражению": "14.06.2018 07:29:46",
-      "Сохранен": "14.06.2018 07:28:49",
-      "В процессе БК": "14.06.2018 07:29:39",
-      "В процессе отзыва": "14.06.2018 07:30:50",
-      "Отозван": "14.06.2018 07:30:50",
-      "Подготовлен к отражению в СЧ": "14.06.2018 07:29:56"
-    }
+    "archiveName": "10k_04-РНПФ-С_конт.отчет.xml.zip",
+    "type": "V_SPN_R_SUD",
+    "historyOfHandling": {}
   },
   {
-    "archiveName": "RNFP-UM_sk_prf.zip",
+    "archiveName": "10k_06-РНПФ-УМ_конт.отчет.xml.zip",
     "type": "V_MSK_DEATH",
-    "historyOfHandling": {
-      "Отклонен на БК": "14.06.2018 07:33:29",
-      "Сохранен": "14.06.2018 07:28:49",
-      "В процессе БК": "14.06.2018 07:33:14"
-    }
+    "historyOfHandling": {}
+  },
+  {
+    "archiveName": "10k_08-ЗСПННПФ.xml.zip",
+    "type": "V_UVED_OZV_SPN",
+    "historyOfHandling": {}
+  },
+  {
+    "archiveName": "10k_06-РНПФ-УМ.xml.zip",
+    "type": "V_MSK_DEATH",
+    "historyOfHandling": {}
+  },
+  {
+    "archiveName": "10k_07_УОПС-С.xml.zip",
+    "type": "V_UVED_COURT",
+    "historyOfHandling": {}
   }
 ]

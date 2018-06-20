@@ -13,6 +13,6 @@ public interface SendServiceRest {
      *             {"uppFileId":123, "documentFileId":1234, documentType": TYPE_DOC}
      * @return объект Call<T>
      */
-    @POST("backend/process/sendNpfDocument")
+    @POST("process/sendNpfDocument")
     Call<String> send(@Body JsonObject json) throws Exception;
 }
